@@ -8,10 +8,12 @@
         <TextBox HorizontalAlignment="Left" Height="24" Margin="10,38,0,0" TextWrapping="Wrap" Text="Zutaten" VerticalAlignment="Top" Width="70"/>
         <TextBox HorizontalAlignment="Left" Height="24" Margin="85,38,0,0" TextWrapping="Wrap" Text="Menge" VerticalAlignment="Top" Width="75"/>
         <TextBox HorizontalAlignment="Left" Height="24" Margin="165,38,0,0" TextWrapping="Wrap" Text="Einheit" VerticalAlignment="Top" Width="69"/>
-        <ListView HorizontalAlignment="Left" Height="161" Margin="10,96,0,0" VerticalAlignment="Top" Width="224">
+        <ListView HorizontalAlignment="Left" Height="161" Margin="10,96,0,0" VerticalAlignment="Top" Width="224" SelectionChanged="ListView_SelectionChanged">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn/>
+                    <GridViewColumn Header="Zutat" Width="115"/>
+                    <GridViewColumn Header="Menge" Width="50"/>
+                    <GridViewColumn Header="Einheit" Width="50"/>
                 </GridView>
             </ListView.View>
         </ListView>
