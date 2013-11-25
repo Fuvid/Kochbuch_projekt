@@ -29,5 +29,11 @@ namespace DasUltimativeKochbuch
         {
 
         }
+
+
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
