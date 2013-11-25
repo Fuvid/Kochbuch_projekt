@@ -1,0 +1,37 @@
+CREATE TABLE User(
+	ID INT AUTO_INCREMENT,
+        Name VARCHAR(255),
+        Email VARCHAR UNIQUE,
+        passwort VARCHAR(255),
+	PRIMARY KEY (ID)
+);
+CREATE TABLE Rezept(
+	ID INT AUTO_INCREMENT,
+        Name VARCHAR(255) NOT NULL,
+        Zubereitung TEXT,
+        Personen INT(3),
+        UsrID INT,
+	PRIMARY KEY(ID),
+	FOREIGN KEY(UsrID) REFERENCES User(ID)
+);
+CREATE TABLE Zutat(
+	ID INT AUTO_INCREMENT,
+        Score BIGINT,
+        Name VARCHAR(255) NOT NULL,
+   	PRIMARY KEY (ID)
+);
+CREATE TABLE Einheit(
+	ID INT AUTO_INCREMENT,
+        Name VARCHAR(255) NOT NULL,
+   	PRIMARY KEY (ID)
+);
+CREATE TABLE RezZut(
+	RezeptID INT,
+        ZutatID INT,
+        Menge FLOAT,
+        EinheitID INT,
+        PRIMARY KEY(RezeptID, ZutatID),
+        FOREIGN KEY (RezeptID) REFERENCES Rezept(ID),
+        FOREIGN KEY (ZutatID) REFERENCES Zutat(ID),
+        FOREIGN KEY (EinheitID) REFERENCES Einheit(ID)
+);
