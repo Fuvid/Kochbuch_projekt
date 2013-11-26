@@ -34,6 +34,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>Properties\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -66,7 +70,7 @@
     <Compile Include="Core\Rezept.cs" />
     <Compile Include="Core\Zutat.cs" />
     <Compile Include="Datenbank\DatenbankConnector.cs" />
-    <Compile Include="Datenbank\FunktionenDB.cs" />
+    <Compile Include="Datenbank\DBConnect.cs" />
     <Compile Include="Datenbank\Mockup.cs" />
     <Compile Include="GUI\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

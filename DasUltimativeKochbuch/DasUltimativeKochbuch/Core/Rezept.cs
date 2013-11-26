@@ -8,11 +8,37 @@ namespace DasUltimativeKochbuch.Core
 {
     public class Rezept
     {
-        List<Zutat> zutaten;
+        //Liste der benötigten Zutaten
+        private List<Zutat> zutaten;
+        //Fließtext zur Zubereitung
         String zubereitung;
+        //Der name des Rezept z.B. "Omas Hausgemachte Käsespätzle"
         String name;
+        //Für wie vielöe Personen ist das Rezept gedacht, um später besser Skalieren zu können
         int pers;
 
+        public Rezept(List<Zutat> zt, String zub, String n, int p)
+        {
+            zutaten = zt;
+            zubereitung = zub;
+            name = n;
+            pers = p;
+        }
 
+        string toString(){
+            string res = "";
+            res += this.name;
+            res += '\n';
+            res += '\n';
+            foreach (var item in zutaten)
+            {
+                res += item.name + '\n';
+            }
+            res += '\n';
+            res += this.zubereitung;
+
+            return res;
+
+        }
     }
 }

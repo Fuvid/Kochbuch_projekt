@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Windows;
 
@@ -14,13 +10,13 @@ namespace DasUltimativeKochbuch.Datenbank
         {
             MySqlConnection connect;
             MySqlCommand cmd;
+            
             string connectionLine;
             string commandLine;
 
             connectionLine = "Data source=localhost;UserId=root;Password=;database=kochbuch";
             connect = new MySqlConnection(connectionLine);
             cmd = new MySqlCommand();
-
             try
             {
                 //Create a connection  
@@ -38,13 +34,12 @@ namespace DasUltimativeKochbuch.Datenbank
 
             //Set the command texat  
             cmd.CommandText = commandLine;
-
             //Ausführen des Sql Queries
             cmd.ExecuteNonQuery();
-
             //Close the connection  
             cmd.Connection.Close();
         }
+
 
 
 

@@ -6,9 +6,19 @@ using System.Threading.Tasks;
 
 namespace DasUltimativeKochbuch.Core
 {
-    class Zutat
+    public class Zutat
     {
-        String name;
+        //Name der Zutat
+        public string name { get; set; }
+        //interne Bewertung der Zutat
         int score;
+        //Die Einheit in der die Zutat berechnet wird
+        Einheit einh;
+
+        public Zutat(String n, Einheit e) {
+            n = name;
+            einh = e;
+            score = 0;
+        }
     }
 }
