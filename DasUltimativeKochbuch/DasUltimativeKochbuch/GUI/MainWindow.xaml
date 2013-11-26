@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Menu x:Name="MainMenu" IsMainMenu="True" Height="321" Margin="0,0,-0.333,0.333" VerticalAlignment="Bottom">
+        <Menu x:Name="MainMenu" IsMainMenu="True" Height="23" Margin="0,0,0,0" VerticalAlignment="Top">
             <MenuItem Header="_Datei" />
             <MenuItem Header="_Bearbeiten" />
             <MenuItem Header="_Anzeigen">
