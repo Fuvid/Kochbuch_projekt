@@ -38,13 +38,12 @@ namespace DasUltimativeKochbuch.Datenbank
 
             //Set the command texat  
             cmd.CommandText = commandLine;
-
             //Ausführen des Sql Queries
             cmd.ExecuteNonQuery();
-
             //Close the connection  
             cmd.Connection.Close();
         }
+
 
 
 
