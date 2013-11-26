@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DasUltimativeKochbuch.Core
 {
-    class Rezept
+    public class Rezept
     {
         List<Zutat> zutaten;
         String zubereitung;
