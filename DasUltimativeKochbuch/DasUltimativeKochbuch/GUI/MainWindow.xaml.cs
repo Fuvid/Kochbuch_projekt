@@ -24,11 +24,5 @@ namespace DasUltimativeKochbuch
         {
             InitializeComponent();
         }
-
-
-        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
     }
 }

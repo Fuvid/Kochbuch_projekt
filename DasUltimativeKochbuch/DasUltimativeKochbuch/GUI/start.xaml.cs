@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace DasUltimativeKochbuch.GUI
 {
     /// <summary>
-    /// Interaktionslogik für Rezept_erstellen.xaml
+    /// Interaktionslogik für start.xaml
     /// </summary>
-    public partial class Rezept_erstellen : Page
+    public partial class start : Page
     {
-        public Rezept_erstellen()
+        public start()
         {
             InitializeComponent();
-        }
-
-        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
         }
     }
 }
