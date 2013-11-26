@@ -10,6 +10,7 @@ namespace DasUltimativeKochbuch.Datenbank
         {
             MySqlConnection connect;
             MySqlCommand cmd;
+            
             string connectionLine;
             string commandLine;
 
