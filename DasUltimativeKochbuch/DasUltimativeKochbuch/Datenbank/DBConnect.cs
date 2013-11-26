@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Windows;
 
@@ -20,7 +16,6 @@ namespace DasUltimativeKochbuch.Datenbank
             connectionLine = "Data source=localhost;UserId=root;Password=;database=kochbuch";
             connect = new MySqlConnection(connectionLine);
             cmd = new MySqlCommand();
-
             try
             {
                 //Create a connection  
