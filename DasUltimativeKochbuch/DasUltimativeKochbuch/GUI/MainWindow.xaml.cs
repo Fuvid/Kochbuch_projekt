@@ -25,8 +25,7 @@ namespace DasUltimativeKochbuch
             InitializeComponent();
         }
 
-
-        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
 
         }
