@@ -8,7 +8,7 @@ namespace DasUltimativeKochbuch.Core
 {
     class Einheit
     {
-        String name;
+        public String name{get;set;}
         public Einheit(String n) {
             this.name = n;
         }
