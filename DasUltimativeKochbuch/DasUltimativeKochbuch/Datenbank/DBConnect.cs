@@ -10,48 +10,40 @@ namespace DasUltimativeKochbuch.Datenbank
 {
     class DBConnect
     {
-        private void executeQuery()
+        private void executeQuery(string query)
         {
-            MySqlConnection connect;  
-            MySqlCommand cmd;  
-            string connectionLine;  
-            string commandLine;  
+            MySqlConnection connect;
+            MySqlCommand cmd;
+            string connectionLine;
+            string commandLine;
 
-            connectionLine = "Data source=localhost;UserId=root;Password=;";   
-            connect = new MySqlConnection(connectionLine);  
-            cmd = new MySqlCommand();  
-  
-            try  
-            {  
+            connectionLine = "Data source=localhost;UserId=root;Password=;database=kochbuch";
+            connect = new MySqlConnection(connectionLine);
+            cmd = new MySqlCommand();
+
+            try
+            {
                 //Create a connection  
-                cmd.Connection = connect;  
+                cmd.Connection = connect;
                 //Open the connection  
-                cmd.Connection.Open();  
-            }  
-            catch (NullReferenceException ex)  
-            {  
-                MessageBox.Show(ex.Message);  
-            }  
-  
-            commandLine = @"Hier Query";  
-            
-                //Set the command text  
-  
-                cmd.CommandText = commandLine;  
-  
-                //Set the parameters  
-                
-                //cmd.Parameters.AddWithValue("@name", inputName);  
-                
+                cmd.Connection.Open();
+            }
+            catch (NullReferenceException ex)
+            {
+                //Fehler abfangen und in Messagebox ausgeben
+                Console.WriteLine(ex.Message);
+            }
 
-               //Ausführen des Sql Queries
-                cmd.ExecuteNonQuery();  
-  
-                //Close the connection  
-                cmd.Connection.Close();  
-  
-                //Clear parameters  
-                cmd.Parameters.Clear();  
+            commandLine = query;
+
+            //Set the command texat  
+            cmd.CommandText = commandLine;
+
+            //Ausführen des Sql Queries
+            cmd.ExecuteNonQuery();
+
+            //Close the connection  
+            cmd.Connection.Close();
         }
 
 
