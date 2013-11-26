@@ -1,19 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DasUltimativeKochbuch.Core;
 
 
 namespace DasUltimativeKochbuch.Datenbank
 {
-    class Mockup:DatenbankConnector
+    class Mockup//:DatenbankConnector
     {
-
-        List<Rezept> rl = new List<Rezept>();
-        List<Einheit> el = new List<Einheit>();
-        List<Zutat> zl = new List<Zutat>();
+        /*
+        HashSet<Rezept> rl = new HashSet<Rezept>();
+        HashSet<Einheit> el = new HashSet<Einheit>();
+        HashSet<Zutat> zl = new HashSet<Zutat>();
 
         public Mockup() {
 
@@ -41,38 +38,49 @@ namespace DasUltimativeKochbuch.Datenbank
             zl.Add(new Zutat("Schweinelende", el.Find(x => x.name == "kg")));
             zl.Add(new Zutat("Nudeln", el.Find(x => x.name == "g")));
 
-
+          
         }
 
 
-        public void rezSpeichern(Core.Rezept r)
+        public void rezSpeichern(Rezept r)
+        {
+            rl.Add(r);
+        }
+
+        public HashSet<Rezept> alleRezepte()
+        {
+            return rl;
+        }
+
+        public HashSet<Rezept> rezepteMit(HashSet<Zutat> lz)
+        {
+            HashSet<Rezept> res = new HashSet<Rezept>();
+            foreach (Rezept rezept in rl)
+            {
+                foreach (var zut in lz)
+                {
+                    if (rezept.zutaten.Find(x => x.name == zut.name)!=null) {
+                        continue;
+                    }
+                    break;
+                }
+            }
+            return res;
+        }
+
+        public HashSet<Zutat> alleZutaten()
         {
             throw new NotImplementedException();
         }
 
-        public List<Core.Rezept> alleRezepte()
+        public void einheitSpeichern(Einheit e)
         {
             throw new NotImplementedException();
         }
 
-        public List<Core.Rezept> rezepteMit(List<Core.Zutat> lz)
+        public HashSet<Einheit> alleEinheiten()
         {
             throw new NotImplementedException();
-        }
-
-        public List<Core.Zutat> alleZutaten()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void einheitSpeichern(Core.Einheit e)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<Core.Einheit> alleEinheiten()
-        {
-            throw new NotImplementedException();
-        }
+        }*/
     }
 }

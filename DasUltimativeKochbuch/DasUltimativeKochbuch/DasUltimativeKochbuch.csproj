@@ -69,6 +69,7 @@
     <Compile Include="Core\Einheit.cs" />
     <Compile Include="Core\Rezept.cs" />
     <Compile Include="Core\Zutat.cs" />
+    <Compile Include="Core\ZutatEqualityComparerForSearch.cs" />
     <Compile Include="Datenbank\DatenbankConnector.cs" />
     <Compile Include="Datenbank\DBConnect.cs" />
     <Compile Include="Datenbank\Mockup.cs" />

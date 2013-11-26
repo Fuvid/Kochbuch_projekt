@@ -9,12 +9,12 @@ namespace DasUltimativeKochbuch.Core
     public class Rezept
     {
         //Liste der benötigten Zutaten
-        private List<Zutat> zutaten;
+        public List<Zutat> zutaten { get; set; }
         //Fließtext zur Zubereitung
-        String zubereitung;
+        string zubereitung;
         //Der name des Rezept z.B. "Omas Hausgemachte Käsespätzle"
-        String name;
-        //Für wie vielöe Personen ist das Rezept gedacht, um später besser Skalieren zu können
+        string name;
+        //Für wie viele Personen ist das Rezept gedacht, um später besser Skalieren zu können
         int pers;
 
         public Rezept(List<Zutat> zt, String zub, String n, int p)
