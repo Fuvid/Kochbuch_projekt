@@ -41,7 +41,7 @@ namespace DasUltimativeKochbuch.Datenbank
             zl.Add(new Zutat("Schweinelende", el.Find(x => x.name == "kg")));
             zl.Add(new Zutat("Nudeln", el.Find(x => x.name == "g")));
 
-            rl.Add(new Rezept());
+
         }
 
 

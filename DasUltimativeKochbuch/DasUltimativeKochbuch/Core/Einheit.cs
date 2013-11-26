@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DasUltimativeKochbuch.Core
 {
-    class Einheit
+    public class Einheit
     {
         public String name{get;set;}
         public Einheit(String n) {
