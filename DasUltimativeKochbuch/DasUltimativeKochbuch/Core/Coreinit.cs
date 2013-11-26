@@ -9,10 +9,6 @@ namespace DasUltimativeKochbuch.Core
     class Coreinit
     {
         void ini() {
-  
-
-
-
         }
     }
 }
