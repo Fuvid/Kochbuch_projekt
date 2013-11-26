@@ -7,9 +7,9 @@
       d:DesignHeight="300" d:DesignWidth="300"
 	Title="start">
 
-    <Grid MinWidth="300" MinHeight="300">
-        <Button Content="Button" HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top" Width="280"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="90" Width="280" TextAlignment="Center"><Run Language="de-de" Text="Herzlich Willkommen im Ultimativen Kochbuch"/></TextBlock>
+    <Grid MinWidth="300">
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" TextAlignment="Center"><Run Language="de-de" Text="Herzlich Willkommen im Ultimativen Kochbuch"/></TextBlock>
+        <Image HorizontalAlignment="Center" Height="120" Margin="0,50,0,20" VerticalAlignment="Center" Width="160" Source="Bilder/cartoon-24299_640.png"/>
 
     </Grid>
 </Page>
