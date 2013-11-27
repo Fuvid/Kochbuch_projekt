@@ -4,7 +4,7 @@ using System.Windows;
 
 namespace DasUltimativeKochbuch.Datenbank
 {
-    class DBConnect
+    public class DBConnect:DatenbankConnector
     {
         private void executeQuery(string query)
         {
@@ -43,5 +43,35 @@ namespace DasUltimativeKochbuch.Datenbank
 
 
 
+
+        public void rezSpeichern(Core.Rezept r)
+        {
+            throw new NotImplementedException();
+        }
+
+        public System.Collections.Generic.List<Core.Rezept> alleRezepte()
+        {
+            throw new NotImplementedException();
+        }
+
+        public System.Collections.Generic.List<Core.Rezept> rezepteMit(System.Collections.Generic.List<Core.Zutat> lz)
+        {
+            throw new NotImplementedException();
+        }
+
+        public System.Collections.Generic.List<Core.Zutat> alleZutaten()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void einheitSpeichern(Core.Einheit e)
+        {
+            throw new NotImplementedException();
+        }
+
+        public System.Collections.Generic.List<Core.Einheit> alleEinheiten()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
