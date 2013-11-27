@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DasUltimativeKochbuch
+namespace DasUltimativeKochbuch.GUI
 {
     /// <summary>
-    /// Interaktionslogik für MainWindow.xaml
+    /// Interaktionslogik für Rezept_erstellen.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Rezept_erstellen : Page
     {
-        public MainWindow()
+        public Rezept_erstellen()
         {
             InitializeComponent();
         }

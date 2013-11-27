@@ -1,25 +1,18 @@
-﻿<Window x:Class="DasUltimativeKochbuch.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        xmlns:GUI="clr-namespace:DasUltimativeKochbuch" xmlns:GUI1="clr-namespace:DasUltimativeKochbuch.GUI" x:Class="DasUltimativeKochbuch.MainWindow"
+        Title="Das Ultimative Kochbuch" Height="350" Width="525" SizeToContent="WidthAndHeight">
     <Grid>
-        <TextBox x:Name="Zubereitung" HorizontalAlignment="Left" Height="301" Margin="239,10,0,0" TextWrapping="Wrap" Text="Zubereitung" VerticalAlignment="Top" Width="270"/>
-        <TextBox x:Name="Rezeptname" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="Rezeptname" VerticalAlignment="Top" Width="224"/>
-        <TextBox x:Name="Zutat" HorizontalAlignment="Left" Height="24" Margin="10,38,0,0" TextWrapping="Wrap" Text="Zutat" VerticalAlignment="Top" Width="70"/>
-        <TextBox x:Name="Menge" HorizontalAlignment="Left" Height="24" Margin="85,38,0,0" TextWrapping="Wrap" Text="Menge" VerticalAlignment="Top" Width="75"/>
-        <TextBox x:Name="Einheit" HorizontalAlignment="Left" Height="24" Margin="165,38,0,0" TextWrapping="Wrap" Text="Einheit" VerticalAlignment="Top" Width="69"/>
-        <ListView x:Name="Zutatenliste" HorizontalAlignment="Left" Height="161" Margin="10,96,0,0" VerticalAlignment="Top" Width="224" SelectionChanged="ListView_SelectionChanged">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn Header="Zutat" Width="115"/>
-                    <GridViewColumn Header="Menge" Width="50"/>
-                    <GridViewColumn Header="Einheit" Width="50"/>
-                </GridView>
-            </ListView.View>
-        </ListView>
-        <Button x:Name="Zutat_Hinzufügen" Content="Zutat Hinzufügen&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Width="224" Height="24"/>
-        <Button x:Name="Speichern" Content="Rezept Speichern" HorizontalAlignment="Left" Margin="10,289,0,0" VerticalAlignment="Top" Width="224"/>
-        <TextBlock Margin="10,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="144" TextAlignment="Right" HorizontalAlignment="Left" Padding="0,2,0,0"><Run Language="de-de" Text="Portionen:"/></TextBlock>
-        <TextBox x:Name="Anzahl_Portionen" HorizontalAlignment="Left" Height="22" Margin="159,262,0,0" TextWrapping="Wrap" Text="Anzahl" VerticalAlignment="Top" Width="75"/>
+        <Menu x:Name="MainMenu" IsMainMenu="True" Height="22" Margin="0,0,0,0" VerticalAlignment="Top">
+            <MenuItem Header="_Datei" />
+            <MenuItem Header="_Bearbeiten" />
+            <MenuItem Header="_Anzeigen">
+                <MenuItem Header="_Rezept hinzufügen" />
+            </MenuItem>
+            <MenuItem Header="_Fenster" />
+            <MenuItem Header="_Hilfe" />
+        </Menu>
+        <Frame x:Name="view" Margin="0,22,0,0" VerticalAlignment="Top" Source="/DasUltimativeKochbuch;component/GUI/start.xaml"/>
     </Grid>
 </Window>

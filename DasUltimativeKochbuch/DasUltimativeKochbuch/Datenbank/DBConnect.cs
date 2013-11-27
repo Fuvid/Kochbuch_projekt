@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using MySql.Data.MySqlClient;
 using System.Windows;
+using System.Collections.Generic;
+using DasUltimativeKochbuch.Core;
 
 namespace DasUltimativeKochbuch.Datenbank
 {
-    class DBConnect
+    public class DBConnect:DatenbankConnector
     {
         MySqlConnection connect;
         MySqlCommand cmd;
@@ -70,5 +72,35 @@ namespace DasUltimativeKochbuch.Datenbank
         }
 
 
+
+        public void rezSpeichern(Rezept r)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Rezept> alleRezepte()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Rezept> rezepteMit(List<Zutat> lz)
+        {
+            throw new NotImplementedException();
+        }
+
+        public SortedSet<Zutat> alleZutaten()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void einheitSpeichern(Einheit e)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Einheit> alleEinheiten()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

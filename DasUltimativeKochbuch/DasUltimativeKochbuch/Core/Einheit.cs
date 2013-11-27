@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace DasUltimativeKochbuch.Core
 {
-    class Einheit
+    public class Einheit
     {
-        String name;
-        public Einheit(String n) {
+        public string name{get;set;}
+        public Einheit(string n) {
             this.name = n;
         }
     }
