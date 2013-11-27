@@ -31,9 +31,8 @@ namespace DasUltimativeKochbuch.GUI
             string Einheit = TBEinehit.Text;
             string Menge = TBMenge.Text;
 
-            string[] row = { Zutat, Einheit, Menge };
-            var listviewitem = new System.Windows.Forms.ListViewItem(row);
-            LVZutaten.Items.Add(listviewitem);
+            string[] row = { "Zutat", "Menge", "Einheit" };
+            LVZutaten.Items.Add(row);
         }
     }
 }
