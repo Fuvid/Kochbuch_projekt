@@ -104,7 +104,10 @@ namespace DasUltimativeKochbuch.Datenbank
 
             //-----------------------------------------------------
 
-            foreach(Rezept r.Zutat in zu)
+            foreach (Zutat zt in r.zutaten)
+            {
+                Console.WriteLine(zt);
+            }
             query2 = "INSERT INTO zutat(´Name´,´Score´) VALUES(@name, @score);";
 
             commandLine = query2;
