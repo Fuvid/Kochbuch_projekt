@@ -4,13 +4,12 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       mc:Ignorable="d" 
-      d:DesignHeight="400" d:DesignWidth="60
-      0"
+      d:DesignHeight="400" d:DesignWidth="600"
 	Title="Rezept_erstellen">
 
     <Grid Margin="0,0,0,0" MinWidth="600" MinHeight="400">
         <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Rezeptname" VerticalAlignment="Top" Width="286" Margin="10,10,0,0"/>
-        <TextBox TextWrapping="Wrap" Text="Zubereitung" Margin="301,10,10,10" />
+        <TextBox TextWrapping="Wrap" Text="Zubereitung" Margin="301,10,10,10" AcceptsReturn="True" AcceptsTab="True" />
         <TextBox HorizontalAlignment="Left" Height="23" Margin="10,38,0,0" TextWrapping="Wrap" Text="Zutat" VerticalAlignment="Top" Width="145"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="160,38,0,0" TextWrapping="Wrap" Text="Menge" VerticalAlignment="Top" Width="70"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="235,38,0,0" TextWrapping="Wrap" Text="Einheit" VerticalAlignment="Top" Width="61"/>
