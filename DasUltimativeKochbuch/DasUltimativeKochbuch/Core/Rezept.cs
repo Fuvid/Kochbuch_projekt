@@ -16,13 +16,13 @@ namespace DasUltimativeKochbuch.Core
         public List<Zutat> zutaten { get; set; }
 
         //Fließtext zur Zubereitung
-        string zubereitung;
+        public string zubereitung;
 
         //Der name des Rezept z.B. "Omas Hausgemachte Käsespätzle"
-        string name;
+        public string name;
 
         //Für wie viele Personen ist das Rezept gedacht, um später besser Skalieren zu können
-        int pers;
+        public int pers;
 
         public Rezept(List<Zutat> zt, String zub, String n, int p)
         {
