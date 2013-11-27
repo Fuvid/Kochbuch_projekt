@@ -1,6 +1,8 @@
 ﻿using System;
 using MySql.Data.MySqlClient;
 using System.Windows;
+using System.Collections.Generic;
+using DasUltimativeKochbuch.Core;
 
 namespace DasUltimativeKochbuch.Datenbank
 {
@@ -44,32 +46,32 @@ namespace DasUltimativeKochbuch.Datenbank
 
 
 
-        public void rezSpeichern(Core.Rezept r)
+        public void rezSpeichern(Rezept r)
         {
             throw new NotImplementedException();
         }
 
-        public System.Collections.Generic.List<Core.Rezept> alleRezepte()
+        public List<Rezept> alleRezepte()
         {
             throw new NotImplementedException();
         }
 
-        public System.Collections.Generic.List<Core.Rezept> rezepteMit(System.Collections.Generic.List<Core.Zutat> lz)
+        public List<Rezept> rezepteMit(List<Zutat> lz)
         {
             throw new NotImplementedException();
         }
 
-        public System.Collections.Generic.List<Core.Zutat> alleZutaten()
+        public List<Zutat> alleZutaten()
         {
             throw new NotImplementedException();
         }
 
-        public void einheitSpeichern(Core.Einheit e)
+        public void einheitSpeichern(Einheit e)
         {
             throw new NotImplementedException();
         }
 
-        public System.Collections.Generic.List<Core.Einheit> alleEinheiten()
+        public List<Einheit> alleEinheiten()
         {
             throw new NotImplementedException();
         }
