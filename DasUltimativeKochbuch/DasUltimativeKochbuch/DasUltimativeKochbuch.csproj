@@ -73,6 +73,9 @@
     <Compile Include="Core\ZutatEqualityComparerForSearch.cs" />
     <Compile Include="Datenbank\DatenbankConnector.cs" />
     <Compile Include="Datenbank\DBConnect.cs" />
+    <Compile Include="Datenbank\DBEinheit.cs" />
+    <Compile Include="Datenbank\DBRezept.cs" />
+    <Compile Include="Datenbank\DBZutat.cs" />
     <Compile Include="Datenbank\Mockup.cs" />
     <Compile Include="GUI\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
