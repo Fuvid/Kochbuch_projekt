@@ -61,7 +61,7 @@ namespace DasUltimativeKochbuch.Datenbank
             throw new NotImplementedException();
         }
 
-        public List<Zutat> alleZutaten()
+        public SortedSet<Zutat> alleZutaten()
         {
             throw new NotImplementedException();
         }

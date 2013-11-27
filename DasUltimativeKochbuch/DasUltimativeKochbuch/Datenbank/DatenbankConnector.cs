@@ -16,7 +16,7 @@ namespace DasUltimativeKochbuch.Datenbank
         List<Rezept> rezepteMit(List<Zutat> lz);
 
 
-        List<Zutat> alleZutaten();
+        SortedSet<Zutat> alleZutaten();
 
         void einheitSpeichern(Einheit e);
         List<Einheit> alleEinheiten();
