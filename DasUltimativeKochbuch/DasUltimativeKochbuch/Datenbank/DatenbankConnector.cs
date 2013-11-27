@@ -10,13 +10,16 @@ namespace DasUltimativeKochbuch.Datenbank
     interface DatenbankConnector
     {
         void rezSpeichern(Rezept r);
-        HashSet<Rezept> alleRezepte();
-        HashSet<Rezept> rezepteMit(HashSet<Zutat> lz);
+        List<Rezept> alleRezepte();
+        //Liste mit allen Rezepten, die mindestens eine der Zutaten enthält
 
-        HashSet<Zutat> alleZutaten();
+        List<Rezept> rezepteMit(List<Zutat> lz);
+
+
+        SortedSet<Zutat> alleZutaten();
 
         void einheitSpeichern(Einheit e);
-        HashSet<Einheit> alleEinheiten();
+        List<Einheit> alleEinheiten();
 
     }
 }
