@@ -76,6 +76,12 @@ namespace DasUltimativeKochbuch.Datenbank
         public void rezSpeichern(Rezept r)
         {
             throw new NotImplementedException();
+            String query1;
+            String query2;
+            String query3;
+            query1 = "INSERT INTO rezept(´Name´,´Zubereitung´,´Personen´,´UsrID´) VALUES();";
+            query2 = "INSERT INTO zutat(´Name´,´Score´) VALUES();";
+            query3 = "INSERT INTO rezzut(´Menge´,´´) VALUES();";
         }
 
         public List<Rezept> alleRezepte()
