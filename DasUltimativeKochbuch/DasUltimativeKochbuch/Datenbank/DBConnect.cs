@@ -75,13 +75,55 @@ namespace DasUltimativeKochbuch.Datenbank
 
         public void rezSpeichern(Rezept r)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
             String query1;
             String query2;
             String query3;
-            query1 = "INSERT INTO rezept(´Name´,´Zubereitung´,´Personen´,´UsrID´) VALUES();";
+
+            String name = r.name;
+            String zubereitung = r.zubereitung;
+            int pers = r.pers;
+            int usrID = 0; // für spätere Zwecke
+
+            int rezeptID = 0;
+
+            query1 = "INSERT INTO rezept(´Name´,´Zubereitung´,´Personen´,´UsrID´) VALUES(@name, @zubereitung, @pers, @usrID);";
+            this.verbindungOeffen();
+            cmd = new MySqlCommand();
+            cmd.Parameters.AddWithValue("@name", name);
+            cmd.Parameters.AddWithValue("@zubereitung", zubereitung);
+            cmd.Parameters.AddWithValue("@pers", pers);
+            cmd.Parameters.AddWithValue("@usrID", usrID);
+            commandLine = query1;
+            
+            //Set the command text  
+            cmd.CommandText = commandLine;
+            //Ausführen des Sql Queries
+            rezeptID = (int)cmd.ExecuteScalar();
+
+            //-----------------------------------------------------
+
             query2 = "INSERT INTO zutat(´Name´,´Score´) VALUES();";
+
+            commandLine = query2;
+
+            //Set the command text  
+            cmd.CommandText = commandLine;
+            //Ausführen des Sql Queries
+            cmd.ExecuteNonQuery();
+
             query3 = "INSERT INTO rezzut(´Menge´,´´) VALUES();";
+
+            commandLine = query3;
+
+            //Set the command text  
+            cmd.CommandText = commandLine;
+            //Ausführen des Sql Queries
+            cmd.ExecuteNonQuery();
+
+            //Close the connection  
+            cmd.Connection.Close();
+
         }
 
         public List<Rezept> alleRezepte()
