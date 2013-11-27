@@ -20,9 +20,21 @@ namespace DasUltimativeKochbuch.GUI
     /// </summary>
     public partial class Rezept_erstellen : Page
     {
+        List<string> Zutaten = new List<string>();
+
         public Rezept_erstellen()
         {
             InitializeComponent();
+        }
+
+        private void AddZutat_Click(object sender, RoutedEventArgs e)
+        {
+            string Zutat = TBZutat.Text;
+            string Einheit = TBEinehit.Text;
+            string Menge = TBMenge.Text;
+
+            string[] row = { "Zutat", "Menge", "Einheit" };
+            LVZutaten.Items.Add(row);
         }
     }
 }

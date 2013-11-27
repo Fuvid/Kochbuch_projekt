@@ -31,7 +31,7 @@ namespace DasUltimativeKochbuch.Core
 
             List<Zutat> zl1 = new List<Zutat>();
 
-            zl1.Add(new Zutat("Kartoffel", el.))
+//            zl1.Add(new Zutat("Kartoffel", el.));
             
         }
     }

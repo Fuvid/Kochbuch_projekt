@@ -24,5 +24,11 @@ namespace DasUltimativeKochbuch
         {
             InitializeComponent();
         }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            view.NavigationService.Navigate(new Uri("GUI\\Rezept_erstellen.xaml",UriKind.Relative));
+            Hauptfenster.Title = "Das Ultimative Kochbuch - Rezept hinzufügen";
+        }
     }
 }
