@@ -24,5 +24,16 @@ namespace DasUltimativeKochbuch.GUI
         {
             InitializeComponent();
         }
+
+        private void AddZutat_Click(object sender, RoutedEventArgs e)
+        {
+            string Zutat = TBZutat.Text;
+            string Einheit = TBEinehit.Text;
+            string Menge = TBMenge.Text;
+
+            string[] row = { Zutat, Einheit, Menge };
+            var listviewitem = new System.Windows.Forms.ListViewItem(row);
+            LVZutaten.Items.Add(listviewitem);
+        }
     }
 }

@@ -1,8 +1,8 @@
 ﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:GUI="clr-namespace:DasUltimativeKochbuch" xmlns:GUI1="clr-namespace:DasUltimativeKochbuch.GUI" x:Class="DasUltimativeKochbuch.MainWindow"
-        Title="Das Ultimative Kochbuch" Height="350" Width="525" SizeToContent="WidthAndHeight">
+        xmlns:GUI="clr-namespace:DasUltimativeKochbuch" xmlns:GUI1="clr-namespace:DasUltimativeKochbuch.GUI" x:Name="Hauptfenster" x:Class="DasUltimativeKochbuch.MainWindow"
+        Title="Das Ultimative Kochbuch" Height="350" Width="525" SizeToContent="WidthAndHeight" Icon="Bilder/cartoon-24299_640.png" ResizeMode="NoResize">
     <Grid>
         <Menu x:Name="MainMenu" IsMainMenu="True" Height="22" Margin="0,0,0,0" VerticalAlignment="Top">
             <MenuItem Header="_Datei" />
