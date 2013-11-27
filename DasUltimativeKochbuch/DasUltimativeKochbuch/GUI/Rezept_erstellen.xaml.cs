@@ -20,6 +20,8 @@ namespace DasUltimativeKochbuch.GUI
     /// </summary>
     public partial class Rezept_erstellen : Page
     {
+        List<string> Zutaten = new List<string>();
+
         public Rezept_erstellen()
         {
             InitializeComponent();
