@@ -17,6 +17,7 @@ namespace DasUltimativeKochbuch.Datenbank
 
         public DBConnect()
         {
+            //Anmeldedaten des MySQL Servers
             connectionLine = "Data source=localhost;UserId=root;Password=;database=kochbuch";
             connect = new MySqlConnection(connectionLine);
         }
@@ -27,17 +28,17 @@ namespace DasUltimativeKochbuch.Datenbank
             {
                 //Create a connection  
                 cmd.Connection = connect;
-                //Open the connection  
+                //Open the connection
                 cmd.Connection.Open();
             }
             catch (NullReferenceException ex)
             {
                 //Fehler abfangen und in Messagebox ausgeben
-                Console.WriteLine(ex.Message);
+                MessageBox.Show(ex.Message);
             }
         }
 
-        private void executeQuery(string query)
+        private void executeQuery(string query)         //Zum ausführen von SQL Anweisungen ohne Rückgabe
         {
             cmd = new MySqlCommand();
             this.verbindungOeffnen();
@@ -61,7 +62,7 @@ namespace DasUltimativeKochbuch.Datenbank
             cmd.CommandText = query;
             //Ausführen des Sql Queries und Rückgabe der ersten Spalte in der ersten Reihe
             int ret = Convert.ToInt32(cmd.ExecuteScalar());
-            //Close the connection  
+            //Verbindung schließen  
             cmd.Connection.Close();
             return ret;
         }
@@ -93,8 +94,9 @@ namespace DasUltimativeKochbuch.Datenbank
         {
             
             int rezeptID;
+            String query;
 
-            String query = "INSERT INTO rezept(Name, Zubereitung, Personen) VALUES('" + r.name + "', '" + r.zubereitung + "', '" + r.pers + "');SELECT LAST_INSERT_ID();"; // @usrID
+            query = "INSERT INTO rezept(Name, Zubereitung, Personen) VALUES('" + r.name + "', '" + r.zubereitung + "', '" + r.pers + "');SELECT LAST_INSERT_ID();"; // @usrID
             rezeptID = this.executeQueryMitReturn(query);       // Insert ausführen und die ID des Rezeptes speichern
             foreach (Zutat zt in r.zutaten)
             {
@@ -116,8 +118,8 @@ namespace DasUltimativeKochbuch.Datenbank
                 }
                 
                 //----------- Muss um EinheitID ergänzt werden
-                String query3 = "INSERT INTO rezzut(ZutatID, Menge, RezeptID) VALUES('" + zID +"', '" + zt.menge +"', '" + rezeptID +"');";  //ZutatID, RezeptID und Menge in Tabelle "rezzut" eintragen
-                this.executeQuery(query3);
+                query = "INSERT INTO rezzut(ZutatID, Menge, RezeptID) VALUES('" + zID +"', '" + zt.menge +"', '" + rezeptID +"');";  //ZutatID, RezeptID und Menge in Tabelle "rezzut" eintragen
+                this.executeQuery(query);
                 MessageBox.Show("Rezept hinzugefügt");
             }
         }
