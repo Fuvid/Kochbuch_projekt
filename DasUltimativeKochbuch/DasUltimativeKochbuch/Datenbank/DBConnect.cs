@@ -169,7 +169,12 @@ namespace DasUltimativeKochbuch.Datenbank
 
         public void einheitSpeichern(Einheit e)
         {
-            throw new NotImplementedException();
+            string query;
+            string name = e.name;
+
+            query = "INSERT INTO einheit(Name) VALUES('" + name + "');";
+            this.executeQuery(query);
+            MessageBox.Show("Einheit hinzugefügt.");
         }
 
         public List<Einheit> alleEinheiten()
