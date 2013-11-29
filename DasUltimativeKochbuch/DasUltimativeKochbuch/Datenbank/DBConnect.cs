@@ -108,40 +108,67 @@ namespace DasUltimativeKochbuch.Datenbank
             {
                 Console.WriteLine(zt);
 
-                cmd.CommandText = @"SELECT Name FROM zutat WHERE name = ?Name;";
+                cmd.CommandText = @"SELECT ID FROM zutat WHERE name = @Name;";
                 cmd.Parameters.AddWithValue("Name", zt.name);
                 MySqlDataReader Reader = cmd.ExecuteReader();
                 if (!Reader.HasRows) return;
                 while (Reader.Read())
                 {
-                    string rname = Reader["Name"].ToString();
+                    string rID = Reader["ID"].ToString();
+
+                    if (rID == null)
+                    {
+                        query2 = "INSERT INTO zutat(´Name´,´Score´) VALUES(@name, @score);";
+
+                        cmd.Parameters.AddWithValue("Name", zt.name);
+                        cmd.Parameters.AddWithValue("Score", 0);
+
+                        commandLine = query2;
+
+                        //Set the command text  
+                        cmd.CommandText = commandLine;
+                        //Ausführen des Sql Queries
+                        cmd.ExecuteNonQuery();
+                    }
+                    else
+                    {
+                        query2 = "UPDATE zutat SET Score=Score + 1";
+
+                        commandLine = query2;
+
+                        //Set the command text  
+                        cmd.CommandText = commandLine;
+                        //Ausführen des Sql Queries
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    //----------- Muss um EinheitID ergänzt werden
+
+                    query3 = "INSERT INTO rezzut(´ZutatID´, ´Menge´,´RezeptID´) VALUES(@ZutatID, @rezeptID, @menge);";
+
+                    cmd.Parameters.AddWithValue("ZutatID", rID);
+                    cmd.Parameters.AddWithValue("Menge", zt.menge);
+                    cmd.Parameters.AddWithValue("RezeptID", rezeptID);
+                    
+
+                    commandLine = query3;
+
+                    //Set the command text  
+                    cmd.CommandText = commandLine;
+                    //Ausführen des Sql Queries
+                    cmd.ExecuteNonQuery();
+
+                    //Close the connection  
+                    cmd.Connection.Close();
+
                 }
                 Reader.Close();
 
 
             }
-            query2 = "INSERT INTO zutat(´Name´,´Score´) VALUES(@name, @score);";
+            
 
-            commandLine = query2;
-
-            //Set the command text  
-            cmd.CommandText = commandLine;
-            //Ausführen des Sql Queries
-            cmd.ExecuteNonQuery();
-
-            //-----------------------------------------------------
-
-            query3 = "INSERT INTO rezzut(´Menge´,´RezeptID´) VALUES(@menge, @rezeptID);";
-
-            commandLine = query3;
-
-            //Set the command text  
-            cmd.CommandText = commandLine;
-            //Ausführen des Sql Queries
-            cmd.ExecuteNonQuery();
-
-            //Close the connection  
-            cmd.Connection.Close();
+            
 
         }
 
