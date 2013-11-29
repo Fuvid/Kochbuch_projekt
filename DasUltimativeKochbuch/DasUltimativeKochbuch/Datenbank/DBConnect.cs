@@ -51,6 +51,24 @@ namespace DasUltimativeKochbuch.Datenbank
             cmd.Connection.Close();
         }
 
+        private int executeQueryMitReturn(string query)
+        {
+            int ret;
+            cmd = new MySqlCommand();
+            this.verbindungOeffnen();
+            
+
+            commandLine = query;
+
+            //Set the command texat  
+            cmd.CommandText = commandLine;
+            //Ausführen des Sql Queries
+            ret = Convert.ToInt32(cmd.ExecuteScalar());
+            //Close the connection  
+            cmd.Connection.Close();
+            return ret;
+        }
+
         public List<string> Select(string query)
         {
             List<string> rueck = new List<string>();
@@ -74,48 +92,26 @@ namespace DasUltimativeKochbuch.Datenbank
 
         public void rezSpeichern(Rezept r)
         {
+            String query;
+            int rezeptID;
 
-            String query1;
-            String query2;
-            String query3;
+            query = "INSERT INTO rezept(Name, Zubereitung, Personen) VALUES('"+ r.name +"', '"+ r.zubereitung +"', '"+ r.pers +"');SELECT LAST_INSERT_ID();"; // @usrID
 
-            String name = r.name;
-            String zubereitung = r.zubereitung;
-            int pers = r.pers;
-            // int usrID = 0;
-
-            int rezeptID = 0;
-
-            query1 = "INSERT INTO rezept(Name, Zubereitung, Personen) VALUES(@name, @zubereitung, @pers);SELECT LAST_INSERT_ID();"; // @usrID
-            
-            cmd = new MySqlCommand();
-            this.verbindungOeffnen();
-            //Parameter hinzufügen
-            cmd.Parameters.AddWithValue("@name", name);
-            cmd.Parameters.AddWithValue("@zubereitung", zubereitung);
-            cmd.Parameters.AddWithValue("@pers", pers);
-            // cmd.Parameters.AddWithValue("@usrID", usrID);
-            commandLine = query1;
-            
-            //Set the command text  
-            cmd.CommandText = commandLine;
-            //Ausführen des Sql Queries
-            rezeptID = Convert.ToInt32(cmd.ExecuteScalar());
+            rezeptID = this.executeQueryMitReturn(query);
 
             //-----------------------------------------------------
 
             foreach (Zutat zt in r.zutaten)
             {
-                Console.WriteLine(zt);
-
-                cmd.CommandText = @"SELECT ID FROM zutat WHERE name = @Name;";
+                cmd.CommandText = @"SELECT ID FROM zutat WHERE name = '"+ zt.name +"';";
                 //Parameter hinzufügen
-                cmd.Parameters.AddWithValue("Name", zt.name);
+                //cmd.Parameters.AddWithValue("Name", zt.name);
                 MySqlDataReader Reader = cmd.ExecuteReader();
                 while (Reader.Read())
                 {
                     string rID = Reader["ID"].ToString();
-
+                    MessageBox.Show(rID);
+                    String query2;
                     if (rID == null)
                     {
                         query2 = "INSERT INTO zutat(´Name´,´Score´) VALUES(@name, @score);";
@@ -144,13 +140,12 @@ namespace DasUltimativeKochbuch.Datenbank
                     }
 
                     //----------- Muss um EinheitID ergänzt werden
-
+                    String query3;
                     query3 = "INSERT INTO rezzut(´ZutatID´, ´Menge´,´RezeptID´) VALUES(@ZutatID, @rezeptID, @menge);";
                     //Parameter hinzufügen
                     cmd.Parameters.AddWithValue("ZutatID", rID);
                     cmd.Parameters.AddWithValue("Menge", zt.menge);
                     cmd.Parameters.AddWithValue("RezeptID", rezeptID);
-                    
 
                     commandLine = query3;
 
