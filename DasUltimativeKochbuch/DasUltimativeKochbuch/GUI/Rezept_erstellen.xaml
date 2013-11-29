@@ -20,9 +20,9 @@
         <ListView x:Name="LVZutaten" HorizontalAlignment="Left" Height="244" Margin="10,93,0,0" VerticalAlignment="Top" Width="286">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Zutaten" Width="150"/>
-                    <GridViewColumn Header="Menge" Width="70"/>
-                    <GridViewColumn Header="Einheit" Width="60"/>
+                    <GridViewColumn Header="Zutaten" Width="175" DisplayMemberBinding="{Binding Path=Zutaten}" />
+                    <GridViewColumn Header="Menge" Width="50" DisplayMemberBinding="{Binding Path=Mengen}" />
+                    <GridViewColumn Header="Einheit" Width="50" DisplayMemberBinding="{Binding Path=Einheiten}" />
                 </GridView>
             </ListView.View>
         </ListView>

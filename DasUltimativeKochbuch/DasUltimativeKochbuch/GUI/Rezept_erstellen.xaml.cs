@@ -20,8 +20,6 @@ namespace DasUltimativeKochbuch.GUI
     /// </summary>
     public partial class Rezept_erstellen : Page
     {
-        List<string> Zutaten = new List<string>();
-
         public Rezept_erstellen()
         {
             InitializeComponent();
@@ -33,8 +31,13 @@ namespace DasUltimativeKochbuch.GUI
             string Einheit = TBEinehit.Text;
             string Menge = TBMenge.Text;
 
-            string[] row = { "Zutat", "Menge", "Einheit" };
-            LVZutaten.Items.Add(row);
+            LVZutaten.Items.Add(
+                    new
+                    {
+                        Zutaten = Zutat,
+                        Mengen = Menge,
+                        Einheiten = Einheit,
+                    });
         }
     }
 }
