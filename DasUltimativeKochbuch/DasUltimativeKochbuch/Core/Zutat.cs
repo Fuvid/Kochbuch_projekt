@@ -11,9 +11,10 @@ namespace DasUltimativeKochbuch.Core
         //Name der Zutat
         public string name { get; set; }
         //interne Bewertung der Zutat
-        int score;
+        public int score;
         //Die Einheit in der die Zutat berechnet wird
-        Einheit einh;
+        public Einheit einh { get; internal set; }
+
 
         public double menge { get; set; }
 
@@ -24,7 +25,7 @@ namespace DasUltimativeKochbuch.Core
             score = 0;
             menge = 0;
         }
-        public Zutat(string n, Einheit e, int m)
+        public Zutat(string n, Einheit e, double m)
         {
             name = n;
             einh = e;

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using MySql.Data.MySqlClient;
 using System.Windows;
-using System.Collections.Generic;
 using DasUltimativeKochbuch.Core;
 
 namespace DasUltimativeKochbuch.Datenbank

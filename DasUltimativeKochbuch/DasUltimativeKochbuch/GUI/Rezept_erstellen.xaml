@@ -19,9 +19,9 @@
         <ListView x:Name="LVZutaten" HorizontalAlignment="Left" Height="244" Margin="10,93,0,0" VerticalAlignment="Top" Width="286" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Zutaten" Width="175" DisplayMemberBinding="{Binding Path=Zutaten}" />
-                    <GridViewColumn Header="Menge" Width="50" DisplayMemberBinding="{Binding Path=Mengen}" />
-                    <GridViewColumn Header="Einheit" Width="50" DisplayMemberBinding="{Binding Path=Einheiten}" />
+                    <GridViewColumn Header="Zutaten" Width="175" DisplayMemberBinding="{Binding Path=name}" />
+                    <GridViewColumn Header="Menge" Width="50" DisplayMemberBinding="{Binding Path=menge}" />
+                    <GridViewColumn Header="Einheit" Width="50" DisplayMemberBinding="{Binding Path=einh.name}" />
                 </GridView>
             </ListView.View>
         </ListView>

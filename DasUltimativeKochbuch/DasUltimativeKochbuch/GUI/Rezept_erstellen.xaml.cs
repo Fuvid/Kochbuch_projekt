@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using DasUltimativeKochbuch.Core;
+
 namespace DasUltimativeKochbuch.GUI
 {
     /// <summary>
@@ -29,12 +31,13 @@ namespace DasUltimativeKochbuch.GUI
         {
             // Hinzufügen einer neuen Zeile in das ListView Fenster.
             LVZutaten.Items.Add(
-                    new
-                    {
-                        Zutaten = TBZutat.Text,     // Zutat auslesen und an die Spalte Zutaten binden.
-                        Mengen = TBMenge.Text,      // Menge auslesen und an die Spalte Mengen binden.
-                        Einheiten = TBEinehit.Text  // Einheit auslesen und an die Spalte Einheiten binden.
-                    });
+                    new Zutat(TBZutat.Text, new Einheit(TBEinehit.Text), Convert.ToDouble(TBMenge.Text))
+                    );
+                    //{
+                    //    Zutaten = TBZutat.Text,     // Zutat auslesen und an die Spalte Zutaten binden.
+                    //    Mengen = TBMenge.Text,      // Menge auslesen und an die Spalte Mengen binden.
+                    //    Einheiten = TBEinehit.Text  // Einheit auslesen und an die Spalte Einheiten binden.
+                    //});
         }
 
         private void Save_Rezept_Click(object sender, RoutedEventArgs e)
