@@ -107,6 +107,18 @@ namespace DasUltimativeKochbuch.Datenbank
             foreach (Zutat zt in r.zutaten)
             {
                 Console.WriteLine(zt);
+
+                cmd.CommandText = @"SELECT Name FROM zutat WHERE name = ?Name;";
+                cmd.Parameters.AddWithValue("Name", zt.name);
+                MySqlDataReader Reader = cmd.ExecuteReader();
+                if (!Reader.HasRows) return;
+                while (Reader.Read())
+                {
+                    string rname = Reader["Name"].ToString();
+                }
+                Reader.Close();
+
+
             }
             query2 = "INSERT INTO zutat(´Name´,´Score´) VALUES(@name, @score);";
 
@@ -131,6 +143,11 @@ namespace DasUltimativeKochbuch.Datenbank
             //Close the connection  
             cmd.Connection.Close();
 
+        }
+
+        private string GetDBString(string p, MySqlDataReader Reader)
+        {
+            throw new NotImplementedException();
         }
 
         public List<Rezept> alleRezepte()
