@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using MySql.Data.MySqlClient;
 using System.Windows;
-using System.Collections.Generic;
 using DasUltimativeKochbuch.Core;
 
 namespace DasUltimativeKochbuch.Datenbank
@@ -91,6 +90,7 @@ namespace DasUltimativeKochbuch.Datenbank
             
             cmd = new MySqlCommand();
             this.verbindungOeffnen();
+            //Parameter hinzufügen
             cmd.Parameters.AddWithValue("@name", name);
             cmd.Parameters.AddWithValue("@zubereitung", zubereitung);
             cmd.Parameters.AddWithValue("@pers", pers);
@@ -109,9 +109,9 @@ namespace DasUltimativeKochbuch.Datenbank
                 Console.WriteLine(zt);
 
                 cmd.CommandText = @"SELECT ID FROM zutat WHERE name = @Name;";
+                //Parameter hinzufügen
                 cmd.Parameters.AddWithValue("Name", zt.name);
                 MySqlDataReader Reader = cmd.ExecuteReader();
-                if (!Reader.HasRows) return;
                 while (Reader.Read())
                 {
                     string rID = Reader["ID"].ToString();
@@ -119,7 +119,7 @@ namespace DasUltimativeKochbuch.Datenbank
                     if (rID == null)
                     {
                         query2 = "INSERT INTO zutat(´Name´,´Score´) VALUES(@name, @score);";
-
+                        //Parameter hinzufügen
                         cmd.Parameters.AddWithValue("Name", zt.name);
                         cmd.Parameters.AddWithValue("Score", 0);
 
@@ -132,8 +132,9 @@ namespace DasUltimativeKochbuch.Datenbank
                     }
                     else
                     {
-                        query2 = "UPDATE zutat SET Score=Score + 1";
-
+                        query2 = "UPDATE zutat SET Score=Score + 1 WHERE ID = @ID";
+                        //Parameter hinzufügen
+                        cmd.Parameters.AddWithValue("ID", rID);
                         commandLine = query2;
 
                         //Set the command text  
@@ -145,7 +146,7 @@ namespace DasUltimativeKochbuch.Datenbank
                     //----------- Muss um EinheitID ergänzt werden
 
                     query3 = "INSERT INTO rezzut(´ZutatID´, ´Menge´,´RezeptID´) VALUES(@ZutatID, @rezeptID, @menge);";
-
+                    //Parameter hinzufügen
                     cmd.Parameters.AddWithValue("ZutatID", rID);
                     cmd.Parameters.AddWithValue("Menge", zt.menge);
                     cmd.Parameters.AddWithValue("RezeptID", rezeptID);
@@ -160,28 +161,44 @@ namespace DasUltimativeKochbuch.Datenbank
 
                     //Close the connection  
                     cmd.Connection.Close();
-
                 }
                 Reader.Close();
-
-
             }
-            
-
-            
-
         }
 
-        private string GetDBString(string p, MySqlDataReader Reader)
-        {
-            throw new NotImplementedException();
-        }
+
+        
 
         public List<Rezept> alleRezepte()
         {
-            throw new NotImplementedException();
-        }
+            List<Rezept> alleRezepte = new List<Rezept>();
+            string query;
+            query = "SELECT * FROM rezept";
 
+            cmd = new MySqlCommand();
+            this.verbindungOeffnen();
+
+            commandLine = query;
+
+            //Set the command text  
+            cmd.CommandText = commandLine;
+            MySqlDataReader Reader = cmd.ExecuteReader();
+
+            while (Reader.Read())
+            {
+                string rID = Reader["ID"].ToString();
+                string rName = Reader["Name"].ToString();
+                string rzubereitung = Reader["Zubereitung"].ToString();
+                string rPersonen = Reader["Personen"].ToString();
+
+
+            }
+            return alleRezepte;
+        }
+        private string GetDBString(string p, MySqlDataReader Reader)
+                {
+                    throw new NotImplementedException();
+                }
         public List<Rezept> rezepteMit(List<Zutat> lz)
         {
             throw new NotImplementedException();
