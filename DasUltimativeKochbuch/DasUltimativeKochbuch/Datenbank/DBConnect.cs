@@ -86,7 +86,7 @@ namespace DasUltimativeKochbuch.Datenbank
 
             int rezeptID = 0;
 
-            query1 = "INSERT INTO rezept(´Name´,´Zubereitung´,´Personen´,´UsrID´) VALUES(@name, @zubereitung, @pers);SELECT LAST_INSERT_ID();"; // @usrID
+            query1 = "INSERT INTO rezept(Name, Zubereitung, Personen) VALUES(@name, @zubereitung, @pers);SELECT LAST_INSERT_ID();"; // @usrID
             
             cmd = new MySqlCommand();
             this.verbindungOeffnen();
