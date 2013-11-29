@@ -9,7 +9,7 @@ namespace DasUltimativeKochbuch.Core
     //Klassen zum vergleich bei der Scuhe für das passendste Rezept
     class ZutatEqualityComparerForSearch : IEqualityComparer<object>
     {
-        public bool Equals(object x, object y)
+        public new bool Equals(object x, object y)
         {
             if (x is Zutat && y is Zutat)
             {

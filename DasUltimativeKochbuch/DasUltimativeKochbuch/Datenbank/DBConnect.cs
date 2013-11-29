@@ -167,14 +167,14 @@ namespace DasUltimativeKochbuch.Datenbank
         }
 
 
-        
+            
 
         public List<Rezept> alleRezepte()
         {
             List<Rezept> alleRezepte = new List<Rezept>();
             string query;
             query = "SELECT * FROM rezept";
-
+            
             cmd = new MySqlCommand();
             this.verbindungOeffnen();
 
@@ -185,7 +185,7 @@ namespace DasUltimativeKochbuch.Datenbank
             MySqlDataReader Reader = cmd.ExecuteReader();
 
             while (Reader.Read())
-            {
+        {
                 string rID = Reader["ID"].ToString();
                 string rName = Reader["Name"].ToString();
                 string rzubereitung = Reader["Zubereitung"].ToString();
@@ -196,9 +196,9 @@ namespace DasUltimativeKochbuch.Datenbank
             return alleRezepte;
         }
         private string GetDBString(string p, MySqlDataReader Reader)
-                {
-                    throw new NotImplementedException();
-                }
+        {
+            throw new NotImplementedException();
+        }
         public List<Rezept> rezepteMit(List<Zutat> lz)
         {
             throw new NotImplementedException();

@@ -13,6 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using DasUltimativeKochbuch.Core;
+using DasUltimativeKochbuch.Datenbank;
+
 namespace DasUltimativeKochbuch.GUI
 {
     /// <summary>
@@ -20,24 +23,37 @@ namespace DasUltimativeKochbuch.GUI
     /// </summary>
     public partial class Rezept_erstellen : Page
     {
+        List<Zutat> zl;
+        DatenbankConnector dbc = new DBConnect();
+        
         public Rezept_erstellen()
         {
             InitializeComponent();
+            zl = new List<Zutat>();
         }
-
+       
         private void AddZutat_Click(object sender, RoutedEventArgs e)
         {
-            string Zutat = TBZutat.Text;
-            string Einheit = TBEinehit.Text;
-            string Menge = TBMenge.Text;
+            // Hinzufügen einer neuen Zeile in das ListView Fenster.
+            Zutat zt = new Zutat(TBZutat.Text, new Einheit(TBEinehit.Text), Convert.ToDouble(TBMenge.Text));
+            zl.Add(zt);
+            LVZutaten.Items.Add(zt);
+        }
 
-            LVZutaten.Items.Add(
-                    new
-                    {
-                        Zutaten = Zutat,
-                        Mengen = Menge,
-                        Einheiten = Einheit,
-                    });
+        private void Save_Rezept_Click(object sender, RoutedEventArgs e)
+        {
+            //foreach (object item in LVZutaten.Items)
+            //{
+            //    if (item is String)
+            //    {
+            //        String i = (String) item;
+            //        TBZubereitung.Text = i;
+            //    }
+            //    else throw new Exception("WPF ist DUMM!");
+            //}
+            Rezept r = new Rezept(zl, TBZubereitung.Text, TBRezeptname.Text, 4);//-TODO Personenangabe
+            dbc.rezSpeichern(r);
+
         }
     }
 }

@@ -9,7 +9,8 @@ namespace DasUltimativeKochbuch.Core
 {
     class Coreinit
     {
-        void ini() {
+        private static bool intialisiert = false;
+        public static void ini() {
             DatenbankConnector dbc = new DBConnect();
             SortedSet<Einheit> el = new SortedSet<Einheit>();
             el.Add(new Einheit(""));
