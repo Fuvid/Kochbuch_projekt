@@ -27,16 +27,13 @@ namespace DasUltimativeKochbuch.GUI
 
         private void AddZutat_Click(object sender, RoutedEventArgs e)
         {
-            string Zutat = TBZutat.Text;
-            string Einheit = TBEinehit.Text;
-            string Menge = TBMenge.Text;
-
+            // Hinzufügen einer neuen Zeile in das ListView Fenster.
             LVZutaten.Items.Add(
                     new
                     {
-                        Zutaten = Zutat,
-                        Mengen = Menge,
-                        Einheiten = Einheit
+                        Zutaten = TBZutat.Text,     // Zutat auslesen und an die Spalte Zutaten binden.
+                        Mengen = TBMenge.Text,      // Menge auslesen und an die Spalte Mengen binden.
+                        Einheiten = TBEinehit.Text  // Einheit auslesen und an die Spalte Einheiten binden.
                     });
         }
     }

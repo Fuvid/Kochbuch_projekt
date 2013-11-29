@@ -8,7 +8,7 @@
             <MenuItem Header="_Datei" />
             <MenuItem Header="_Bearbeiten" />
             <MenuItem Header="_Anzeigen">
-                <MenuItem Header="_Rezept hinzufügen" Click="MenuItem_Click" />
+                <MenuItem x:Name="Rezept_hinzufügen" Header="_Rezept hinzufügen" Click="Rezept_hinzufügen_Click" />
             </MenuItem>
             <MenuItem Header="_Fenster" />
             <MenuItem Header="_Hilfe" />
