@@ -13,6 +13,7 @@ namespace DasUltimativeKochbuch.Datenbank
         MySqlCommand cmd;
         string connectionLine;
         string commandLine;
+        
 
         public DBConnect()
         {
@@ -52,15 +53,14 @@ namespace DasUltimativeKochbuch.Datenbank
             cmd.Connection.Close();
         }
 
-        private int executeQueryMitReturn(string query)
+        private int executeQueryMitReturn(string query)         //
         {
-            int ret;
             cmd = new MySqlCommand();
             this.verbindungOeffnen();
 
             cmd.CommandText = query;
             //Ausführen des Sql Queries und Rückgabe der ersten Spalte in der ersten Reihe
-            ret = Convert.ToInt32(cmd.ExecuteScalar());
+            int ret = Convert.ToInt32(cmd.ExecuteScalar());
             //Close the connection  
             cmd.Connection.Close();
             return ret;
@@ -72,15 +72,15 @@ namespace DasUltimativeKochbuch.Datenbank
             this.verbindungOeffnen();
             //Create a data reader and Execute the command
             MySqlDataReader dataReader = cmd.ExecuteReader();
-            dataReader.Read();
-                if (dataReader.HasRows)
+
+            dataReader.Read();      //der Reader fängt an Zeilen zu lesen
+                if (dataReader.HasRows)     //Wenn der Reader Zeilen besitzt dann wird die Id zurückgegeben
                 {
-                    string zID = Convert.ToString(dataReader["ID"]);
-                    MessageBox.Show(zID);
+                    string ID = Convert.ToString(dataReader["ID"]);
                     cmd.Connection.Close();
-                    return Convert.ToInt32(zID);
+                    return Convert.ToInt32(ID);
                 }
-                else
+                else        //Wenn nicht wird 0 zurückgegeben
                 {
                     cmd.Connection.Close();
                     return 0;
@@ -91,39 +91,34 @@ namespace DasUltimativeKochbuch.Datenbank
 
         public void rezSpeichern(Rezept r)
         {
-            String query;
+            
             int rezeptID;
 
-            query = "INSERT INTO rezept(Name, Zubereitung, Personen) VALUES('"+ r.name +"', '"+ r.zubereitung +"', '"+ r.pers +"');SELECT LAST_INSERT_ID();"; // @usrID
+            String query = "INSERT INTO rezept(Name, Zubereitung, Personen) VALUES('" + r.name + "', '" + r.zubereitung + "', '" + r.pers + "');SELECT LAST_INSERT_ID();"; // @usrID
             rezeptID = this.executeQueryMitReturn(query);       // Insert ausführen und die ID des Rezeptes speichern
-
             foreach (Zutat zt in r.zutaten)
             {
                 query = "SELECT ID FROM zutat WHERE name = '"+ zt.name +"';";
-                int zID = Convert.ToInt32(this.selectID(query));
-                String query2;
-                if (zID != 0)
+                int zID = Convert.ToInt32(this.selectID(query));        //Nach Zutat suchen
+
+                if (zID != 0)       //Wenn Zutat vorhanden Score inkrementieren | Wenn nicht vorhanden, Zutat hinzufügen und ID der Zutat speichern
                 {
-                    MessageBox.Show("Zutat vorhanden");
-                    query2 = "UPDATE zutat SET Score=Score+1 WHERE ID = '" + zID + "'";
-                    this.executeQuery(query2);
+                    query = "UPDATE zutat SET Score=Score+1 WHERE ID = '" + zID + "'";
+                    this.executeQuery(query);
                 }
                 else
                 {
-                    MessageBox.Show("Zutat nicht vorhanden");
-                    query2 = "INSERT INTO zutat(Name, Score) VALUES('" + zt.name + "', 0);";
-                    this.executeQuery(query2);
+                    query = "INSERT INTO zutat(Name, Score) VALUES('" + zt.name + "', 0);";
+                    this.executeQuery(query);
+
+                    query = "SELECT ID FROM zutat WHERE name = '" + zt.name + "';";
+                    zID = Convert.ToInt32(this.selectID(query));
                 }
                 
-
-
-                    //----------- Muss um EinheitID ergänzt werden
-                    //----------- Muss ZutatsID benutzen
-                    
-                
-                    //String query3;
-                    //query3 = "INSERT INTO rezzut(ZutatID, Menge, RezeptID) VALUES('" + zID +"', '" + zt.menge +"', '" + rezeptID +"');";
-                    //this.executeQuery(query3);
+                //----------- Muss um EinheitID ergänzt werden
+                String query3 = "INSERT INTO rezzut(ZutatID, Menge, RezeptID) VALUES('" + zID +"', '" + zt.menge +"', '" + rezeptID +"');";  //ZutatID, RezeptID und Menge in Tabelle "rezzut" eintragen
+                this.executeQuery(query3);
+                MessageBox.Show("Rezept hinzugefügt");
             }
         }
 
@@ -151,6 +146,7 @@ namespace DasUltimativeKochbuch.Datenbank
                 string rName = Reader["Name"].ToString();
                 string rzubereitung = Reader["Zubereitung"].ToString();
                 string rPersonen = Reader["Personen"].ToString();
+
             }
             Reader.Close();
             return alleRezepte;
