@@ -36,5 +36,20 @@ namespace DasUltimativeKochbuch.GUI
                         Einheiten = TBEinehit.Text  // Einheit auslesen und an die Spalte Einheiten binden.
                     });
         }
+
+        private void Save_Rezept_Click(object sender, RoutedEventArgs e)
+        {
+            //foreach (object item in LVZutaten.Items)
+            //{
+            //    if (item is String)
+            //    {
+            //        String i = (String) item;
+            //        TBZubereitung.Text = i;
+            //    }
+            //    else throw new Exception("WPF ist DUMM!");
+            //}
+
+
+        }
     }
 }
