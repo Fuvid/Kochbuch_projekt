@@ -36,7 +36,7 @@ namespace DasUltimativeKochbuch.GUI
                     {
                         Zutaten = Zutat,
                         Mengen = Menge,
-                        Einheiten = Einheit,
+                        Einheiten = Einheit
                     });
         }
     }

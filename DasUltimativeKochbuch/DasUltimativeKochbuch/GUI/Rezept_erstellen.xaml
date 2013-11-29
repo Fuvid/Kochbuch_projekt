@@ -17,7 +17,7 @@
 
         <Button x:Name="Save_Rezept" Content="Rezept Speichern" HorizontalAlignment="Left" VerticalAlignment="Top" Width="286" Margin="10,342,0,0"/>
         <ProgressBar x:Name="PBSave" HorizontalAlignment="Left" Height="21" VerticalAlignment="Top" Width="286" Margin="10,369,0,0"/>
-        <ListView x:Name="LVZutaten" HorizontalAlignment="Left" Height="244" Margin="10,93,0,0" VerticalAlignment="Top" Width="286">
+        <ListView x:Name="LVZutaten" HorizontalAlignment="Left" Height="244" Margin="10,93,0,0" VerticalAlignment="Top" Width="286" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Zutaten" Width="175" DisplayMemberBinding="{Binding Path=Zutaten}" />
