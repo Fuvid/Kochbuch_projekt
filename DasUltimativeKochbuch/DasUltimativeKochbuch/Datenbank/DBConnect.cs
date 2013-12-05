@@ -118,7 +118,7 @@ namespace DasUltimativeKochbuch.Datenbank
 
                     if (rID == null)
                     {
-                        query2 = "INSERT INTO zutat(´Name´,´Score´) VALUES(@name, @score);";
+                        query2 = "INSERT INTO zutat(Name, Score) VALUES(@name, @score);";
                         //Parameter hinzufügen
                         cmd.Parameters.AddWithValue("Name", zt.name);
                         cmd.Parameters.AddWithValue("Score", 0);
@@ -145,7 +145,7 @@ namespace DasUltimativeKochbuch.Datenbank
 
                     //----------- Muss um EinheitID ergänzt werden
 
-                    query3 = "INSERT INTO rezzut(´ZutatID´, ´Menge´,´RezeptID´) VALUES(@ZutatID, @rezeptID, @menge);";
+                    query3 = "INSERT INTO rezzut(ZutatID, Menge, RezeptID) VALUES(@ZutatID, @rezeptID, @menge);";
                     //Parameter hinzufügen
                     cmd.Parameters.AddWithValue("ZutatID", rID);
                     cmd.Parameters.AddWithValue("Menge", zt.menge);
