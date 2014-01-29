@@ -24,7 +24,6 @@ namespace DasUltimativeKochbuch.GUI
     public partial class Rezept_erstellen : Page
     {
         List<Zutat> zl;
-        DatenbankConnector dbc = new DBConnect();
         
         public Rezept_erstellen()
         {
@@ -52,7 +51,7 @@ namespace DasUltimativeKochbuch.GUI
             //    else throw new Exception("WPF ist DUMM!");
             //}
             Rezept r = new Rezept(zl, TBZubereitung.Text, TBRezeptname.Text, 4);//-TODO Personenangabe
-            dbc.rezSpeichern(r);
+            Ref.dbc.rezSpeichern(r);
 
         }
     }

@@ -131,6 +131,7 @@ namespace DasUltimativeKochbuch.Datenbank
         {
             List<Rezept> alleRezepte = new List<Rezept>();
             string query;
+            string zut_query;
             query = "SELECT * FROM rezept";
             
             cmd = new MySqlCommand();
@@ -144,20 +145,32 @@ namespace DasUltimativeKochbuch.Datenbank
 
             while (Reader.Read())
             {
+
                 string rID = Reader["ID"].ToString();
                 string rName = Reader["Name"].ToString();
                 string rzubereitung = Reader["Zubereitung"].ToString();
-                string rPersonen = Reader["Personen"].ToString();
+                String rPersonen = Reader["Personen"].ToString();
+               // ab hier nur test oder halt falsch
+                zut_query = "SELECT ZutatID, EinheitID FROM rezzut WHERE RezeptID ='" + rID + "'";
+                cmd.CommandText = zut_query;
+               
+                MySqlDataReader ZutReader = cmd.ExecuteReader();
+                List<Zutat> zl = new List<Zutat>();
+                while (ZutReader.Read()){
+                    zl.Add(new Zutat(ZutReader["Name"].ToString(),Ref.einheiten.Find()));
+                }
+                alleRezepte.Add(new Rezept(zl, rzubereitung,rName, Convert.ToInt32(rPersonen)));
 
             }
             Reader.Close();
+
             return alleRezepte;
         }
         private string GetDBString(string p, MySqlDataReader Reader)
         {
             throw new NotImplementedException();
         }
-        public List<Rezept> rezepteMit(List<Zutat> lz)
+        public List<Rezept> rezepteMit(Zutat lz)
         {
             throw new NotImplementedException();
         }

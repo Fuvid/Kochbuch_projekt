@@ -1,0 +1,3 @@
+Ich brauch noch eine Referenz auf Ein "Hauptobjekt", aus dem ich den Kontext erstelleen kann. Die frage ist, ob wir dafür eine extra-Klasse anlege und man sich die Referenzen alle da heraus nehmen kann (z.B. Datenbank-Connector) oder ob wir sagen, dass z.B. das App.xaml.cs die Funktionalität übernimmt
+
+Brauchen wir für Einheiten wirklich eine Klasse? oder sollen wir das einfach als String Speichern und die fest integrieren.(Enum/StringArray?)? Ich bekomm sonst eine zu verschachtelte SQL abfrage, die nciht unbeding übersichtlich ist.

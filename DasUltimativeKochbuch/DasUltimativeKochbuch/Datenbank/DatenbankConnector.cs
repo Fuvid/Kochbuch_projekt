@@ -11,9 +11,9 @@ namespace DasUltimativeKochbuch.Datenbank
     {
         void rezSpeichern(Rezept r);
         List<Rezept> alleRezepte();
-        //Liste mit allen Rezepten, die mindestens eine der Zutaten enthält
+        //Liste mit allen Rezepten, die die Zutat enthält
 
-        List<Rezept> rezepteMit(List<Zutat> lz);
+        List<Rezept> rezepteMit(Zutat z);
 
 
         SortedSet<Zutat> alleZutaten();

@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DasUltimativeKochbuch.Datenbank;
+using DasUltimativeKochbuch.Core;
 
 namespace DasUltimativeKochbuch
 {
@@ -20,9 +22,12 @@ namespace DasUltimativeKochbuch
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
+            Ref.dbc = new DBConnect();
+            
         }
 
         private void Rezept_hinzufügen_Click(object sender, RoutedEventArgs e)
