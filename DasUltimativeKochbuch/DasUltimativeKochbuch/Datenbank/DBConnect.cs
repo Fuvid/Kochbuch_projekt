@@ -13,9 +13,11 @@ namespace DasUltimativeKochbuch.Datenbank
         MySqlCommand cmd;
         string connectionLine;
         string commandLine;
+        
 
         public DBConnect()
         {
+            //Anmeldedaten des MySQL Servers
             connectionLine = "Data source=localhost;UserId=root;Password=;database=kochbuch";
             connect = new MySqlConnection(connectionLine);
         }
@@ -26,20 +28,21 @@ namespace DasUltimativeKochbuch.Datenbank
             {
                 //Create a connection  
                 cmd.Connection = connect;
-                //Open the connection  
+                //Open the connection
                 cmd.Connection.Open();
             }
             catch (NullReferenceException ex)
             {
                 //Fehler abfangen und in Messagebox ausgeben
-                Console.WriteLine(ex.Message);
+                MessageBox.Show(ex.Message);
             }
         }
 
-        private void executeQuery(string query)
+        private void executeQuery(string query)         //Zum ausführen von SQL Anweisungen ohne Rückgabe
         {
-            this.verbindungOeffnen();
             cmd = new MySqlCommand();
+            this.verbindungOeffnen();
+            
 
             commandLine = query;
 
@@ -51,123 +54,93 @@ namespace DasUltimativeKochbuch.Datenbank
             cmd.Connection.Close();
         }
 
-        public List<string> Select(string query)
+        private int executeQueryMitReturn(string query)         //
         {
-            List<string> rueck = new List<string>();
+            cmd = new MySqlCommand();
             this.verbindungOeffnen();
 
-            //Create Command
+            cmd.CommandText = query;
+            //Ausführen des Sql Queries und Rückgabe der ersten Spalte in der ersten Reihe
+            int ret = Convert.ToInt32(cmd.ExecuteScalar());
+            //Verbindung schließen  
+            cmd.Connection.Close();
+            return ret;
+        }
+
+        public int selectID(string query)
+        {
             MySqlCommand cmd = new MySqlCommand(query, connect);
+            this.verbindungOeffnen();
             //Create a data reader and Execute the command
             MySqlDataReader dataReader = cmd.ExecuteReader();
 
+            dataReader.Read();      //der Reader fängt an Zeilen zu lesen
+                if (dataReader.HasRows)     //Wenn der Reader Zeilen besitzt dann wird die Id zurückgegeben
+                {
+                    string ID = Convert.ToString(dataReader["ID"]);
+                    cmd.Connection.Close();
+                    return Convert.ToInt32(ID);
+                }
+                else        //Wenn nicht wird 0 zurückgegeben
+                {
+                    cmd.Connection.Close();
+                    return 0;
+                }
+        }
+
+        public List<Einheit> selectEinheitName(string query)
+        {
+            MySqlCommand cmd = new MySqlCommand(query, connect);
+            this.verbindungOeffnen();
+            //Create a data reader and Execute the command
+            MySqlDataReader dataReader = cmd.ExecuteReader();
+            List<Einheit> einheiten = new List<Einheit>();
             while (dataReader.Read())
             {
-                rueck.Add(dataReader[""] + "");
+                string tmp = Convert.ToString(dataReader["Name"]);
+                Einheit e = new Einheit("tmp");
+                einheiten.Add(e);         
             }
-            dataReader.Close();
             cmd.Connection.Close();
-            return rueck;
+            return einheiten;
         }
 
 
 
         public void rezSpeichern(Rezept r)
         {
-
-            String query1;
-            String query2;
-            String query3;
-
-            String name = r.name;
-            String zubereitung = r.zubereitung;
-            int pers = r.pers;
-            // int usrID = 0;
-
-            int rezeptID = 0;
-
-            query1 = "INSERT INTO rezept(Name, Zubereitung, Personen) VALUES(@name, @zubereitung, @pers);SELECT LAST_INSERT_ID();"; // @usrID
             
-            cmd = new MySqlCommand();
-            this.verbindungOeffnen();
-            //Parameter hinzufügen
-            cmd.Parameters.AddWithValue("@name", name);
-            cmd.Parameters.AddWithValue("@zubereitung", zubereitung);
-            cmd.Parameters.AddWithValue("@pers", pers);
-            // cmd.Parameters.AddWithValue("@usrID", usrID);
-            commandLine = query1;
-            
-            //Set the command text  
-            cmd.CommandText = commandLine;
-            //Ausführen des Sql Queries
-            rezeptID = Convert.ToInt32(cmd.ExecuteScalar());
+            int rezeptID;
+            String query;
 
-            //-----------------------------------------------------
-
+            query = "INSERT INTO rezept(Name, Zubereitung, Personen) VALUES('" + r.name + "', '" + r.zubereitung + "', '" + r.pers + "');SELECT LAST_INSERT_ID();"; // @usrID
+            rezeptID = this.executeQueryMitReturn(query);       // Insert ausführen und die ID des Rezeptes speichern
             foreach (Zutat zt in r.zutaten)
             {
-                Console.WriteLine(zt);
+                query = "SELECT ID FROM zutat WHERE name = '"+ zt.name +"';";
+                int zID = Convert.ToInt32(this.selectID(query));        //Nach Zutat suchen
 
-                cmd.CommandText = @"SELECT ID FROM zutat WHERE name = @Name;";
-                //Parameter hinzufügen
-                cmd.Parameters.AddWithValue("Name", zt.name);
-                MySqlDataReader Reader = cmd.ExecuteReader();
-                while (Reader.Read())
+                if (zID != 0)       //Wenn Zutat vorhanden Score inkrementieren | Wenn nicht vorhanden, Zutat hinzufügen und ID der Zutat speichern
                 {
-                    string rID = Reader["ID"].ToString();
-
-                    if (rID == null)
-                    {
-                        query2 = "INSERT INTO zutat(Name, Score) VALUES(@name, @score);";
-                        //Parameter hinzufügen
-                        cmd.Parameters.AddWithValue("Name", zt.name);
-                        cmd.Parameters.AddWithValue("Score", 0);
-
-                        commandLine = query2;
-
-                        //Set the command text  
-                        cmd.CommandText = commandLine;
-                        //Ausführen des Sql Queries
-                        cmd.ExecuteNonQuery();
-                    }
-                    else
-                    {
-                        query2 = "UPDATE zutat SET Score=Score + 1 WHERE ID = @ID";
-                        //Parameter hinzufügen
-                        cmd.Parameters.AddWithValue("ID", rID);
-                        commandLine = query2;
-
-                        //Set the command text  
-                        cmd.CommandText = commandLine;
-                        //Ausführen des Sql Queries
-                        cmd.ExecuteNonQuery();
-                    }
-
-                    //----------- Muss um EinheitID ergänzt werden
-
-                    query3 = "INSERT INTO rezzut(ZutatID, Menge, RezeptID) VALUES(@ZutatID, @rezeptID, @menge);";
-                    //Parameter hinzufügen
-                    cmd.Parameters.AddWithValue("ZutatID", rID);
-                    cmd.Parameters.AddWithValue("Menge", zt.menge);
-                    cmd.Parameters.AddWithValue("RezeptID", rezeptID);
-                    
-
-                    commandLine = query3;
-
-                    //Set the command text  
-                    cmd.CommandText = commandLine;
-                    //Ausführen des Sql Queries
-                    cmd.ExecuteNonQuery();
-
-                    //Close the connection  
-                    cmd.Connection.Close();
+                    query = "UPDATE zutat SET Score=Score+1 WHERE ID = '" + zID + "'";
+                    this.executeQuery(query);
                 }
-                Reader.Close();
+                else
+                {
+                    query = "INSERT INTO zutat(Name, Score) VALUES('" + zt.name + "', 0);";
+                    this.executeQuery(query);
+
+                    query = "SELECT ID FROM zutat WHERE name = '" + zt.name + "';";
+                    zID = Convert.ToInt32(this.selectID(query));
+                }
+                
+                //----------- Muss um EinheitID ergänzt werden
+                query = "INSERT INTO rezzut(ZutatID, Menge, RezeptID) VALUES('" + zID +"', '" + zt.menge +"', '" + rezeptID +"');";  //ZutatID, RezeptID und Menge in Tabelle "rezzut" eintragen
+                this.executeQuery(query);
+                MessageBox.Show("Rezept hinzugefügt");
             }
         }
 
-
-            
 
         public List<Rezept> alleRezepte()
         {
@@ -185,20 +158,17 @@ namespace DasUltimativeKochbuch.Datenbank
             MySqlDataReader Reader = cmd.ExecuteReader();
 
             while (Reader.Read())
-        {
+            {
                 string rID = Reader["ID"].ToString();
                 string rName = Reader["Name"].ToString();
                 string rzubereitung = Reader["Zubereitung"].ToString();
                 string rPersonen = Reader["Personen"].ToString();
 
-
             }
+            Reader.Close();
             return alleRezepte;
         }
-        private string GetDBString(string p, MySqlDataReader Reader)
-        {
-            throw new NotImplementedException();
-        }
+
         public List<Rezept> rezepteMit(List<Zutat> lz)
         {
             throw new NotImplementedException();
@@ -211,12 +181,21 @@ namespace DasUltimativeKochbuch.Datenbank
 
         public void einheitSpeichern(Einheit e)
         {
-            throw new NotImplementedException();
+            string query;
+            string name = e.name;
+
+            query = "INSERT INTO einheit(Name) VALUES('" + name + "');";
+            this.executeQuery(query);
+            MessageBox.Show("Einheit hinzugefügt.");
         }
 
         public List<Einheit> alleEinheiten()
         {
-            throw new NotImplementedException();
+            string query;
+            List<Einheit> einheiten = new List<Einheit>();
+            query = "SELECT * FROM einheit";
+            einheiten = this.selectEinheitName(query);
+            return einheiten;
         }
     }
 }
