@@ -88,6 +88,23 @@ namespace DasUltimativeKochbuch.Datenbank
                 }
         }
 
+        public List<Einheit> selectEinheitName(string query)
+        {
+            MySqlCommand cmd = new MySqlCommand(query, connect);
+            this.verbindungOeffnen();
+            //Create a data reader and Execute the command
+            MySqlDataReader dataReader = cmd.ExecuteReader();
+            List<Einheit> einheiten = new List<Einheit>();
+            while (dataReader.Read())
+            {
+                string tmp = Convert.ToString(dataReader["Name"]);
+                Einheit e = new Einheit("tmp");
+                einheiten.Add(e);         
+            }
+            cmd.Connection.Close();
+            return einheiten;
+        }
+
 
 
         public void rezSpeichern(Rezept r)
@@ -125,8 +142,6 @@ namespace DasUltimativeKochbuch.Datenbank
         }
 
 
-            
-
         public List<Rezept> alleRezepte()
         {
             List<Rezept> alleRezepte = new List<Rezept>();
@@ -153,10 +168,7 @@ namespace DasUltimativeKochbuch.Datenbank
             Reader.Close();
             return alleRezepte;
         }
-        private string GetDBString(string p, MySqlDataReader Reader)
-        {
-            throw new NotImplementedException();
-        }
+
         public List<Rezept> rezepteMit(List<Zutat> lz)
         {
             throw new NotImplementedException();
@@ -179,7 +191,11 @@ namespace DasUltimativeKochbuch.Datenbank
 
         public List<Einheit> alleEinheiten()
         {
-            throw new NotImplementedException();
+            string query;
+            List<Einheit> einheiten = new List<Einheit>();
+            query = "SELECT * FROM einheit";
+            einheiten = this.selectEinheitName(query);
+            return einheiten;
         }
     }
 }
