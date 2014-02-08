@@ -8,7 +8,9 @@ namespace DasUltimativeKochbuch.Core
 {
     public class Einheit
     {
-        public string name{get;set;}
+        public string name   {get;set;}
+      //  public string beschr {get;set;}
+
         public override string ToString()
         {
             return name;
@@ -16,5 +18,9 @@ namespace DasUltimativeKochbuch.Core
         public Einheit(string n) {
             this.name = n;
         }
+        //public Einheit(string n, string beschr): this(n)
+        //{
+        //    this.beschr = beschr;
+        //}
     }
 }

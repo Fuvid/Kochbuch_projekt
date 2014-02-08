@@ -26,7 +26,8 @@ namespace DasUltimativeKochbuch
         public MainWindow()
         {
             InitializeComponent();
-            Ref.dbc = new DBConnect();
+            Coreinit.ini();
+            //Ref.dbc = new DBConnect();
             
         }
 

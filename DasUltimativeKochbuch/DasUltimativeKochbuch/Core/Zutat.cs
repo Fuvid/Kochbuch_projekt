@@ -79,5 +79,15 @@ namespace DasUltimativeKochbuch.Core
         }
 
 
+
+        public bool Equals(Zutat x, Zutat y)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int GetHashCode(Zutat obj)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

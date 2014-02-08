@@ -11,25 +11,26 @@ namespace DasUltimativeKochbuch.Core
     {
         private static bool intialisiert = false;
         public static void ini() {
-            DatenbankConnector dbc = new DBConnect();
-            SortedSet<Einheit> el = new SortedSet<Einheit>();
-            el.Add(new Einheit(""));
+            Ref.dbc = new DBConnect();
+            //el.Add(new Einheit(""));
+            Ref.einheiten = new List<Einheit>();
+            Ref.einheiten.Add(new Einheit("Stk"));//, "Stück"));
+            Ref.einheiten.Add(new Einheit("tl"));//, "Teelöffel"));
 
-            el.Add(new Einheit("Stk"));
-            el.Add(new Einheit("tl"));
 
+            Ref.einheiten.Add(new Einheit("kg"));//, "Kilogramm"));
+            Ref.einheiten.Add(new Einheit("g"));//, "Gramm"));
 
-            el.Add(new Einheit("kg"));
-            el.Add(new Einheit("g"));
+            Ref.einheiten.Add(new Einheit("l"));//, "Liter"));
+            Ref.einheiten.Add(new Einheit("ml"));//, "Milliliter"));
+            Ref.einheiten.Add(new Einheit("cl"));//, "Zentiliter"));
 
-            el.Add(new Einheit("l"));
-            el.Add(new Einheit("ml"));
-            el.Add(new Einheit("cl"));
-
-            foreach (Einheit e in el) {
+            /*
+            foreach (Einheit e in Ref.einheiten)
+            {
                 dbc.einheitSpeichern(e);
             }
-
+  */          
             List<Zutat> zl1 = new List<Zutat>();
 
 //            zl1.Add(new Zutat("Kartoffel", el.));

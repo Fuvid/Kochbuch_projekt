@@ -157,7 +157,7 @@ namespace DasUltimativeKochbuch.Datenbank
                 MySqlDataReader ZutReader = cmd.ExecuteReader();
                 List<Zutat> zl = new List<Zutat>();
                 while (ZutReader.Read()){
-                    zl.Add(new Zutat(ZutReader["Name"].ToString(),Ref.einheiten.Find()));
+                 //   zl.Add(new Zutat(ZutReader["Name"].ToString(),Ref.einheiten.Find(eh => eh.)));
                 }
                 alleRezepte.Add(new Rezept(zl, rzubereitung,rName, Convert.ToInt32(rPersonen)));
 
@@ -170,9 +170,49 @@ namespace DasUltimativeKochbuch.Datenbank
         {
             throw new NotImplementedException();
         }
-        public List<Rezept> rezepteMit(Zutat lz)
+        public List<Rezept> rezepteMit(Zutat zt)
         {
-            throw new NotImplementedException();
+            int zID;
+            int rezeptID;
+            String query;
+
+            query = "SELECT ID FROM zutat WHERE name = '" + zt.name + "';";
+            zID = Convert.ToInt32(this.selectID(query));        //Nach Zutat suchen
+
+            query = "SELECT * FROM rezzut WHERE zutatID ='"+zID+"'";
+            
+            cmd = new MySqlCommand();
+            this.verbindungOeffnen();
+
+            commandLine = query;
+
+            //Set the command text  
+            cmd.CommandText = commandLine;
+            MySqlDataReader Reader = cmd.ExecuteReader();
+
+
+            query = "INSERT INTO rezept(Name, Zubereitung, Personen) VALUES('" + r.name + "', '" + r.zubereitung + "', '" + r.pers + "');SELECT LAST_INSERT_ID();"; // @usrID
+            rezeptID = this.executeQueryMitReturn(query);       // Insert ausführen und die ID des Rezeptes speichern
+            
+            if (zID != 0)       //Wenn Zutat vorhanden Score inkrementieren | Wenn nicht vorhanden, Zutat hinzufügen und ID der Zutat speichern
+            {
+                query = "UPDATE zutat SET Score=Score+1 WHERE ID = '" + zID + "'";
+                this.executeQuery(query);
+            }
+            else
+            {
+                query = "INSERT INTO zutat(Name, Score) VALUES('" + zt.name + "', 0);";
+                this.executeQuery(query);
+
+                query = "SELECT ID FROM zutat WHERE name = '" + zt.name + "';";
+                zID = Convert.ToInt32(this.selectID(query));
+            }
+
+            //----------- Muss um EinheitID ergänzt werden
+            query = "INSERT INTO rezzut(ZutatID, Menge, RezeptID) VALUES('" + zID + "', '" + zt.menge + "', '" + rezeptID + "');";  //ZutatID, RezeptID und Menge in Tabelle "rezzut" eintragen
+            this.executeQuery(query);
+            MessageBox.Show("Rezept hinzugefügt");
+            
         }
 
         public SortedSet<Zutat> alleZutaten()

@@ -34,9 +34,16 @@ namespace DasUltimativeKochbuch.GUI
         private void AddZutat_Click(object sender, RoutedEventArgs e)
         {
             // Hinzufügen einer neuen Zeile in das ListView Fenster.
-            Zutat zt = new Zutat(TBZutat.Text, new Einheit(TBEinehit.Text), Convert.ToDouble(TBMenge.Text));
-            zl.Add(zt);
-            LVZutaten.Items.Add(zt);
+            try
+            {
+                Zutat zt = new Zutat(TBZutat.Text, new Einheit(TBEinehit.Text), Convert.ToDouble(TBMenge.Text));
+                zl.Add(zt);
+                LVZutaten.Items.Add(zt);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("bitte gültigen wert eingeben");
+            }
         }
 
         private void Save_Rezept_Click(object sender, RoutedEventArgs e)

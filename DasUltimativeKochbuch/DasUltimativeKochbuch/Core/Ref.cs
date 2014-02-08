@@ -11,6 +11,6 @@ namespace DasUltimativeKochbuch.Core
     {
         public static DatenbankConnector dbc { set; get; }
         public static List<Einheit> einheiten { set; get; }
- 
+        
     }
 }
