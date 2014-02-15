@@ -30,12 +30,36 @@ namespace DasUltimativeKochbuch.GUI
         {
             InitializeComponent();
             zl = new List<Zutat>();
+            foreach(Einheit e in Ref.ehl){
+                Einheit.Items.Add(e);
+            }
         }
        
         private void AddZutat_Click(object sender, RoutedEventArgs e)
         {
             // Hinzufügen einer neuen Zeile in das ListView Fenster.
-            Zutat zt = new Zutat(TBZutat.Text, new Einheit(TBEinehit.Text), Convert.ToDouble(TBMenge.Text));
+            if (Einheit.SelectedItem == null) {
+                MessageBox.Show("Keine Einheit angegeben");
+                return;
+            }
+            if (!(Einheit.SelectedItem is Einheit))
+            {
+                MessageBox.Show("Keine Einheit");
+                return;
+            }
+
+            double mng;
+            try
+            {
+                mng = Convert.ToDouble(TBMenge.Text);
+
+            }
+            catch(FormatException) {
+                MessageBox.Show("Bitte eine Zahl als Menge angeben");
+                return;
+            }
+
+            Zutat zt = new Zutat(TBZutat.Text, (Einheit)Einheit.SelectionBoxItem, Convert.ToDouble(TBMenge.Text));
             zl.Add(zt);
             LVZutaten.Items.Add(zt);
         }
