@@ -30,6 +30,9 @@ namespace DasUltimativeKochbuch.GUI
         {
             InitializeComponent();
             zl = new List<Zutat>();
+            foreach(Einheit e in Ref.ehl){
+                Einheit.Items.Add(e);
+            }
         }
        
         private void AddZutat_Click(object sender, RoutedEventArgs e)

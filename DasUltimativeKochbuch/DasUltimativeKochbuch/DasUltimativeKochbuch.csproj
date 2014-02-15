@@ -69,6 +69,7 @@
     </Compile>
     <Compile Include="Core\Coreinit.cs" />
     <Compile Include="Core\Einheit.cs" />
+    <Compile Include="Core\Ref.cs" />
     <Compile Include="Core\Rezept.cs" />
     <Compile Include="Core\Suche.cs" />
     <Compile Include="Core\Zutat.cs" />
