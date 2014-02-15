@@ -172,6 +172,7 @@ namespace DasUltimativeKochbuch.Datenbank
         }
         public List<Rezept> rezepteMit(Zutat zt)
         {
+            throw new NotImplementedException();
             int zID;
             int rezeptID;
             String query;
@@ -191,7 +192,7 @@ namespace DasUltimativeKochbuch.Datenbank
             MySqlDataReader Reader = cmd.ExecuteReader();
 
 
-            query = "INSERT INTO rezept(Name, Zubereitung, Personen) VALUES('" + r.name + "', '" + r.zubereitung + "', '" + r.pers + "');SELECT LAST_INSERT_ID();"; // @usrID
+            //query = "INSERT INTO rezept(Name, Zubereitung, Personen) VALUES('" + r.name + "', '" + r.zubereitung + "', '" + r.pers + "');SELECT LAST_INSERT_ID();"; // @usrID
             rezeptID = this.executeQueryMitReturn(query);       // Insert ausführen und die ID des Rezeptes speichern
             
             if (zID != 0)       //Wenn Zutat vorhanden Score inkrementieren | Wenn nicht vorhanden, Zutat hinzufügen und ID der Zutat speichern
