@@ -27,5 +27,10 @@
         </ListView>
         <TextBox x:Name="TB_PAnzahl" HorizontalAlignment="Left" Height="23" Margin="235,314,0,0" TextWrapping="Wrap" Text="Anzahl" VerticalAlignment="Top" Width="61"/>
         <Label Content="Anzahl der Personen:" HorizontalAlignment="Left" Margin="107,314,0,0" VerticalAlignment="Top" Height="23" Width="123"/>
+        <!--<ComboBox HorizontalAlignment="Left" Margin="235,38,0,0" VerticalAlignment="Top" Width="61" SelectionChanged="ComboBox_SelectionChanged" >
+            <ComboBox.ItemBindingGroup>
+                <BindingGroup/>
+            </ComboBox.ItemBindingGroup>
+        </ComboBox>-->
     </Grid>
 </Page>
