@@ -87,6 +87,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="GUI\Rezept_suchen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GUI\start.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -95,6 +99,9 @@
   <ItemGroup>
     <Compile Include="GUI\Rezept_erstellen.xaml.cs">
       <DependentUpon>Rezept_erstellen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Rezept_suchen.xaml.cs">
+      <DependentUpon>Rezept_suchen.xaml</DependentUpon>
     </Compile>
     <Compile Include="GUI\start.xaml.cs">
       <DependentUpon>start.xaml</DependentUpon>

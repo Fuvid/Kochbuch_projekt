@@ -6,11 +6,10 @@
     <Grid>
         <Menu x:Name="MainMenu" IsMainMenu="True" Height="22" Margin="0,0,0,0" VerticalAlignment="Top">
             <MenuItem Header="_Datei" />
-            <MenuItem Header="_Bearbeiten" />
-            <MenuItem Header="_Anzeigen">
+            <MenuItem Header="_Bearbeiten">
                 <MenuItem x:Name="Rezept_hinzufügen" Header="_Rezept hinzufügen" Click="Rezept_hinzufügen_Click" />
+                <MenuItem x:Name="Rezept_suchen" Header="_Rezept suchen" Click="Rezept_suchen_Click" />
             </MenuItem>
-            <MenuItem Header="_Fenster" />
             <MenuItem Header="_Hilfe" />
         </Menu>
         <Frame x:Name="view" Margin="0,22,0,0" VerticalAlignment="Top" Source="/DasUltimativeKochbuch;component/GUI/start.xaml" NavigationUIVisibility="Hidden"/>

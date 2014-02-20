@@ -26,9 +26,9 @@ namespace DasUltimativeKochbuch.Core
             el.Add(new Einheit("ml"));
             el.Add(new Einheit("cl"));
             
-            foreach (Einheit e in el) {
-                dbc.einheitSpeichern(e);
-            }
+            //foreach (Einheit e in el) {
+            //    dbc.einheitSpeichern(e);
+            //}
             Ref.ehl = el;
             List<Zutat> zl1 = new List<Zutat>();
 
