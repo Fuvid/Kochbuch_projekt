@@ -142,7 +142,7 @@ namespace DasUltimativeKochbuch.Datenbank
         }
 
 
-        public List<Rezept> alleRezepte()
+        public List<Rezept> alleRezepte() //Nicht fertig
         {
             List<Rezept> alleRezepte = new List<Rezept>();
             string query;
@@ -159,10 +159,12 @@ namespace DasUltimativeKochbuch.Datenbank
 
             while (Reader.Read())
             {
+                
                 string rID = Reader["ID"].ToString();
                 string rName = Reader["Name"].ToString();
                 string rzubereitung = Reader["Zubereitung"].ToString();
                 string rPersonen = Reader["Personen"].ToString();
+
 
             }
             Reader.Close();
