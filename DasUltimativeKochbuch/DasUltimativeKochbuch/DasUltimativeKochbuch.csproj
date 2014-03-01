@@ -69,18 +69,25 @@
     </Compile>
     <Compile Include="Core\Coreinit.cs" />
     <Compile Include="Core\Einheit.cs" />
+    <Compile Include="Core\Ref.cs" />
     <Compile Include="Core\Rezept.cs" />
     <Compile Include="Core\Suche.cs" />
     <Compile Include="Core\Zutat.cs" />
     <Compile Include="Core\ZutatEqualityComparerForSearch.cs" />
     <Compile Include="Datenbank\DatenbankConnector.cs" />
     <Compile Include="Datenbank\DBConnect.cs" />
-    <Compile Include="Datenbank\Mockup.cs" />
+    <Compile Include="Datenbank\OLEConnect.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="GUI\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Page Include="GUI\Rezept_erstellen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\Rezept_suchen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -93,8 +100,16 @@
     <Compile Include="GUI\Rezept_erstellen.xaml.cs">
       <DependentUpon>Rezept_erstellen.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Rezept_suchen.xaml.cs">
+      <DependentUpon>Rezept_suchen.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GUI\start.xaml.cs">
       <DependentUpon>start.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KochbuchDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KochbuchDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -113,6 +128,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="KochbuchDataSet.xsc">
+      <DependentUpon>KochbuchDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KochbuchDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KochbuchDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KochbuchDataSet.xss">
+      <DependentUpon>KochbuchDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

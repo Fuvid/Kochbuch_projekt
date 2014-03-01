@@ -12,7 +12,11 @@
         <TextBox x:Name="TBZubereitung" TextWrapping="Wrap" Text="Zubereitung" Margin="303,10,8,10" AcceptsReturn="True" AcceptsTab="True" />
         <TextBox x:Name="TBZutat" HorizontalAlignment="Left" Height="23" Margin="10,38,0,0" TextWrapping="Wrap" Text="Zutat" VerticalAlignment="Top" Width="145"/>
         <TextBox x:Name="TBMenge" HorizontalAlignment="Left" Height="23" Margin="160,38,0,0" TextWrapping="Wrap" Text="Menge" VerticalAlignment="Top" Width="70"/>
-        <TextBox x:Name="TBEinehit" HorizontalAlignment="Left" Height="23" Margin="235,38,0,0" TextWrapping="Wrap" Text="Einheit" VerticalAlignment="Top" Width="61"/>
+        <ComboBox x:Name="Einheit" HorizontalAlignment="Left" Margin="235,38,0,0" VerticalAlignment="Top" Width="61" SelectionChanged="ComboBox_SelectionChanged" Height="23" >
+            <ComboBox.ItemBindingGroup>
+                <BindingGroup/>
+            </ComboBox.ItemBindingGroup>
+        </ComboBox>
         <Button x:Name="AddZutat" Content="Zutat hinzufügen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="286" Margin="10,66,0,0" Click="AddZutat_Click" />
         <Button x:Name="Save_Rezept" Content="Rezept Speichern" HorizontalAlignment="Left" VerticalAlignment="Top" Width="286" Margin="10,342,0,0" Click="Save_Rezept_Click"/>
         <ProgressBar x:Name="PBSave" HorizontalAlignment="Left" Height="21" VerticalAlignment="Top" Width="286" Margin="10,369,0,0"/>
@@ -25,5 +29,6 @@
                 </GridView>
             </ListView.View>
         </ListView>
+
     </Grid>
 </Page>

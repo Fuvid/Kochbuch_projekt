@@ -7,12 +7,12 @@ using DasUltimativeKochbuch.Datenbank;
 
 namespace DasUltimativeKochbuch.Core
 {
-    class Coreinit
+    static class Coreinit
     {
         private static bool intialisiert = false;
         public static void ini() {
             DatenbankConnector dbc = new DBConnect();
-            SortedSet<Einheit> el = new SortedSet<Einheit>();
+            List<Einheit> el = new List<Einheit>();
             el.Add(new Einheit(""));
 
             el.Add(new Einheit("Stk"));
@@ -25,11 +25,11 @@ namespace DasUltimativeKochbuch.Core
             el.Add(new Einheit("l"));
             el.Add(new Einheit("ml"));
             el.Add(new Einheit("cl"));
-
-            foreach (Einheit e in el) {
-                dbc.einheitSpeichern(e);
-            }
-
+            
+            //foreach (Einheit e in el) {
+            //    dbc.einheitSpeichern(e);
+            //}
+            Ref.ehl = el;
             List<Zutat> zl1 = new List<Zutat>();
 
 //            zl1.Add(new Zutat("Kartoffel", el.));

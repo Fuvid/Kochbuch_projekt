@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DasUltimativeKochbuch.Core;
 
 namespace DasUltimativeKochbuch
 {
@@ -22,7 +23,10 @@ namespace DasUltimativeKochbuch
     {
         public MainWindow()
         {
+
             InitializeComponent();
+            
+            Coreinit.ini();
         }
 
         private void Rezept_hinzufügen_Click(object sender, RoutedEventArgs e)
@@ -30,5 +34,13 @@ namespace DasUltimativeKochbuch
             view.NavigationService.Navigate(new Uri("GUI\\Rezept_erstellen.xaml", UriKind.Relative));
             Hauptfenster.Title = "Das Ultimative Kochbuch - Rezept hinzufügen";
         }
+
+        private void Rezept_suchen_Click(object sender, RoutedEventArgs e)
+        {
+            view.NavigationService.Navigate(new Uri("GUI\\Rezept_suchen.xaml", UriKind.Relative));
+            Hauptfenster.Title = "Das Ultimative Kochbuch - Rezept suchen";
+        }
+
+
     }
 }

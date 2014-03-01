@@ -1,9 +1,11 @@
+CREATE DATABASE kochbuch;
 CREATE TABLE User(
 	ID INT AUTO_INCREMENT,
         Name VARCHAR(255),
-        Email VARCHAR UNIQUE,
+        Email VARCHAR(255),
         passwort VARCHAR(255),
-	PRIMARY KEY (ID)
+	PRIMARY KEY (ID),
+	UNIQUE(Email)
 );
 CREATE TABLE Rezept(
 	ID INT AUTO_INCREMENT,
