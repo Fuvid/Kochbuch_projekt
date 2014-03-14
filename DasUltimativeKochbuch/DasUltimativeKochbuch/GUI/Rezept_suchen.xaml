@@ -11,6 +11,6 @@
         <TextBox x:Name="TB_Zutaten" Height="23" Margin="10,10,10,0" TextWrapping="Wrap" Text="Hier Zutaten bitte Kommagetrennt eingeben" VerticalAlignment="Top" GotFocus="TB_Zutaten_GotFocus" ToolTip="Hier Zutaten bitte Kommagetrennt eingeben" LostFocus="TB_Zutaten_LostFocus"/>
         <Button x:Name="BSuchen" Content="Suchen" Margin="10,38,10,0" VerticalAlignment="Top"/>
         <ListBox HorizontalAlignment="Left" Margin="10,63,0,10" Width="275"/>
-        <TextBox Margin="290,63,10,10" TextWrapping="Wrap" Text="TextBox" />
+        <TextBox Margin="290,63,10,10" TextWrapping="Wrap" Text="TextBox"/>
     </Grid>
 </Page>
