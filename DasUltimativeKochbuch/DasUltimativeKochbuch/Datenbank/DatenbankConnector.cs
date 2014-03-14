@@ -7,7 +7,7 @@ using DasUltimativeKochbuch.Core;
 
 namespace DasUltimativeKochbuch.Datenbank
 {
-    interface DatenbankConnector
+    public interface DatenbankConnector
     {
         void rezSpeichern(Rezept r);
         List<Rezept> alleRezepte();

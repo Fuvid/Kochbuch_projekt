@@ -12,6 +12,9 @@ namespace DasUltimativeKochbuch.Core
         private static bool intialisiert = false;
         public static void ini() {
             Ref.dbc = new DBConnect();
+            Ref.defaultValues = new Dictionary<string, string>();
+            Ref.defaultValues.Add("TB_Zutaten", "blubb");
+            
             List<Einheit> el = new List<Einheit>();
             el.Add(new Einheit(""));
 
