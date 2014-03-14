@@ -24,11 +24,13 @@ namespace DasUltimativeKochbuch.GUI
         public Rezept_suchen()
         {
             InitializeComponent();
+            TB_Zutaten.Text = Ref.defaultValues["TB_Zutaten"];
+
         }
 
         private void TB_Zutaten_GotFocus(object sender, RoutedEventArgs e)
         {
-            if ((sender as TextBox).Text == "Hier Zutaten bitte Kommagetrennt eingeben")
+            if ((sender as TextBox).Text == Ref.defaultValues[(sender as TextBox).Name])
             {
                 (sender as TextBox).Text = String.Empty;
             }
@@ -42,7 +44,7 @@ namespace DasUltimativeKochbuch.GUI
         private void TB_Zutaten_LostFocus(object sender, RoutedEventArgs e)
         {
             if((sender as TextBox).Text == String.Empty){
-                (sender as TextBox).Text = "Hier Zutaten bitte Kommagetrennt eingeben";
+                (sender as TextBox).Text = Ref.defaultValues[(sender as TextBox).Name];
             }
             else
             {

@@ -33,6 +33,10 @@ namespace DasUltimativeKochbuch.GUI
             foreach(Einheit e in Ref.ehl){
                 Einheit.Items.Add(e);
             }
+            TB_Menge.Text = Ref.defaultValues["TB_Menge"];
+            TB_Zutat.Text = Ref.defaultValues["TB_Zutat"];
+            TB_Rezeptname.Text = Ref.defaultValues["TB_Rezeptname"];
+            TB_Zubereitung.Text = Ref.defaultValues["TB_Zubereitung"];
         }
        
         private void AddZutat_Click(object sender, RoutedEventArgs e)
@@ -51,7 +55,7 @@ namespace DasUltimativeKochbuch.GUI
             double mng;
             try
             {
-                mng = Convert.ToDouble(TBMenge.Text);
+                mng = Convert.ToDouble(TB_Menge.Text);
 
             }
             catch(FormatException) {
@@ -59,9 +63,9 @@ namespace DasUltimativeKochbuch.GUI
                 return;
             }
 
-            Zutat zt = new Zutat(TBZutat.Text, (Einheit)Einheit.SelectionBoxItem, Convert.ToDouble(TBMenge.Text));
+            Zutat zt = new Zutat(TB_Zutat.Text, (Einheit)Einheit.SelectionBoxItem, Convert.ToDouble(TB_Menge.Text));
             zl.Add(zt);
-            LVZutaten.Items.Add(zt);
+            LV_Zutaten.Items.Add(zt);
         }
 
         private void Save_Rezept_Click(object sender, RoutedEventArgs e)
@@ -75,7 +79,7 @@ namespace DasUltimativeKochbuch.GUI
             //    }
             //    else throw new Exception("WPF ist DUMM!");
             //}
-            Rezept r = new Rezept(zl, TBZubereitung.Text, TBRezeptname.Text, 4);//-TODO Personenangabe
+            Rezept r = new Rezept(zl, TB_Zubereitung.Text, TB_Rezeptname.Text, 4);//-TODO Personenangabe
             dbc.rezSpeichern(r);
 
         }

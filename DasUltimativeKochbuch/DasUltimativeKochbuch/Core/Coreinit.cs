@@ -14,6 +14,10 @@ namespace DasUltimativeKochbuch.Core
             Ref.dbc = new DBConnect();
             Ref.defaultValues = new Dictionary<string, string>();
             Ref.defaultValues.Add("TB_Zutaten", "Hier Zutaten bitte Kommagetrennt eingeben");
+            Ref.defaultValues.Add("TB_Rezeptname", "Rezeptname");
+            Ref.defaultValues.Add("TB_Zubereitung", "Zubereitung");
+            Ref.defaultValues.Add("TB_Zutat", "Zutat");
+            Ref.defaultValues.Add("TB_Menge", "Menge");
             
             List<Einheit> el = new List<Einheit>();
             el.Add(new Einheit(""));
