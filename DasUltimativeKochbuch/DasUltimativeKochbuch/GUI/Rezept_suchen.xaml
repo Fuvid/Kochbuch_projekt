@@ -1,0 +1,16 @@
+﻿<Page x:Class="DasUltimativeKochbuch.GUI.Rezept_suchen"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      Height="400" Width="800"
+	Title="Rezept_suchen">
+
+    <Grid>
+        <TextBox x:Name="TB_Zutaten" Height="23" Margin="10,10,10,0" TextWrapping="Wrap" Text="Hier Zutaten bitte Kommagetrennt eingeben" VerticalAlignment="Top" GotFocus="TB_Zutaten_GotFocus" ToolTip="Hier Zutaten bitte Kommagetrennt eingeben" LostFocus="TB_Zutaten_LostFocus"/>
+        <Button x:Name="BSuchen" Content="Suchen" Margin="10,38,10,0" VerticalAlignment="Top"/>
+        <ListBox HorizontalAlignment="Left" Margin="10,63,0,10" Width="275"/>
+        <TextBox Margin="290,63,10,10" TextWrapping="Wrap" Text="TextBox" />
+    </Grid>
+</Page>
