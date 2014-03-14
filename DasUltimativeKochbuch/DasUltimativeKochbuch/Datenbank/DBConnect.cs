@@ -137,35 +137,60 @@ namespace DasUltimativeKochbuch.Datenbank
                 //----------- Muss um EinheitID ergänzt werden
                 query = "INSERT INTO rezzut(ZutatID, Menge, RezeptID) VALUES('" + zID +"', '" + zt.menge +"', '" + rezeptID +"');";  //ZutatID, RezeptID und Menge in Tabelle "rezzut" eintragen
                 this.executeQuery(query);
-                MessageBox.Show("Rezept hinzugefügt");
+                
             }
+            MessageBox.Show("Rezept hinzugefügt");
         }
 
 
-        public List<Rezept> alleRezepte() //Nicht fertig
+        public List<Rezept> alleRezepte()
         {
             List<Rezept> alleRezepte = new List<Rezept>();
             string query;
+            string zutatQuery;
             query = "SELECT * FROM rezept";
             
             cmd = new MySqlCommand();
             this.verbindungOeffnen();
-
+            //---------------------
             commandLine = query;
-
             //Set the command text  
             cmd.CommandText = commandLine;
             MySqlDataReader Reader = cmd.ExecuteReader();
-
+            //--------------------------------
             while (Reader.Read())
             {
-                
-                string rID = Reader["ID"].ToString();
+                int rID = Convert.ToInt32(Reader["ID"].ToString());
                 string rName = Reader["Name"].ToString();
                 string rzubereitung = Reader["Zubereitung"].ToString();
-                string rPersonen = Reader["Personen"].ToString();
+                int rPersonen = Convert.ToInt32(Reader["Personen"].ToString());
 
+                List<Zutat> rzutaten = new List<Zutat>();
 
+                //-----------
+                zutatQuery = "SELECT ZutatID, Menge, Score FROM rezzut WHERE RezeptID = "+ rID +";";
+                commandLine = zutatQuery;
+                cmd.CommandText = commandLine;
+                //---------
+                MySqlDataReader readerRezzut = cmd.ExecuteReader();
+                while (readerRezzut.Read())
+                {
+                    int zID = Convert.ToInt32(readerRezzut["ZutatID"].ToString());
+                    double zMenge = Convert.ToDouble(readerRezzut["Menge"]);
+                    commandLine = "SELECT Name FROM zutat WHERE ID = "+zID+";";
+                    cmd.CommandText = commandLine;
+                    MySqlDataReader readerZutat = cmd.ExecuteReader();
+                    while (readerZutat.Read())
+                    {
+                        string zName = readerZutat["ID"].ToString();
+                        Einheit e = new Einheit("test");
+
+                        Zutat z = new Zutat(zName, e, zMenge);
+                        rzutaten.Add(z);
+                    }
+                }
+                Rezept r = new Rezept(rzutaten, rzubereitung, rName, rPersonen);
+                alleRezepte.Add(r);
             }
             Reader.Close();
             return alleRezepte;
@@ -173,12 +198,27 @@ namespace DasUltimativeKochbuch.Datenbank
 
         public List<Rezept> rezepteMit(List<Zutat> lz)
         {
-            throw new NotImplementedException();
+            List<Rezept> rMit = new List<Rezept>();
+
+
+
+
+            return rMit;
         }
 
         public SortedSet<Zutat> alleZutaten()
         {
-            throw new NotImplementedException();
+            SortedSet<Zutat> alleZutaten = new SortedSet<Zutat>();
+            cmd.CommandText = "SELECT * FROM zutat";
+            MySqlDataReader readerZutat = cmd.ExecuteReader();
+            while (readerZutat.Read())
+            {
+                Einheit e = new Einheit("test");
+                string zName = readerZutat["Name"].ToString();
+                Zutat z = new Zutat(zName, e);
+                alleZutaten.Add(z);
+            }
+            return alleZutaten;
         }
 
         public void einheitSpeichern(Einheit e)
@@ -193,10 +233,16 @@ namespace DasUltimativeKochbuch.Datenbank
 
         public List<Einheit> alleEinheiten()
         {
-            string query;
             List<Einheit> einheiten = new List<Einheit>();
-            query = "SELECT * FROM einheit";
-            einheiten = this.selectEinheitName(query);
+            commandLine = "SELECT * FROM einheit";
+            cmd.CommandText = commandLine;
+            MySqlDataReader readerEinheit = cmd.ExecuteReader();
+            while (readerEinheit.Read())
+            {   
+                string eName = readerEinheit["Name"].ToString();
+                Einheit e = new Einheit(eName);
+                einheiten.Add(e);
+            }
             return einheiten;
         }
     }
