@@ -13,7 +13,7 @@ namespace DasUltimativeKochbuch.Core
         public static void ini() {
             Ref.dbc = new DBConnect();
             Ref.defaultValues = new Dictionary<string, string>();
-            Ref.defaultValues.Add("TB_Zutaten", "blubb");
+            Ref.defaultValues.Add("TB_Zutaten", "Hier Zutaten bitte Kommagetrennt eingeben");
             
             List<Einheit> el = new List<Einheit>();
             el.Add(new Einheit(""));
