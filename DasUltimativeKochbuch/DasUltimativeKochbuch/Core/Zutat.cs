@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DasUltimativeKochbuch.Core
 {
-    public class Zutat
+    public class Zutat:IEquatable<Zutat>
     {
         //Name der Zutat
         public string name { get; set; }
@@ -31,6 +31,13 @@ namespace DasUltimativeKochbuch.Core
             einh = e;
             score = 0;
             menge = m;
+        }
+
+        public bool Equals(Zutat other)
+        {
+            if (other == null) return false;
+            if (this.name != other.name) return false;
+            return true;
         }
     }
 }

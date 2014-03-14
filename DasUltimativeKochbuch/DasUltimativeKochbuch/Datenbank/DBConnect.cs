@@ -171,7 +171,7 @@ namespace DasUltimativeKochbuch.Datenbank
             return alleRezepte;
         }
 
-        public List<Rezept> rezepteMit(List<Zutat> lz)
+        public List<Rezept> rezepteMit(Zutat lz)
         {
             throw new NotImplementedException();
         }

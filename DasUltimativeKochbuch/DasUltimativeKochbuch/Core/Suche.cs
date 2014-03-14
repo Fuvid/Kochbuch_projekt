@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using DasUltimativeKochbuch.Datenbank;
+using DasUltimativeKochbuch.Core;
 
 namespace DasUltimativeKochbuch.Core
 {
@@ -13,7 +14,7 @@ namespace DasUltimativeKochbuch.Core
     class Suche
     {
         private const int _RESULTS = 100;
-        DatenbankConnector dbc = new DBConnect();
+        DatenbankConnector dbc = Ref.dbc
         SortedSet<Zutat> zl;
 
         public Suche() {
