@@ -11,7 +11,10 @@ namespace DasUltimativeKochbuch.Core
     {
         private static bool intialisiert = false;
         public static void ini() {
-            DatenbankConnector dbc = new DBConnect();
+            Ref.dbc = new DBConnect();
+            Ref.defaultValues = new Dictionary<string, string>();
+            Ref.defaultValues.Add("TB_Zutaten", "Hier Zutaten bitte Kommagetrennt eingeben");
+            
             List<Einheit> el = new List<Einheit>();
             el.Add(new Einheit(""));
 
@@ -30,6 +33,7 @@ namespace DasUltimativeKochbuch.Core
             //    dbc.einheitSpeichern(e);
             //}
             Ref.ehl = el;
+          
             List<Zutat> zl1 = new List<Zutat>();
 
 //            zl1.Add(new Zutat("Kartoffel", el.));

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using DasUltimativeKochbuch.Datenbank;
+using DasUltimativeKochbuch.Core;
 
 namespace DasUltimativeKochbuch.Core
 {
@@ -13,18 +14,20 @@ namespace DasUltimativeKochbuch.Core
     class Suche
     {
         private const int _RESULTS = 100;
-        DatenbankConnector dbc = new DBConnect();
         SortedSet<Zutat> zl;
 
-        public Suche() {
-            zl = dbc.alleZutaten();
+        public Suche() { 
+            zl = Ref.dbc.alleZutaten();
         }
         List<Rezept> find(List<Zutat> z) {
-            List<Rezept> rezmit = dbc.rezepteMit(z);
+            Ref.dbc.rezepteMit(z[0]);
+
+
+
             List<Rezept> res = new List<Rezept>();
             
             
-            while (res.Count < _RESULTS) { 
+          /**  while (res.Count < _RESULTS) { 
                 foreach (Rezept r in rezmit) {
                     
                     if (r.zutaten.Equals(z)) {
@@ -34,12 +37,12 @@ namespace DasUltimativeKochbuch.Core
     
                 }
             }
-
+            */
             return res;
         }
 
         public void update() {
-            zl = dbc.alleZutaten();
+            zl = Ref.dbc.alleZutaten();
         }
     }
 }

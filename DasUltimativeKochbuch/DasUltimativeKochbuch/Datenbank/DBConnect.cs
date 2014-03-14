@@ -196,7 +196,7 @@ namespace DasUltimativeKochbuch.Datenbank
             return alleRezepte;
         }
 
-        public List<Rezept> rezepteMit(List<Zutat> lz)//Unfertig
+        public List<Rezept> rezepteMit(Zutat lz)
         {
             List<Rezept> rMit = new List<Rezept>();
 
