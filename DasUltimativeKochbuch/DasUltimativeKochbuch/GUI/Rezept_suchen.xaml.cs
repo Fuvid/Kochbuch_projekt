@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DasUltimativeKochbuch.Core;
 
 namespace DasUltimativeKochbuch.GUI
 {
@@ -41,11 +42,11 @@ namespace DasUltimativeKochbuch.GUI
         private void TB_Zutaten_LostFocus(object sender, RoutedEventArgs e)
         {
             if((sender as TextBox).Text == String.Empty){
-                (sender as TextBox).Text = "Hier Zutaten bitte Kommagetrennt eingeben";
+                (sender as TextBox).Text = Ref.defaultValues[(sender as TextBox).Name];
             }
             else
             {
-
+                
             }
         }
     }

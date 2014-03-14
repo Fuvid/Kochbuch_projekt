@@ -58,7 +58,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="XML\XMLConnector.cs" />
+    <Compile Include="XML\XMLConnector.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Page Include="GUI\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
