@@ -18,6 +18,7 @@ namespace DasUltimativeKochbuch.Core
             Ref.defaultValues.Add("TB_Zubereitung", "Zubereitung");
             Ref.defaultValues.Add("TB_Zutat", "Zutat");
             Ref.defaultValues.Add("TB_Menge", "Menge");
+            Ref.defaultValues.Add("TB_PersonenAnzahl", "");
             
             List<Einheit> el = new List<Einheit>();
             el.Add(new Einheit(""));

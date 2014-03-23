@@ -29,7 +29,7 @@ namespace DasUltimativeKochbuch.GUI
 
         /**
         * Hier werden Startwerte für die Page Rezept_erstellen gesetzt und festgelegt.
-        * In der Core.ini stehen die Feldnamen die dann gesetzt werden, auch die
+        * In der Coreinit.cs stehen die Feldnamen die dann gesetzt werden, auch die
         * Einheiten sind dort festgelegt und werden hier initialisiert.
         */
         public Rezept_erstellen()

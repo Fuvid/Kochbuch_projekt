@@ -11,7 +11,7 @@
         <TextBox x:Name="TB_Rezeptname" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="286" Margin="10,10,0,0" GotFocus="TB_GotFocus" LostFocus="TB_LostFocus"/>
         <TextBox x:Name="TB_Zubereitung" TextWrapping="Wrap" Margin="303,10,8,10" AcceptsReturn="True" AcceptsTab="True" GotFocus="TB_GotFocus" LostFocus="TB_LostFocus"/>
         <TextBox x:Name="TB_Zutat" HorizontalAlignment="Left" Height="23" Margin="10,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" GotFocus="TB_GotFocus" LostFocus="TB_LostFocus"/>
-        <TextBox x:Name="TB_Menge" HorizontalAlignment="Left" Height="23" Margin="160,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" GotFocus="TB_GotFocus" LostFocus="TB_LostFocus"/>
+        <TextBox x:Name="TB_Menge" HorizontalAlignment="Left" Height="23" Margin="161,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" GotFocus="TB_GotFocus" LostFocus="TB_LostFocus"/>
         <ComboBox x:Name="Einheit" HorizontalAlignment="Left" Margin="234,38,0,0" VerticalAlignment="Top" Width="61" Height="23" >
             <ComboBox.ItemBindingGroup>
                 <BindingGroup/>
@@ -20,7 +20,7 @@
         <Button x:Name="AddZutat" Content="Zutat hinzufügen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="286" Margin="10,66,0,0" Click="AddZutat_Click" />
         <Button x:Name="Save_Rezept" Content="Rezept Speichern" HorizontalAlignment="Left" VerticalAlignment="Top" Width="286" Margin="10,342,0,0" Click="Save_Rezept_Click"/>
         <ProgressBar x:Name="PB_Save" HorizontalAlignment="Left" Height="21" VerticalAlignment="Top" Width="286" Margin="10,369,0,0"/>
-        <ListView x:Name="LV_Zutaten" HorizontalAlignment="Left" Height="244" Margin="10,93,0,0" VerticalAlignment="Top" Width="286" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+        <ListView x:Name="LV_Zutaten" HorizontalAlignment="Left" Height="216" Margin="10,93,0,0" VerticalAlignment="Top" Width="286" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Zutaten" Width="175" DisplayMemberBinding="{Binding Path=name}" />
@@ -29,6 +29,8 @@
                 </GridView>
             </ListView.View>
         </ListView>
+        <TextBox x:Name="TB_PersonenAnzahl" HorizontalAlignment="Left" Height="23" Margin="225,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" GotFocus="TB_GotFocus" LostFocus="TB_LostFocus"/>
+        <Label Content="Personen anzahl:" HorizontalAlignment="Left" Margin="10,314,0,0" VerticalAlignment="Top" Height="23" Width="210" VerticalContentAlignment="Stretch" Padding="115,3,5,5"/>
 
     </Grid>
 </Page>

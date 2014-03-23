@@ -23,7 +23,7 @@ namespace DasUltimativeKochbuch.GUI
     {
         /**
          * Hier werden die Startwerte für die Page Rezept_suchen gesetzt
-         * in der Core.ini stehen die Textfeldbezeichnungen die dann geladen werden.
+         * in der Coreinit.cs stehen die Textfeldbezeichnungen die dann geladen werden.
          */
         public Rezept_suchen()
         {
