@@ -21,6 +21,10 @@ namespace DasUltimativeKochbuch.GUI
     /// </summary>
     public partial class Rezept_suchen : Page
     {
+        /**
+         * Hier werden die Startwerte für die Page Rezept_suchen gesetzt
+         * in der Core.ini stehen die Textfeldbezeichnungen die dann geladen werden.
+         */
         public Rezept_suchen()
         {
             InitializeComponent();
@@ -28,7 +32,12 @@ namespace DasUltimativeKochbuch.GUI
 
         }
 
-        private void TB_Zutaten_GotFocus(object sender, RoutedEventArgs e)
+
+        /**
+         * Diese Funktion dient zum leeren des Textfeldes wenn der Startwert
+         * gesetzt ist, ist ein anderer Inhalt in dem Textfeld wird nichts unternommen.
+         */
+        private void TB_GotFocus(object sender, RoutedEventArgs e)
         {
             if ((sender as TextBox).Text == Ref.defaultValues[(sender as TextBox).Name])
             {
@@ -41,7 +50,12 @@ namespace DasUltimativeKochbuch.GUI
             
         }
 
-        private void TB_Zutaten_LostFocus(object sender, RoutedEventArgs e)
+        /**
+         * Mit dieser Funktion wird überprüft ob in dem Textfeld etwas drinne steht, wenn nichs
+         * drinne steht wird der Startwert gesetzt, damit wird der Defaultwert Simuliert.
+         * Ist ein Wert vorhanden bleibt dieser in dem Textfeld erhalten.
+         */
+        private void TB_LostFocus(object sender, RoutedEventArgs e)
         {
             if((sender as TextBox).Text == String.Empty){
                 (sender as TextBox).Text = Ref.defaultValues[(sender as TextBox).Name];

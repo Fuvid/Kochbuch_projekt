@@ -25,12 +25,20 @@ namespace DasUltimativeKochbuch.GUI
     {
         List<Zutat> zl;
         DatenbankConnector dbc = new DBConnect();
-        
+
+
+        /**
+        * Hier werden Startwerte für die Page Rezept_erstellen gesetzt und festgelegt.
+        * In der Core.ini stehen die Feldnamen die dann gesetzt werden, auch die
+        * Einheiten sind dort festgelegt und werden hier initialisiert.
+        */
         public Rezept_erstellen()
         {
+
             InitializeComponent();
             zl = new List<Zutat>();
-            foreach(Einheit e in Ref.ehl){
+            foreach (Einheit e in Ref.ehl)
+            {
                 Einheit.Items.Add(e);
             }
             TB_Menge.Text = Ref.defaultValues["TB_Menge"];
@@ -38,11 +46,48 @@ namespace DasUltimativeKochbuch.GUI
             TB_Rezeptname.Text = Ref.defaultValues["TB_Rezeptname"];
             TB_Zubereitung.Text = Ref.defaultValues["TB_Zubereitung"];
         }
-       
+
+
+        /**
+         * Diese Funktion dient zum leeren des Textfeldes wenn der Startwert
+         * gesetzt ist, ist ein anderer Inhalt in dem Textfeld wird nichts unternommen.
+         */
+        private void TB_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if ((sender as TextBox).Text == Ref.defaultValues[(sender as TextBox).Name])
+            {
+                (sender as TextBox).Text = String.Empty;
+            }
+            else
+            {
+
+            }
+
+        }
+
+        /**
+         * Mit dieser Funktion wird überprüft ob in dem Textfeld etwas drinne steht, wenn nichs
+         * drinne steht wird der Startwert gesetzt, damit wird der Defaultwert Simuliert.
+         * Ist ein Wert vorhanden bleibt dieser in dem Textfeld erhalten.
+         */
+        private void TB_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if ((sender as TextBox).Text == String.Empty)
+            {
+                (sender as TextBox).Text = Ref.defaultValues[(sender as TextBox).Name];
+            }
+            else
+            {
+
+            }
+        }
+
+
         private void AddZutat_Click(object sender, RoutedEventArgs e)
         {
             // Hinzufügen einer neuen Zeile in das ListView Fenster.
-            if (Einheit.SelectedItem == null) {
+            if (Einheit.SelectedItem == null)
+            {
                 MessageBox.Show("Keine Einheit angegeben");
                 return;
             }
@@ -58,7 +103,8 @@ namespace DasUltimativeKochbuch.GUI
                 mng = Convert.ToDouble(TB_Menge.Text);
 
             }
-            catch(FormatException) {
+            catch (FormatException)
+            {
                 MessageBox.Show("Bitte eine Zahl als Menge angeben");
                 return;
             }
