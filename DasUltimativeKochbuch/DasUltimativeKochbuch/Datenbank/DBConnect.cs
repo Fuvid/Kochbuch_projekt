@@ -199,10 +199,50 @@ namespace DasUltimativeKochbuch.Datenbank
         public List<Rezept> rezepteMit(Zutat lz)
         {
             List<Rezept> rMit = new List<Rezept>();
+            
+            cmd.CommandText = "SELECT ID FROM zutat WHERE Name = " + lz.name + ";";
+            MySqlDataReader readerZutat = cmd.ExecuteReader();
+            while(readerZutat.Read())
+            {
+               int zID = Convert.ToInt32(readerZutat["ID"]);
+               cmd.CommandText = "SELECT RezeptID FROM rezzut WHERE ZutatID = "+zID+";";
+               MySqlDataReader readerRID = cmd.ExecuteReader();
+               while(readerRID.Read())
+               {
+                   int rID = Convert.ToInt32(readerRID["RezeptID"]);
+                   cmd.CommandText = "SELECT * FROM rezept WHERE ID = "+rID+";";
+                   MySqlDataReader readerRezept = cmd.ExecuteReader();
+                   while(readerRezept.Read())
+                   {
+                       List<Zutat> z = new List<Zutat>();
 
+                       string rName = readerRezept["Name"].ToString();
+                       string rZubereitung = readerRezept["Zubereitung"].ToString();
+                       int rPersonen = Convert.ToInt32(readerRezept["Personen"]);
+                       
+                       cmd.CommandText = "SELECT ZutatID FROM rezzut WHERE RezeptID = "+rID+";";
+                       MySqlDataReader readerZutatID = cmd.ExecuteReader();
+                       while(readerZutatID.Read())
+                       {
+                           string zutatenID = readerZutatID["ZutatID"].ToString();
 
+                           cmd.CommandText = "SELECT Name FROM zutat WHERE ID = "+zutatenID+";";
+                           MySqlDataReader readerZutatName = cmd.ExecuteReader();
+                           while(readerZutatName.Read())
+                           {
+                               string zName = readerZutatName["Name"].ToString();
 
+                               Einheit e = new Einheit("Tasse");
+                               Zutat zut = new Zutat(zName, e);
+                               z.Add(zut);
+                           }
 
+                       }
+                       Rezept r = new Rezept(z, rZubereitung, rName, rPersonen);
+                       rMit.Add(r);
+                   }
+               }
+            }
             return rMit;
         }
 
