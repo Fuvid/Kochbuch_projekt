@@ -47,7 +47,7 @@ namespace DasUltimativeKochbuch.GUI
             {
 
             }
-            
+
         }
 
         /**
@@ -57,13 +57,82 @@ namespace DasUltimativeKochbuch.GUI
          */
         private void TB_LostFocus(object sender, RoutedEventArgs e)
         {
-            if((sender as TextBox).Text == String.Empty){
+            if ((sender as TextBox).Text == String.Empty)
+            {
                 (sender as TextBox).Text = Ref.defaultValues[(sender as TextBox).Name];
             }
             else
             {
 
             }
+        }
+
+
+        /**
+         * In dieser Funktion soll eine Liste von Zutaten an die Suche übergeben werden.
+         * Die zurückkommende Liste wird dann abgeabeitet, d.h. das jeder Rezeptname
+         * in das Feld LB_Rezepte geschrieben wird.
+         * 
+         * Die Liste muss bis zu einer neuen suche oder bis zur Beendigung des Programmes
+         * temporär gespeichert werden!
+         * 
+         * Momentan wird nur das dummy Rezept geladen und ausgegeben.
+         * Hier muss ein Funktions aufruf der Rezeptsuche stattfinden und diese müssen
+         * als Liste zurück kommen!
+         */
+        private void BSuchen_Click(object sender, RoutedEventArgs e)
+        {
+            if (TB_Zutaten.Text == Ref.defaultValues["TB_Zutaten"])
+            {
+                System.Windows.Forms.MessageBox.Show("Sie haben keine Zutaten angegeben.");
+            }
+            else
+            {
+                var blubber = Ref.rl;
+                System.Windows.Forms.MessageBox.Show("Nette Zutaten");
+                foreach (var item in blubber)
+                {
+                    ListBoxItem blubb = new ListBoxItem();
+                    blubb.Content = item.name;
+                    blubb.GotFocus += Show_Rezept;
+                    LB_Rezepte.Items.Add(blubb);
+                }
+            }
+        }
+
+
+
+        /*
+         * Mit dieser Funktion wird aus der Liste der Rezepte das ausgewählte gesucht und 
+         * in den anderen Fenstern erscheint dann die Zubereitung und die Zutaten.
+         * 
+         * WICHTIG!!
+         * Die Zutaten werden noch nicht ausgegeben, weil mir noch das Design für das Anzeigen nicht klar ist!!
+         * Sobald das klar ist wird das auslesen des Rezeptes richtig dargestellt!
+         */
+
+        private void Show_Rezept(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Forms.MessageBox.Show("Auswahl: " + (sender as ListBoxItem).Content);
+            //var temp = (sender as ListBoxItem).Content;
+            //string ficken = (string)temp;
+
+            Rezept result = Ref.rl.Find(
+
+                delegate(Rezept bk)
+                {
+                    return bk.name == "dolles rezept";
+                }
+            );
+            if (result != null)
+            {
+                TB_Rezeptanzeigen.Text = "Rezeptname: " + result.name + "\n\nPersonenanzahl: " + result.pers + "\n\nRezeptbeschreibung:\n" + result.zubereitung;
+            }
+            else
+            {
+                System.Windows.Forms.MessageBox.Show("\nNot found: {0}");
+            }
+           
         }
     }
 }

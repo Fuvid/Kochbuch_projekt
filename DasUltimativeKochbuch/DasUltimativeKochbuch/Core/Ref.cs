@@ -12,7 +12,10 @@ namespace DasUltimativeKochbuch.Core
     {
         public static Dictionary<string, string> defaultValues;
         static List<Einheit> _ehl;
-        public static List<Einheit> ehl { 
+        public static List<Rezept> rl;
+
+        public static List<Einheit> ehl
+        { 
             get { return _ehl;}
             set { _ehl = value; }
         }

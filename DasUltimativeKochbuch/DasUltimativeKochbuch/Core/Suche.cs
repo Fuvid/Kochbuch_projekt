@@ -20,25 +20,8 @@ namespace DasUltimativeKochbuch.Core
             zl = Ref.dbc.alleZutaten();
         }
         List<Rezept> find(List<Zutat> z) {
-            Ref.dbc.rezepteMit(z[0]);
-
-
-
-            List<Rezept> res = new List<Rezept>();
+            return Ref.rl;
             
-            
-          /**  while (res.Count < _RESULTS) { 
-                foreach (Rezept r in rezmit) {
-                    
-                    if (r.zutaten.Equals(z)) {
-                        res.Add(r);
-                        rezmit.Remove(r);
-                    }
-    
-                }
-            }
-            */
-            return res;
         }
 
         public void update() {

@@ -12,7 +12,7 @@ namespace DasUltimativeKochbuch.XML
     { 
         public void rezSpeichern(Rezept r)
         {
-            string dodo;
+           // string dodo;
             throw new NotImplementedException();
         }
 
