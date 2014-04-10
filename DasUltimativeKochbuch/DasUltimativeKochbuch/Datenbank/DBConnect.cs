@@ -285,5 +285,11 @@ namespace DasUltimativeKochbuch.Datenbank
             }
             return einheiten;
         }
+
+
+        public List<Rezept> rezepteMit(List<Zutat> lz)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

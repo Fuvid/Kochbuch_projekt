@@ -37,7 +37,7 @@ namespace DasUltimativeKochbuch.Core
             res += this.name;
             res += '\n';
             res += '\n';
-            foreach (var item in zutaten)
+            foreach (Zutat item in zutaten)
             {
                 res += item.name + '\n';
             }

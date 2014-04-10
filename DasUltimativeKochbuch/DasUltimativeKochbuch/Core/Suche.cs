@@ -13,13 +13,15 @@ namespace DasUltimativeKochbuch.Core
 
     class Suche
     {
+        public static readonly byte SORT_BY_BUY_LESS = 0x0;
+        public static readonly byte SORT_BY_BUY_POPULAR = 0x1;
         private const int _RESULTS = 100;
         SortedSet<Zutat> zl;
 
         public Suche() { 
             zl = Ref.dbc.alleZutaten();
         }
-        List<Rezept> find(List<Zutat> z) {
+        List<Rezept> find(List<Zutat> z, int sortby) {
             return Ref.rl;
             
         }

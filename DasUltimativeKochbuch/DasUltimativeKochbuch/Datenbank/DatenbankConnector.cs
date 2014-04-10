@@ -14,6 +14,8 @@ namespace DasUltimativeKochbuch.Datenbank
         //Liste mit allen Rezepten, die mindestens eine der Zutaten enthält
 
         List<Rezept> rezepteMit(Zutat lz);
+        List<Rezept> rezepteMit(List<Zutat> lz);
+
 
 
         SortedSet<Zutat> alleZutaten();
