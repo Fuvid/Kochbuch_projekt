@@ -103,7 +103,7 @@ namespace DasUltimativeKochbuch.Core
             res = Ref.dbc.rezepteMit(z);
             res.Sort(comp);
 
-            return Ref.rl;
+            return res;
 
         }
 

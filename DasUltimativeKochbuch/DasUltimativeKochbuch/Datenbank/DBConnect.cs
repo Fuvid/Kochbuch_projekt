@@ -163,8 +163,7 @@ namespace DasUltimativeKochbuch.Datenbank
                 int rID = Convert.ToInt32(Reader["ID"].ToString());
                 string rName = Reader["Name"].ToString();
                 string rzubereitung = Reader["Zubereitung"].ToString();
-                in
-                t rPersonen = Convert.ToInt32(Reader["Personen"].ToString());
+                int rPersonen = Convert.ToInt32(Reader["Personen"].ToString());
 
                 List<Zutat> rzutaten = new List<Zutat>();
 
