@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using DasUltimativeKochbuch.Core;
 
+
 namespace DasUltimativeKochbuch.GUI
 {
     /// <summary>
@@ -29,7 +30,8 @@ namespace DasUltimativeKochbuch.GUI
         {
             InitializeComponent();
             TB_Zutaten.Text = Ref.defaultValues["TB_Zutaten"];
-
+            CB_Suchkrit.Items.Add("Wenig neu kaufen");
+            CB_Suchkrit.Items.Add("Häufig benutze Zutaten");
         }
 
 
@@ -88,15 +90,37 @@ namespace DasUltimativeKochbuch.GUI
             }
             else
             {
-                var blubber = Ref.rl;
-                System.Windows.Forms.MessageBox.Show("Nette Zutaten");
-                foreach (var item in blubber)
+                if (CB_Suchkrit.SelectedIndex == -1)
                 {
-                    ListBoxItem blubb = new ListBoxItem();
-                    blubb.Content = item.name;
-                    blubb.GotFocus += Show_Rezept;
-                    LB_Rezepte.Items.Add(blubb);
+                    System.Windows.Forms.MessageBox.Show("Sie haben noch nicht ausgewählt wie Sie die Rezepte aufgelistet haben möchten.\n\nSie haben die Möglichkeit sie so auflisten zu lassen das sie entweder wenige Zutaten neu kaufen müssen, oder das Sie nur häufig gebrauchte Zutaten dazukaufen müssen.");
                 }
+                else
+                {
+                    var blubber = Ref.rl;
+                    LB_Rezepte.Items.Clear();
+
+                    string zutaten = TB_Zutaten.Text;
+                    string[] zutat = zutaten.Split(',');
+
+                    List<Zutat> zutatens = new List<Zutat>();
+                    foreach (string brot in zutat)
+                    {
+                        zutatens.Add(new Zutat(brot, null));
+                    }
+
+                    Suche s = new Suche();
+                    byte cb_id = (byte)CB_Suchkrit.SelectedIndex;
+                    List<Rezept> blah = s.find(zutatens, cb_id);
+
+                    foreach (Rezept item in blah)
+                    {
+                        ListBoxItem blubb = new ListBoxItem();
+                        blubb.Content = item.name;
+                        blubb.GotFocus += Show_Rezept;
+                        LB_Rezepte.Items.Add(blubb);
+                    }
+                }
+
             }
         }
 
@@ -113,15 +137,10 @@ namespace DasUltimativeKochbuch.GUI
 
         private void Show_Rezept(object sender, RoutedEventArgs e)
         {
-            System.Windows.Forms.MessageBox.Show("Auswahl: " + (sender as ListBoxItem).Content);
-            //var temp = (sender as ListBoxItem).Content;
-            //string ficken = (string)temp;
-
             Rezept result = Ref.rl.Find(
-
                 delegate(Rezept bk)
                 {
-                    return bk.name == "dolles rezept";
+                    return bk.name == (sender as ListBoxItem).Content;
                 }
             );
             if (result != null)
@@ -132,7 +151,7 @@ namespace DasUltimativeKochbuch.GUI
             {
                 System.Windows.Forms.MessageBox.Show("\nNot found: {0}");
             }
-           
+
         }
     }
 }
