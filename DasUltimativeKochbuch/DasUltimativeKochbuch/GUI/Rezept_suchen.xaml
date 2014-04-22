@@ -9,8 +9,13 @@
 
     <Grid x:Name="Rezept_suchen_Grid" Margin="0,0,0,0" MinWidth="800" MinHeight="400">
         <TextBox x:Name="TB_Zutaten" Height="23" Margin="12,10,8,0" TextWrapping="Wrap" VerticalAlignment="Top" GotFocus="TB_GotFocus" ToolTip="Hier Zutaten bitte Kommagetrennt eingeben" LostFocus="TB_LostFocus"/>
-        <Button x:Name="BSuchen" Content="Suchen" Margin="10,38,10,0" VerticalAlignment="Top" Click="BSuchen_Click"/>
+        <Button x:Name="BSuchen" Content="Suchen" Margin="10,38,200,0" VerticalAlignment="Top" Click="BSuchen_Click"/>
         <ListBox x:Name="LB_Rezepte" HorizontalAlignment="Left" Margin="10,63,0,10" Width="275"/>
         <TextBox x:Name="TB_Rezeptanzeigen" Margin="290,63,10,10" TextWrapping="Wrap"/>
+        <ComboBox x:Name="CB_Suchkrit" HorizontalAlignment="Left" Margin="605,38,0,0" VerticalAlignment="Top" Width="185" Height="20" SelectionChanged="CB_Suchkrit_SelectionChanged">
+            <ComboBox.ItemBindingGroup>
+                <BindingGroup/>
+            </ComboBox.ItemBindingGroup>
+        </ComboBox>
     </Grid>
 </Page>

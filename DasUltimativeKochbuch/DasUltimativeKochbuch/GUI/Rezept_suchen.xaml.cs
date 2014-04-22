@@ -29,7 +29,8 @@ namespace DasUltimativeKochbuch.GUI
         {
             InitializeComponent();
             TB_Zutaten.Text = Ref.defaultValues["TB_Zutaten"];
-
+            CB_Suchkrit.Items.Add("Wenig neu kaufen");
+            CB_Suchkrit.Items.Add("Häufig benutze Zutaten");
         }
 
 
@@ -89,7 +90,11 @@ namespace DasUltimativeKochbuch.GUI
             else
             {
                 var blubber = Ref.rl;
+                int blah = CB_Suchkrit.SelectedIndex;
+                System.Windows.Forms.MessageBox.Show("" + blah);
                 System.Windows.Forms.MessageBox.Show("Nette Zutaten");
+                LB_Rezepte.Items.Clear();
+
                 foreach (var item in blubber)
                 {
                     ListBoxItem blubb = new ListBoxItem();
@@ -133,6 +138,11 @@ namespace DasUltimativeKochbuch.GUI
                 System.Windows.Forms.MessageBox.Show("\nNot found: {0}");
             }
            
+        }
+
+        private void CB_Suchkrit_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
