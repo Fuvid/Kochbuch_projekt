@@ -19,14 +19,9 @@ namespace DasUltimativeKochbuch.Core
             Ref.defaultValues.Add("TB_Zutat", "Zutat");
             Ref.defaultValues.Add("TB_Menge", "Menge");
             Ref.defaultValues.Add("TB_Personenanzahl", "");
-            Ref.rl = new List<Rezept>();
-            List<Zutat> lz = new List<Zutat>();
-            lz.Add(new Zutat("blah", new Einheit("mg"),100));
-            lz.Add(new Zutat("and", new Einheit("mg"),123));
-            lz.Add(new Zutat("bl", new Einheit("mg"),1122));
-            lz.Add(new Zutat("bl", new Einheit("mg"),12222));
-            Ref.rl.Add(new Rezept(lz, "machhalt iwas", "dolles rezept", 123));
+
             List<Einheit> el = new List<Einheit>();
+             
             el.Add(new Einheit(""));
 
             el.Add(new Einheit("Stk"));
@@ -39,15 +34,7 @@ namespace DasUltimativeKochbuch.Core
             el.Add(new Einheit("l"));
             el.Add(new Einheit("ml"));
             el.Add(new Einheit("cl"));
-            
-            //foreach (Einheit e in el) {
-            //    dbc.einheitSpeichern(e);
-            //}
             Ref.ehl = el;
-          
-            List<Zutat> zl1 = new List<Zutat>();
-
-//            zl1.Add(new Zutat("Kartoffel", el.));
             
         }
     }

@@ -105,6 +105,7 @@ namespace DasUltimativeKochbuch.GUI
                     List<Zutat> zutatens = new List<Zutat>();
                     foreach (string brot in zutat)
                     {
+                        System.Windows.Forms.MessageBox.Show(brot);
                         zutatens.Add(new Zutat(brot, null));
                     }
 
