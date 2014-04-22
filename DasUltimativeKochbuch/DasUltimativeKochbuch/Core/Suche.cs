@@ -31,10 +31,12 @@ namespace DasUltimativeKochbuch.Core
 
                 foreach (Zutat z in toIgnore)
                 {
+                    if(clean_x.Contains(z))
                     clean_x.Remove(z);
                 }
                 foreach (Zutat z in toIgnore)
                 {
+                    if (clean_y.Contains(z))
                     clean_y.Remove(z);
                 }
                 score_x = clean_x.Count;
@@ -101,6 +103,7 @@ namespace DasUltimativeKochbuch.Core
                     throw new KeyNotFoundException();
             }
             res = Ref.dbc.rezepteMit(z);
+
             res.Sort(comp);
 
             return res;

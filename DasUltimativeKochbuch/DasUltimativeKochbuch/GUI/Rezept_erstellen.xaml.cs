@@ -26,12 +26,11 @@ namespace DasUltimativeKochbuch.GUI
         List<Zutat> zl;
         DatenbankConnector dbc = new DBConnect();
 
-
-        /**
-        * Hier werden Startwerte für die Page Rezept_erstellen gesetzt und festgelegt.
-        * In der Coreinit.cs stehen die Feldnamen die dann gesetzt werden, auch die
-        * Einheiten sind dort festgelegt und werden hier initialisiert.
-        */
+        /// <summary>
+        /// Hier werden Startwerte für die Page <c>Rezept_erstellen</c> gesetzt und festgelegt.
+        /// In der <c>Coreinit.cs</c> stehen die Feldnamen die dann gesetzt werden, auch die
+        /// Einheiten sind dort festgelegt und werden hier initialisiert.
+        /// </summary>
         public Rezept_erstellen()
         {
 
