@@ -26,9 +26,10 @@ namespace DasUltimativeKochbuch.GUI
         List<Zutat> zl;
         DatenbankConnector dbc = new DBConnect();
 
+
         /// <summary>
-        /// Hier werden Startwerte für die Page <c>Rezept_erstellen</c> gesetzt und festgelegt.
-        /// In der <c>Coreinit.cs</c> stehen die Feldnamen die dann gesetzt werden, auch die
+        /// Hier werden Startwerte für die Page Rezept_erstellen gesetzt und festgelegt.
+        /// In der Coreinit.cs stehen die Feldnamen die dann gesetzt werden, auch die
         /// Einheiten sind dort festgelegt und werden hier initialisiert.
         /// </summary>
         public Rezept_erstellen()
@@ -47,10 +48,10 @@ namespace DasUltimativeKochbuch.GUI
         }
 
 
-        /**
-         * Diese Funktion dient zum leeren des Textfeldes wenn der Startwert
-         * gesetzt ist, ist ein anderer Inhalt in dem Textfeld wird nichts unternommen.
-         */
+        /// <summary>
+        /// Diese Funktion dient zum leeren des Textfeldes wenn der Startwert
+        /// gesetzt ist, ist ein anderer Inhalt in dem Textfeld wird nichts unternommen.
+        /// </summary>
         private void TB_GotFocus(object sender, RoutedEventArgs e)
         {
             if ((sender as TextBox).Text == Ref.defaultValues[(sender as TextBox).Name])
@@ -64,11 +65,11 @@ namespace DasUltimativeKochbuch.GUI
 
         }
 
-        /**
-         * Mit dieser Funktion wird überprüft ob in dem Textfeld etwas drinne steht, wenn nichs
-         * drinne steht wird der Startwert gesetzt, damit wird der Defaultwert Simuliert.
-         * Ist ein Wert vorhanden bleibt dieser in dem Textfeld erhalten.
-         */
+        /// <summary>
+        /// Mit dieser Funktion wird überprüft ob in dem Textfeld etwas drinne steht, wenn nichs
+        /// drinne steht wird der Startwert gesetzt, damit wird der Defaultwert Simuliert.
+        /// Ist ein Wert vorhanden bleibt dieser in dem Textfeld erhalten.
+        /// </summary>
         private void TB_LostFocus(object sender, RoutedEventArgs e)
         {
             if ((sender as TextBox).Text == String.Empty)

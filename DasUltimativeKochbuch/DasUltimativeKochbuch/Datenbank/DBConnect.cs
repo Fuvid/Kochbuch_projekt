@@ -195,10 +195,10 @@ namespace DasUltimativeKochbuch.Datenbank
 
         public List<Rezept> alleRezepte()
         {
-            List<Rezept> alleRezepte = new List<Rezept>();
+            List<Rezept> alleRezepte = new List<Rezept>(); //Liste in die alle Rezepte gespeichert werden
             string query;
             string zutatQuery;
-            query = "SELECT * FROM rezept";
+            query = "SELECT * FROM rezept"; //SQL -> alle Rezepte selektieren
 
             cmd = new MySqlCommand();
             this.verbindungOeffnen();
@@ -212,12 +212,12 @@ namespace DasUltimativeKochbuch.Datenbank
             //--------------------------------
             while (Reader.Read())
             {
-                int rID = Convert.ToInt32(Reader["ID"].ToString());
+                int rID = Convert.ToInt32(Reader["ID"].ToString());//Deklarieren der Variablen, die Ein Obejekt in der Liste sind
                 string rName = Reader["Name"].ToString();
                 string rzubereitung = Reader["Zubereitung"].ToString();
                 int rPersonen = Convert.ToInt32(Reader["Personen"].ToString());
 
-                List<Zutat> rzutaten = new List<Zutat>();
+                List<Zutat> rzutaten = new List<Zutat>();//Liste mit Zutaten erstellen, die später einen Teil der Liste<Rezept> darstellt
 
                 zutatQuery = "SELECT ZutatID, Menge, Score FROM rezzut WHERE RezeptID = " + rID + ";";
                 commandLine = zutatQuery;
@@ -237,19 +237,19 @@ namespace DasUltimativeKochbuch.Datenbank
                         Einheit e = new Einheit("test");
 
                         Zutat z = new Zutat(zName, e, zMenge);
-                        rzutaten.Add(z);
+                        rzutaten.Add(z);//Zutaten dem Rezept hinzufügen
                     }
                 }
                 Rezept r = new Rezept(rzutaten, rzubereitung, rName, rPersonen);
-                alleRezepte.Add(r);
+                alleRezepte.Add(r);//Rezept der Liste hinzufügen
             }
             Reader.Close();
-            return alleRezepte;
+            return alleRezepte;//Rückgabe aller Rezepte
         }
 
         public List<Rezept> rezepteMit(Zutat lz)
         {
-            List<Rezept> rMit = new List<Rezept>();
+            List<Rezept> rMit = new List<Rezept>();// Erstellen der Liste für alle Rezepte mit einer bestimmten Zutat
 
             cmd.CommandText = "SELECT ID FROM zutat WHERE Name = " + lz.name + ";";
             MySqlDataReader readerZutat = cmd.ExecuteReader();
