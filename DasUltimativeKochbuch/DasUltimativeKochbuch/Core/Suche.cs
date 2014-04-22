@@ -86,7 +86,7 @@ namespace DasUltimativeKochbuch.Core
         {
             zl = Ref.dbc.alleZutaten();
         }
-        List<Rezept> find(List<Zutat> z, byte sortby)
+        public List<Rezept> find(List<Zutat> z, byte sortby)
         {
             List<Rezept> res;
             IComparer<Rezept> comp;
