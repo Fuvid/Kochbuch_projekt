@@ -23,15 +23,15 @@ namespace DasUltimativeKochbuch.GUI
     public partial class Rezept_suchen : Page
     {
         ///<summary>
-        /// Hier werden die Startwerte für die Page Rezept_suchen gesetzt
-        /// in der Coreinit.cs stehen die Textfeldbezeichnungen die dann geladen werden.
+        /// Hier werden die Startwerte für die Page <c>Rezept_suchen</c> gesetzt
+        /// in der <c>Coreinit.cs</c> stehen die Textfeldbezeichnungen die dann geladen werden.
         ///</summary>
         public Rezept_suchen()
         {
             InitializeComponent();
-            TB_Zutaten.Text = Ref.defaultValues["TB_Zutaten"];
-            CB_Suchkrit.Items.Add("Wenig neu kaufen");
-            CB_Suchkrit.Items.Add("Häufig benutze Zutaten");
+            TB_Zutaten.Text = Ref.defaultValues["TB_Zutaten"]; // Setzten des Textes der Textbox TB_Zutaten
+            CB_Suchkrit.Items.Add("Wenig neu kaufen"); // Hinzufügen der Auswahlmöglichkeit der Combobox
+            CB_Suchkrit.Items.Add("Häufig benutze Zutaten"); // Hinzufügen der Auswahlmöglichkeit der Combobox
         }
 
 
@@ -41,9 +41,10 @@ namespace DasUltimativeKochbuch.GUI
         ///</summary>
         private void TB_GotFocus(object sender, RoutedEventArgs e)
         {
+            // Wenn die Textbox den Startwert enthält diese leeren, ansonsten nichts unternehmen.
             if ((sender as TextBox).Text == Ref.defaultValues[(sender as TextBox).Name])
             {
-                (sender as TextBox).Text = String.Empty;
+                (sender as TextBox).Text = String.Empty; // Leeren der Textbox
             }
             else
             {
@@ -59,9 +60,10 @@ namespace DasUltimativeKochbuch.GUI
         ///</summary>
         private void TB_LostFocus(object sender, RoutedEventArgs e)
         {
-            if ((sender as TextBox).Text == String.Empty)
+            // Wenn in die Textbox nichts hinein geschrieben wurde wieder Default-Wert setzten.
+            if ((sender as TextBox).Text == String.Empty) // Prüfen auf leer
             {
-                (sender as TextBox).Text = Ref.defaultValues[(sender as TextBox).Name];
+                (sender as TextBox).Text = Ref.defaultValues[(sender as TextBox).Name]; // Default-Wert setzen.
             }
             else
             {
@@ -74,36 +76,29 @@ namespace DasUltimativeKochbuch.GUI
         /// In dieser Funktion soll eine Liste von Zutaten an die Suche übergeben werden.
         /// Die zurückkommende Liste wird dann abgeabeitet, d.h. das jeder Rezeptname
         /// in das Feld LB_Rezepte geschrieben wird.
-        /// 
-        /// Die Liste muss bis zu einer neuen suche oder bis zur Beendigung des Programmes
-        /// temporär gespeichert werden!
-        ///
-        /// Momentan wird nur das dummy Rezept geladen und ausgegeben.
-        /// Hier muss ein Funktions aufruf der Rezeptsuche stattfinden und diese müssen
-        /// als Liste zurück kommen!
         /// </summary>
         private void BSuchen_Click(object sender, RoutedEventArgs e)
         {
-            if (TB_Zutaten.Text == Ref.defaultValues["TB_Zutaten"])
+            if (TB_Zutaten.Text == Ref.defaultValues["TB_Zutaten"]) // Prüfen ob eine Zutat eingegeben wurde.
             {
                 System.Windows.Forms.MessageBox.Show("Sie haben keine Zutaten angegeben.");
             }
             else
             {
-                if (CB_Suchkrit.SelectedIndex == -1)
+                if (CB_Suchkrit.SelectedIndex == -1) // Prüfen ob eine Auswahl der Combobox getroffen wurde.
                 {
                     System.Windows.Forms.MessageBox.Show("Sie haben noch nicht ausgewählt wie Sie die Rezepte aufgelistet haben möchten.\n\nSie haben die Möglichkeit sie so auflisten zu lassen das sie entweder wenige Zutaten neu kaufen müssen, oder das Sie nur häufig gebrauchte Zutaten dazukaufen müssen.");
                 }
                 else
                 {
-                    var blubber = Ref.rl;
-                    LB_Rezepte.Items.Clear();
+                    //var blubber = Ref.rl;
+                    LB_Rezepte.Items.Clear(); // Leeren der Rezeptliste
 
-                    string zutaten = TB_Zutaten.Text;
-                    string[] zutat = zutaten.Split(',');
+                    string zutaten = TB_Zutaten.Text; // Zutaten aus der Textbox auslesen.
+                    string[] zutat = zutaten.Split(','); // Zutaten in ein Array schreiben.
 
                     List<Zutat> zutatens = new List<Zutat>();
-                    foreach (string brot in zutat)
+                    foreach (string brot in zutat) // Das Array mit den Zutaten durchgehen und in eine Liste schreiben.
                     {
                         System.Windows.Forms.MessageBox.Show(brot);
                         zutatens.Add(new Zutat(brot, null));
@@ -111,9 +106,9 @@ namespace DasUltimativeKochbuch.GUI
 
                     Suche s = new Suche();
                     byte cb_id = (byte)CB_Suchkrit.SelectedIndex;
-                    List<Rezept> blah = s.find(zutatens, cb_id);
+                    List<Rezept> blah = s.find(zutatens, cb_id); // Die Rezeptsuche starten und die Liste speichern.
 
-                    foreach (Rezept item in blah)
+                    foreach (Rezept item in blah) // Die Rezeptliste abarbeiten und in die Listbox hinzufügen.
                     {
                         ListBoxItem blubb = new ListBoxItem();
                         blubb.Content = item.name;
@@ -138,14 +133,15 @@ namespace DasUltimativeKochbuch.GUI
 
         private void Show_Rezept(object sender, RoutedEventArgs e)
         {
-            Rezept result = Ref.rl.Find(
+            Rezept result = Ref.rl.Find( // Die Liste nach dem Rezept durchsuchen.
                 delegate(Rezept bk)
                 {
-                    return bk.name == (sender as ListBoxItem).Content;
+                    return bk.name == (sender as ListBoxItem).Content; // Rezeptnamen mit Rezeptnamen in der Liste vergleichen
                 }
             );
             if (result != null)
             {
+                // Die Ensprechenden inhalte auf die entsprechenden Felder verteilen so das man das Rezept schön lesen kann.
                 TB_Rezeptanzeigen.Text = "Rezeptname: " + result.name + "\n\nPersonenanzahl: " + result.pers + "\n\nRezeptbeschreibung:\n" + result.zubereitung;
             }
             else
