@@ -105,13 +105,14 @@ namespace DasUltimativeKochbuch.GUI
                     List<Zutat> zutatens = new List<Zutat>();
                     foreach (string brot in zutat)
                     {
-                        zutatens.Add(new Zutat(brot, null));
+                        if(brot != null) zutatens.Add(new Zutat( brot.Trim(), null));
                     }
 
                     Suche s = new Suche();
-                    byte cb_id = (byte)CB_Suchkrit.SelectedIndex;
-                    List<Rezept> blah = s.find(zutatens, cb_id);
-
+                    int cb_id = CB_Suchkrit.SelectedIndex;
+                    List<Rezept> blah = new List<Rezept>();
+                    blah = s.find(zutatens, cb_id);
+                    if (blah != null) { 
                     foreach (Rezept item in blah)
                     {
                         ListBoxItem blubb = new ListBoxItem();
@@ -119,6 +120,8 @@ namespace DasUltimativeKochbuch.GUI
                         blubb.GotFocus += Show_Rezept;
                         LB_Rezepte.Items.Add(blubb);
                     }
+                    }
+                   
                 }
 
             }

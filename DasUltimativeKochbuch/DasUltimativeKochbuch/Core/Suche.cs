@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using DasUltimativeKochbuch.Datenbank;
 using DasUltimativeKochbuch.Core;
+using System.Windows.Forms;
 
 namespace DasUltimativeKochbuch.Core
 {
@@ -60,12 +61,12 @@ namespace DasUltimativeKochbuch.Core
 
                 foreach (Zutat z in toIgnore)
                 {
-                    clean_x.Remove(z);
+                    if(clean_x.Contains(z))
+                        clean_x.Remove(z);
+                    if (clean_y.Contains(z))
+                        clean_y.Remove(z);
                 }
-                foreach (Zutat z in toIgnore)
-                {
-                    clean_y.Remove(z);
-                }
+               
                 foreach (Zutat s in clean_x)
                 {
                     score_x += s.score;
@@ -77,18 +78,19 @@ namespace DasUltimativeKochbuch.Core
                 return score_x - score_y;
             }
         }
-        public static readonly byte SORT_BY_BUY_LESS = 0;
-        public static readonly byte SORT_BY_BUY_POPULAR = 1;
+        public static readonly int SORT_BY_BUY_LESS = 0;
+        public static readonly int SORT_BY_BUY_POPULAR = 1;
         private const int _RESULTS = 100;
         SortedSet<Zutat> zl;
 
         public Suche()
         {
-            zl = Ref.dbc.alleZutaten();
+            //zl = Ref.dbc.alleZutaten();
         }
-        public List<Rezept> find(List<Zutat> z, byte sortby)
+        public List<Rezept> find(List<Zutat> z, int sortby)
         {
-            List<Rezept> res;
+            
+            List<Rezept> res=new List<Rezept>();
             IComparer<Rezept> comp;
 
             switch (sortby)
@@ -102,17 +104,17 @@ namespace DasUltimativeKochbuch.Core
                 default:
                     throw new KeyNotFoundException();
             }
-            res = Ref.dbc.rezepteMit(z);
-
-            res.Sort(comp);
-
+            foreach (Zutat zut in z) {
+                MessageBox.Show(zut.name);
+            }
+                res.AddRange( Ref.dbc.rezepteMit(z));
+                
+                res.Sort(comp);
+         
             return res;
 
         }
 
-        public void update()
-        {
-            zl = Ref.dbc.alleZutaten();
-        }
+     
     }
 }

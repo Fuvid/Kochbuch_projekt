@@ -9,7 +9,7 @@ namespace DasUltimativeKochbuch.Core
     public class Zutat:IEquatable<Zutat>
     {
         //Name der Zutat
-        public string name { get; set; }
+        public string name;
         //interne Bewertung der Zutat
         public int score;
         //Die Einheit in der die Zutat berechnet wird
@@ -20,7 +20,7 @@ namespace DasUltimativeKochbuch.Core
 
 
         public Zutat(string n, Einheit e) {
-            n = name;
+            name = n;
             einh = e;
             score = 0;
             menge = 0;

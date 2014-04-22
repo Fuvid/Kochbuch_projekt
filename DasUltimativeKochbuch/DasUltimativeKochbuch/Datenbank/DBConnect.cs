@@ -7,10 +7,11 @@ using DasUltimativeKochbuch.Core;
 
 namespace DasUltimativeKochbuch.Datenbank
 {
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1001:TypesThatOwnDisposableFieldsShouldBeDisposable")]
     public class DBConnect : DatenbankConnector
     {
         MySqlConnection connect;
-        MySqlCommand cmd;
+        MySqlCommand cmd = new MySqlCommand();
         string connectionLine;
         string commandLine;
 
@@ -298,17 +299,18 @@ namespace DasUltimativeKochbuch.Datenbank
 
         public SortedSet<Zutat> alleZutaten()
         {
-            SortedSet<Zutat> alleZutaten = new SortedSet<Zutat>();
-            cmd.CommandText = "SELECT * FROM zutat";
-            MySqlDataReader readerZutat = cmd.ExecuteReader();
-            while (readerZutat.Read())
-            {
-                Einheit e = new Einheit("test");
-                string zName = readerZutat["Name"].ToString();
-                Zutat z = new Zutat(zName, e);
-                alleZutaten.Add(z);
-            }
-            return alleZutaten;
+           // SortedSet<Zutat> alleZutaten = new SortedSet<Zutat>();
+            //cmd.CommandText = "SELECT * FROM zutat";
+            //MySqlDataReader readerZutat = cmd.ExecuteReader();
+            //while (readerZutat.Read())
+            //{
+            //    Einheit e = new Einheit("test");
+             //   string zName = readerZutat["Name"].ToString();
+              //  Zutat z = new Zutat(zName, e);
+              //  alleZutaten.Add(z);
+            //}
+            //return alleZutaten;
+            throw new NotImplementedException();
         }
 
         public void einheitSpeichern(Einheit e)
@@ -339,16 +341,22 @@ namespace DasUltimativeKochbuch.Datenbank
 
         public List<Rezept> rezepteMit(List<Zutat> lz)
         {
+            this.verbindungOeffnen();
+            cmd = new MySqlCommand();
+            cmd.Connection = this.connect;
             List<Rezept> rMit = new List<Rezept>();
             List<int> rids = new List<int>();
             foreach (Zutat z in lz)
             {
-                cmd.CommandText = "SELECT ID FROM zutat WHERE Name = " + z.name + ";";
+                cmd.CommandText = "SELECT ID FROM zutat WHERE Name = '" + z.name + "';";
+               
+               
                 MySqlDataReader readerZutat = cmd.ExecuteReader();
                 while (readerZutat.Read())
                 {
                     int zID = Convert.ToInt32(readerZutat["ID"]);
-                    cmd.CommandText = "SELECT RezeptID FROM rezzut WHERE ZutatID = " + zID + ";";
+                    MessageBox.Show("SELECT RezeptID FROM rezzut WHERE ZutatID = '" + zID + "';");
+                    cmd.CommandText = "SELECT RezeptID FROM rezzut WHERE ZutatID = '" + zID + "';";
                     MySqlDataReader readerRID = cmd.ExecuteReader();
                     while (readerRID.Read())
                     {
@@ -358,7 +366,7 @@ namespace DasUltimativeKochbuch.Datenbank
                             continue;
                         }
                         rids.Add(rID);
-                        cmd.CommandText = "SELECT * FROM rezept WHERE ID = " + rID + ";";
+                        cmd.CommandText = "SELECT * FROM rezept WHERE ID = '" + rID + "';";
                         MySqlDataReader readerRezept = cmd.ExecuteReader();
                         while (readerRezept.Read())
                         {
@@ -392,6 +400,7 @@ namespace DasUltimativeKochbuch.Datenbank
                     }
                 }
             }
+            cmd.Connection.Close();
             return rMit;
 
         }
