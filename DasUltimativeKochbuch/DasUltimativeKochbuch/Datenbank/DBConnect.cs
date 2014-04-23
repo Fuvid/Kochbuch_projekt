@@ -432,18 +432,30 @@ namespace DasUltimativeKochbuch.Datenbank
                         //--
                         foreach (int zid in zutatenID)
                         {
+                            string eName="";
+                            double m = 0;
+                            cmd.CommandText = "SELECT R.ZutatID, E.Name AS Name, R.Menge AS Menge FROM rezzut AS R JOIN Einheit AS E ON R.EinheitID = E.ID WHERE R.ZutatID ="+zid+";";
+                            MySqlDataReader readerEinheit = cmd.ExecuteReader();
+                            while (readerEinheit.Read())
+                            {
+                                eName = readerEinheit["Name"].ToString();
+                                m = Convert.ToInt32(readerEinheit["Menge"]);
+                            }
+                            readerEinheit.Close();
+                            ///---------------
                             cmd.CommandText = "SELECT Name FROM zutat WHERE ID = '" + zid + "';";
                             MySqlDataReader readerZutatName = cmd.ExecuteReader();
                             while (readerZutatName.Read())
                             {
                                 string zName = readerZutatName["Name"].ToString();
 
-                                Einheit e = new Einheit("Tasse");
-                                Zutat zut = new Zutat(zName, e);
+                                Einheit e = new Einheit(eName);
+                                Zutat zut = new Zutat(zName, e, m);
                                 MessageBox.Show("Aufruf");
                                 zl.Add(zut);
                             }
                             readerZutatName.Close();
+                            
                             //counter2++;
                         }
                         Rezept r = new Rezept(zl, rZubereitung, rName, rPersonen);
