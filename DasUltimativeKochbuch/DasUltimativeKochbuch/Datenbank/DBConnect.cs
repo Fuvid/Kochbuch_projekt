@@ -393,50 +393,60 @@ namespace DasUltimativeKochbuch.Datenbank
                     if (zutID == 0) break;
                     cmd.CommandText = "SELECT RezeptID FROM rezzut WHERE ZutatID = " + zutID + " limit 100;";
                     MySqlDataReader readerRID = cmd.ExecuteReader();
-                    int rID = 0;
+                    int[] rID = new int[100];
+                    int i = 0;
                     while (readerRID.Read())
                     {
-                        rID = Convert.ToInt32(readerRID["RezeptID"]);
+                        rID[i] = Convert.ToInt32(readerRID["RezeptID"]);
+                        i++;
                     }
                     readerRID.Close();
-                    //Jetzt Daten des rezeptes holen
-                    cmd.CommandText = "SELECT * FROM rezept WHERE ID = '" + rID + "';";
-                    MySqlDataReader readerRezept = cmd.ExecuteReader();
-                    string rName="";
-                    string rZubereitung="";
-                    int rPersonen=0;
-                    List<Zutat> zl = new List<Zutat>();
-                    while (readerRezept.Read())
-                    {
-                        rName = readerRezept["Name"].ToString();
-                        rZubereitung = readerRezept["Zubereitung"].ToString();
-                        rPersonen = Convert.ToInt32(readerRezept["Personen"]);
-                    }
-                    readerRezept.Close();
-                    cmd.CommandText = "SELECT ZutatID FROM rezzut WHERE RezeptID = " + rID + ";";
-                    MySqlDataReader readerZutatID = cmd.ExecuteReader();
+                    foreach(int id in rID){
+                        //Jetzt Daten des rezeptes holen
+                        if (id == 0) break;
+                        MessageBox.Show("1");
+                        cmd.CommandText = "SELECT * FROM rezept WHERE ID = '" + id + "';";
+                        MySqlDataReader readerRezept = cmd.ExecuteReader();
+                        string rName="";
+                        string rZubereitung="";
+                        int rPersonen=0;
+                        MessageBox.Show("2");
+                        List<Zutat> zl = new List<Zutat>();
+                        while (readerRezept.Read())
+                        {
+                            rName = readerRezept["Name"].ToString();
+                            rZubereitung = readerRezept["Zubereitung"].ToString();
+                            rPersonen = Convert.ToInt32(readerRezept["Personen"]);
+                        }
+                        readerRezept.Close();
+                        MessageBox.Show("3");
+                        cmd.CommandText = "SELECT ZutatID FROM rezzut WHERE RezeptID = " + id + ";";
+                        MySqlDataReader readerZutatID = cmd.ExecuteReader();
 
-                    string zutatenID="";
-                    while (readerZutatID.Read())
-                    {
-                        zutatenID = readerZutatID["ZutatID"].ToString();
-                    }
-                    readerZutatID.Close();
-                    //--
-                    cmd.CommandText = "SELECT Name FROM zutat WHERE ID = '" + zutatenID + "';";
-                    MySqlDataReader readerZutatName = cmd.ExecuteReader();
-                    while (readerZutatName.Read())
-                    {
-                        string zName = readerZutatName["Name"].ToString();
+                        string zutatenID="";
+                        while (readerZutatID.Read())
+                        {
+                            zutatenID = readerZutatID["ZutatID"].ToString();
+                        }
+                        readerZutatID.Close();
+                        //--
+                        MessageBox.Show("4");
+                        cmd.CommandText = "SELECT Name FROM zutat WHERE ID = '" + zutatenID + "';";
+                        MySqlDataReader readerZutatName = cmd.ExecuteReader();
+                        while (readerZutatName.Read())
+                        {
+                            string zName = readerZutatName["Name"].ToString();
 
-                        Einheit e = new Einheit("Tasse");
-                        Zutat zut = new Zutat(zName, e);
-                        zl.Add(zut);
+                            Einheit e = new Einheit("Tasse");
+                            Zutat zut = new Zutat(zName, e);
+                            zl.Add(zut);
+                        }
+                        readerZutatName.Close();
+                        MessageBox.Show("5");
+                        Rezept r = new Rezept(zl, rZubereitung, rName, rPersonen);
+                        rMit.Add(r);
+                        counter2++;
                     }
-                    readerZutatName.Close();
-                    Rezept r = new Rezept(zl, rZubereitung, rName, rPersonen);
-                    rMit.Add(r);
-                    counter2++;
                 }
             }
             cmd.Connection.Close();
