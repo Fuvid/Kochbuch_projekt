@@ -93,12 +93,8 @@
     <Compile Include="Core\Rezept.cs" />
     <Compile Include="Core\Suche.cs" />
     <Compile Include="Core\Zutat.cs" />
-    <Compile Include="Core\ZutatEqualityComparerForSearch.cs" />
     <Compile Include="Datenbank\DatenbankConnector.cs" />
     <Compile Include="Datenbank\DBConnect.cs" />
-    <Compile Include="Datenbank\OLEConnect.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="GUI\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
