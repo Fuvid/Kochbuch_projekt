@@ -148,6 +148,13 @@ namespace DasUltimativeKochbuch.GUI
                 //TB_Rezeptanzeigen.Text = "Rezeptname: " + result.name + "\n\nPersonenanzahl: " + result.pers + "\n\nRezeptbeschreibung:\n" + result.zubereitung;
                 LB_Rezeptname.Content = result.name;
                 LB_Personenanzahl.Content = result.pers;
+                TB_Zubereitung.Text = result.zubereitung;
+
+                foreach (Zutat kartoffel in result.zutaten)
+                {
+                    LV_Zutaten.Items.Add(kartoffel);
+                    System.Windows.Forms.MessageBox.Show(kartoffel.name);
+                }
             }
             else
             {
