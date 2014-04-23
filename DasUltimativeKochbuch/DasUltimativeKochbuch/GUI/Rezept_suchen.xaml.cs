@@ -102,7 +102,7 @@ namespace DasUltimativeKochbuch.GUI
                     List<Zutat> zutatens = new List<Zutat>();
                     foreach (string brot in zutat) // Das Array mit den Zutaten durchgehen und in eine Liste schreiben.
                     {
-                        System.Windows.Forms.MessageBox.Show(brot);
+                        System.Windows.Forms.MessageBox.Show("Dorians Messagebox: " + brot);
                         zutatens.Add(new Zutat(brot, null));
                     }
 
