@@ -444,10 +444,10 @@ namespace DasUltimativeKochbuch.Datenbank
                                 zl.Add(zut);
                             }
                             readerZutatName.Close();
-                            Rezept r = new Rezept(zl, rZubereitung, rName, rPersonen);
-                            rMit.Add(r);
-                            counter2++;
+                            //counter2++;
                         }
+                        Rezept r = new Rezept(zl, rZubereitung, rName, rPersonen);
+                        rMit.Add(r);
                     }
                 }
             }
