@@ -39,7 +39,7 @@ namespace DasUltimativeKochbuch.Datenbank
             }
             catch (NullReferenceException ex)
             {
-                
+
                 ///<summary>
                 ///Fehler abfangen und in Messagebox ausgeben
                 ///</summary>
@@ -201,7 +201,7 @@ namespace DasUltimativeKochbuch.Datenbank
                 readerRID.Close();
                 cmd.Connection.Close();
 
-                query = "INSERT INTO rezzut(ZutatID, Menge, RezeptID, EinheitID) VALUES('" + zID + "', '" + zt.menge + "', '" + rezeptID + "','"+ eID +"');";  //ZutatID, RezeptID und Menge in Tabelle "rezzut" eintragen
+                query = "INSERT INTO rezzut(ZutatID, Menge, RezeptID, EinheitID) VALUES('" + zID + "', '" + zt.menge + "', '" + rezeptID + "','" + eID + "');";  //ZutatID, RezeptID und Menge in Tabelle "rezzut" eintragen
                 this.executeQuery(query);
 
             }
@@ -326,15 +326,15 @@ namespace DasUltimativeKochbuch.Datenbank
 
         public SortedSet<Zutat> alleZutaten()
         {
-           // SortedSet<Zutat> alleZutaten = new SortedSet<Zutat>();
+            // SortedSet<Zutat> alleZutaten = new SortedSet<Zutat>();
             //cmd.CommandText = "SELECT * FROM zutat";
             //MySqlDataReader readerZutat = cmd.ExecuteReader();
             //while (readerZutat.Read())
             //{
             //    Einheit e = new Einheit("test");
-             //   string zName = readerZutat["Name"].ToString();
-              //  Zutat z = new Zutat(zName, e);
-              //  alleZutaten.Add(z);
+            //   string zName = readerZutat["Name"].ToString();
+            //  Zutat z = new Zutat(zName, e);
+            //  alleZutaten.Add(z);
             //}
             //return alleZutaten;
             throw new NotImplementedException();
@@ -388,7 +388,7 @@ namespace DasUltimativeKochbuch.Datenbank
                 readerZutat.Close();
                 //ID der Zutat in zID
                 //Jetzt RezeptID's der Zutat holen
-                foreach(int zutID in zID)
+                foreach (int zutID in zID)
                 {
                     if (zutID == 0) break;
                     cmd.CommandText = "SELECT RezeptID FROM rezzut WHERE ZutatID = " + zutID + " limit 100;";
@@ -401,16 +401,15 @@ namespace DasUltimativeKochbuch.Datenbank
                         i++;
                     }
                     readerRID.Close();
-                    foreach(int id in rID){
+                    foreach (int id in rID)
+                    {
                         //Jetzt Daten des rezeptes holen
                         if (id == 0) break;
-                        MessageBox.Show("1");
                         cmd.CommandText = "SELECT * FROM rezept WHERE ID = '" + id + "';";
                         MySqlDataReader readerRezept = cmd.ExecuteReader();
-                        string rName="";
-                        string rZubereitung="";
-                        int rPersonen=0;
-                        MessageBox.Show("2");
+                        string rName = "";
+                        string rZubereitung = "";
+                        int rPersonen = 0;
                         List<Zutat> zl = new List<Zutat>();
                         while (readerRezept.Read())
                         {
@@ -419,33 +418,36 @@ namespace DasUltimativeKochbuch.Datenbank
                             rPersonen = Convert.ToInt32(readerRezept["Personen"]);
                         }
                         readerRezept.Close();
-                        MessageBox.Show("3");
                         cmd.CommandText = "SELECT ZutatID FROM rezzut WHERE RezeptID = " + id + ";";
                         MySqlDataReader readerZutatID = cmd.ExecuteReader();
-
-                        string zutatenID="";
+                        //hier for
+                        int[] zutatenID = new int[100];
+                        int j = 0;
                         while (readerZutatID.Read())
                         {
-                            zutatenID = readerZutatID["ZutatID"].ToString();
+                            zutatenID[j] = Convert.ToInt32(readerZutatID["ZutatID"]);
+                            j++;
                         }
                         readerZutatID.Close();
                         //--
-                        MessageBox.Show("4");
-                        cmd.CommandText = "SELECT Name FROM zutat WHERE ID = '" + zutatenID + "';";
-                        MySqlDataReader readerZutatName = cmd.ExecuteReader();
-                        while (readerZutatName.Read())
+                        foreach (int zid in zutatenID)
                         {
-                            string zName = readerZutatName["Name"].ToString();
+                            cmd.CommandText = "SELECT Name FROM zutat WHERE ID = '" + zid + "';";
+                            MySqlDataReader readerZutatName = cmd.ExecuteReader();
+                            while (readerZutatName.Read())
+                            {
+                                string zName = readerZutatName["Name"].ToString();
 
-                            Einheit e = new Einheit("Tasse");
-                            Zutat zut = new Zutat(zName, e);
-                            zl.Add(zut);
+                                Einheit e = new Einheit("Tasse");
+                                Zutat zut = new Zutat(zName, e);
+                                MessageBox.Show("Aufruf");
+                                zl.Add(zut);
+                            }
+                            readerZutatName.Close();
+                            Rezept r = new Rezept(zl, rZubereitung, rName, rPersonen);
+                            rMit.Add(r);
+                            counter2++;
                         }
-                        readerZutatName.Close();
-                        MessageBox.Show("5");
-                        Rezept r = new Rezept(zl, rZubereitung, rName, rPersonen);
-                        rMit.Add(r);
-                        counter2++;
                     }
                 }
             }
