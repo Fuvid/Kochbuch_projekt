@@ -32,6 +32,7 @@ namespace DasUltimativeKochbuch.GUI
             TB_Zutaten.Text = Ref.defaultValues["TB_Zutaten"]; // Setzten des Textes der Textbox TB_Zutaten
             CB_Suchkrit.Items.Add("Wenig neu kaufen"); // Hinzufügen der Auswahlmöglichkeit der Combobox
             CB_Suchkrit.Items.Add("Häufig benutze Zutaten"); // Hinzufügen der Auswahlmöglichkeit der Combobox
+            CB_Suchkrit.SelectedIndex = 0; // Standertwert für die Combobox Setzen
         }
 
 
@@ -53,11 +54,11 @@ namespace DasUltimativeKochbuch.GUI
 
         }
 
-        ///<summary>
+        /// <summary>
         /// Mit dieser Funktion wird überprüft ob in dem Textfeld etwas drinne steht, wenn nichs
         /// drinne steht wird der Startwert gesetzt, damit wird der Defaultwert Simuliert.
         /// Ist ein Wert vorhanden bleibt dieser in dem Textfeld erhalten.
-        ///</summary>
+        /// </summary>
         private void TB_LostFocus(object sender, RoutedEventArgs e)
         {
             // Wenn in die Textbox nichts hinein geschrieben wurde wieder Default-Wert setzten.
