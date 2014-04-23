@@ -85,7 +85,7 @@ namespace DasUltimativeKochbuch.GUI
             LB_Rezeptname.Content = "Rezeptname";
             LV_Zutaten.Items.Clear();
             LB_Rezepte.Items.Clear(); // Leeren der Rezeptliste
-            TB_Zubereitung.Text "";
+            TB_Zubereitung.Text = "";
             if (TB_Zutaten.Text == Ref.defaultValues["TB_Zutaten"]) // Prüfen ob eine Zutat eingegeben wurde.
             {
                 System.Windows.Forms.MessageBox.Show("Sie haben keine Zutaten angegeben.");
