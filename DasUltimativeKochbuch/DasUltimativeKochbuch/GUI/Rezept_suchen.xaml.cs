@@ -145,7 +145,9 @@ namespace DasUltimativeKochbuch.GUI
             if (result != null)
             {
                 // Die Ensprechenden inhalte auf die entsprechenden Felder verteilen so das man das Rezept schön lesen kann.
-                TB_Rezeptanzeigen.Text = "Rezeptname: " + result.name + "\n\nPersonenanzahl: " + result.pers + "\n\nRezeptbeschreibung:\n" + result.zubereitung;
+                //TB_Rezeptanzeigen.Text = "Rezeptname: " + result.name + "\n\nPersonenanzahl: " + result.pers + "\n\nRezeptbeschreibung:\n" + result.zubereitung;
+                LB_Rezeptname.Content = result.name;
+                LB_Personenanzahl.Content = result.pers;
             }
             else
             {

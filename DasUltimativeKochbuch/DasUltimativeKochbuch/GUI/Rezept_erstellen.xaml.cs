@@ -96,7 +96,7 @@ namespace DasUltimativeKochbuch.GUI
                 MessageBox.Show("Keine Einheit");
                 return;
             }
-
+                
             double mng;
             try
             {

@@ -119,9 +119,11 @@
   <ItemGroup>
     <Compile Include="GUI\Rezept_erstellen.xaml.cs">
       <DependentUpon>Rezept_erstellen.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </Compile>
     <Compile Include="GUI\Rezept_suchen.xaml.cs">
       <DependentUpon>Rezept_suchen.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </Compile>
     <Compile Include="GUI\start.xaml.cs">
       <DependentUpon>start.xaml</DependentUpon>
