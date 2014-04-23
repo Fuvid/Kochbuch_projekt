@@ -185,7 +185,23 @@ namespace DasUltimativeKochbuch.Datenbank
                 ///<summary>
                 ///Muss um EinheitID ergänzt werden
                 ///</summary>
-                query = "INSERT INTO rezzut(ZutatID, Menge, RezeptID) VALUES('" + zID + "', '" + zt.menge + "', '" + rezeptID + "');";  //ZutatID, RezeptID und Menge in Tabelle "rezzut" eintragen
+                ///
+                string einheitName = zt.einh.name;
+
+
+                cmd = new MySqlCommand();
+                this.verbindungOeffnen();
+                cmd.CommandText = "SELECT ID FROM einheit WHERE Name = '" + einheitName + "';";
+                MySqlDataReader readerRID = cmd.ExecuteReader();
+                string eID = "";
+                while (readerRID.Read())
+                {
+                    eID = readerRID["ID"].ToString();
+                }
+                readerRID.Close();
+                cmd.Connection.Close();
+
+                query = "INSERT INTO rezzut(ZutatID, Menge, RezeptID, EinheitID) VALUES('" + zID + "', '" + zt.menge + "', '" + rezeptID + "','"+ eID +"');";  //ZutatID, RezeptID und Menge in Tabelle "rezzut" eintragen
                 this.executeQuery(query);
 
             }
@@ -193,7 +209,7 @@ namespace DasUltimativeKochbuch.Datenbank
         }
 
 
-        public List<Rezept> alleRezepte()
+        public List<Rezept> alleRezepte()//Umschreiben
         {
             List<Rezept> alleRezepte = new List<Rezept>(); //Liste in die alle Rezepte gespeichert werden
             string query;
@@ -331,10 +347,9 @@ namespace DasUltimativeKochbuch.Datenbank
 
             query = "INSERT INTO einheit(Name) VALUES('" + name + "');";
             this.executeQuery(query);
-            MessageBox.Show("Einheit hinzugefügt.");
         }
 
-        public List<Einheit> alleEinheiten()
+        public List<Einheit> alleEinheiten()//sollte funktionieren
         {
             List<Einheit> einheiten = new List<Einheit>();
             commandLine = "SELECT * FROM einheit";
@@ -350,7 +365,7 @@ namespace DasUltimativeKochbuch.Datenbank
         }
 
 
-        public List<Rezept> rezepteMit(List<Zutat> lz)
+        public List<Rezept> rezepteMit(List<Zutat> lz)//Done
         {
             this.verbindungOeffnen();
             cmd = new MySqlCommand();
@@ -377,10 +392,8 @@ namespace DasUltimativeKochbuch.Datenbank
                 {
                     if (zutID == 0) break;
                     cmd.CommandText = "SELECT RezeptID FROM rezzut WHERE ZutatID = " + zutID + " limit 100;";
-                    MessageBox.Show("SELECT RezeptID FROM rezzut WHERE ZutatID = " + zutID + " limit 100;");
                     MySqlDataReader readerRID = cmd.ExecuteReader();
                     int rID = 0;
-                    MessageBox.Show("1");
                     while (readerRID.Read())
                     {
                         rID = Convert.ToInt32(readerRID["RezeptID"]);
@@ -389,12 +402,10 @@ namespace DasUltimativeKochbuch.Datenbank
                     //Jetzt Daten des rezeptes holen
                     cmd.CommandText = "SELECT * FROM rezept WHERE ID = '" + rID + "';";
                     MySqlDataReader readerRezept = cmd.ExecuteReader();
-                    MessageBox.Show("2");
                     string rName="";
                     string rZubereitung="";
                     int rPersonen=0;
                     List<Zutat> zl = new List<Zutat>();
-                    MessageBox.Show("3");
                     while (readerRezept.Read())
                     {
                         rName = readerRezept["Name"].ToString();
@@ -402,7 +413,6 @@ namespace DasUltimativeKochbuch.Datenbank
                         rPersonen = Convert.ToInt32(readerRezept["Personen"]);
                     }
                     readerRezept.Close();
-                    MessageBox.Show("4");
                     cmd.CommandText = "SELECT ZutatID FROM rezzut WHERE RezeptID = " + rID + ";";
                     MySqlDataReader readerZutatID = cmd.ExecuteReader();
 
@@ -413,7 +423,6 @@ namespace DasUltimativeKochbuch.Datenbank
                     }
                     readerZutatID.Close();
                     //--
-                    MessageBox.Show("5");
                     cmd.CommandText = "SELECT Name FROM zutat WHERE ID = '" + zutatenID + "';";
                     MySqlDataReader readerZutatName = cmd.ExecuteReader();
                     while (readerZutatName.Read())
@@ -425,7 +434,6 @@ namespace DasUltimativeKochbuch.Datenbank
                         zl.Add(zut);
                     }
                     readerZutatName.Close();
-                    MessageBox.Show("6");
                     Rezept r = new Rezept(zl, rZubereitung, rName, rPersonen);
                     rMit.Add(r);
                     counter2++;
