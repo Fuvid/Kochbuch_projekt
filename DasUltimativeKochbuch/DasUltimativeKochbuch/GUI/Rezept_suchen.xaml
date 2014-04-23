@@ -16,7 +16,7 @@
                 <BindingGroup/>
             </ComboBox.ItemBindingGroup>
         </ComboBox>
-        <Grid x:Name="Test" HorizontalAlignment="Left" Height="324" Margin="290,66,0,0" VerticalAlignment="Top" Width="510" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True">
+        <Grid x:Name="Test" HorizontalAlignment="Left" Height="579" Margin="290,66,0,0" VerticalAlignment="Top" Width="510" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True">
             <Label x:Name="LB_Rezeptname" Content="Rezeptname" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="490" Height="40" FontSize="20"/>
             <Label  x:Name="LB_Personenanzahl" Content="Anzahl" HorizontalAlignment="Left" Margin="130,55,0,0" VerticalAlignment="Top" Width="60"/>
             <ListView x:Name="LV_Zutaten" HorizontalAlignment="Left" Height="190" Margin="195,55,0,0" VerticalAlignment="Top" Width="305" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
@@ -29,7 +29,7 @@
                 </ListView.View>
             </ListView>
             <Label Content="Personenanzahl:" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top" Width="100"/>
-            <TextBox  x:Name="TB_Zubereitung" HorizontalAlignment="Left" Height="318" Margin="10,250,0,-244" TextWrapping="Wrap" VerticalAlignment="Top" Width="490"/>
+            <TextBox  x:Name="TB_Zubereitung" HorizontalAlignment="Left" Margin="10,250,0,10" TextWrapping="Wrap" Width="490"/>
         </Grid>
     </Grid>
 </Page>
