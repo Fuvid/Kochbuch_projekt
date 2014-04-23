@@ -363,7 +363,6 @@ namespace DasUltimativeKochbuch.Datenbank
             int counter2 = 0;
             foreach (Zutat z in lz)
             {
-
                 cmd.CommandText = "SELECT ID FROM zutat WHERE Name = '" + z.name + "';";
                 MySqlDataReader readerZutat = cmd.ExecuteReader();
                 while (readerZutat.Read())
@@ -372,11 +371,7 @@ namespace DasUltimativeKochbuch.Datenbank
                     counter1++;
                 }
                 readerZutat.Close();
-
-
-
                 //ID der Zutat in zID
-
                 //Jetzt RezeptID's der Zutat holen
                 foreach(int zutID in zID)
                 {
@@ -434,38 +429,10 @@ namespace DasUltimativeKochbuch.Datenbank
                     Rezept r = new Rezept(zl, rZubereitung, rName, rPersonen);
                     rMit.Add(r);
                     counter2++;
-                
                 }
-                
-                /* 
-                 * 
-                            cmd.CommandText = "SELECT ZutatID FROM rezzut WHERE RezeptID = " + rID + ";";
-                            MySqlDataReader readerZutatID = cmd.ExecuteReader();
-                            while (readerZutatID.Read())
-                            {
-                                string zutatenID = readerZutatID["ZutatID"].ToString();
-                 * 
-                                cmd.CommandText = "SELECT Name FROM zutat WHERE ID = " + zutatenID + ";";
-                                MySqlDataReader readerZutatName = cmd.ExecuteReader();
-                                while (readerZutatName.Read())
-                                {
-                                    string zName = readerZutatName["Name"].ToString();
-
-                                    Einheit e = new Einheit("Tasse");
-                                    Zutat zut = new Zutat(zName, e);
-                                    zl.Add(zut);
-                                }
-
-                            }
-                            Rezept r = new Rezept(zl, rZubereitung, rName, rPersonen);
-                            rMit.Add(r);
-                        }
-                    }
-                }*/
             }
             cmd.Connection.Close();
             return rMit;
-
         }
     }
 }
