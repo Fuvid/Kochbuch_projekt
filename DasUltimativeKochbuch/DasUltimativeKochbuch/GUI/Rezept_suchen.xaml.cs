@@ -81,6 +81,11 @@ namespace DasUltimativeKochbuch.GUI
         /// </summary>
         private void BSuchen_Click(object sender, RoutedEventArgs e)
         {
+            LB_Personenanzahl.Content = "Anzahl";
+            LB_Rezeptname.Content = "Rezeptname";
+            LV_Zutaten.Items.Clear();
+            LB_Rezepte.Items.Clear(); // Leeren der Rezeptliste
+            TB_Zubereitung.Text "";
             if (TB_Zutaten.Text == Ref.defaultValues["TB_Zutaten"]) // Prüfen ob eine Zutat eingegeben wurde.
             {
                 System.Windows.Forms.MessageBox.Show("Sie haben keine Zutaten angegeben.");
@@ -94,7 +99,7 @@ namespace DasUltimativeKochbuch.GUI
                 else
                 {
                     //var blubber = Ref.rl;
-                    LB_Rezepte.Items.Clear(); // Leeren der Rezeptliste
+                    //LB_Rezepte.Items.Clear(); // Leeren der Rezeptliste
 
                     string zutaten = TB_Zutaten.Text; // Zutaten aus der Textbox auslesen.
                     string[] zutat = zutaten.Split(','); // Zutaten in ein Array schreiben.
@@ -136,6 +141,7 @@ namespace DasUltimativeKochbuch.GUI
 
         private void Show_Rezept(object sender, RoutedEventArgs e)
         {
+            LV_Zutaten.Items.Clear();
             Rezept result = this.rezeptliste.Find( // Die Liste nach dem Rezept durchsuchen.
                 delegate(Rezept bk)
                 {
@@ -153,7 +159,7 @@ namespace DasUltimativeKochbuch.GUI
                 foreach (Zutat kartoffel in result.zutaten)
                 {
                     LV_Zutaten.Items.Add(kartoffel);
-                    System.Windows.Forms.MessageBox.Show(kartoffel.name);
+                    //System.Windows.Forms.MessageBox.Show(kartoffel.name);
                 }
             }
             else
