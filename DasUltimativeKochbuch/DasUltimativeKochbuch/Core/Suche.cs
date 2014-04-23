@@ -92,7 +92,8 @@ namespace DasUltimativeKochbuch.Core
             
             List<Rezept> res=new List<Rezept>();
             IComparer<Rezept> comp;
-
+            try
+            {    
             switch (sortby)
             {
                 case 0: //SORT_BY_BUY_LESS
@@ -105,12 +106,14 @@ namespace DasUltimativeKochbuch.Core
                     throw new KeyNotFoundException();
             }
             foreach (Zutat zut in z) {
-                MessageBox.Show(zut.name);
+                MessageBox.Show("David sucht nach:"+zut.name);
             }
                 res.AddRange( Ref.dbc.rezepteMit(z));
                 
                 res.Sort(comp);
-         
+            }catch(Exception ex){
+                MessageBox.Show(ex.Message);
+            }
             return res;
 
         }

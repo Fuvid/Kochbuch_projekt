@@ -20,13 +20,24 @@ namespace DasUltimativeKochbuch.Core
 
 
         public Zutat(string n, Einheit e) {
-            new Zutat(n, e, 0);
+
+            name = n;
+            einh = e;
+            score = 0;
+            menge = 0;
         }
         public Zutat(string n, Einheit e, double m)
         {
             name = n;
             einh = e;
             score = 0;
+            menge = m;
+        }
+        public Zutat(string n, Einheit e, double m, int s)
+        {
+            name = n;
+            einh = e;
+            score = s;
             menge = m;
         }
 
