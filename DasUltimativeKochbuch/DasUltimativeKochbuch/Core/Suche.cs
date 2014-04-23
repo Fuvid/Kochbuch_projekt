@@ -29,16 +29,16 @@ namespace DasUltimativeKochbuch.Core
                 List<Zutat> clean_y = y.zutaten;
                 int score_x = 0;
                 int score_y = 0;
-
+                
                 foreach (Zutat z in toIgnore)
                 {
                     if(clean_x.Contains(z))
-                    clean_x.Remove(z);
+                    score_x--;
                 }
                 foreach (Zutat z in toIgnore)
                 {
                     if (clean_y.Contains(z))
-                    clean_y.Remove(z);
+                    score_y--;
                 }
                 score_x = clean_x.Count;
                 score_y = clean_y.Count;
@@ -58,21 +58,15 @@ namespace DasUltimativeKochbuch.Core
                 List<Zutat> clean_y = y.zutaten;
                 int score_x = 0;
                 int score_y = 0;
-
-                foreach (Zutat z in toIgnore)
-                {
-                    if(clean_x.Contains(z))
-                        clean_x.Remove(z);
-                    if (clean_y.Contains(z))
-                        clean_y.Remove(z);
-                }
                
                 foreach (Zutat s in clean_x)
                 {
+                    if(!clean_x.Contains(s))
                     score_x += s.score;
                 }
                 foreach (Zutat s in clean_y)
                 {
+                    if(!clean_y.Contains(s))
                     score_y += s.score;
                 }
                 return score_x - score_y;
@@ -94,20 +88,17 @@ namespace DasUltimativeKochbuch.Core
             IComparer<Rezept> comp;
             try
             {    
-            switch (sortby)
-            {
-                case 0: //SORT_BY_BUY_LESS
-                    comp = new SBLess(z);
-                    break;
-                case 1:
-                    comp = new SBPop(z);
-                    break;
-                default:
-                    throw new KeyNotFoundException();
-            }
-            foreach (Zutat zut in z) {
-                MessageBox.Show("David sucht nach:"+zut.name);
-            }
+                switch (sortby)
+                {
+                    case 0: //SORT_BY_BUY_LESS
+                        comp = new SBLess(z);
+                        break;
+                    case 1:
+                        comp = new SBPop(z);
+                        break;
+                    default:
+                        throw new KeyNotFoundException();
+                }
                 res.AddRange( Ref.dbc.rezepteMit(z));
                 
                 res.Sort(comp);
