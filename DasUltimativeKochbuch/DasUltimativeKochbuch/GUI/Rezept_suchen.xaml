@@ -10,7 +10,7 @@
     <Grid x:Name="Rezept_suchen_Grid" Margin="0,0,0,0" MinWidth="800" MinHeight="645">
         <TextBox x:Name="TB_Zutaten" Height="23" Margin="12,10,10,0" TextWrapping="Wrap" VerticalAlignment="Top" GotFocus="TB_GotFocus" ToolTip="Hier Zutaten bitte Kommagetrennt eingeben" LostFocus="TB_LostFocus"/>
         <Button x:Name="BSuchen" Content="Suchen" Margin="10,38,200,0" VerticalAlignment="Top" Click="BSuchen_Click" Height="23"/>
-        <ListBox x:Name="LB_Rezepte" HorizontalAlignment="Left" Margin="10,66,0,0" Width="275" Height="569" VerticalAlignment="Top"/>
+        <ListBox x:Name="LB_Rezepte" HorizontalAlignment="Left" Margin="10,66,0,10" Width="275"/>
         <ComboBox x:Name="CB_Suchkrit" HorizontalAlignment="Left" Margin="605,38,0,0" VerticalAlignment="Top" Width="185" Height="23" ToolTip="Hier bestimmen Sie ob Sie Rezepte nach wenigen, aber vielleicht nicht häufig gebrauchte Zutaten sotieren möchten oder ob Sie lieber häufig benutzte Zutaten kaufen möchten.">
             <ComboBox.ItemBindingGroup>
                 <BindingGroup/>
@@ -29,7 +29,7 @@
                 </ListView.View>
             </ListView>
             <Label Content="Personenanzahl:" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top" Width="100"/>
-            <TextBox  x:Name="TB_Zubereitung" HorizontalAlignment="Left" Height="319" Margin="10,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="490"/>
+            <TextBox  x:Name="TB_Zubereitung" HorizontalAlignment="Left" Margin="10,250,0,10" TextWrapping="Wrap" Width="490"/>
         </Grid>
     </Grid>
 </Page>
