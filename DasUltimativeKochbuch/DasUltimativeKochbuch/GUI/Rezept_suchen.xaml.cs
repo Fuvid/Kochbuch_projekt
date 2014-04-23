@@ -22,6 +22,7 @@ namespace DasUltimativeKochbuch.GUI
     /// </summary>
     public partial class Rezept_suchen : Page
     {
+        List<Rezept> rezeptliste = new List<Rezept>();
         ///<summary>
         /// Hier werden die Startwerte für die Page <c>Rezept_suchen</c> gesetzt
         /// in der <c>Coreinit.cs</c> stehen die Textfeldbezeichnungen die dann geladen werden.
@@ -116,6 +117,7 @@ namespace DasUltimativeKochbuch.GUI
                         blubb.GotFocus += Show_Rezept;
                         LB_Rezepte.Items.Add(blubb);
                     }
+                    this.rezeptliste = blah;
                 }
 
             }
@@ -134,7 +136,7 @@ namespace DasUltimativeKochbuch.GUI
 
         private void Show_Rezept(object sender, RoutedEventArgs e)
         {
-            Rezept result = Ref.rl.Find( // Die Liste nach dem Rezept durchsuchen.
+            Rezept result = this.rezeptliste.Find( // Die Liste nach dem Rezept durchsuchen.
                 delegate(Rezept bk)
                 {
                     return bk.name == (sender as ListBoxItem).Content; // Rezeptnamen mit Rezeptnamen in der Liste vergleichen
