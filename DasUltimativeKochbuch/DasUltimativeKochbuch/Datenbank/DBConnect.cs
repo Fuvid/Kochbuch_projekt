@@ -364,6 +364,7 @@ namespace DasUltimativeKochbuch.Datenbank
                 einheiten.Add(new Einheit(eName));
             }
             readerEinheit.Close();
+            cmd.Connection.Close();
             return einheiten;
         }
 

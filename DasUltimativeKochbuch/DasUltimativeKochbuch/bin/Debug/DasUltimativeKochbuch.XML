@@ -22,6 +22,52 @@
             Application Entry Point.
             </summary>
         </member>
+        <member name="M:DasUltimativeKochbuch.Core.Coreinit.ini">
+            <summary>
+            <para> 
+            Wird am anfang des Programmes aufgerufen und soll die wichtigsten Umgebungsvariablen setzen,
+            die für den Programmablauf benötigt werden. 
+            </para>
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.Core.Einheit">
+            <summary>
+            Repräsentiert eine Einheit, z. B.: kg, Tasse, ...
+            </summary>
+        </member>
+        <member name="P:DasUltimativeKochbuch.Core.Einheit.name">
+            <summary>
+            der Name der Einheit
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.Core.Ref">
+            <summary>
+            <para>
+            Hier werden die Referenzen auf Variablen und Klassen gespeichert, 
+            damit von überall darauf zugegriffen werden kann
+            </para>
+            </summary>
+        </member>
+        <member name="F:DasUltimativeKochbuch.Core.Ref.defaultValues">
+            <summary>
+            Hier können Stringwerte gesetzt werden
+            </summary>
+        </member>
+        <member name="F:DasUltimativeKochbuch.Core.Ref.ehl">
+            <summary>
+            Die Liste aller Einheiten, wird in der Core.ini() mit den WErten der Datenbank gefüllt
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.Core.Rezept">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:DasUltimativeKochbuch.Core.Rezept.zutaten">
+            <summary>
+            Liste der benötigten Zutaten
+            </summary>
+        </member>
         <member name="M:DasUltimativeKochbuch.Datenbank.DBConnect.#ctor">
             <summary>
             Anmeldedaten des MySQL Servers

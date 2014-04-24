@@ -24,14 +24,9 @@ namespace DasUltimativeKochbuch.Core
         /// Die Liste aller Einheiten, wird in der Core.ini() mit den WErten der Datenbank gefüllt
         /// </summary>
         public static List<Einheit> ehl;
-        //public static List<Rezept> rl;
-
-       
-        static DatenbankConnector _dbc;
-        public static  DatenbankConnector dbc
-        {
-            get { return _dbc; }
-            set { _dbc = value; }
-        }
+        /// <summary>
+        /// Der DatenbankConnector, der verwendet werden soll, wenn Rezepte gelesen werden sollen
+        /// </summary>
+        public static DatenbankConnector dbc;
     }
 }

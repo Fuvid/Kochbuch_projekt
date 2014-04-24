@@ -8,7 +8,9 @@ namespace DasUltimativeKochbuch.Core
 {
     public class Zutat:IEquatable<Zutat>
     {
-        //Name der Zutat
+        /// <summary>
+        /// Name der Zutat
+        /// </summary>
         public string name { get; set; }
         //interne Bewertung der Zutat
         public int score;

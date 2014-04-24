@@ -21,15 +21,24 @@ namespace DasUltimativeKochbuch.Core
 
         public List<Zutat> zutaten { get; set; }
 
-        //Fließtext zur Zubereitung
+        /// <summary>
+        /// Fließtext zur Zubereitung
+        /// </summary>
+
         public string zubereitung;
 
         //Der name des Rezept z.B. "Omas Hausgemachte Käsespätzle"
         public string name;
 
-        //Für wie viele Personen ist das Rezept gedacht, um später besser Skalieren zu können
+        //Für wie viele Personen ist das Rezept gedacht, um Skalieren zu können
         public int pers;
-
+        /// <summary>
+        /// Konstruktor
+        /// </summary>
+        /// <param name="zt">Die Liste der Zutaten</param>
+        /// <param name="zub">Zubereitung</param>
+        /// <param name="n">Name</param>
+        /// <param name="p">Personenanzahl</param>
         public Rezept(List<Zutat> zt, String zub, String n, int p)
         {
             zutaten = zt;
@@ -37,7 +46,10 @@ namespace DasUltimativeKochbuch.Core
             name = n;
             pers = p;
         }
-
+        /// <summary>
+        /// toString Methode, zum ausgeben eines Rezeptes als string
+        /// </summary>
+        /// <returns>einen string, der das Rezept repräsentiert</returns>
         string toString(){
             string res = "";
             res += this.name;
