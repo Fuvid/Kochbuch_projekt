@@ -102,27 +102,27 @@ namespace DasUltimativeKochbuch.GUI
                     //LB_Rezepte.Items.Clear(); // Leeren der Rezeptliste
 
                     string zutaten = TB_Zutaten.Text; // Zutaten aus der Textbox auslesen.
-                    string[] zutat = zutaten.Split(','); // Zutaten in ein Array schreiben.
+                    string[] zutat_array = zutaten.Split(','); // Zutaten in ein Array schreiben.
 
                     List<Zutat> zutatens = new List<Zutat>();
-                    foreach (string brot in zutat) // Das Array mit den Zutaten durchgehen und in eine Liste schreiben.
+                    foreach (string zutat in zutat_array) // Das Array mit den Zutaten durchgehen und in eine Liste schreiben.
                     {
                         //System.Windows.Forms.MessageBox.Show("Dorians Messagebox: " + brot);
-                        zutatens.Add(new Zutat(brot, null));
+                        zutatens.Add(new Zutat(zutat, null));
                     }
 
                     Suche s = new Suche();
                     byte cb_id = (byte)CB_Suchkrit.SelectedIndex;
-                    List<Rezept> blah = s.find(zutatens, cb_id); // Die Rezeptsuche starten und die Liste speichern.
+                    List<Rezept> Rezepte = s.find(zutatens, cb_id); // Die Rezeptsuche starten und die Liste speichern.
 
-                    foreach (Rezept item in blah) // Die Rezeptliste abarbeiten und in die Listbox hinzufügen.
+                    foreach (Rezept item in Rezepte) // Die Rezeptliste abarbeiten und in die Listbox hinzufügen.
                     {
-                        ListBoxItem blubb = new ListBoxItem();
-                        blubb.Content = item.name;
-                        blubb.GotFocus += Show_Rezept;
-                        LB_Rezepte.Items.Add(blubb);
+                        ListBoxItem Rezept = new ListBoxItem();
+                        Rezept.Content = item.name;
+                        Rezept.GotFocus += Show_Rezept;
+                        LB_Rezepte.Items.Add(Rezept);
                     }
-                    this.rezeptliste = blah;
+                    this.rezeptliste = Rezepte;
                 }
 
             }
@@ -156,9 +156,9 @@ namespace DasUltimativeKochbuch.GUI
                 LB_Personenanzahl.Content = result.pers;
                 TB_Zubereitung.Text = result.zubereitung;
 
-                foreach (Zutat kartoffel in result.zutaten)
+                foreach (Zutat zutat in result.zutaten)
                 {
-                    LV_Zutaten.Items.Add(kartoffel);
+                    LV_Zutaten.Items.Add(zutat);
                     //System.Windows.Forms.MessageBox.Show(kartoffel.name);
                 }
             }

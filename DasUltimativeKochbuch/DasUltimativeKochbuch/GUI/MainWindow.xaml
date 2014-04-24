@@ -10,7 +10,7 @@
                 <MenuItem x:Name="Rezept_hinzufügen" Header="_Rezept hinzufügen" Click="Rezept_hinzufügen_Click" />
                 <MenuItem x:Name="Rezept_suchen" Header="_Rezept suchen" Click="Rezept_suchen_Click" />
             <!--</MenuItem>-->
-            <MenuItem Header="_Hilfe" />
+            <!--<MenuItem Header="_Hilfe" />-->
         </Menu>
         <Frame x:Name="view" Margin="0,22,0,0" VerticalAlignment="Top" Source="/DasUltimativeKochbuch;component/GUI/start.xaml" NavigationUIVisibility="Hidden"/>
     </Grid>
