@@ -20,6 +20,7 @@ namespace DasUltimativeKochbuch.Datenbank
         /// </summary>
         public DBConnect()
         {
+           // if (!Ref.defaultValues.ContainsKey("DB_Connector")) ;
             connectionLine = "Data source=localhost;UserId=root;Password=;database=kochbuch";
             connect = new MySqlConnection(connectionLine);
         }
@@ -353,14 +354,16 @@ namespace DasUltimativeKochbuch.Datenbank
         {
             List<Einheit> einheiten = new List<Einheit>();
             commandLine = "SELECT * FROM einheit";
+            this.verbindungOeffnen();
             cmd.CommandText = commandLine;
             MySqlDataReader readerEinheit = cmd.ExecuteReader();
             while (readerEinheit.Read())
             {
+                MessageBox.Show(readerEinheit["Name"].ToString());
                 string eName = readerEinheit["Name"].ToString();
-                Einheit e = new Einheit(eName);
-                einheiten.Add(e);
+                einheiten.Add(new Einheit(eName));
             }
+            readerEinheit.Close();
             return einheiten;
         }
 

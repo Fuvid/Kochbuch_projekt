@@ -10,9 +10,15 @@ using System.Threading.Tasks;
 
 namespace DasUltimativeKochbuch.Core
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Rezept
     {
-        //Liste der benötigten Zutaten
+        /// <summary>
+        /// Liste der benötigten Zutaten
+        /// </summary>
+
         public List<Zutat> zutaten { get; set; }
 
         //Fließtext zur Zubereitung

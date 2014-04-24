@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace DasUltimativeKochbuch.Core
 {
+    /// <summary>
+    /// Repräsentiert eine Einheit, z. B.: kg, Tasse, ...
+    /// </summary>
     public class Einheit
     {
+        /// <summary>
+        /// der Name der Einheit
+        /// </summary>
         public string name{get;set;}
         public override string ToString()
         {
