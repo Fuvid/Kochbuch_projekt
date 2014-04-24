@@ -25,23 +25,23 @@ namespace DasUltimativeKochbuch.Core
 
             public int Compare(Rezept x, Rezept y)
             {
-                List<Zutat> clean_x = x.zutaten;
-                List<Zutat> clean_y = y.zutaten;
+                List<Zutat> x_zut = x.zutaten;
+                List<Zutat> y_zut  = y.zutaten;
                 int score_x = 0;
                 int score_y = 0;
                 
                 foreach (Zutat z in toIgnore)
                 {
-                    if(clean_x.Contains(z))
+                    if(x_zut.Contains(z))
                     score_x--;
                 }
                 foreach (Zutat z in toIgnore)
                 {
-                    if (clean_y.Contains(z))
+                    if (y_zut.Contains(z))
                     score_y--;
                 }
-                score_x = clean_x.Count;
-                score_y = clean_y.Count;
+                score_x = x_zut.Count;
+                score_y = y_zut.Count;
                 return score_x - score_y;
             }
         }

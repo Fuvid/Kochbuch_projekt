@@ -1,0 +1,310 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DasUltimativeKochbuch</name>
+    </assembly>
+    <members>
+        <member name="T:DasUltimativeKochbuch.App">
+            <summary>
+            Interaktionslogik für "App.xaml"
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.Datenbank.DBConnect.#ctor">
+            <summary>
+            Anmeldedaten des MySQL Servers
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.Datenbank.DBConnect.executeQuery(System.String)">
+            <summary>
+            Zum ausführen von SQL Anweisungen ohne Rückgabe
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.Datenbank.DBConnect.executeQueryMitReturn(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.MainWindow">
+            <summary>
+            Interaktionslogik für MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.GUI.Rezept_erstellen">
+            <summary>
+            Interaktionslogik für Rezept_erstellen.xaml
+            </summary>
+            <summary>
+            Rezept_erstellen
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.GUI.Rezept_erstellen.#ctor">
+            <summary>
+            Hier werden Startwerte für die Page Rezept_erstellen gesetzt und festgelegt.
+            In der Coreinit.cs stehen die Feldnamen die dann gesetzt werden, auch die
+            Einheiten sind dort festgelegt und werden hier initialisiert.
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.GUI.Rezept_erstellen.TB_GotFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Diese Funktion dient zum leeren des Textfeldes wenn der Startwert
+            gesetzt ist, ist ein anderer Inhalt in dem Textfeld wird nichts unternommen.
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.GUI.Rezept_erstellen.TB_LostFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Mit dieser Funktion wird überprüft ob in dem Textfeld etwas drinne steht, wenn nichs
+            drinne steht wird der Startwert gesetzt, damit wird der Defaultwert Simuliert.
+            Ist ein Wert vorhanden bleibt dieser in dem Textfeld erhalten.
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.GUI.Rezept_erstellen.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.GUI.Rezept_suchen">
+            <summary>
+            Interaktionslogik für Rezept_suchen.xaml
+            </summary>
+            <summary>
+            Rezept_suchen
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.GUI.Rezept_suchen.#ctor">
+            <summary>
+             Hier werden die Startwerte für die Page <c>Rezept_suchen</c> gesetzt
+             in der <c>Coreinit.cs</c> stehen die Textfeldbezeichnungen die dann geladen werden.
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.GUI.Rezept_suchen.TB_GotFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+             Diese Funktion dient zum leeren des Textfeldes wenn der Startwert
+             gesetzt ist, ist ein anderer Inhalt in dem Textfeld wird nichts unternommen.
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.GUI.Rezept_suchen.TB_LostFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Mit dieser Funktion wird überprüft ob in dem Textfeld etwas drinne steht, wenn nichs
+            drinne steht wird der Startwert gesetzt, damit wird der Defaultwert Simuliert.
+            Ist ein Wert vorhanden bleibt dieser in dem Textfeld erhalten.
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.GUI.Rezept_suchen.BSuchen_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            In dieser Funktion soll eine Liste von Zutaten an die Suche übergeben werden.
+            Die zurückkommende Liste wird dann abgeabeitet, d.h. das jeder Rezeptname
+            in das Feld LB_Rezepte geschrieben wird.
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.GUI.Rezept_suchen.Show_Rezept(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+             Mit dieser Funktion wird aus der Liste der Rezepte das ausgewählte gesucht und 
+             in den anderen Fenstern erscheint dann die Zubereitung und die Zutaten.
+             
+             WICHTIG!!
+             Die Zutaten werden noch nicht ausgegeben, weil mir noch das Design für das Anzeigen nicht klar ist!!
+             Sobald das klar ist wird das auslesen des Rezeptes richtig dargestellt!
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.GUI.Rezept_suchen.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.GUI.start">
+            <summary>
+            Interaktionslogik für start.xaml
+            </summary>
+            <summary>
+            start
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.GUI.start.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.KochbuchDataSet">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.KochbuchDataSet.EinheitDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.KochbuchDataSet.RezeptDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.KochbuchDataSet.RezZutDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.KochbuchDataSet.UserDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.KochbuchDataSet.ZutatDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.KochbuchDataSet.EinheitRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.KochbuchDataSet.RezeptRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.KochbuchDataSet.RezZutRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.KochbuchDataSet.UserRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.KochbuchDataSet.ZutatRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.KochbuchDataSet.EinheitRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.KochbuchDataSet.RezeptRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.KochbuchDataSet.RezZutRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.KochbuchDataSet.UserRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.KochbuchDataSet.ZutatRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.KochbuchDataSetTableAdapters.EinheitTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.KochbuchDataSetTableAdapters.RezeptTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.KochbuchDataSetTableAdapters.RezZutTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.KochbuchDataSetTableAdapters.UserTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.KochbuchDataSetTableAdapters.ZutatTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.KochbuchDataSetTableAdapters.TableAdapterManager">
+             <summary>
+            TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.KochbuchDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(DasUltimativeKochbuch.KochbuchDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Update rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.KochbuchDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(DasUltimativeKochbuch.KochbuchDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Insert rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.KochbuchDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(DasUltimativeKochbuch.KochbuchDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Delete rows in bottom-up order.
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.KochbuchDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.KochbuchDataSetTableAdapters.TableAdapterManager.UpdateAll(DasUltimativeKochbuch.KochbuchDataSet)">
+             <summary>
+            Update all changes to the dataset.
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.KochbuchDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+             <summary>
+            Update Order Option
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.KochbuchDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+             <summary>
+            Used to sort self-referenced table's rows
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.Properties.Resources">
+            <summary>
+              Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
+            </summary>
+        </member>
+        <member name="P:DasUltimativeKochbuch.Properties.Resources.ResourceManager">
+            <summary>
+              Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
+            </summary>
+        </member>
+        <member name="P:DasUltimativeKochbuch.Properties.Resources.Culture">
+            <summary>
+              Überschreibt die CurrentUICulture-Eigenschaft des aktuellen Threads für alle
+              Ressourcenlookups, die diese stark typisierte Ressourcenklasse verwenden.
+            </summary>
+        </member>
+    </members>
+</doc>
