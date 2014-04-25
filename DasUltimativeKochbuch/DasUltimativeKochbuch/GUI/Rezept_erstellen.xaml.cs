@@ -129,5 +129,13 @@ namespace DasUltimativeKochbuch.GUI
             dbc.rezSpeichern(r);
 
         }
+
+      
+        private void Delete_Zutat_Click(object sender, RoutedEventArgs e)
+        {
+            Zutat z = ((FrameworkElement)sender).DataContext as Zutat;
+            LV_Zutaten.Items.Remove(z);
+            zl.Remove(z);
+        }
     }
 }

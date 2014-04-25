@@ -40,6 +40,5 @@ namespace DasUltimativeKochbuch
             Hauptfenster.Title = "Das Ultimative Kochbuch - Rezept suchen";
         }
 
-
     }
 }

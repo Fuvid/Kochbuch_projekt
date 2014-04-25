@@ -16,8 +16,11 @@ namespace DasUltimativeKochbuch.Core
        /// </para>
        /// </summary>
         public static void ini() {
+
             Ref.dbc = new DBConnect();
+            
             Ref.defaultValues = new Dictionary<string, string>();
+            
             Ref.defaultValues.Add("TB_Zutaten", "Hier Zutaten bitte Kommagetrennt eingeben");
             Ref.defaultValues.Add("TB_Rezeptname", "Rezeptname");
             Ref.defaultValues.Add("TB_Zubereitung", "Zubereitung");

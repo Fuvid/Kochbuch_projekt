@@ -23,14 +23,6 @@
     <HelpKINode Title="DatenbankConnector.alleEinheiten Method " Url="html/fcb0b656-7908-1b73-0655-b11b64f54984.htm" />
     <HelpKINode Title="DBConnect.alleEinheiten Method " Url="html/c5e80ef1-a1f0-74a7-4553-3d10d0e02dbf.htm" />
   </HelpKINode>
-  <HelpKINode Title="alleRezepte method">
-    <HelpKINode Title="DatenbankConnector.alleRezepte Method " Url="html/fe2a8d0d-3fab-617b-23c8-419a986a5ea5.htm" />
-    <HelpKINode Title="DBConnect.alleRezepte Method " Url="html/5bf0ef70-6fbc-c26d-93fd-9c43c0b1dfec.htm" />
-  </HelpKINode>
-  <HelpKINode Title="alleZutaten method">
-    <HelpKINode Title="DatenbankConnector.alleZutaten Method " Url="html/77662bec-dbe4-bc31-e235-487c784e1017.htm" />
-    <HelpKINode Title="DBConnect.alleZutaten Method " Url="html/306d5ed2-08ab-22c3-4b3c-c28706534e64.htm" />
-  </HelpKINode>
   <HelpKINode Title="App class">
     <HelpKINode Title="App Class" Url="html/deba9416-2cb1-8880-9fae-61416ce96c46.htm" />
     <HelpKINode Title="App Members" Url="html/fca307d9-3f3e-f7a2-f185-c61c6fe7457d.htm" />
@@ -203,12 +195,10 @@
     <HelpKINode Title="methods" Url="html/bfd75623-a2e2-6265-7c33-30ebe8218987.htm" />
   </HelpKINode>
   <HelpKINode Title="DatenbankConnector.alleEinheiten method" Url="html/fcb0b656-7908-1b73-0655-b11b64f54984.htm" />
-  <HelpKINode Title="DatenbankConnector.alleRezepte method" Url="html/fe2a8d0d-3fab-617b-23c8-419a986a5ea5.htm" />
-  <HelpKINode Title="DatenbankConnector.alleZutaten method" Url="html/77662bec-dbe4-bc31-e235-487c784e1017.htm" />
   <HelpKINode Title="DatenbankConnector.einheitSpeichern method" Url="html/9b04121f-dbbf-c865-cdfe-3c702640b21d.htm" />
-  <HelpKINode Title="DatenbankConnector.rezepteMit method" Url="html/130d0298-0b60-bc58-bedf-239e8a85f732.htm" />
+  <HelpKINode Title="DatenbankConnector.rezepteMit method" Url="html/dc434169-2412-e00c-510a-fbde4462ecf1.htm" />
   <HelpKINode Title="DatenbankConnector.rezSpeichern method" Url="html/72678e76-3085-6f93-1ad8-860d9ef7ea9d.htm" />
-  <HelpKINode Title="dbc property" Url="html/9637fede-a287-550f-1b18-27e69e6877b2.htm" />
+  <HelpKINode Title="dbc field" Url="html/40261f37-1b0a-58e4-8ec0-a3c0cb3e2d5e.htm" />
   <HelpKINode Title="DBConnect class">
     <HelpKINode Title="DBConnect Class" Url="html/eeb212d3-45c2-7b47-92b7-4219c2e7770b.htm" />
     <HelpKINode Title="DBConnect Members" Url="html/193c4c10-73fa-c073-290a-2e8cea9ca296.htm" />
@@ -218,11 +208,9 @@
     <HelpKINode Title="methods" Url="html/7e1827ca-4a79-22d7-7472-c52b64de369c.htm" />
   </HelpKINode>
   <HelpKINode Title="DBConnect.alleEinheiten method" Url="html/c5e80ef1-a1f0-74a7-4553-3d10d0e02dbf.htm" />
-  <HelpKINode Title="DBConnect.alleRezepte method" Url="html/5bf0ef70-6fbc-c26d-93fd-9c43c0b1dfec.htm" />
-  <HelpKINode Title="DBConnect.alleZutaten method" Url="html/306d5ed2-08ab-22c3-4b3c-c28706534e64.htm" />
   <HelpKINode Title="DBConnect.DBConnect constructor" Url="html/40997acd-0477-9e24-5d2d-e7232566211a.htm" />
   <HelpKINode Title="DBConnect.einheitSpeichern method" Url="html/b62bab01-49d0-d3b8-f9eb-c5fe2522a4ed.htm" />
-  <HelpKINode Title="DBConnect.rezepteMit method" Url="html/e8d1cade-3767-086e-933c-f74dce516c35.htm" />
+  <HelpKINode Title="DBConnect.rezepteMit method" Url="html/711cd228-6d37-ff82-12fd-516ad7e09eff.htm" />
   <HelpKINode Title="DBConnect.rezSpeichern method" Url="html/1f8d889c-d233-4db3-1f52-305b9b233f94.htm" />
   <HelpKINode Title="DBConnect.selectEinheitName method" Url="html/efc0674b-dd79-1dd7-686a-61163a073639.htm" />
   <HelpKINode Title="DBConnect.selectID method" Url="html/903f6767-afac-7fc1-4b87-efa16fc5b547.htm" />
@@ -234,7 +222,7 @@
     <HelpKINode Title="UserTableAdapter.Delete Method " Url="html/d83b435a-3874-a9d7-f25d-a942f3d0564c.htm" />
     <HelpKINode Title="ZutatTableAdapter.Delete Method " Url="html/01ce0826-9ca5-00bf-eb8a-f290c79f16c3.htm" />
   </HelpKINode>
-  <HelpKINode Title="ehl property" Url="html/669b4304-2f64-61cd-7d19-1daf5a2dea43.htm" />
+  <HelpKINode Title="ehl field" Url="html/78cf7608-33cb-56a6-38f5-3c5635e729d1.htm" />
   <HelpKINode Title="einh property" Url="html/47565e14-f4ae-2549-9d3a-11022478c16f.htm" />
   <HelpKINode Title="Einheit class">
     <HelpKINode Title="Einheit Class" Url="html/b50fa56a-ec5c-9821-1fe4-3ee34933fc87.htm" />
@@ -755,12 +743,10 @@
     <HelpKINode Title="about Ref class" Url="html/137c3311-99d3-c4ec-0078-68e5b110dfd1.htm" />
     <HelpKINode Title="all members" Url="html/224db254-d11d-1e05-f48c-0c0ae74afe1f.htm" />
     <HelpKINode Title="fields" Url="html/b136810c-57d8-638f-145d-7f6fe70396f1.htm" />
-    <HelpKINode Title="properties" Url="html/2c2016e7-ffce-16ec-6183-93262d4d8011.htm" />
   </HelpKINode>
-  <HelpKINode Title="Ref.dbc property" Url="html/9637fede-a287-550f-1b18-27e69e6877b2.htm" />
+  <HelpKINode Title="Ref.dbc field" Url="html/40261f37-1b0a-58e4-8ec0-a3c0cb3e2d5e.htm" />
   <HelpKINode Title="Ref.defaultValues field" Url="html/5faba27b-e47a-8e57-4b16-c417bcd7dc5c.htm" />
-  <HelpKINode Title="Ref.ehl property" Url="html/669b4304-2f64-61cd-7d19-1daf5a2dea43.htm" />
-  <HelpKINode Title="Ref.rl field" Url="html/34b55b42-0bde-e8a9-464d-1b7089f9ab28.htm" />
+  <HelpKINode Title="Ref.ehl field" Url="html/78cf7608-33cb-56a6-38f5-3c5635e729d1.htm" />
   <HelpKINode Title="Relations property" Url="html/6427b5c9-3ce3-6ecf-161f-26d231f5307e.htm" />
   <HelpKINode Title="RemoveEinheitRow method" Url="html/32252cc5-46c4-55f5-00bc-ea6893dff9e8.htm" />
   <HelpKINode Title="RemoveRezeptRow method" Url="html/e183d82c-43f2-7d11-64eb-f5c889437fd4.htm" />
@@ -792,8 +778,8 @@
     <HelpKINode Title="properties" Url="html/b2934e19-ba23-75b9-4319-f35193f63b4d.htm" />
   </HelpKINode>
   <HelpKINode Title="rezepteMit method">
-    <HelpKINode Title="DatenbankConnector.rezepteMit Method " Url="html/130d0298-0b60-bc58-bedf-239e8a85f732.htm" />
-    <HelpKINode Title="DBConnect.rezepteMit Method " Url="html/e8d1cade-3767-086e-933c-f74dce516c35.htm" />
+    <HelpKINode Title="DatenbankConnector.rezepteMit Method " Url="html/dc434169-2412-e00c-510a-fbde4462ecf1.htm" />
+    <HelpKINode Title="DBConnect.rezepteMit Method " Url="html/711cd228-6d37-ff82-12fd-516ad7e09eff.htm" />
   </HelpKINode>
   <HelpKINode Title="RezeptID property" Url="html/f9ffe402-2e52-8ef8-4dfc-acb05b225f23.htm" />
   <HelpKINode Title="RezeptIDColumn property" Url="html/5e0aa6d1-a824-5a12-5507-46c740e57d81.htm" />
@@ -909,7 +895,6 @@
   <HelpKINode Title="RezZutTableAdapter.Insert method" Url="html/b51809ba-915c-f21e-bf32-a9b6e5198b8d.htm" />
   <HelpKINode Title="RezZutTableAdapter.RezZutTableAdapter constructor" Url="html/02176b7f-2dec-8db2-58a2-e5dde4e62842.htm" />
   <HelpKINode Title="RezZutTableAdapter.Update method" Url="html/23ed52f1-6f40-26fc-6bd2-af5fac2a3cbf.htm" />
-  <HelpKINode Title="rl field" Url="html/34b55b42-0bde-e8a9-464d-1b7089f9ab28.htm" />
   <HelpKINode Title="Row property">
     <HelpKINode Title="KochbuchDataSet.EinheitRowChangeEvent.Row Property " Url="html/2a7ac7e9-0291-9a17-510d-b2cad43d0eab.htm" />
     <HelpKINode Title="KochbuchDataSet.RezeptRowChangeEvent.Row Property " Url="html/780eb720-2546-31ad-6d39-0ec698ea3aa3.htm" />
@@ -976,7 +961,10 @@
   <HelpKINode Title="TableAdapterManager.UserTableAdapter property" Url="html/3589add8-7bc3-de31-5795-46855652276d.htm" />
   <HelpKINode Title="TableAdapterManager.ZutatTableAdapter property" Url="html/18cec334-3023-7d8a-e230-b1a14e0a4afd.htm" />
   <HelpKINode Title="Tables property" Url="html/d78d791d-052a-bddd-e82a-a8f66225960e.htm" />
-  <HelpKINode Title="ToString method" Url="html/f83d31bf-7479-173e-8ea2-1029d0a12e34.htm" />
+  <HelpKINode Title="ToString method">
+    <HelpKINode Title="Einheit.ToString Method " Url="html/f83d31bf-7479-173e-8ea2-1029d0a12e34.htm" />
+    <HelpKINode Title="Zutat.ToString Method " Url="html/0140d79f-f01c-067c-0899-f2deb019501e.htm" />
+  </HelpKINode>
   <HelpKINode Title="UName property" Url="html/55a1a0a4-a264-036f-23d6-6deee49948b2.htm" />
   <HelpKINode Title="UNameColumn property" Url="html/86ff9a78-7dc8-1a01-bf17-28f335fd9922.htm" />
   <HelpKINode Title="Update method">
@@ -1056,6 +1044,7 @@
   <HelpKINode Title="Zutat.menge property" Url="html/c5714e35-762d-2ca0-ef09-d603ed815fbf.htm" />
   <HelpKINode Title="Zutat.name property" Url="html/f4189603-1e7e-e0aa-dd2a-4b20c3ca1dc9.htm" />
   <HelpKINode Title="Zutat.score field" Url="html/a70cd197-19a6-3dae-c274-38a8834c99c4.htm" />
+  <HelpKINode Title="Zutat.ToString method" Url="html/0140d79f-f01c-067c-0899-f2deb019501e.htm" />
   <HelpKINode Title="Zutat.Zutat constructor" Url="html/e9fddd6e-f6e6-5b34-34ba-35f48503bdec.htm" />
   <HelpKINode Title="ZutatDataTable class">
     <HelpKINode Title="ZutatDataTable Members" Url="html/28f0312c-3a9d-1a89-3797-7ec39232b90d.htm" />
