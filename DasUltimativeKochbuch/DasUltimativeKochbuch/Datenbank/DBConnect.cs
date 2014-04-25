@@ -238,8 +238,8 @@ namespace DasUltimativeKochbuch.Datenbank
         public List<Einheit> alleEinheiten()//sollte funktionieren
         {
             List<Einheit> einheiten = new List<Einheit>();
-            commandLine = "SELECT * FROM einheit";
-            cmd.CommandText = commandLine;
+            cmd.CommandText = "SELECT * FROM einheit";
+            this.verbindungOeffnen();
             MySqlDataReader readerEinheit = cmd.ExecuteReader();
             while (readerEinheit.Read())
             {
@@ -247,6 +247,7 @@ namespace DasUltimativeKochbuch.Datenbank
                 Einheit e = new Einheit(eName);
                 einheiten.Add(e);
             }
+            cmd.Connection.Close();
             return einheiten;
         }
 
