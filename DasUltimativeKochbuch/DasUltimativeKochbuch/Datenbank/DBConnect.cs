@@ -209,62 +209,6 @@ namespace DasUltimativeKochbuch.Datenbank
         }
 
 
-        public List<Rezept> alleRezepte()//Umschreiben
-        {
-            List<Rezept> alleRezepte = new List<Rezept>(); //Liste in die alle Rezepte gespeichert werden
-            string query;
-            string zutatQuery;
-            query = "SELECT * FROM rezept"; //SQL -> alle Rezepte selektieren
-
-            cmd = new MySqlCommand();
-            this.verbindungOeffnen();
-
-            commandLine = query;
-            ///<summary>
-            ///Set the command text | Befehlszeile setzen
-            ///</summary>
-            cmd.CommandText = commandLine;
-            MySqlDataReader Reader = cmd.ExecuteReader();
-            //--------------------------------
-            while (Reader.Read())
-            {
-                int rID = Convert.ToInt32(Reader["ID"].ToString());//Deklarieren der Variablen, die Ein Obejekt in der Liste sind
-                string rName = Reader["Name"].ToString();
-                string rzubereitung = Reader["Zubereitung"].ToString();
-                int rPersonen = Convert.ToInt32(Reader["Personen"].ToString());
-
-                List<Zutat> rzutaten = new List<Zutat>();//Liste mit Zutaten erstellen, die später einen Teil der Liste<Rezept> darstellt
-
-                zutatQuery = "SELECT ZutatID, Menge, Score FROM rezzut WHERE RezeptID = " + rID + ";";
-                commandLine = zutatQuery;
-                cmd.CommandText = commandLine;
-
-                MySqlDataReader readerRezzut = cmd.ExecuteReader();
-                while (readerRezzut.Read())
-                {
-                    int zID = Convert.ToInt32(readerRezzut["ZutatID"].ToString());
-                    double zMenge = Convert.ToDouble(readerRezzut["Menge"]);
-                    commandLine = "SELECT Name FROM zutat WHERE ID = " + zID + ";";
-                    cmd.CommandText = commandLine;
-                    MySqlDataReader readerZutat = cmd.ExecuteReader();
-                    while (readerZutat.Read())
-                    {
-                        string zName = readerZutat["ID"].ToString();
-                        Einheit e = new Einheit("test");
-
-                        Zutat z = new Zutat(zName, e, zMenge);
-                        rzutaten.Add(z);//Zutaten dem Rezept hinzufügen
-                    }
-                }
-                Rezept r = new Rezept(rzutaten, rzubereitung, rName, rPersonen);
-                alleRezepte.Add(r);//Rezept der Liste hinzufügen
-            }
-            Reader.Close();
-            return alleRezepte;//Rückgabe aller Rezepte
-        }
-
-
-
         public SortedSet<Zutat> alleZutaten()
         {
             // SortedSet<Zutat> alleZutaten = new SortedSet<Zutat>();
@@ -285,9 +229,10 @@ namespace DasUltimativeKochbuch.Datenbank
         {
             string query;
             string name = e.name;
-
+            this.verbindungOeffnen();
             query = "INSERT INTO einheit(Name) VALUES('" + name + "');";
             this.executeQuery(query);
+            cmd.Connection.Close();
         }
 
         public List<Einheit> alleEinheiten()//sollte funktionieren
