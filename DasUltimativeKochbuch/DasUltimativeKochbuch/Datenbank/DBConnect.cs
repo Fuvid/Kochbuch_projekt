@@ -208,24 +208,6 @@ namespace DasUltimativeKochbuch.Datenbank
             MessageBox.Show("Rezept hinzugefügt");
         }
 
-
-
-        public SortedSet<Zutat> alleZutaten()
-        {
-            // SortedSet<Zutat> alleZutaten = new SortedSet<Zutat>();
-            //cmd.CommandText = "SELECT * FROM zutat";
-            //MySqlDataReader readerZutat = cmd.ExecuteReader();
-            //while (readerZutat.Read())
-            //{
-            //    Einheit e = new Einheit("test");
-            //   string zName = readerZutat["Name"].ToString();
-            //  Zutat z = new Zutat(zName, e);
-            //  alleZutaten.Add(z);
-            //}
-            //return alleZutaten;
-            throw new NotImplementedException();
-        }
-
         public void einheitSpeichern(Einheit e)
         {
             string query;
@@ -240,6 +222,7 @@ namespace DasUltimativeKochbuch.Datenbank
             List<Einheit> einheiten = new List<Einheit>();
             commandLine = "SELECT * FROM einheit";
             cmd.CommandText = commandLine;
+            this.verbindungOeffnen();
             MySqlDataReader readerEinheit = cmd.ExecuteReader();
             while (readerEinheit.Read())
             {
@@ -247,6 +230,7 @@ namespace DasUltimativeKochbuch.Datenbank
                 Einheit e = new Einheit(eName);
                 einheiten.Add(e);
             }
+            cmd.Connection.Close();
             return einheiten;
         }
 
