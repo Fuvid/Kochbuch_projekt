@@ -20,7 +20,9 @@ namespace DasUltimativeKochbuch.Core
 
         public double menge { get; set; }
 
-
+        public string ToString() {
+            return name;
+        }
         public Zutat(string n, Einheit e) {
 
             name = n;

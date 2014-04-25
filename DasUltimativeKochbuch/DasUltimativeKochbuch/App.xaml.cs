@@ -5,7 +5,9 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
-
+/// <summary>
+/// Der alles umfassende Namespace
+/// </summary>
 namespace DasUltimativeKochbuch
 {
     /// <summary>

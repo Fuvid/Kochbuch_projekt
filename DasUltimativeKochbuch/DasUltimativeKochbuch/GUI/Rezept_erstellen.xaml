@@ -23,14 +23,27 @@
         <ListView x:Name="LV_Zutaten" HorizontalAlignment="Left" Height="216" Margin="10,93,0,0" VerticalAlignment="Top" Width="286" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Zutaten" Width="175" DisplayMemberBinding="{Binding Path=name}" />
+                    <GridViewColumn Header="Zutaten" Width="150" DisplayMemberBinding="{Binding Path=name}" />
                     <GridViewColumn Header="Menge" Width="50" DisplayMemberBinding="{Binding Path=menge}" />
-                    <GridViewColumn Header="Einheit" Width="50" DisplayMemberBinding="{Binding Path=einh.name}" />
+                    <GridViewColumn Header="Einh" Width="45" DisplayMemberBinding="{Binding Path=einh.name}" />
+                    <GridViewColumn Width="30" >
+                        <GridViewColumn.CellTemplate >
+                            <DataTemplate>
+                                <Button Width="15" x:Name="Del_Zut_But" Click="Delete_Zutat_Click" >
+                                <Image Source="Bilder/erase.png"/>
+                                </Button>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+
+
+                    </GridViewColumn>
                 </GridView>
+            
             </ListView.View>
+
         </ListView>
         <TextBox x:Name="TB_Personenanzahl" HorizontalAlignment="Left" Height="23" Margin="225,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" GotFocus="TB_GotFocus" LostFocus="TB_LostFocus"/>
         <Label Content="Personen anzahl:" HorizontalAlignment="Left" Margin="10,314,0,0" VerticalAlignment="Top" Height="23" Width="210" VerticalContentAlignment="Stretch" Padding="115,3,5,5"/>
-
+    
     </Grid>
 </Page>

@@ -19,11 +19,11 @@ namespace DasUltimativeKochbuch.Core
         /// <summary>
         /// Hier können Stringwerte gesetzt werden
         /// </summary>
-        public static Dictionary<string, string> defaultValues;
+        public static Dictionary<string, string> defaultValues = new Dictionary<string,string>();
         /// <summary>
         /// Die Liste aller Einheiten, wird in der Core.ini() mit den WErten der Datenbank gefüllt
         /// </summary>
-        public static List<Einheit> ehl;
+        public static List<Einheit> ehl = new List<Einheit>();
         /// <summary>
         /// Der DatenbankConnector, der verwendet werden soll, wenn Rezepte gelesen werden sollen
         /// </summary>
