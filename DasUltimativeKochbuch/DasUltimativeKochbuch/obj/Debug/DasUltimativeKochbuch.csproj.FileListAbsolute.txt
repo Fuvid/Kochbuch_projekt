@@ -22,3 +22,7 @@ C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\DasUltimativeKochbuch\Das
 C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\DasUltimativeKochbuch\DasUltimativeKochbuch\bin\Debug\DasUltimativeKochbuch.exe.CodeAnalysisLog.xml
 C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\DasUltimativeKochbuch\DasUltimativeKochbuch\bin\Debug\DasUltimativeKochbuch.exe.lastcodeanalysissucceeded
 C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\DasUltimativeKochbuch\DasUltimativeKochbuch\obj\Debug\DasUltimativeKochbuch.csprojResolveAssemblyReference.cache
+C:\Users\azb\Source\Repos\Kochbuch_projekt\DasUltimativeKochbuch\DasUltimativeKochbuch\bin\Debug\DasUltimativeKochbuch.exe.config
+C:\Users\azb\Source\Repos\Kochbuch_projekt\DasUltimativeKochbuch\DasUltimativeKochbuch\bin\Debug\DasUltimativeKochbuch.XML
+C:\Users\azb\Source\Repos\Kochbuch_projekt\DasUltimativeKochbuch\DasUltimativeKochbuch\obj\Debug\DasUltimativeKochbuch.exe
+C:\Users\azb\Source\Repos\Kochbuch_projekt\DasUltimativeKochbuch\DasUltimativeKochbuch\obj\Debug\DasUltimativeKochbuch.pdb
