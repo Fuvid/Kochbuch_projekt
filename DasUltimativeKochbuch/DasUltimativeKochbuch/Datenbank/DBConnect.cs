@@ -209,6 +209,7 @@ namespace DasUltimativeKochbuch.Datenbank
         }
 
 
+
         public SortedSet<Zutat> alleZutaten()
         {
             // SortedSet<Zutat> alleZutaten = new SortedSet<Zutat>();
@@ -229,17 +230,16 @@ namespace DasUltimativeKochbuch.Datenbank
         {
             string query;
             string name = e.name;
-            this.verbindungOeffnen();
+
             query = "INSERT INTO einheit(Name) VALUES('" + name + "');";
             this.executeQuery(query);
-            cmd.Connection.Close();
         }
 
         public List<Einheit> alleEinheiten()//sollte funktionieren
         {
             List<Einheit> einheiten = new List<Einheit>();
-            cmd.CommandText = "SELECT * FROM einheit";
-            this.verbindungOeffnen();
+            commandLine = "SELECT * FROM einheit";
+            cmd.CommandText = commandLine;
             MySqlDataReader readerEinheit = cmd.ExecuteReader();
             while (readerEinheit.Read())
             {
@@ -247,7 +247,6 @@ namespace DasUltimativeKochbuch.Datenbank
                 Einheit e = new Einheit(eName);
                 einheiten.Add(e);
             }
-            cmd.Connection.Close();
             return einheiten;
         }
 
