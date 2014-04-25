@@ -58,14 +58,79 @@
             Die Liste aller Einheiten, wird in der Core.ini() mit den WErten der Datenbank gefüllt
             </summary>
         </member>
+        <member name="F:DasUltimativeKochbuch.Core.Ref.dbc">
+            <summary>
+            Der DatenbankConnector, der verwendet werden soll, wenn Rezepte gelesen werden sollen
+            </summary>
+        </member>
         <member name="T:DasUltimativeKochbuch.Core.Rezept">
             <summary>
             
             </summary>
         </member>
+        <member name="F:DasUltimativeKochbuch.Core.Rezept.zubereitung">
+            <summary>
+            Fließtext zur Zubereitung
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.Core.Rezept.#ctor(System.Collections.Generic.List{DasUltimativeKochbuch.Core.Zutat},System.String,System.String,System.Int32)">
+            <summary>
+            Konstruktor
+            </summary>
+            <param name="zt">Die Liste der Zutaten</param>
+            <param name="zub">Zubereitung</param>
+            <param name="n">Name</param>
+            <param name="p">Personenanzahl</param>
+        </member>
+        <member name="M:DasUltimativeKochbuch.Core.Rezept.toString">
+            <summary>
+            toString Methode, zum ausgeben eines Rezeptes als string
+            </summary>
+            <returns>einen string, der das Rezept repräsentiert</returns>
+        </member>
         <member name="P:DasUltimativeKochbuch.Core.Rezept.zutaten">
             <summary>
             Liste der benötigten Zutaten
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.Core.Suche">
+            <summary>
+            Klasse zum Suchen von Rezepten in der Vorgegenen datenbank
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.Core.Suche.ZutComparer">
+            <summary>
+            Ermöglicht es, Zutaten als gleich zu behandeln, falls der name gleich ist
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.Core.Suche.SBLess">
+            <summary>
+            Die Klasse, die Rezepte anhand deren Zutaten<br />
+            Rezepte sind mehr wert, wenn man weniger zusätzliche Zutaten benötigt werden
+            </summary>
+        </member>
+        <member name="F:DasUltimativeKochbuch.Core.Suche.SBLess.toIgnore">
+            <summary>
+            Die Liste, nach der gesucht wurde, diese soll nicht in die Wertung mit eingehen
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.Core.Suche.SBLess.#ctor(System.Collections.Generic.List{DasUltimativeKochbuch.Core.Zutat})">
+            <summary>
+            Konstruktor
+            </summary>
+            <param name="tig">Die zu ignorierenden Zutaten</param>
+        </member>
+        <member name="M:DasUltimativeKochbuch.Core.Suche.SBLess.Compare(DasUltimativeKochbuch.Core.Rezept,DasUltimativeKochbuch.Core.Rezept)">
+            <summary>
+            vergleicht zwei Rezepte
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="P:DasUltimativeKochbuch.Core.Zutat.name">
+            <summary>
+            Name der Zutat
             </summary>
         </member>
         <member name="M:DasUltimativeKochbuch.Datenbank.DBConnect.#ctor">

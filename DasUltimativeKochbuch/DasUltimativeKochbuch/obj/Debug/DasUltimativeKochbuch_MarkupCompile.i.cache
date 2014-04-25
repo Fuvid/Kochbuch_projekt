@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\azb\Source\Repos\Kochbuch_projekt\DasUltimativeKochbuch\DasUltimativeKochbuch\obj\Debug\
+C:\Users\Dorian\Source\Repos\Kochbuch_projekt\DasUltimativeKochbuch\DasUltimativeKochbuch\obj\Debug\
 DasUltimativeKochbuch
 none
 false
 CODE_ANALYSIS;DEBUG;TRACE
-C:\Users\azb\Source\Repos\Kochbuch_projekt\DasUltimativeKochbuch\DasUltimativeKochbuch\App.xaml
+C:\Users\Dorian\Source\Repos\Kochbuch_projekt\DasUltimativeKochbuch\DasUltimativeKochbuch\App.xaml
 4-131994884
 
-21-200342779
-14895843597
+21376985706
+14-1499355775
 GUI\MainWindow.xaml;GUI\Rezept_erstellen.xaml;GUI\Rezept_suchen.xaml;GUI\start.xaml;
 
-True
+False
 
