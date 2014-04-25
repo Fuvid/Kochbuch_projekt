@@ -1,0 +1,1110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="Action property">
+    <HelpKINode Title="KochbuchDataSet.EinheitRowChangeEvent.Action Property " Url="html/42399cd5-be0e-de1a-ae06-ad681a5d5d95.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezeptRowChangeEvent.Action Property " Url="html/8158621d-48ec-62f0-dbf8-d77a414c68fb.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezZutRowChangeEvent.Action Property " Url="html/c48652f1-9238-30fc-d149-435b6717b2e1.htm" />
+    <HelpKINode Title="KochbuchDataSet.UserRowChangeEvent.Action Property " Url="html/20bb9ace-5451-2476-90cc-4c457d86422e.htm" />
+    <HelpKINode Title="KochbuchDataSet.ZutatRowChangeEvent.Action Property " Url="html/7759b224-8676-c285-7907-6732017e88c7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Adapter property">
+    <HelpKINode Title="EinheitTableAdapter.Adapter Property " Url="html/591525fc-a7a4-3b84-5ff5-a06a54580905.htm" />
+    <HelpKINode Title="RezeptTableAdapter.Adapter Property " Url="html/3b440894-5ca7-5185-4ab1-4fda07f7fd7f.htm" />
+    <HelpKINode Title="RezZutTableAdapter.Adapter Property " Url="html/4b30ad63-5354-8a08-b081-673f8e119fa1.htm" />
+    <HelpKINode Title="UserTableAdapter.Adapter Property " Url="html/53529061-2aeb-9369-5ae5-45d201da1f59.htm" />
+    <HelpKINode Title="ZutatTableAdapter.Adapter Property " Url="html/57de7cff-fef0-209d-38b3-7671a1d1b209.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddEinheitRow method" Url="html/acabd32a-eb28-f309-d6c7-f5529246cf14.htm" />
+  <HelpKINode Title="AddRezeptRow method" Url="html/e14f40d1-8cea-10bd-6e8b-1140c9476ad2.htm" />
+  <HelpKINode Title="AddRezZutRow method" Url="html/30577961-23a8-ed68-0016-5fecdb10b0f1.htm" />
+  <HelpKINode Title="AddUserRow method" Url="html/ca30fd59-781b-90ab-8e33-fa81b6cac45b.htm" />
+  <HelpKINode Title="AddZutatRow method" Url="html/9244b5a9-ff7f-f7c5-329c-47d22fb2b1e3.htm" />
+  <HelpKINode Title="alleEinheiten method">
+    <HelpKINode Title="DatenbankConnector.alleEinheiten Method " Url="html/fcb0b656-7908-1b73-0655-b11b64f54984.htm" />
+    <HelpKINode Title="DBConnect.alleEinheiten Method " Url="html/c5e80ef1-a1f0-74a7-4553-3d10d0e02dbf.htm" />
+  </HelpKINode>
+  <HelpKINode Title="alleRezepte method">
+    <HelpKINode Title="DatenbankConnector.alleRezepte Method " Url="html/fe2a8d0d-3fab-617b-23c8-419a986a5ea5.htm" />
+    <HelpKINode Title="DBConnect.alleRezepte Method " Url="html/5bf0ef70-6fbc-c26d-93fd-9c43c0b1dfec.htm" />
+  </HelpKINode>
+  <HelpKINode Title="alleZutaten method">
+    <HelpKINode Title="DatenbankConnector.alleZutaten Method " Url="html/77662bec-dbe4-bc31-e235-487c784e1017.htm" />
+    <HelpKINode Title="DBConnect.alleZutaten Method " Url="html/306d5ed2-08ab-22c3-4b3c-c28706534e64.htm" />
+  </HelpKINode>
+  <HelpKINode Title="App class">
+    <HelpKINode Title="App Class" Url="html/deba9416-2cb1-8880-9fae-61416ce96c46.htm" />
+    <HelpKINode Title="App Members" Url="html/fca307d9-3f3e-f7a2-f185-c61c6fe7457d.htm" />
+    <HelpKINode Title="about App class" Url="html/deba9416-2cb1-8880-9fae-61416ce96c46.htm" />
+    <HelpKINode Title="all members" Url="html/fca307d9-3f3e-f7a2-f185-c61c6fe7457d.htm" />
+    <HelpKINode Title="constructor" Url="html/35eb7d2e-e480-ffb1-e60a-71b7786e8433.htm" />
+    <HelpKINode Title="events" Url="html/4bbc7f89-bb59-7de1-f25f-540c1c4509e7.htm" />
+    <HelpKINode Title="methods" Url="html/fd742960-f26d-ea63-ef75-212de0df5e0d.htm" />
+    <HelpKINode Title="properties" Url="html/f8675a8c-c261-9f62-6577-3f920d10473c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="App.App constructor" Url="html/35eb7d2e-e480-ffb1-e60a-71b7786e8433.htm" />
+  <HelpKINode Title="App.InitializeComponent method" Url="html/861acbfe-a10b-84b9-af51-3b368898b527.htm" />
+  <HelpKINode Title="App.Main method" Url="html/93cd58b6-692e-6f1e-1eea-0224c526b3b2.htm" />
+  <HelpKINode Title="BackupDataSetBeforeUpdate property" Url="html/f1cb8bcb-6b9a-efb4-d25d-5c49272ce7d6.htm" />
+  <HelpKINode Title="ClearBeforeFill property">
+    <HelpKINode Title="EinheitTableAdapter.ClearBeforeFill Property " Url="html/735f5282-39ae-99cf-c7f7-b6c21e68ad8c.htm" />
+    <HelpKINode Title="RezeptTableAdapter.ClearBeforeFill Property " Url="html/768321bf-4a9e-2fd9-2446-be3344ae7878.htm" />
+    <HelpKINode Title="RezZutTableAdapter.ClearBeforeFill Property " Url="html/9a0f226d-09a8-2f4d-3e10-c96084e1c546.htm" />
+    <HelpKINode Title="UserTableAdapter.ClearBeforeFill Property " Url="html/3c0d5f6c-e77f-dc34-8376-3771f0d3884a.htm" />
+    <HelpKINode Title="ZutatTableAdapter.ClearBeforeFill Property " Url="html/c29a921e-573a-51a4-4dd2-1607564f96d1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Clone method">
+    <HelpKINode Title="KochbuchDataSet.Clone Method " Url="html/0bdbecad-962c-b0ee-2077-fb7e93b5d40d.htm" />
+    <HelpKINode Title="KochbuchDataSet.EinheitDataTable.Clone Method " Url="html/9765ed67-0b60-9455-6a59-2789b836919c.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezeptDataTable.Clone Method " Url="html/9b5f314d-7600-d09a-7f99-8418d28e1c51.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezZutDataTable.Clone Method " Url="html/872f3d0f-7197-2169-c730-286885170c85.htm" />
+    <HelpKINode Title="KochbuchDataSet.UserDataTable.Clone Method " Url="html/510c8c13-8946-aab7-8ad6-ddde8ea5d356.htm" />
+    <HelpKINode Title="KochbuchDataSet.ZutatDataTable.Clone Method " Url="html/d8182b5b-bdf2-df45-e4ed-9305dd9b933e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CommandCollection property">
+    <HelpKINode Title="EinheitTableAdapter.CommandCollection Property " Url="html/1402055a-14f1-e249-f376-5e4a831690d0.htm" />
+    <HelpKINode Title="RezeptTableAdapter.CommandCollection Property " Url="html/3398ef47-cdc9-207f-4683-1e7675816a3e.htm" />
+    <HelpKINode Title="RezZutTableAdapter.CommandCollection Property " Url="html/95359947-3bf0-058b-2f83-8b3508963b5b.htm" />
+    <HelpKINode Title="UserTableAdapter.CommandCollection Property " Url="html/6472fc66-52ff-17e3-43e9-130181d94f9d.htm" />
+    <HelpKINode Title="ZutatTableAdapter.CommandCollection Property " Url="html/9c80755c-b11a-ce1c-86f0-c5bdc375a225.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Connection property" Url="html/571cbf27-d33a-8910-7033-2681e2772d18.htm" />
+  <HelpKINode Title="Count property">
+    <HelpKINode Title="KochbuchDataSet.EinheitDataTable.Count Property " Url="html/0ab2d090-ecae-17e1-19e5-bd9caf1e3496.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezeptDataTable.Count Property " Url="html/8e872fc8-2670-6d9b-8bec-67ad99b54345.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezZutDataTable.Count Property " Url="html/6dbcb8d8-2aec-81c3-a412-55f409de07f7.htm" />
+    <HelpKINode Title="KochbuchDataSet.UserDataTable.Count Property " Url="html/2ebd58e4-1f39-86f6-d26e-41179b40005a.htm" />
+    <HelpKINode Title="KochbuchDataSet.ZutatDataTable.Count Property " Url="html/595a4d5a-6c66-672b-418f-093d776ee9e7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CreateInstance method">
+    <HelpKINode Title="KochbuchDataSet.EinheitDataTable.CreateInstance Method " Url="html/c6df5c5f-560b-8ef3-b8a4-a09636b1aa24.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezeptDataTable.CreateInstance Method " Url="html/f35d6041-b172-094b-4b36-6bc08b2a0749.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezZutDataTable.CreateInstance Method " Url="html/7639bc20-48b1-465c-e0d4-93a9505d48f0.htm" />
+    <HelpKINode Title="KochbuchDataSet.UserDataTable.CreateInstance Method " Url="html/adfd9743-b5f8-8354-bdfd-27c0eb6a299b.htm" />
+    <HelpKINode Title="KochbuchDataSet.ZutatDataTable.CreateInstance Method " Url="html/307b56ec-712a-0f8b-8f5c-22b6fea90372.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DasUltimativeKochbuch namespace" Url="html/5bc74c1f-bff3-9f2b-ebd0-df8bcdda657e.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.App class">
+    <HelpKINode Title="App Class" Url="html/deba9416-2cb1-8880-9fae-61416ce96c46.htm" />
+    <HelpKINode Title="App Members" Url="html/fca307d9-3f3e-f7a2-f185-c61c6fe7457d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DasUltimativeKochbuch.Core namespace" Url="html/f56143fc-e906-2236-1a73-36125ece6169.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.Core.Einheit class">
+    <HelpKINode Title="Einheit Class" Url="html/b50fa56a-ec5c-9821-1fe4-3ee34933fc87.htm" />
+    <HelpKINode Title="Einheit Members" Url="html/b978b0f1-8b47-ac57-b747-eb965ba23afd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DasUltimativeKochbuch.Core.Ref class">
+    <HelpKINode Title="Ref Class" Url="html/137c3311-99d3-c4ec-0078-68e5b110dfd1.htm" />
+    <HelpKINode Title="Ref Members" Url="html/224db254-d11d-1e05-f48c-0c0ae74afe1f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DasUltimativeKochbuch.Core.Rezept class">
+    <HelpKINode Title="Rezept Class" Url="html/e9431903-613b-5804-ac55-477c3621c326.htm" />
+    <HelpKINode Title="Rezept Members" Url="html/042ed996-39a8-792f-ec26-6069596edf21.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DasUltimativeKochbuch.Core.Zutat class">
+    <HelpKINode Title="Zutat Class" Url="html/f9f0697c-40c6-219f-890a-00fbd165dc1c.htm" />
+    <HelpKINode Title="Zutat Members" Url="html/560a6e84-ab3d-5119-b137-b56c831e2c5e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DasUltimativeKochbuch.Datenbank namespace" Url="html/e3ab2dfe-cb74-515c-ca22-81fa932ef96f.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.Datenbank.DatenbankConnector interface">
+    <HelpKINode Title="DatenbankConnector Interface" Url="html/5f6e8238-96a2-e46d-791a-8b8db0513675.htm" />
+    <HelpKINode Title="DatenbankConnector Members" Url="html/668fd4b4-4b0d-aa9e-b550-b0fa03159074.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DasUltimativeKochbuch.Datenbank.DBConnect class">
+    <HelpKINode Title="DBConnect Class" Url="html/eeb212d3-45c2-7b47-92b7-4219c2e7770b.htm" />
+    <HelpKINode Title="DBConnect Members" Url="html/193c4c10-73fa-c073-290a-2e8cea9ca296.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DasUltimativeKochbuch.EinheitDataTable class" Url="html/4f1f8dd4-be11-070b-24b6-faea01b99b13.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.EinheitRow class" Url="html/8dc16d6b-0866-7d7b-ae3c-114076002214.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.EinheitRowChangeEvent class" Url="html/9b1cc787-ba00-2899-cf4f-9e74537fc56d.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.GUI namespace" Url="html/27fc186d-8554-ea59-e5b4-848dfd858fe9.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.GUI.Rezept_erstellen class">
+    <HelpKINode Title="Rezept_erstellen Class" Url="html/51395b9a-c9f8-7a6a-776f-349be605dcfe.htm" />
+    <HelpKINode Title="Rezept_erstellen Members" Url="html/b20fbd0e-6245-ee9f-2295-554061c96311.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DasUltimativeKochbuch.GUI.Rezept_suchen class">
+    <HelpKINode Title="Rezept_suchen Class" Url="html/ca24f7e7-1ce0-cfbb-c9e7-2ec243e5e4f3.htm" />
+    <HelpKINode Title="Rezept_suchen Members" Url="html/a99c0fbe-2218-f723-8a18-831dfed5df2e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DasUltimativeKochbuch.GUI.start class">
+    <HelpKINode Title="start Class" Url="html/e4fe956b-1b8e-00d2-066f-c22dfff0c5ff.htm" />
+    <HelpKINode Title="start Members" Url="html/4fac56c1-dd31-b883-345a-6fb5876e17dd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSet class">
+    <HelpKINode Title="KochbuchDataSet Class" Url="html/6236b6bc-2c22-6252-edd5-f2f91a827952.htm" />
+    <HelpKINode Title="KochbuchDataSet Members" Url="html/755be0a4-f627-3133-fa3f-a714f1a6e9ec.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSet.EinheitDataTable class" Url="html/a67dc4da-a8b5-554c-79ab-6b8c7386ea0b.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSet.EinheitRow class" Url="html/68ef60d1-7d20-6755-15df-f898e47060c8.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSet.EinheitRowChangeEvent class" Url="html/c31835eb-e871-9cea-0c77-a5999dedccee.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSet.EinheitRowChangeEventHandler delegate" Url="html/4b59ceff-5f64-5efd-0972-76bc449a07fa.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSet.RezeptDataTable class" Url="html/e0f64cda-adcb-345d-4459-462c41de30dc.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSet.RezeptRow class" Url="html/a166dde4-f18f-601e-75b4-0b2791df74e5.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSet.RezeptRowChangeEvent class" Url="html/d923dbe5-0401-e4b7-6f5f-0b9f6e5f7bd6.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSet.RezeptRowChangeEventHandler delegate" Url="html/bc1c70bf-f5a5-7e1b-bfb0-93890670cb19.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSet.RezZutDataTable class" Url="html/3fb39643-cc09-66d8-e7c7-9bfcc798b18b.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSet.RezZutRow class" Url="html/4f397bec-e233-1d88-660f-f71e6bc9a6be.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSet.RezZutRowChangeEvent class" Url="html/b3b720fe-8399-72aa-1056-3e3fab62b2c7.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSet.RezZutRowChangeEventHandler delegate" Url="html/c7b75cf7-3913-dd72-fc72-73407ab4ea63.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSet.UserDataTable class" Url="html/ae699a6d-45b4-2d61-e306-445a4187dcb3.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSet.UserRow class" Url="html/fbfbc15a-927d-bd96-25cf-8483000dd72c.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSet.UserRowChangeEvent class" Url="html/ece2d1a9-a372-5e62-8207-008702b122a7.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSet.UserRowChangeEventHandler delegate" Url="html/129fa5a5-5805-5c9a-02b1-5c0076c27493.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSet.ZutatDataTable class" Url="html/09772d65-918e-430d-4f8c-bb3a7089b29d.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSet.ZutatRow class" Url="html/90bf339b-0f71-dc4b-f40e-eb0abb15fc30.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSet.ZutatRowChangeEvent class" Url="html/261d36ea-36c9-8a81-d07f-1afe4e20581a.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSet.ZutatRowChangeEventHandler delegate" Url="html/84a99522-b0bb-9169-6500-cf88fb9d8fd4.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSetTableAdapters namespace" Url="html/f7997266-efaa-3797-4915-1a34051f06df.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSetTableAdapters.EinheitTableAdapter class">
+    <HelpKINode Title="EinheitTableAdapter Class" Url="html/6bf0635a-5e42-f94c-0ab6-5c574b195785.htm" />
+    <HelpKINode Title="EinheitTableAdapter Members" Url="html/2198104f-ca64-6aee-00fb-2ba505818112.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSetTableAdapters.RezeptTableAdapter class">
+    <HelpKINode Title="RezeptTableAdapter Class" Url="html/29786231-50ed-62c4-5f68-68dfdcae2bbe.htm" />
+    <HelpKINode Title="RezeptTableAdapter Members" Url="html/84e80be7-a5cf-6b60-3f55-d0edc3b00877.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSetTableAdapters.RezZutTableAdapter class">
+    <HelpKINode Title="RezZutTableAdapter Class" Url="html/5b3c65d6-4dc2-5bcb-2a77-542f4ad954f2.htm" />
+    <HelpKINode Title="RezZutTableAdapter Members" Url="html/bb885347-b0cd-6cf2-b357-bcef9dc65896.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSetTableAdapters.TableAdapterManager class">
+    <HelpKINode Title="TableAdapterManager Class" Url="html/81bc9cb7-b2ea-0236-8cc5-f4f6ca3c610f.htm" />
+    <HelpKINode Title="TableAdapterManager Members" Url="html/9e30ae47-90a8-6e6e-e9c8-81fbebb5b4de.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSetTableAdapters.TableAdapterManager.UpdateOrderOption enumeration" Url="html/ec71caac-1242-feb7-2058-8a27ed42370b.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSetTableAdapters.UserTableAdapter class">
+    <HelpKINode Title="UserTableAdapter Class" Url="html/e3efae53-db1a-1ddc-814e-8e41292e6524.htm" />
+    <HelpKINode Title="UserTableAdapter Members" Url="html/ad722ed8-1a6b-cb71-6a32-0c4e3b8fc05f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSetTableAdapters.ZutatTableAdapter class">
+    <HelpKINode Title="ZutatTableAdapter Class" Url="html/edea41cf-888b-7f44-9218-8a610bf94fc2.htm" />
+    <HelpKINode Title="ZutatTableAdapter Members" Url="html/172405f8-5f2c-7548-f54c-d3f9928be443.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DasUltimativeKochbuch.MainWindow class">
+    <HelpKINode Title="MainWindow Class" Url="html/6caf63e0-ceee-898d-a415-7b27c118053e.htm" />
+    <HelpKINode Title="MainWindow Members" Url="html/a50bc127-9974-1bfd-5f76-ec8c9c93f334.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DasUltimativeKochbuch.RezeptDataTable class" Url="html/b00e4a3a-7c4f-b6b6-2eb9-bebbcd127235.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.RezeptRow class" Url="html/512a439f-5d68-3b71-3f87-ec5cad2d880e.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.RezeptRowChangeEvent class" Url="html/99f20a1c-e7b0-1f74-fcec-99e34c31e367.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.RezZutDataTable class" Url="html/0b6e4990-392d-43c7-f432-0db053d377f7.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.RezZutRow class" Url="html/6d479341-8bb3-4659-8c3c-5304e71d7ddc.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.RezZutRowChangeEvent class" Url="html/7ffd1df2-3231-0cd8-b4de-8bbea15f4a6a.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.UserDataTable class" Url="html/380298f8-7caf-5e5a-93e5-4e1d48dbbc9c.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.UserRow class" Url="html/1da89bae-a077-c585-4246-353a872329a6.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.UserRowChangeEvent class" Url="html/7db15c45-9edd-3601-a02a-03dfa9df627f.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.ZutatDataTable class" Url="html/28f0312c-3a9d-1a89-3797-7ec39232b90d.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.ZutatRow class" Url="html/940d7808-6e28-7626-be84-c37e7c0c3f1b.htm" />
+  <HelpKINode Title="DasUltimativeKochbuch.ZutatRowChangeEvent class" Url="html/0721f4bd-a67c-0976-604d-14579ad85e75.htm" />
+  <HelpKINode Title="DatenbankConnector interface">
+    <HelpKINode Title="DatenbankConnector Interface" Url="html/5f6e8238-96a2-e46d-791a-8b8db0513675.htm" />
+    <HelpKINode Title="DatenbankConnector Members" Url="html/668fd4b4-4b0d-aa9e-b550-b0fa03159074.htm" />
+    <HelpKINode Title="about DatenbankConnector interface" Url="html/5f6e8238-96a2-e46d-791a-8b8db0513675.htm" />
+    <HelpKINode Title="all members" Url="html/668fd4b4-4b0d-aa9e-b550-b0fa03159074.htm" />
+    <HelpKINode Title="methods" Url="html/bfd75623-a2e2-6265-7c33-30ebe8218987.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DatenbankConnector.alleEinheiten method" Url="html/fcb0b656-7908-1b73-0655-b11b64f54984.htm" />
+  <HelpKINode Title="DatenbankConnector.alleRezepte method" Url="html/fe2a8d0d-3fab-617b-23c8-419a986a5ea5.htm" />
+  <HelpKINode Title="DatenbankConnector.alleZutaten method" Url="html/77662bec-dbe4-bc31-e235-487c784e1017.htm" />
+  <HelpKINode Title="DatenbankConnector.einheitSpeichern method" Url="html/9b04121f-dbbf-c865-cdfe-3c702640b21d.htm" />
+  <HelpKINode Title="DatenbankConnector.rezepteMit method" Url="html/130d0298-0b60-bc58-bedf-239e8a85f732.htm" />
+  <HelpKINode Title="DatenbankConnector.rezSpeichern method" Url="html/72678e76-3085-6f93-1ad8-860d9ef7ea9d.htm" />
+  <HelpKINode Title="dbc property" Url="html/9637fede-a287-550f-1b18-27e69e6877b2.htm" />
+  <HelpKINode Title="DBConnect class">
+    <HelpKINode Title="DBConnect Class" Url="html/eeb212d3-45c2-7b47-92b7-4219c2e7770b.htm" />
+    <HelpKINode Title="DBConnect Members" Url="html/193c4c10-73fa-c073-290a-2e8cea9ca296.htm" />
+    <HelpKINode Title="about DBConnect class" Url="html/eeb212d3-45c2-7b47-92b7-4219c2e7770b.htm" />
+    <HelpKINode Title="all members" Url="html/193c4c10-73fa-c073-290a-2e8cea9ca296.htm" />
+    <HelpKINode Title="constructor" Url="html/40997acd-0477-9e24-5d2d-e7232566211a.htm" />
+    <HelpKINode Title="methods" Url="html/7e1827ca-4a79-22d7-7472-c52b64de369c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DBConnect.alleEinheiten method" Url="html/c5e80ef1-a1f0-74a7-4553-3d10d0e02dbf.htm" />
+  <HelpKINode Title="DBConnect.alleRezepte method" Url="html/5bf0ef70-6fbc-c26d-93fd-9c43c0b1dfec.htm" />
+  <HelpKINode Title="DBConnect.alleZutaten method" Url="html/306d5ed2-08ab-22c3-4b3c-c28706534e64.htm" />
+  <HelpKINode Title="DBConnect.DBConnect constructor" Url="html/40997acd-0477-9e24-5d2d-e7232566211a.htm" />
+  <HelpKINode Title="DBConnect.einheitSpeichern method" Url="html/b62bab01-49d0-d3b8-f9eb-c5fe2522a4ed.htm" />
+  <HelpKINode Title="DBConnect.rezepteMit method" Url="html/e8d1cade-3767-086e-933c-f74dce516c35.htm" />
+  <HelpKINode Title="DBConnect.rezSpeichern method" Url="html/1f8d889c-d233-4db3-1f52-305b9b233f94.htm" />
+  <HelpKINode Title="DBConnect.selectEinheitName method" Url="html/efc0674b-dd79-1dd7-686a-61163a073639.htm" />
+  <HelpKINode Title="DBConnect.selectID method" Url="html/903f6767-afac-7fc1-4b87-efa16fc5b547.htm" />
+  <HelpKINode Title="defaultValues field" Url="html/5faba27b-e47a-8e57-4b16-c417bcd7dc5c.htm" />
+  <HelpKINode Title="Delete method">
+    <HelpKINode Title="EinheitTableAdapter.Delete Method " Url="html/9c418906-61f3-0ea9-4752-4718e3b0f19c.htm" />
+    <HelpKINode Title="RezeptTableAdapter.Delete Method " Url="html/7432b0c6-ecaa-c580-5781-0a7713506e2a.htm" />
+    <HelpKINode Title="RezZutTableAdapter.Delete Method " Url="html/6fda177a-44e2-8b74-018a-0af82dddc5ba.htm" />
+    <HelpKINode Title="UserTableAdapter.Delete Method " Url="html/d83b435a-3874-a9d7-f25d-a942f3d0564c.htm" />
+    <HelpKINode Title="ZutatTableAdapter.Delete Method " Url="html/01ce0826-9ca5-00bf-eb8a-f290c79f16c3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ehl property" Url="html/669b4304-2f64-61cd-7d19-1daf5a2dea43.htm" />
+  <HelpKINode Title="einh property" Url="html/47565e14-f4ae-2549-9d3a-11022478c16f.htm" />
+  <HelpKINode Title="Einheit class">
+    <HelpKINode Title="Einheit Class" Url="html/b50fa56a-ec5c-9821-1fe4-3ee34933fc87.htm" />
+    <HelpKINode Title="Einheit Members" Url="html/b978b0f1-8b47-ac57-b747-eb965ba23afd.htm" />
+    <HelpKINode Title="about Einheit class" Url="html/b50fa56a-ec5c-9821-1fe4-3ee34933fc87.htm" />
+    <HelpKINode Title="all members" Url="html/b978b0f1-8b47-ac57-b747-eb965ba23afd.htm" />
+    <HelpKINode Title="constructor" Url="html/131a855c-4a70-dc3d-a8a4-4a582d221dfc.htm" />
+    <HelpKINode Title="methods" Url="html/6008e244-ae3b-98c9-da36-e49215aff96d.htm" />
+    <HelpKINode Title="properties" Url="html/4cda1f9b-8958-efa4-5f1f-455af122e9bd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Einheit property">
+    <HelpKINode Title="KochbuchDataSet.Einheit Property " Url="html/1d2c772a-bdea-9516-e6d4-b74bb7cd2a77.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezZutRow.Einheit Property " Url="html/2c18c9ff-c6b8-0d93-3868-9dbfe5b02074.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Einheit.Einheit constructor" Url="html/131a855c-4a70-dc3d-a8a4-4a582d221dfc.htm" />
+  <HelpKINode Title="Einheit.name property" Url="html/7df5dabc-6023-ed30-fef2-5ca3b3f4b70c.htm" />
+  <HelpKINode Title="Einheit.ToString method" Url="html/f83d31bf-7479-173e-8ea2-1029d0a12e34.htm" />
+  <HelpKINode Title="EinheitColumn property" Url="html/2ab5939d-d605-fc13-de67-fd43463e6580.htm" />
+  <HelpKINode Title="EinheitDataTable class">
+    <HelpKINode Title="EinheitDataTable Members" Url="html/4f1f8dd4-be11-070b-24b6-faea01b99b13.htm" />
+    <HelpKINode Title="all members" Url="html/4f1f8dd4-be11-070b-24b6-faea01b99b13.htm" />
+    <HelpKINode Title="events" Url="html/c461574e-aacf-c6f7-6335-cc82c9738e2c.htm" />
+    <HelpKINode Title="fields" Url="html/c3febb0e-cfa0-a437-918f-b728fecf590a.htm" />
+    <HelpKINode Title="methods" Url="html/33cc25ba-493c-0549-8d81-aaf859d1461c.htm" />
+    <HelpKINode Title="properties" Url="html/c0154d0c-5ce0-c864-8909-857919e36738.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EinheitRow class">
+    <HelpKINode Title="EinheitRow Members" Url="html/8dc16d6b-0866-7d7b-ae3c-114076002214.htm" />
+    <HelpKINode Title="all members" Url="html/8dc16d6b-0866-7d7b-ae3c-114076002214.htm" />
+    <HelpKINode Title="methods" Url="html/182acc00-4fd2-2032-8c82-5f0f11b3955b.htm" />
+    <HelpKINode Title="properties" Url="html/244569e6-1df6-85bc-0d81-2972169be43c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EinheitRow property" Url="html/0f8f4164-b61d-074c-7750-6bd39e0c8414.htm" />
+  <HelpKINode Title="EinheitRowChanged event" Url="html/0797181f-46f2-69cf-06c8-920dfac3d489.htm" />
+  <HelpKINode Title="EinheitRowChangeEvent class">
+    <HelpKINode Title="EinheitRowChangeEvent Members" Url="html/9b1cc787-ba00-2899-cf4f-9e74537fc56d.htm" />
+    <HelpKINode Title="all members" Url="html/9b1cc787-ba00-2899-cf4f-9e74537fc56d.htm" />
+    <HelpKINode Title="methods" Url="html/2379cc41-d027-252d-c2b3-5e5ac50c437a.htm" />
+    <HelpKINode Title="properties" Url="html/d657d48c-0ea2-ec07-d9b5-5002adb7aa5e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EinheitRowChanging event" Url="html/0fd75b66-d211-5eb7-b0c5-bd3600fee616.htm" />
+  <HelpKINode Title="EinheitRowDeleted event" Url="html/1938a26e-5694-bc7b-9b95-5fe1f06ae627.htm" />
+  <HelpKINode Title="EinheitRowDeleting event" Url="html/255098a7-1d01-f851-97d3-8f8f307e327a.htm" />
+  <HelpKINode Title="einheitSpeichern method">
+    <HelpKINode Title="DatenbankConnector.einheitSpeichern Method " Url="html/9b04121f-dbbf-c865-cdfe-3c702640b21d.htm" />
+    <HelpKINode Title="DBConnect.einheitSpeichern Method " Url="html/b62bab01-49d0-d3b8-f9eb-c5fe2522a4ed.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EinheitTableAdapter class">
+    <HelpKINode Title="EinheitTableAdapter Class" Url="html/6bf0635a-5e42-f94c-0ab6-5c574b195785.htm" />
+    <HelpKINode Title="EinheitTableAdapter Members" Url="html/2198104f-ca64-6aee-00fb-2ba505818112.htm" />
+    <HelpKINode Title="about EinheitTableAdapter class" Url="html/6bf0635a-5e42-f94c-0ab6-5c574b195785.htm" />
+    <HelpKINode Title="all members" Url="html/2198104f-ca64-6aee-00fb-2ba505818112.htm" />
+    <HelpKINode Title="constructor" Url="html/6618615e-44d4-f7a4-3c3f-8aec6a2238ad.htm" />
+    <HelpKINode Title="events" Url="html/67099a57-4047-9a18-c70c-000c09734af5.htm" />
+    <HelpKINode Title="methods" Url="html/8fa99b5b-1bdf-430e-7a51-db5700e899dc.htm" />
+    <HelpKINode Title="properties" Url="html/31e038e9-b2c3-6a88-1fe9-a7b36ffa9faa.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EinheitTableAdapter property" Url="html/773b23ce-8930-8d85-d436-de577942767f.htm" />
+  <HelpKINode Title="EinheitTableAdapter.Adapter property" Url="html/591525fc-a7a4-3b84-5ff5-a06a54580905.htm" />
+  <HelpKINode Title="EinheitTableAdapter.ClearBeforeFill property" Url="html/735f5282-39ae-99cf-c7f7-b6c21e68ad8c.htm" />
+  <HelpKINode Title="EinheitTableAdapter.CommandCollection property" Url="html/1402055a-14f1-e249-f376-5e4a831690d0.htm" />
+  <HelpKINode Title="EinheitTableAdapter.Delete method" Url="html/9c418906-61f3-0ea9-4752-4718e3b0f19c.htm" />
+  <HelpKINode Title="EinheitTableAdapter.EinheitTableAdapter constructor" Url="html/6618615e-44d4-f7a4-3c3f-8aec6a2238ad.htm" />
+  <HelpKINode Title="EinheitTableAdapter.Fill method" Url="html/177b030f-aa16-8ef1-e212-dcccdcc21353.htm" />
+  <HelpKINode Title="EinheitTableAdapter.GetData method" Url="html/ba7181ff-6714-7a23-caa7-b545e86fdace.htm" />
+  <HelpKINode Title="EinheitTableAdapter.Insert method" Url="html/ddfa7abf-4c4e-07a8-cf4f-2726f8321d59.htm" />
+  <HelpKINode Title="EinheitTableAdapter.Update method" Url="html/5114aa88-4dec-c28d-80d1-c89a0adee9ef.htm" />
+  <HelpKINode Title="EinhName property" Url="html/ee4334f9-a10e-e61e-55bf-383f574d4117.htm" />
+  <HelpKINode Title="EinhNameColumn property" Url="html/86d89f26-0b7f-186a-a0f4-75b6ac90627b.htm" />
+  <HelpKINode Title="Email property" Url="html/010c31f0-86f7-4189-c109-30c600e2409f.htm" />
+  <HelpKINode Title="EmailColumn property" Url="html/1006bc54-81d8-3fce-4f17-8a4e3b40d336.htm" />
+  <HelpKINode Title="Equals method" Url="html/1b65a9a8-d63e-30f1-88c7-27da86967847.htm" />
+  <HelpKINode Title="Fill method">
+    <HelpKINode Title="EinheitTableAdapter.Fill Method " Url="html/177b030f-aa16-8ef1-e212-dcccdcc21353.htm" />
+    <HelpKINode Title="RezeptTableAdapter.Fill Method " Url="html/910c1f66-934f-6667-b124-19ee67943751.htm" />
+    <HelpKINode Title="RezZutTableAdapter.Fill Method " Url="html/197d5a95-5637-b007-8e1f-ce8da8defb18.htm" />
+    <HelpKINode Title="UserTableAdapter.Fill Method " Url="html/213d3160-175d-7b58-9f44-1fa2fdab1526.htm" />
+    <HelpKINode Title="ZutatTableAdapter.Fill Method " Url="html/79fcdae3-459a-de06-52c0-4ef09cbb0708.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FindByID method">
+    <HelpKINode Title="KochbuchDataSet.EinheitDataTable.FindByID Method " Url="html/676197ee-5083-5852-cdc2-5096c2e04cbe.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezeptDataTable.FindByID Method " Url="html/1c03c219-d868-8be0-af3b-eb20d523445a.htm" />
+    <HelpKINode Title="KochbuchDataSet.UserDataTable.FindByID Method " Url="html/b1725f7c-7829-2911-e05d-e7346ae9ed87.htm" />
+    <HelpKINode Title="KochbuchDataSet.ZutatDataTable.FindByID Method " Url="html/5cd5294f-812c-35e3-be8c-53928bfd86ed.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FindByRezeptIDZutatID method" Url="html/8d8cc27c-00f2-66ff-c70a-d76dcaa9761f.htm" />
+  <HelpKINode Title="GetData method">
+    <HelpKINode Title="EinheitTableAdapter.GetData Method " Url="html/ba7181ff-6714-7a23-caa7-b545e86fdace.htm" />
+    <HelpKINode Title="RezeptTableAdapter.GetData Method " Url="html/6e6c646e-9e3c-b7fc-2e98-d93244c59f89.htm" />
+    <HelpKINode Title="RezZutTableAdapter.GetData Method " Url="html/71083183-aaaf-ecc0-3fec-d36fc2f800f3.htm" />
+    <HelpKINode Title="UserTableAdapter.GetData Method " Url="html/4e0c49e1-3ff9-39f3-a833-20c4b82ebb8f.htm" />
+    <HelpKINode Title="ZutatTableAdapter.GetData Method " Url="html/0ed6cd6b-0332-0ba3-7089-c939acb01a18.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetRezeptRows method" Url="html/21045680-330d-836e-6af2-721113a346e3.htm" />
+  <HelpKINode Title="GetRezZutRows method">
+    <HelpKINode Title="KochbuchDataSet.EinheitRow.GetRezZutRows Method " Url="html/5b32f0aa-d27b-7fbb-87a2-af32ea05240d.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezeptRow.GetRezZutRows Method " Url="html/bf50e939-a1ad-99d2-c36b-bc27f180956a.htm" />
+    <HelpKINode Title="KochbuchDataSet.ZutatRow.GetRezZutRows Method " Url="html/b3f4c287-39ac-debd-218f-de1f29547ec2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetRowType method">
+    <HelpKINode Title="KochbuchDataSet.EinheitDataTable.GetRowType Method " Url="html/f2d87cfa-07d9-26a9-8be5-965f370b416d.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezeptDataTable.GetRowType Method " Url="html/26f8b189-bf55-0183-9e8d-a68ad78eca5e.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezZutDataTable.GetRowType Method " Url="html/650fd3b7-d550-b7d0-403c-d16bab2c2e21.htm" />
+    <HelpKINode Title="KochbuchDataSet.UserDataTable.GetRowType Method " Url="html/d5a57454-49b8-f7e2-e1c5-1b7186bfb7d2.htm" />
+    <HelpKINode Title="KochbuchDataSet.ZutatDataTable.GetRowType Method " Url="html/09ac56b7-eb64-b7f4-e534-6924e7caffe2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetSchemaSerializable method" Url="html/dc2336a5-0648-c687-920b-1e6be2f87e16.htm" />
+  <HelpKINode Title="GetTypedDataSetSchema method" Url="html/f8116c38-a56c-90e9-1042-6a5c34298976.htm" />
+  <HelpKINode Title="GetTypedTableSchema method">
+    <HelpKINode Title="KochbuchDataSet.EinheitDataTable.GetTypedTableSchema Method " Url="html/a739e424-14f8-ef3d-08d4-56f4f7b1348d.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezeptDataTable.GetTypedTableSchema Method " Url="html/254269ff-6c1f-336c-7f80-7597d5f98739.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezZutDataTable.GetTypedTableSchema Method " Url="html/8c859084-84d8-3aaf-fc80-0c84cfe53726.htm" />
+    <HelpKINode Title="KochbuchDataSet.UserDataTable.GetTypedTableSchema Method " Url="html/3b3416a1-2175-7ddc-b7b4-c80d62cd6cd3.htm" />
+    <HelpKINode Title="KochbuchDataSet.ZutatDataTable.GetTypedTableSchema Method " Url="html/3cd6dad0-9352-f5ae-9a6a-be698210822d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ID property">
+    <HelpKINode Title="KochbuchDataSet.EinheitRow.ID Property " Url="html/53327657-9656-525d-610f-52b2b2faa4a7.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezeptRow.ID Property " Url="html/6e96e25d-caa4-76dd-4f26-83028d3d681b.htm" />
+    <HelpKINode Title="KochbuchDataSet.UserRow.ID Property " Url="html/ad84c04a-2522-be54-c50e-623737957c14.htm" />
+    <HelpKINode Title="KochbuchDataSet.ZutatRow.ID Property " Url="html/f8dac5f3-d3e9-8990-d8ba-4546b4b6dfc2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IDColumn property">
+    <HelpKINode Title="KochbuchDataSet.EinheitDataTable.IDColumn Property " Url="html/d513dfd0-0e0e-7d11-a600-8e2aee8e88a9.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezeptDataTable.IDColumn Property " Url="html/243ce476-1aac-6980-1576-8d6c3b914a55.htm" />
+    <HelpKINode Title="KochbuchDataSet.UserDataTable.IDColumn Property " Url="html/96538277-d51a-c514-3a4d-4a487ccfeb6a.htm" />
+    <HelpKINode Title="KochbuchDataSet.ZutatDataTable.IDColumn Property " Url="html/4028696b-508c-930a-9aeb-684063003462.htm" />
+  </HelpKINode>
+  <HelpKINode Title="InitializeComponent method">
+    <HelpKINode Title="App.InitializeComponent Method " Url="html/861acbfe-a10b-84b9-af51-3b368898b527.htm" />
+    <HelpKINode Title="MainWindow.InitializeComponent Method " Url="html/3835df2c-7484-dbce-d00d-932a737570bf.htm" />
+    <HelpKINode Title="Rezept_erstellen.InitializeComponent Method " Url="html/5f897444-f9a2-e530-dd4b-b66481f294dc.htm" />
+    <HelpKINode Title="Rezept_suchen.InitializeComponent Method " Url="html/f75797ef-a0ea-1f81-8f5a-fb91b9de9bb7.htm" />
+    <HelpKINode Title="start.InitializeComponent Method " Url="html/6f99361d-69d0-3fd4-fc2e-0d6962c80244.htm" />
+  </HelpKINode>
+  <HelpKINode Title="InitializeDerivedDataSet method" Url="html/9aadb567-9bec-ad95-22a0-bd9fd9b33564.htm" />
+  <HelpKINode Title="Insert method">
+    <HelpKINode Title="EinheitTableAdapter.Insert Method " Url="html/ddfa7abf-4c4e-07a8-cf4f-2726f8321d59.htm" />
+    <HelpKINode Title="RezeptTableAdapter.Insert Method " Url="html/12118a23-61e3-c77b-d38b-df1d2c21ec2d.htm" />
+    <HelpKINode Title="RezZutTableAdapter.Insert Method " Url="html/b51809ba-915c-f21e-bf32-a9b6e5198b8d.htm" />
+    <HelpKINode Title="UserTableAdapter.Insert Method " Url="html/234c7f3b-3b3b-f0ef-0ab2-a42c8e4e311d.htm" />
+    <HelpKINode Title="ZutatTableAdapter.Insert Method " Url="html/79e9cf41-aa2d-1ee4-6927-9da9927e5758.htm" />
+  </HelpKINode>
+  <HelpKINode Title="InsertUpdateDelete enumeration member" Url="html/ec71caac-1242-feb7-2058-8a27ed42370b.htm" />
+  <HelpKINode Title="IsEinheitNull method" Url="html/6e548ccc-8984-3f35-6772-ebb99e3a68f4.htm" />
+  <HelpKINode Title="IsEinhNameNull method" Url="html/209ee31c-8022-30ba-bdfe-1ed4be81bbd3.htm" />
+  <HelpKINode Title="IsEmailNull method" Url="html/ef420837-f7fc-7d9a-6df4-6c7bbb2a3797.htm" />
+  <HelpKINode Title="IsMengeNull method" Url="html/b49280ba-90d9-0ce9-3d72-b89b182c80f9.htm" />
+  <HelpKINode Title="IsPasswortNull method" Url="html/d775ba52-4c42-956e-ffbc-4e1e01384dce.htm" />
+  <HelpKINode Title="IsPersonenNull method" Url="html/4000281b-aaba-0461-75de-1569eff13876.htm" />
+  <HelpKINode Title="IsRezNameNull method" Url="html/c4c18665-5614-1f09-7e61-926925ef3cdb.htm" />
+  <HelpKINode Title="IsScoreNull method" Url="html/4bb0c771-7ad3-63e5-ed72-c7d72a6300ec.htm" />
+  <HelpKINode Title="IsUNameNull method" Url="html/8adb46fd-a3d6-3514-0bb2-8c40cd98da7c.htm" />
+  <HelpKINode Title="IsUsrIDNull method" Url="html/2970dd09-c3f6-0441-ce6b-c15bda1b5200.htm" />
+  <HelpKINode Title="IsZubereitungNull method" Url="html/85f339f4-0e7f-2325-de62-fbbe9c1c0351.htm" />
+  <HelpKINode Title="IsZutNameNull method" Url="html/269397cc-eb73-333e-7093-3f69815672a2.htm" />
+  <HelpKINode Title="Item property">
+    <HelpKINode Title="KochbuchDataSet.EinheitDataTable.Item Property " Url="html/638a9b31-78dd-805c-fa3e-cf7667b8d081.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezeptDataTable.Item Property " Url="html/c93a00bf-22bf-21f7-372e-67ce14450312.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezZutDataTable.Item Property " Url="html/274494e4-acfc-7f19-789f-198d93631b12.htm" />
+    <HelpKINode Title="KochbuchDataSet.UserDataTable.Item Property " Url="html/a133224f-bfbd-291a-ed5a-607ccf61d2d4.htm" />
+    <HelpKINode Title="KochbuchDataSet.ZutatDataTable.Item Property " Url="html/4e40b370-29b4-463a-d458-668179029d39.htm" />
+  </HelpKINode>
+  <HelpKINode Title="KochbuchDataSet class">
+    <HelpKINode Title="KochbuchDataSet Class" Url="html/6236b6bc-2c22-6252-edd5-f2f91a827952.htm" />
+    <HelpKINode Title="KochbuchDataSet Members" Url="html/755be0a4-f627-3133-fa3f-a714f1a6e9ec.htm" />
+    <HelpKINode Title="about KochbuchDataSet class" Url="html/6236b6bc-2c22-6252-edd5-f2f91a827952.htm" />
+    <HelpKINode Title="all members" Url="html/755be0a4-f627-3133-fa3f-a714f1a6e9ec.htm" />
+    <HelpKINode Title="constructor" Url="html/a60b5735-3363-cdfe-18e7-796927ae2ace.htm" />
+    <HelpKINode Title="events" Url="html/7294993e-1193-4f0d-cc87-bf9150350bb0.htm" />
+    <HelpKINode Title="methods" Url="html/ac957a0f-ee52-d551-3eee-4cf517e9e739.htm" />
+    <HelpKINode Title="properties" Url="html/2d326d57-b026-02a6-85d1-ab494bc81838.htm" />
+  </HelpKINode>
+  <HelpKINode Title="KochbuchDataSet.Clone method" Url="html/0bdbecad-962c-b0ee-2077-fb7e93b5d40d.htm" />
+  <HelpKINode Title="KochbuchDataSet.Einheit property" Url="html/1d2c772a-bdea-9516-e6d4-b74bb7cd2a77.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitDataTable class">
+    <HelpKINode Title="KochbuchDataSet.EinheitDataTable Class" Url="html/a67dc4da-a8b5-554c-79ab-6b8c7386ea0b.htm" />
+    <HelpKINode Title="about KochbuchDataSet.EinheitDataTable class" Url="html/a67dc4da-a8b5-554c-79ab-6b8c7386ea0b.htm" />
+    <HelpKINode Title="constructor" Url="html/13d9a89d-431d-dbc4-fd21-d9a4f949fd2f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="KochbuchDataSet.EinheitDataTable.AddEinheitRow method" Url="html/acabd32a-eb28-f309-d6c7-f5529246cf14.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitDataTable.Clone method" Url="html/9765ed67-0b60-9455-6a59-2789b836919c.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitDataTable.Count property" Url="html/0ab2d090-ecae-17e1-19e5-bd9caf1e3496.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitDataTable.CreateInstance method" Url="html/c6df5c5f-560b-8ef3-b8a4-a09636b1aa24.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitDataTable.EinheitDataTable constructor" Url="html/13d9a89d-431d-dbc4-fd21-d9a4f949fd2f.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitDataTable.EinheitRowChanged event" Url="html/0797181f-46f2-69cf-06c8-920dfac3d489.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitDataTable.EinheitRowChanging event" Url="html/0fd75b66-d211-5eb7-b0c5-bd3600fee616.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitDataTable.EinheitRowDeleted event" Url="html/1938a26e-5694-bc7b-9b95-5fe1f06ae627.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitDataTable.EinheitRowDeleting event" Url="html/255098a7-1d01-f851-97d3-8f8f307e327a.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitDataTable.EinhNameColumn property" Url="html/86d89f26-0b7f-186a-a0f4-75b6ac90627b.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitDataTable.FindByID method" Url="html/676197ee-5083-5852-cdc2-5096c2e04cbe.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitDataTable.GetRowType method" Url="html/f2d87cfa-07d9-26a9-8be5-965f370b416d.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitDataTable.GetTypedTableSchema method" Url="html/a739e424-14f8-ef3d-08d4-56f4f7b1348d.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitDataTable.IDColumn property" Url="html/d513dfd0-0e0e-7d11-a600-8e2aee8e88a9.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitDataTable.Item property" Url="html/638a9b31-78dd-805c-fa3e-cf7667b8d081.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitDataTable.NewEinheitRow method" Url="html/41382b85-cf4a-7f86-9199-22b821af72ff.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitDataTable.NewRowFromBuilder method" Url="html/b7748e0b-db8b-f916-2371-4c4a58a6f5d4.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitDataTable.OnRowChanged method" Url="html/e730c038-310a-d53b-b344-e5fd97f10136.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitDataTable.OnRowChanging method" Url="html/9810a987-890d-d3b6-fdd1-5df87e5d3246.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitDataTable.OnRowDeleted method" Url="html/91593551-1103-1f7f-8a48-51b9b7ce62d7.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitDataTable.OnRowDeleting method" Url="html/d8988edd-7761-0689-ec13-9f1af054d1ae.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitDataTable.RemoveEinheitRow method" Url="html/32252cc5-46c4-55f5-00bc-ea6893dff9e8.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitRow class">
+    <HelpKINode Title="KochbuchDataSet.EinheitRow Class" Url="html/68ef60d1-7d20-6755-15df-f898e47060c8.htm" />
+    <HelpKINode Title="about KochbuchDataSet.EinheitRow class" Url="html/68ef60d1-7d20-6755-15df-f898e47060c8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="KochbuchDataSet.EinheitRow.EinhName property" Url="html/ee4334f9-a10e-e61e-55bf-383f574d4117.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitRow.GetRezZutRows method" Url="html/5b32f0aa-d27b-7fbb-87a2-af32ea05240d.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitRow.ID property" Url="html/53327657-9656-525d-610f-52b2b2faa4a7.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitRow.IsEinhNameNull method" Url="html/209ee31c-8022-30ba-bdfe-1ed4be81bbd3.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitRow.SetEinhNameNull method" Url="html/97a24e20-5e50-a6f3-ff89-ee32e0ab7c94.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitRowChangeEvent class">
+    <HelpKINode Title="KochbuchDataSet.EinheitRowChangeEvent Class" Url="html/c31835eb-e871-9cea-0c77-a5999dedccee.htm" />
+    <HelpKINode Title="about KochbuchDataSet.EinheitRowChangeEvent class" Url="html/c31835eb-e871-9cea-0c77-a5999dedccee.htm" />
+    <HelpKINode Title="constructor" Url="html/88c45900-ba98-606d-3c9e-c62e4d7019f7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="KochbuchDataSet.EinheitRowChangeEvent.Action property" Url="html/42399cd5-be0e-de1a-ae06-ad681a5d5d95.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitRowChangeEvent.EinheitRowChangeEvent constructor" Url="html/88c45900-ba98-606d-3c9e-c62e4d7019f7.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitRowChangeEvent.Row property" Url="html/2a7ac7e9-0291-9a17-510d-b2cad43d0eab.htm" />
+  <HelpKINode Title="KochbuchDataSet.EinheitRowChangeEventHandler delegate" Url="html/4b59ceff-5f64-5efd-0972-76bc449a07fa.htm" />
+  <HelpKINode Title="KochbuchDataSet.GetSchemaSerializable method" Url="html/dc2336a5-0648-c687-920b-1e6be2f87e16.htm" />
+  <HelpKINode Title="KochbuchDataSet.GetTypedDataSetSchema method" Url="html/f8116c38-a56c-90e9-1042-6a5c34298976.htm" />
+  <HelpKINode Title="KochbuchDataSet.InitializeDerivedDataSet method" Url="html/9aadb567-9bec-ad95-22a0-bd9fd9b33564.htm" />
+  <HelpKINode Title="KochbuchDataSet.KochbuchDataSet constructor" Url="html/a60b5735-3363-cdfe-18e7-796927ae2ace.htm" />
+  <HelpKINode Title="KochbuchDataSet.ReadXmlSerializable method" Url="html/eb11e575-682d-5d3d-9f85-39fdcff7f427.htm" />
+  <HelpKINode Title="KochbuchDataSet.Relations property" Url="html/6427b5c9-3ce3-6ecf-161f-26d231f5307e.htm" />
+  <HelpKINode Title="KochbuchDataSet.Rezept property" Url="html/075d9801-bf3f-036a-fb86-8ebbae9e1630.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptDataTable class">
+    <HelpKINode Title="KochbuchDataSet.RezeptDataTable Class" Url="html/e0f64cda-adcb-345d-4459-462c41de30dc.htm" />
+    <HelpKINode Title="about KochbuchDataSet.RezeptDataTable class" Url="html/e0f64cda-adcb-345d-4459-462c41de30dc.htm" />
+    <HelpKINode Title="constructor" Url="html/6ca83158-b1ed-35c6-af4e-f1dd8eb8799d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="KochbuchDataSet.RezeptDataTable.AddRezeptRow method" Url="html/e14f40d1-8cea-10bd-6e8b-1140c9476ad2.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptDataTable.Clone method" Url="html/9b5f314d-7600-d09a-7f99-8418d28e1c51.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptDataTable.Count property" Url="html/8e872fc8-2670-6d9b-8bec-67ad99b54345.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptDataTable.CreateInstance method" Url="html/f35d6041-b172-094b-4b36-6bc08b2a0749.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptDataTable.FindByID method" Url="html/1c03c219-d868-8be0-af3b-eb20d523445a.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptDataTable.GetRowType method" Url="html/26f8b189-bf55-0183-9e8d-a68ad78eca5e.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptDataTable.GetTypedTableSchema method" Url="html/254269ff-6c1f-336c-7f80-7597d5f98739.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptDataTable.IDColumn property" Url="html/243ce476-1aac-6980-1576-8d6c3b914a55.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptDataTable.Item property" Url="html/c93a00bf-22bf-21f7-372e-67ce14450312.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptDataTable.NewRezeptRow method" Url="html/d68929f4-3858-5479-e057-6d4d8f5c44c1.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptDataTable.NewRowFromBuilder method" Url="html/90df21d7-ee78-2d7c-557e-f094bd48fc50.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptDataTable.OnRowChanged method" Url="html/5b299864-4a6c-270a-4127-0bb32dcd6ddc.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptDataTable.OnRowChanging method" Url="html/dc593c1e-8146-6763-414a-3f594f6a3119.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptDataTable.OnRowDeleted method" Url="html/23935423-7965-4a9f-dbe6-eb1f7caa821d.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptDataTable.OnRowDeleting method" Url="html/c40978af-3785-d617-e52d-7cc0fe4128ca.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptDataTable.PersonenColumn property" Url="html/1ff9a822-d215-593a-7c64-d53d4b39b553.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptDataTable.RemoveRezeptRow method" Url="html/e183d82c-43f2-7d11-64eb-f5c889437fd4.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptDataTable.RezeptDataTable constructor" Url="html/6ca83158-b1ed-35c6-af4e-f1dd8eb8799d.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptDataTable.RezeptRowChanged event" Url="html/62503d10-85cd-b4da-2c91-3e907ac831fb.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptDataTable.RezeptRowChanging event" Url="html/8e7b824f-eb7c-afff-75d4-e48f61f757ca.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptDataTable.RezeptRowDeleted event" Url="html/9c2ecb38-be67-45ad-8768-7d27c5d4d12e.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptDataTable.RezeptRowDeleting event" Url="html/81a0faeb-846a-ba18-813b-9f44162a995e.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptDataTable.RezNameColumn property" Url="html/070dcca8-ae4a-e873-d9f9-907255f63053.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptDataTable.UsrIDColumn property" Url="html/637a75ab-eaf9-b188-7301-811fd1d7ee54.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptDataTable.ZubereitungColumn property" Url="html/33a67cf0-6640-83a9-b6ae-88d092d56812.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptRow class">
+    <HelpKINode Title="KochbuchDataSet.RezeptRow Class" Url="html/a166dde4-f18f-601e-75b4-0b2791df74e5.htm" />
+    <HelpKINode Title="about KochbuchDataSet.RezeptRow class" Url="html/a166dde4-f18f-601e-75b4-0b2791df74e5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="KochbuchDataSet.RezeptRow.GetRezZutRows method" Url="html/bf50e939-a1ad-99d2-c36b-bc27f180956a.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptRow.ID property" Url="html/6e96e25d-caa4-76dd-4f26-83028d3d681b.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptRow.IsPersonenNull method" Url="html/4000281b-aaba-0461-75de-1569eff13876.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptRow.IsRezNameNull method" Url="html/c4c18665-5614-1f09-7e61-926925ef3cdb.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptRow.IsUsrIDNull method" Url="html/2970dd09-c3f6-0441-ce6b-c15bda1b5200.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptRow.IsZubereitungNull method" Url="html/85f339f4-0e7f-2325-de62-fbbe9c1c0351.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptRow.Personen property" Url="html/5f8ea670-48ff-aafd-8b03-5ca8ff1b5513.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptRow.RezName property" Url="html/ed712995-7656-d53b-ffae-92fa563f6bd6.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptRow.SetPersonenNull method" Url="html/94745a79-b64c-7503-2ad9-a3c4a387914f.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptRow.SetRezNameNull method" Url="html/71803461-b3ec-79bf-80ea-0f7066b1d7f4.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptRow.SetUsrIDNull method" Url="html/93308174-1b92-2946-9bc3-816efafe6285.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptRow.SetZubereitungNull method" Url="html/65997161-985b-a602-6d85-4c4c06c6fbc6.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptRow.UserRow property" Url="html/bd8b06a0-8ece-9a96-fa90-92851e69c861.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptRow.UsrID property" Url="html/f7cd6bb8-0ef7-0e52-9a7e-dced81980cfa.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptRow.Zubereitung property" Url="html/dbe5d6f5-9e99-ebfa-f552-e155dfe5d95a.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptRowChangeEvent class">
+    <HelpKINode Title="KochbuchDataSet.RezeptRowChangeEvent Class" Url="html/d923dbe5-0401-e4b7-6f5f-0b9f6e5f7bd6.htm" />
+    <HelpKINode Title="about KochbuchDataSet.RezeptRowChangeEvent class" Url="html/d923dbe5-0401-e4b7-6f5f-0b9f6e5f7bd6.htm" />
+    <HelpKINode Title="constructor" Url="html/38efa433-75a0-3c28-f3db-89c976fb6420.htm" />
+  </HelpKINode>
+  <HelpKINode Title="KochbuchDataSet.RezeptRowChangeEvent.Action property" Url="html/8158621d-48ec-62f0-dbf8-d77a414c68fb.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptRowChangeEvent.RezeptRowChangeEvent constructor" Url="html/38efa433-75a0-3c28-f3db-89c976fb6420.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptRowChangeEvent.Row property" Url="html/780eb720-2546-31ad-6d39-0ec698ea3aa3.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezeptRowChangeEventHandler delegate" Url="html/bc1c70bf-f5a5-7e1b-bfb0-93890670cb19.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZut property" Url="html/a0227267-0032-8404-96fc-d555f1e01db7.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutDataTable class">
+    <HelpKINode Title="KochbuchDataSet.RezZutDataTable Class" Url="html/3fb39643-cc09-66d8-e7c7-9bfcc798b18b.htm" />
+    <HelpKINode Title="about KochbuchDataSet.RezZutDataTable class" Url="html/3fb39643-cc09-66d8-e7c7-9bfcc798b18b.htm" />
+    <HelpKINode Title="constructor" Url="html/11b0924b-1cdc-c811-0d6c-c2a1ad271a24.htm" />
+  </HelpKINode>
+  <HelpKINode Title="KochbuchDataSet.RezZutDataTable.AddRezZutRow method" Url="html/30577961-23a8-ed68-0016-5fecdb10b0f1.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutDataTable.Clone method" Url="html/872f3d0f-7197-2169-c730-286885170c85.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutDataTable.Count property" Url="html/6dbcb8d8-2aec-81c3-a412-55f409de07f7.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutDataTable.CreateInstance method" Url="html/7639bc20-48b1-465c-e0d4-93a9505d48f0.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutDataTable.EinheitColumn property" Url="html/2ab5939d-d605-fc13-de67-fd43463e6580.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutDataTable.FindByRezeptIDZutatID method" Url="html/8d8cc27c-00f2-66ff-c70a-d76dcaa9761f.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutDataTable.GetRowType method" Url="html/650fd3b7-d550-b7d0-403c-d16bab2c2e21.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutDataTable.GetTypedTableSchema method" Url="html/8c859084-84d8-3aaf-fc80-0c84cfe53726.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutDataTable.Item property" Url="html/274494e4-acfc-7f19-789f-198d93631b12.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutDataTable.MengeColumn property" Url="html/51251439-3761-be19-1660-cf34317cc6ac.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutDataTable.NewRezZutRow method" Url="html/2b637426-d8bb-6f20-2786-e811f7029608.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutDataTable.NewRowFromBuilder method" Url="html/b992278f-0b00-bcae-718e-292d726c8782.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutDataTable.OnRowChanged method" Url="html/99fc76b5-d62b-854e-fda9-82efa1548a90.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutDataTable.OnRowChanging method" Url="html/d5f2da3c-a373-4a3f-b92b-a3fd03929133.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutDataTable.OnRowDeleted method" Url="html/aecc8de4-3d20-0f34-8dc4-48576f0b67b0.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutDataTable.OnRowDeleting method" Url="html/37e54311-128e-0124-5a35-9b421f2111dc.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutDataTable.RemoveRezZutRow method" Url="html/0f8b144f-6aba-93f5-5b0d-9472c548c371.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutDataTable.RezeptIDColumn property" Url="html/5e0aa6d1-a824-5a12-5507-46c740e57d81.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutDataTable.RezZutDataTable constructor" Url="html/11b0924b-1cdc-c811-0d6c-c2a1ad271a24.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutDataTable.RezZutRowChanged event" Url="html/705d756d-83d2-ba4a-10a0-70a817bb75ac.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutDataTable.RezZutRowChanging event" Url="html/4ea3fe6b-bbb0-aa25-14c3-70bb201ffe0d.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutDataTable.RezZutRowDeleted event" Url="html/c5db52ac-bcd6-0e08-ec32-231c50127009.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutDataTable.RezZutRowDeleting event" Url="html/8174548d-cf5a-809f-c183-44437feb95ae.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutDataTable.ZutatIDColumn property" Url="html/9837ab94-8fd2-0a9b-3f84-671572bf11ce.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutRow class">
+    <HelpKINode Title="KochbuchDataSet.RezZutRow Class" Url="html/4f397bec-e233-1d88-660f-f71e6bc9a6be.htm" />
+    <HelpKINode Title="about KochbuchDataSet.RezZutRow class" Url="html/4f397bec-e233-1d88-660f-f71e6bc9a6be.htm" />
+  </HelpKINode>
+  <HelpKINode Title="KochbuchDataSet.RezZutRow.Einheit property" Url="html/2c18c9ff-c6b8-0d93-3868-9dbfe5b02074.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutRow.EinheitRow property" Url="html/0f8f4164-b61d-074c-7750-6bd39e0c8414.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutRow.IsEinheitNull method" Url="html/6e548ccc-8984-3f35-6772-ebb99e3a68f4.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutRow.IsMengeNull method" Url="html/b49280ba-90d9-0ce9-3d72-b89b182c80f9.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutRow.Menge property" Url="html/03e56d9f-ebf5-2564-b86a-003d282bb34e.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutRow.RezeptID property" Url="html/f9ffe402-2e52-8ef8-4dfc-acb05b225f23.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutRow.RezeptRow property" Url="html/80ae9ba4-2420-4da6-e4f2-5ce42dd4c9fc.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutRow.SetEinheitNull method" Url="html/0de07573-9652-fb88-3d19-5b554c61e2af.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutRow.SetMengeNull method" Url="html/b03458b4-3751-317e-c40d-03e7d966511b.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutRow.ZutatID property" Url="html/873f20da-f88a-90f5-7e85-759f9a4e5cd6.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutRow.ZutatRow property" Url="html/7bef9732-173c-eddd-51c8-27fb2f905a1f.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutRowChangeEvent class">
+    <HelpKINode Title="KochbuchDataSet.RezZutRowChangeEvent Class" Url="html/b3b720fe-8399-72aa-1056-3e3fab62b2c7.htm" />
+    <HelpKINode Title="about KochbuchDataSet.RezZutRowChangeEvent class" Url="html/b3b720fe-8399-72aa-1056-3e3fab62b2c7.htm" />
+    <HelpKINode Title="constructor" Url="html/b871958b-61c0-3e3d-f9cf-2c79e5419af7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="KochbuchDataSet.RezZutRowChangeEvent.Action property" Url="html/c48652f1-9238-30fc-d149-435b6717b2e1.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutRowChangeEvent.RezZutRowChangeEvent constructor" Url="html/b871958b-61c0-3e3d-f9cf-2c79e5419af7.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutRowChangeEvent.Row property" Url="html/8692848a-e618-f225-96fe-a0f4a698c254.htm" />
+  <HelpKINode Title="KochbuchDataSet.RezZutRowChangeEventHandler delegate" Url="html/c7b75cf7-3913-dd72-fc72-73407ab4ea63.htm" />
+  <HelpKINode Title="KochbuchDataSet.SchemaSerializationMode property" Url="html/9698eaa9-b411-0974-8673-836eaa37ffe2.htm" />
+  <HelpKINode Title="KochbuchDataSet.ShouldSerializeRelations method" Url="html/2b6d683b-8b6a-47f6-7088-465d5893db0a.htm" />
+  <HelpKINode Title="KochbuchDataSet.ShouldSerializeTables method" Url="html/4ce92652-d640-b023-4920-5f7951dafb6e.htm" />
+  <HelpKINode Title="KochbuchDataSet.Tables property" Url="html/d78d791d-052a-bddd-e82a-a8f66225960e.htm" />
+  <HelpKINode Title="KochbuchDataSet.User property" Url="html/c379585e-7c48-95cf-b630-bacdeefbcf29.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserDataTable class">
+    <HelpKINode Title="KochbuchDataSet.UserDataTable Class" Url="html/ae699a6d-45b4-2d61-e306-445a4187dcb3.htm" />
+    <HelpKINode Title="about KochbuchDataSet.UserDataTable class" Url="html/ae699a6d-45b4-2d61-e306-445a4187dcb3.htm" />
+    <HelpKINode Title="constructor" Url="html/d4a38975-eb89-f50a-ff6c-dd8b48d07626.htm" />
+  </HelpKINode>
+  <HelpKINode Title="KochbuchDataSet.UserDataTable.AddUserRow method" Url="html/ca30fd59-781b-90ab-8e33-fa81b6cac45b.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserDataTable.Clone method" Url="html/510c8c13-8946-aab7-8ad6-ddde8ea5d356.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserDataTable.Count property" Url="html/2ebd58e4-1f39-86f6-d26e-41179b40005a.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserDataTable.CreateInstance method" Url="html/adfd9743-b5f8-8354-bdfd-27c0eb6a299b.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserDataTable.EmailColumn property" Url="html/1006bc54-81d8-3fce-4f17-8a4e3b40d336.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserDataTable.FindByID method" Url="html/b1725f7c-7829-2911-e05d-e7346ae9ed87.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserDataTable.GetRowType method" Url="html/d5a57454-49b8-f7e2-e1c5-1b7186bfb7d2.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserDataTable.GetTypedTableSchema method" Url="html/3b3416a1-2175-7ddc-b7b4-c80d62cd6cd3.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserDataTable.IDColumn property" Url="html/96538277-d51a-c514-3a4d-4a487ccfeb6a.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserDataTable.Item property" Url="html/a133224f-bfbd-291a-ed5a-607ccf61d2d4.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserDataTable.NewRowFromBuilder method" Url="html/07ddfcf6-5b7e-3519-5f7b-1243a90d80b4.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserDataTable.NewUserRow method" Url="html/c2b76401-d411-7973-7463-265225a1efa5.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserDataTable.OnRowChanged method" Url="html/b65e11ce-ea14-108f-0f59-532d21488144.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserDataTable.OnRowChanging method" Url="html/488b9968-04b2-aca5-a43b-4a63974bdf59.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserDataTable.OnRowDeleted method" Url="html/e91c171e-afef-176a-12d6-031635fdad36.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserDataTable.OnRowDeleting method" Url="html/d34d095e-8687-da0c-5e49-17560f2100d6.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserDataTable.PasswortColumn property" Url="html/b9dc4849-c90d-faea-db9e-538bf511d2ac.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserDataTable.RemoveUserRow method" Url="html/87c0a325-6e60-94f5-90b7-d0a2494f45d4.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserDataTable.UNameColumn property" Url="html/86ff9a78-7dc8-1a01-bf17-28f335fd9922.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserDataTable.UserDataTable constructor" Url="html/d4a38975-eb89-f50a-ff6c-dd8b48d07626.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserDataTable.UserRowChanged event" Url="html/2a9909bb-230a-ad3e-db49-5f29d09d6e2b.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserDataTable.UserRowChanging event" Url="html/5d9abbe9-f2d7-307e-1c4e-aad918dbb978.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserDataTable.UserRowDeleted event" Url="html/06d89565-d436-cb03-6af3-c71c539c012c.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserDataTable.UserRowDeleting event" Url="html/5aaf7b63-eaef-1cce-64bd-a3e4c4af9418.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserRow class">
+    <HelpKINode Title="KochbuchDataSet.UserRow Class" Url="html/fbfbc15a-927d-bd96-25cf-8483000dd72c.htm" />
+    <HelpKINode Title="about KochbuchDataSet.UserRow class" Url="html/fbfbc15a-927d-bd96-25cf-8483000dd72c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="KochbuchDataSet.UserRow.Email property" Url="html/010c31f0-86f7-4189-c109-30c600e2409f.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserRow.GetRezeptRows method" Url="html/21045680-330d-836e-6af2-721113a346e3.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserRow.ID property" Url="html/ad84c04a-2522-be54-c50e-623737957c14.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserRow.IsEmailNull method" Url="html/ef420837-f7fc-7d9a-6df4-6c7bbb2a3797.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserRow.IsPasswortNull method" Url="html/d775ba52-4c42-956e-ffbc-4e1e01384dce.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserRow.IsUNameNull method" Url="html/8adb46fd-a3d6-3514-0bb2-8c40cd98da7c.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserRow.Passwort property" Url="html/a6659b28-2df6-8501-0a11-7bbfba536e9c.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserRow.SetEmailNull method" Url="html/832795d3-08c7-bc8f-8b1d-c16417209980.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserRow.SetPasswortNull method" Url="html/edfd2bf8-63df-8e40-967e-cd5ddec16d75.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserRow.SetUNameNull method" Url="html/2374da53-0c00-10e0-21f2-d99317e158ac.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserRow.UName property" Url="html/55a1a0a4-a264-036f-23d6-6deee49948b2.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserRowChangeEvent class">
+    <HelpKINode Title="KochbuchDataSet.UserRowChangeEvent Class" Url="html/ece2d1a9-a372-5e62-8207-008702b122a7.htm" />
+    <HelpKINode Title="about KochbuchDataSet.UserRowChangeEvent class" Url="html/ece2d1a9-a372-5e62-8207-008702b122a7.htm" />
+    <HelpKINode Title="constructor" Url="html/b1ab264c-3f76-74fe-cd60-291e8c109932.htm" />
+  </HelpKINode>
+  <HelpKINode Title="KochbuchDataSet.UserRowChangeEvent.Action property" Url="html/20bb9ace-5451-2476-90cc-4c457d86422e.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserRowChangeEvent.Row property" Url="html/20a548e1-adc2-ffa3-3ac0-1aa5f483ff23.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserRowChangeEvent.UserRowChangeEvent constructor" Url="html/b1ab264c-3f76-74fe-cd60-291e8c109932.htm" />
+  <HelpKINode Title="KochbuchDataSet.UserRowChangeEventHandler delegate" Url="html/129fa5a5-5805-5c9a-02b1-5c0076c27493.htm" />
+  <HelpKINode Title="KochbuchDataSet.Zutat property" Url="html/b2cf43c1-6f49-e142-f767-f551693f5d11.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatDataTable class">
+    <HelpKINode Title="KochbuchDataSet.ZutatDataTable Class" Url="html/09772d65-918e-430d-4f8c-bb3a7089b29d.htm" />
+    <HelpKINode Title="about KochbuchDataSet.ZutatDataTable class" Url="html/09772d65-918e-430d-4f8c-bb3a7089b29d.htm" />
+    <HelpKINode Title="constructor" Url="html/e769acf7-8440-6b5c-2b28-2174b5ac87d2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="KochbuchDataSet.ZutatDataTable.AddZutatRow method" Url="html/9244b5a9-ff7f-f7c5-329c-47d22fb2b1e3.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatDataTable.Clone method" Url="html/d8182b5b-bdf2-df45-e4ed-9305dd9b933e.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatDataTable.Count property" Url="html/595a4d5a-6c66-672b-418f-093d776ee9e7.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatDataTable.CreateInstance method" Url="html/307b56ec-712a-0f8b-8f5c-22b6fea90372.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatDataTable.FindByID method" Url="html/5cd5294f-812c-35e3-be8c-53928bfd86ed.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatDataTable.GetRowType method" Url="html/09ac56b7-eb64-b7f4-e534-6924e7caffe2.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatDataTable.GetTypedTableSchema method" Url="html/3cd6dad0-9352-f5ae-9a6a-be698210822d.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatDataTable.IDColumn property" Url="html/4028696b-508c-930a-9aeb-684063003462.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatDataTable.Item property" Url="html/4e40b370-29b4-463a-d458-668179029d39.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatDataTable.NewRowFromBuilder method" Url="html/6dc93434-0e20-9767-3352-cb726d34cf13.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatDataTable.NewZutatRow method" Url="html/d997886b-30f0-a7d7-20eb-c754530c6ea2.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatDataTable.OnRowChanged method" Url="html/cdf9df55-8b13-7650-dce1-beb38e6dfc10.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatDataTable.OnRowChanging method" Url="html/6240d9f7-7001-9a98-02d4-369b4fe17ba5.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatDataTable.OnRowDeleted method" Url="html/dde0707b-f79e-3ad8-04c0-8b16bdd6a79e.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatDataTable.OnRowDeleting method" Url="html/9db86bb8-bbfc-7ad6-9e4e-10a2be068bac.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatDataTable.RemoveZutatRow method" Url="html/9081dc62-8926-c8e0-e92f-ab9490504d05.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatDataTable.ScoreColumn property" Url="html/63925c98-0107-c8cf-b4e2-761fb8da04e2.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatDataTable.ZutatDataTable constructor" Url="html/e769acf7-8440-6b5c-2b28-2174b5ac87d2.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatDataTable.ZutatRowChanged event" Url="html/b78ad28b-a848-b2a2-9fee-24d63a3819bf.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatDataTable.ZutatRowChanging event" Url="html/b836e9c5-a0d1-f6ab-f061-3146aac5ac46.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatDataTable.ZutatRowDeleted event" Url="html/03a1afe1-488e-864c-2285-d3112befc4fc.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatDataTable.ZutatRowDeleting event" Url="html/92f398b6-031a-4205-fcb6-b10cb924f3b7.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatDataTable.ZutNameColumn property" Url="html/39656c24-bf67-6d69-71bb-848276b0b2a7.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatRow class">
+    <HelpKINode Title="KochbuchDataSet.ZutatRow Class" Url="html/90bf339b-0f71-dc4b-f40e-eb0abb15fc30.htm" />
+    <HelpKINode Title="about KochbuchDataSet.ZutatRow class" Url="html/90bf339b-0f71-dc4b-f40e-eb0abb15fc30.htm" />
+  </HelpKINode>
+  <HelpKINode Title="KochbuchDataSet.ZutatRow.GetRezZutRows method" Url="html/b3f4c287-39ac-debd-218f-de1f29547ec2.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatRow.ID property" Url="html/f8dac5f3-d3e9-8990-d8ba-4546b4b6dfc2.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatRow.IsScoreNull method" Url="html/4bb0c771-7ad3-63e5-ed72-c7d72a6300ec.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatRow.IsZutNameNull method" Url="html/269397cc-eb73-333e-7093-3f69815672a2.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatRow.Score property" Url="html/787fc80f-af5c-4593-53fa-5667f2596d02.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatRow.SetScoreNull method" Url="html/36916e52-439d-fc4d-eda8-a7417dde2dc7.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatRow.SetZutNameNull method" Url="html/dcfebb19-6228-ceb0-b5c3-fcebf6eec504.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatRow.ZutName property" Url="html/c60ddf9c-0a59-16f7-870a-b2aa9c422460.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatRowChangeEvent class">
+    <HelpKINode Title="KochbuchDataSet.ZutatRowChangeEvent Class" Url="html/261d36ea-36c9-8a81-d07f-1afe4e20581a.htm" />
+    <HelpKINode Title="about KochbuchDataSet.ZutatRowChangeEvent class" Url="html/261d36ea-36c9-8a81-d07f-1afe4e20581a.htm" />
+    <HelpKINode Title="constructor" Url="html/52c7fffa-6df7-d7df-3021-abb81b00007e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="KochbuchDataSet.ZutatRowChangeEvent.Action property" Url="html/7759b224-8676-c285-7907-6732017e88c7.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatRowChangeEvent.Row property" Url="html/9ef8cfe5-6577-2694-730a-0c5be0aca529.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatRowChangeEvent.ZutatRowChangeEvent constructor" Url="html/52c7fffa-6df7-d7df-3021-abb81b00007e.htm" />
+  <HelpKINode Title="KochbuchDataSet.ZutatRowChangeEventHandler delegate" Url="html/84a99522-b0bb-9169-6500-cf88fb9d8fd4.htm" />
+  <HelpKINode Title="Main method" Url="html/93cd58b6-692e-6f1e-1eea-0224c526b3b2.htm" />
+  <HelpKINode Title="MainWindow class">
+    <HelpKINode Title="MainWindow Class" Url="html/6caf63e0-ceee-898d-a415-7b27c118053e.htm" />
+    <HelpKINode Title="MainWindow Members" Url="html/a50bc127-9974-1bfd-5f76-ec8c9c93f334.htm" />
+    <HelpKINode Title="about MainWindow class" Url="html/6caf63e0-ceee-898d-a415-7b27c118053e.htm" />
+    <HelpKINode Title="all members" Url="html/a50bc127-9974-1bfd-5f76-ec8c9c93f334.htm" />
+    <HelpKINode Title="constructor" Url="html/8042baef-52dd-dc1a-d983-5f35f51a3461.htm" />
+    <HelpKINode Title="events" Url="html/c9714e5c-0921-6688-69ef-884275aff106.htm" />
+    <HelpKINode Title="methods" Url="html/761d98b6-7151-bd70-28d6-c1333ce9d87d.htm" />
+    <HelpKINode Title="properties" Url="html/539acdc9-8122-8dc8-f235-bd441f063dda.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MainWindow.InitializeComponent method" Url="html/3835df2c-7484-dbce-d00d-932a737570bf.htm" />
+  <HelpKINode Title="MainWindow.MainWindow constructor" Url="html/8042baef-52dd-dc1a-d983-5f35f51a3461.htm" />
+  <HelpKINode Title="MatchTableAdapterConnection method" Url="html/a194da06-e851-3cf2-a7c0-41e82ae76f99.htm" />
+  <HelpKINode Title="Menge property" Url="html/03e56d9f-ebf5-2564-b86a-003d282bb34e.htm" />
+  <HelpKINode Title="menge property" Url="html/c5714e35-762d-2ca0-ef09-d603ed815fbf.htm" />
+  <HelpKINode Title="MengeColumn property" Url="html/51251439-3761-be19-1660-cf34317cc6ac.htm" />
+  <HelpKINode Title="name field" Url="html/6debedbd-4c61-8ea9-64fc-4e2131b06c82.htm" />
+  <HelpKINode Title="name property">
+    <HelpKINode Title="Einheit.name Property " Url="html/7df5dabc-6023-ed30-fef2-5ca3b3f4b70c.htm" />
+    <HelpKINode Title="Zutat.name Property " Url="html/f4189603-1e7e-e0aa-dd2a-4b20c3ca1dc9.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NewEinheitRow method" Url="html/41382b85-cf4a-7f86-9199-22b821af72ff.htm" />
+  <HelpKINode Title="NewRezeptRow method" Url="html/d68929f4-3858-5479-e057-6d4d8f5c44c1.htm" />
+  <HelpKINode Title="NewRezZutRow method" Url="html/2b637426-d8bb-6f20-2786-e811f7029608.htm" />
+  <HelpKINode Title="NewRowFromBuilder method">
+    <HelpKINode Title="KochbuchDataSet.EinheitDataTable.NewRowFromBuilder Method " Url="html/b7748e0b-db8b-f916-2371-4c4a58a6f5d4.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezeptDataTable.NewRowFromBuilder Method " Url="html/90df21d7-ee78-2d7c-557e-f094bd48fc50.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezZutDataTable.NewRowFromBuilder Method " Url="html/b992278f-0b00-bcae-718e-292d726c8782.htm" />
+    <HelpKINode Title="KochbuchDataSet.UserDataTable.NewRowFromBuilder Method " Url="html/07ddfcf6-5b7e-3519-5f7b-1243a90d80b4.htm" />
+    <HelpKINode Title="KochbuchDataSet.ZutatDataTable.NewRowFromBuilder Method " Url="html/6dc93434-0e20-9767-3352-cb726d34cf13.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NewUserRow method" Url="html/c2b76401-d411-7973-7463-265225a1efa5.htm" />
+  <HelpKINode Title="NewZutatRow method" Url="html/d997886b-30f0-a7d7-20eb-c754530c6ea2.htm" />
+  <HelpKINode Title="OnRowChanged method">
+    <HelpKINode Title="KochbuchDataSet.EinheitDataTable.OnRowChanged Method " Url="html/e730c038-310a-d53b-b344-e5fd97f10136.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezeptDataTable.OnRowChanged Method " Url="html/5b299864-4a6c-270a-4127-0bb32dcd6ddc.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezZutDataTable.OnRowChanged Method " Url="html/99fc76b5-d62b-854e-fda9-82efa1548a90.htm" />
+    <HelpKINode Title="KochbuchDataSet.UserDataTable.OnRowChanged Method " Url="html/b65e11ce-ea14-108f-0f59-532d21488144.htm" />
+    <HelpKINode Title="KochbuchDataSet.ZutatDataTable.OnRowChanged Method " Url="html/cdf9df55-8b13-7650-dce1-beb38e6dfc10.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OnRowChanging method">
+    <HelpKINode Title="KochbuchDataSet.EinheitDataTable.OnRowChanging Method " Url="html/9810a987-890d-d3b6-fdd1-5df87e5d3246.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezeptDataTable.OnRowChanging Method " Url="html/dc593c1e-8146-6763-414a-3f594f6a3119.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezZutDataTable.OnRowChanging Method " Url="html/d5f2da3c-a373-4a3f-b92b-a3fd03929133.htm" />
+    <HelpKINode Title="KochbuchDataSet.UserDataTable.OnRowChanging Method " Url="html/488b9968-04b2-aca5-a43b-4a63974bdf59.htm" />
+    <HelpKINode Title="KochbuchDataSet.ZutatDataTable.OnRowChanging Method " Url="html/6240d9f7-7001-9a98-02d4-369b4fe17ba5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OnRowDeleted method">
+    <HelpKINode Title="KochbuchDataSet.EinheitDataTable.OnRowDeleted Method " Url="html/91593551-1103-1f7f-8a48-51b9b7ce62d7.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezeptDataTable.OnRowDeleted Method " Url="html/23935423-7965-4a9f-dbe6-eb1f7caa821d.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezZutDataTable.OnRowDeleted Method " Url="html/aecc8de4-3d20-0f34-8dc4-48576f0b67b0.htm" />
+    <HelpKINode Title="KochbuchDataSet.UserDataTable.OnRowDeleted Method " Url="html/e91c171e-afef-176a-12d6-031635fdad36.htm" />
+    <HelpKINode Title="KochbuchDataSet.ZutatDataTable.OnRowDeleted Method " Url="html/dde0707b-f79e-3ad8-04c0-8b16bdd6a79e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OnRowDeleting method">
+    <HelpKINode Title="KochbuchDataSet.EinheitDataTable.OnRowDeleting Method " Url="html/d8988edd-7761-0689-ec13-9f1af054d1ae.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezeptDataTable.OnRowDeleting Method " Url="html/c40978af-3785-d617-e52d-7cc0fe4128ca.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezZutDataTable.OnRowDeleting Method " Url="html/37e54311-128e-0124-5a35-9b421f2111dc.htm" />
+    <HelpKINode Title="KochbuchDataSet.UserDataTable.OnRowDeleting Method " Url="html/d34d095e-8687-da0c-5e49-17560f2100d6.htm" />
+    <HelpKINode Title="KochbuchDataSet.ZutatDataTable.OnRowDeleting Method " Url="html/9db86bb8-bbfc-7ad6-9e4e-10a2be068bac.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Passwort property" Url="html/a6659b28-2df6-8501-0a11-7bbfba536e9c.htm" />
+  <HelpKINode Title="PasswortColumn property" Url="html/b9dc4849-c90d-faea-db9e-538bf511d2ac.htm" />
+  <HelpKINode Title="pers field" Url="html/623aecbe-34eb-c566-0420-55cdf7817099.htm" />
+  <HelpKINode Title="Personen property" Url="html/5f8ea670-48ff-aafd-8b03-5ca8ff1b5513.htm" />
+  <HelpKINode Title="PersonenColumn property" Url="html/1ff9a822-d215-593a-7c64-d53d4b39b553.htm" />
+  <HelpKINode Title="ReadXmlSerializable method" Url="html/eb11e575-682d-5d3d-9f85-39fdcff7f427.htm" />
+  <HelpKINode Title="Ref class">
+    <HelpKINode Title="Ref Class" Url="html/137c3311-99d3-c4ec-0078-68e5b110dfd1.htm" />
+    <HelpKINode Title="Ref Members" Url="html/224db254-d11d-1e05-f48c-0c0ae74afe1f.htm" />
+    <HelpKINode Title="about Ref class" Url="html/137c3311-99d3-c4ec-0078-68e5b110dfd1.htm" />
+    <HelpKINode Title="all members" Url="html/224db254-d11d-1e05-f48c-0c0ae74afe1f.htm" />
+    <HelpKINode Title="fields" Url="html/b136810c-57d8-638f-145d-7f6fe70396f1.htm" />
+    <HelpKINode Title="properties" Url="html/2c2016e7-ffce-16ec-6183-93262d4d8011.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Ref.dbc property" Url="html/9637fede-a287-550f-1b18-27e69e6877b2.htm" />
+  <HelpKINode Title="Ref.defaultValues field" Url="html/5faba27b-e47a-8e57-4b16-c417bcd7dc5c.htm" />
+  <HelpKINode Title="Ref.ehl property" Url="html/669b4304-2f64-61cd-7d19-1daf5a2dea43.htm" />
+  <HelpKINode Title="Ref.rl field" Url="html/34b55b42-0bde-e8a9-464d-1b7089f9ab28.htm" />
+  <HelpKINode Title="Relations property" Url="html/6427b5c9-3ce3-6ecf-161f-26d231f5307e.htm" />
+  <HelpKINode Title="RemoveEinheitRow method" Url="html/32252cc5-46c4-55f5-00bc-ea6893dff9e8.htm" />
+  <HelpKINode Title="RemoveRezeptRow method" Url="html/e183d82c-43f2-7d11-64eb-f5c889437fd4.htm" />
+  <HelpKINode Title="RemoveRezZutRow method" Url="html/0f8b144f-6aba-93f5-5b0d-9472c548c371.htm" />
+  <HelpKINode Title="RemoveUserRow method" Url="html/87c0a325-6e60-94f5-90b7-d0a2494f45d4.htm" />
+  <HelpKINode Title="RemoveZutatRow method" Url="html/9081dc62-8926-c8e0-e92f-ab9490504d05.htm" />
+  <HelpKINode Title="Rezept class">
+    <HelpKINode Title="Rezept Class" Url="html/e9431903-613b-5804-ac55-477c3621c326.htm" />
+    <HelpKINode Title="Rezept Members" Url="html/042ed996-39a8-792f-ec26-6069596edf21.htm" />
+    <HelpKINode Title="about Rezept class" Url="html/e9431903-613b-5804-ac55-477c3621c326.htm" />
+    <HelpKINode Title="all members" Url="html/042ed996-39a8-792f-ec26-6069596edf21.htm" />
+    <HelpKINode Title="constructor" Url="html/2c45cd24-6900-5c46-d2b8-ae647f5ccd21.htm" />
+    <HelpKINode Title="fields" Url="html/3f393007-cb7e-8db9-8342-afc8623beb14.htm" />
+    <HelpKINode Title="methods" Url="html/b6efdf8b-3e11-abfa-5cbc-d81b91a801d9.htm" />
+    <HelpKINode Title="properties" Url="html/7fe19026-8dff-268a-3545-4f2ef0c78130.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Rezept property" Url="html/075d9801-bf3f-036a-fb86-8ebbae9e1630.htm" />
+  <HelpKINode Title="Rezept.name field" Url="html/6debedbd-4c61-8ea9-64fc-4e2131b06c82.htm" />
+  <HelpKINode Title="Rezept.pers field" Url="html/623aecbe-34eb-c566-0420-55cdf7817099.htm" />
+  <HelpKINode Title="Rezept.Rezept constructor" Url="html/2c45cd24-6900-5c46-d2b8-ae647f5ccd21.htm" />
+  <HelpKINode Title="Rezept.zubereitung field" Url="html/442302a3-f906-dc87-1262-9a71619d109d.htm" />
+  <HelpKINode Title="Rezept.zutaten property" Url="html/5fa1259e-245e-9d25-16ba-a57e82accd79.htm" />
+  <HelpKINode Title="RezeptDataTable class">
+    <HelpKINode Title="RezeptDataTable Members" Url="html/b00e4a3a-7c4f-b6b6-2eb9-bebbcd127235.htm" />
+    <HelpKINode Title="all members" Url="html/b00e4a3a-7c4f-b6b6-2eb9-bebbcd127235.htm" />
+    <HelpKINode Title="events" Url="html/656b61ef-4d7e-696f-ba4b-b77f3c7dbeb7.htm" />
+    <HelpKINode Title="fields" Url="html/0d7d98de-743a-dee3-f667-2eaed2ef58b7.htm" />
+    <HelpKINode Title="methods" Url="html/99a58c22-3b23-00a4-6469-b55059b24bd0.htm" />
+    <HelpKINode Title="properties" Url="html/b2934e19-ba23-75b9-4319-f35193f63b4d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="rezepteMit method">
+    <HelpKINode Title="DatenbankConnector.rezepteMit Method " Url="html/130d0298-0b60-bc58-bedf-239e8a85f732.htm" />
+    <HelpKINode Title="DBConnect.rezepteMit Method " Url="html/e8d1cade-3767-086e-933c-f74dce516c35.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RezeptID property" Url="html/f9ffe402-2e52-8ef8-4dfc-acb05b225f23.htm" />
+  <HelpKINode Title="RezeptIDColumn property" Url="html/5e0aa6d1-a824-5a12-5507-46c740e57d81.htm" />
+  <HelpKINode Title="RezeptRow class">
+    <HelpKINode Title="RezeptRow Members" Url="html/512a439f-5d68-3b71-3f87-ec5cad2d880e.htm" />
+    <HelpKINode Title="all members" Url="html/512a439f-5d68-3b71-3f87-ec5cad2d880e.htm" />
+    <HelpKINode Title="methods" Url="html/a2012c52-cf99-b9cf-e07f-1aae060329e9.htm" />
+    <HelpKINode Title="properties" Url="html/0d2d47c0-6588-cfbd-6c52-80b6dde86e8d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RezeptRow property" Url="html/80ae9ba4-2420-4da6-e4f2-5ce42dd4c9fc.htm" />
+  <HelpKINode Title="RezeptRowChanged event" Url="html/62503d10-85cd-b4da-2c91-3e907ac831fb.htm" />
+  <HelpKINode Title="RezeptRowChangeEvent class">
+    <HelpKINode Title="RezeptRowChangeEvent Members" Url="html/99f20a1c-e7b0-1f74-fcec-99e34c31e367.htm" />
+    <HelpKINode Title="all members" Url="html/99f20a1c-e7b0-1f74-fcec-99e34c31e367.htm" />
+    <HelpKINode Title="methods" Url="html/6fe5311f-8a58-e9b1-58d2-a1f17d3f059b.htm" />
+    <HelpKINode Title="properties" Url="html/41a2b9d0-3817-b25a-7184-33ec28184a56.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RezeptRowChanging event" Url="html/8e7b824f-eb7c-afff-75d4-e48f61f757ca.htm" />
+  <HelpKINode Title="RezeptRowDeleted event" Url="html/9c2ecb38-be67-45ad-8768-7d27c5d4d12e.htm" />
+  <HelpKINode Title="RezeptRowDeleting event" Url="html/81a0faeb-846a-ba18-813b-9f44162a995e.htm" />
+  <HelpKINode Title="RezeptTableAdapter class">
+    <HelpKINode Title="RezeptTableAdapter Class" Url="html/29786231-50ed-62c4-5f68-68dfdcae2bbe.htm" />
+    <HelpKINode Title="RezeptTableAdapter Members" Url="html/84e80be7-a5cf-6b60-3f55-d0edc3b00877.htm" />
+    <HelpKINode Title="about RezeptTableAdapter class" Url="html/29786231-50ed-62c4-5f68-68dfdcae2bbe.htm" />
+    <HelpKINode Title="all members" Url="html/84e80be7-a5cf-6b60-3f55-d0edc3b00877.htm" />
+    <HelpKINode Title="constructor" Url="html/5e1fb41e-f30e-43a9-af41-42a888ead652.htm" />
+    <HelpKINode Title="events" Url="html/c55f21ba-9f8f-e620-4d83-9982f8fee4e3.htm" />
+    <HelpKINode Title="methods" Url="html/7331d9f0-59fa-bd1e-d768-3fb39710f92a.htm" />
+    <HelpKINode Title="properties" Url="html/94186bba-6676-de23-901d-e3d3049c8038.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RezeptTableAdapter property" Url="html/475db286-3d50-9359-cfa9-44b4ce6d35d1.htm" />
+  <HelpKINode Title="RezeptTableAdapter.Adapter property" Url="html/3b440894-5ca7-5185-4ab1-4fda07f7fd7f.htm" />
+  <HelpKINode Title="RezeptTableAdapter.ClearBeforeFill property" Url="html/768321bf-4a9e-2fd9-2446-be3344ae7878.htm" />
+  <HelpKINode Title="RezeptTableAdapter.CommandCollection property" Url="html/3398ef47-cdc9-207f-4683-1e7675816a3e.htm" />
+  <HelpKINode Title="RezeptTableAdapter.Delete method" Url="html/7432b0c6-ecaa-c580-5781-0a7713506e2a.htm" />
+  <HelpKINode Title="RezeptTableAdapter.Fill method" Url="html/910c1f66-934f-6667-b124-19ee67943751.htm" />
+  <HelpKINode Title="RezeptTableAdapter.GetData method" Url="html/6e6c646e-9e3c-b7fc-2e98-d93244c59f89.htm" />
+  <HelpKINode Title="RezeptTableAdapter.Insert method" Url="html/12118a23-61e3-c77b-d38b-df1d2c21ec2d.htm" />
+  <HelpKINode Title="RezeptTableAdapter.RezeptTableAdapter constructor" Url="html/5e1fb41e-f30e-43a9-af41-42a888ead652.htm" />
+  <HelpKINode Title="RezeptTableAdapter.Update method" Url="html/4ce4f2bd-ed6b-6982-68e3-3412d185f977.htm" />
+  <HelpKINode Title="Rezept_erstellen class">
+    <HelpKINode Title="Rezept_erstellen Class" Url="html/51395b9a-c9f8-7a6a-776f-349be605dcfe.htm" />
+    <HelpKINode Title="Rezept_erstellen Members" Url="html/b20fbd0e-6245-ee9f-2295-554061c96311.htm" />
+    <HelpKINode Title="about Rezept_erstellen class" Url="html/51395b9a-c9f8-7a6a-776f-349be605dcfe.htm" />
+    <HelpKINode Title="all members" Url="html/b20fbd0e-6245-ee9f-2295-554061c96311.htm" />
+    <HelpKINode Title="constructor" Url="html/5e39c203-1cc6-5e70-af60-878a198a18b6.htm" />
+    <HelpKINode Title="events" Url="html/98e93f84-645e-4296-2130-d2c35515d18a.htm" />
+    <HelpKINode Title="methods" Url="html/bc82c10d-3966-81e5-1b23-05d12733577b.htm" />
+    <HelpKINode Title="properties" Url="html/779e75d4-104a-7bea-7fb5-c8e17b84c0f2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Rezept_erstellen.InitializeComponent method" Url="html/5f897444-f9a2-e530-dd4b-b66481f294dc.htm" />
+  <HelpKINode Title="Rezept_erstellen.Rezept_erstellen constructor" Url="html/5e39c203-1cc6-5e70-af60-878a198a18b6.htm" />
+  <HelpKINode Title="Rezept_suchen class">
+    <HelpKINode Title="Rezept_suchen Class" Url="html/ca24f7e7-1ce0-cfbb-c9e7-2ec243e5e4f3.htm" />
+    <HelpKINode Title="Rezept_suchen Members" Url="html/a99c0fbe-2218-f723-8a18-831dfed5df2e.htm" />
+    <HelpKINode Title="about Rezept_suchen class" Url="html/ca24f7e7-1ce0-cfbb-c9e7-2ec243e5e4f3.htm" />
+    <HelpKINode Title="all members" Url="html/a99c0fbe-2218-f723-8a18-831dfed5df2e.htm" />
+    <HelpKINode Title="constructor" Url="html/d4e0a368-5fa3-a164-0541-3b7558dac1f1.htm" />
+    <HelpKINode Title="events" Url="html/740f4d94-9e6b-d654-f19b-dac1b87aa69a.htm" />
+    <HelpKINode Title="methods" Url="html/df6e14fd-a2af-172a-8793-85be1ce6251b.htm" />
+    <HelpKINode Title="properties" Url="html/eb546124-b651-bcc7-4b03-03c02e119c9e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Rezept_suchen.InitializeComponent method" Url="html/f75797ef-a0ea-1f81-8f5a-fb91b9de9bb7.htm" />
+  <HelpKINode Title="Rezept_suchen.Rezept_suchen constructor" Url="html/d4e0a368-5fa3-a164-0541-3b7558dac1f1.htm" />
+  <HelpKINode Title="RezName property" Url="html/ed712995-7656-d53b-ffae-92fa563f6bd6.htm" />
+  <HelpKINode Title="RezNameColumn property" Url="html/070dcca8-ae4a-e873-d9f9-907255f63053.htm" />
+  <HelpKINode Title="rezSpeichern method">
+    <HelpKINode Title="DatenbankConnector.rezSpeichern Method " Url="html/72678e76-3085-6f93-1ad8-860d9ef7ea9d.htm" />
+    <HelpKINode Title="DBConnect.rezSpeichern Method " Url="html/1f8d889c-d233-4db3-1f52-305b9b233f94.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RezZut property" Url="html/a0227267-0032-8404-96fc-d555f1e01db7.htm" />
+  <HelpKINode Title="RezZutDataTable class">
+    <HelpKINode Title="RezZutDataTable Members" Url="html/0b6e4990-392d-43c7-f432-0db053d377f7.htm" />
+    <HelpKINode Title="all members" Url="html/0b6e4990-392d-43c7-f432-0db053d377f7.htm" />
+    <HelpKINode Title="events" Url="html/206cba97-e32a-6324-9e95-6b38d8ba1cd9.htm" />
+    <HelpKINode Title="fields" Url="html/140e3153-ae59-f7f1-f93e-427f41090ce9.htm" />
+    <HelpKINode Title="methods" Url="html/a00f48f3-2707-5196-3268-8136ea72d7be.htm" />
+    <HelpKINode Title="properties" Url="html/a68e53b7-ba5f-8420-6199-7793cd552de8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RezZutRow class">
+    <HelpKINode Title="RezZutRow Members" Url="html/6d479341-8bb3-4659-8c3c-5304e71d7ddc.htm" />
+    <HelpKINode Title="all members" Url="html/6d479341-8bb3-4659-8c3c-5304e71d7ddc.htm" />
+    <HelpKINode Title="methods" Url="html/6db13f31-b2f5-3264-c63f-6f6ead4573dd.htm" />
+    <HelpKINode Title="properties" Url="html/206d7ded-b1c5-7840-ad24-78fed9d7b00d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RezZutRowChanged event" Url="html/705d756d-83d2-ba4a-10a0-70a817bb75ac.htm" />
+  <HelpKINode Title="RezZutRowChangeEvent class">
+    <HelpKINode Title="RezZutRowChangeEvent Members" Url="html/7ffd1df2-3231-0cd8-b4de-8bbea15f4a6a.htm" />
+    <HelpKINode Title="all members" Url="html/7ffd1df2-3231-0cd8-b4de-8bbea15f4a6a.htm" />
+    <HelpKINode Title="methods" Url="html/8289ce71-41a1-15a9-f7ea-48de89ae552a.htm" />
+    <HelpKINode Title="properties" Url="html/f52472c5-48a1-8237-b674-99c60a3fe645.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RezZutRowChanging event" Url="html/4ea3fe6b-bbb0-aa25-14c3-70bb201ffe0d.htm" />
+  <HelpKINode Title="RezZutRowDeleted event" Url="html/c5db52ac-bcd6-0e08-ec32-231c50127009.htm" />
+  <HelpKINode Title="RezZutRowDeleting event" Url="html/8174548d-cf5a-809f-c183-44437feb95ae.htm" />
+  <HelpKINode Title="RezZutTableAdapter class">
+    <HelpKINode Title="RezZutTableAdapter Class" Url="html/5b3c65d6-4dc2-5bcb-2a77-542f4ad954f2.htm" />
+    <HelpKINode Title="RezZutTableAdapter Members" Url="html/bb885347-b0cd-6cf2-b357-bcef9dc65896.htm" />
+    <HelpKINode Title="about RezZutTableAdapter class" Url="html/5b3c65d6-4dc2-5bcb-2a77-542f4ad954f2.htm" />
+    <HelpKINode Title="all members" Url="html/bb885347-b0cd-6cf2-b357-bcef9dc65896.htm" />
+    <HelpKINode Title="constructor" Url="html/02176b7f-2dec-8db2-58a2-e5dde4e62842.htm" />
+    <HelpKINode Title="events" Url="html/38f2fafb-0715-78c7-e48d-0fb8f75b3a55.htm" />
+    <HelpKINode Title="methods" Url="html/528b8dcf-4c69-d77d-7681-6b8e5c6a4871.htm" />
+    <HelpKINode Title="properties" Url="html/aa689dce-ec7c-0d5e-fa81-aed8e651da38.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RezZutTableAdapter property" Url="html/b53df3c0-12eb-090b-96d9-1e9f2fb6e370.htm" />
+  <HelpKINode Title="RezZutTableAdapter.Adapter property" Url="html/4b30ad63-5354-8a08-b081-673f8e119fa1.htm" />
+  <HelpKINode Title="RezZutTableAdapter.ClearBeforeFill property" Url="html/9a0f226d-09a8-2f4d-3e10-c96084e1c546.htm" />
+  <HelpKINode Title="RezZutTableAdapter.CommandCollection property" Url="html/95359947-3bf0-058b-2f83-8b3508963b5b.htm" />
+  <HelpKINode Title="RezZutTableAdapter.Delete method" Url="html/6fda177a-44e2-8b74-018a-0af82dddc5ba.htm" />
+  <HelpKINode Title="RezZutTableAdapter.Fill method" Url="html/197d5a95-5637-b007-8e1f-ce8da8defb18.htm" />
+  <HelpKINode Title="RezZutTableAdapter.GetData method" Url="html/71083183-aaaf-ecc0-3fec-d36fc2f800f3.htm" />
+  <HelpKINode Title="RezZutTableAdapter.Insert method" Url="html/b51809ba-915c-f21e-bf32-a9b6e5198b8d.htm" />
+  <HelpKINode Title="RezZutTableAdapter.RezZutTableAdapter constructor" Url="html/02176b7f-2dec-8db2-58a2-e5dde4e62842.htm" />
+  <HelpKINode Title="RezZutTableAdapter.Update method" Url="html/23ed52f1-6f40-26fc-6bd2-af5fac2a3cbf.htm" />
+  <HelpKINode Title="rl field" Url="html/34b55b42-0bde-e8a9-464d-1b7089f9ab28.htm" />
+  <HelpKINode Title="Row property">
+    <HelpKINode Title="KochbuchDataSet.EinheitRowChangeEvent.Row Property " Url="html/2a7ac7e9-0291-9a17-510d-b2cad43d0eab.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezeptRowChangeEvent.Row Property " Url="html/780eb720-2546-31ad-6d39-0ec698ea3aa3.htm" />
+    <HelpKINode Title="KochbuchDataSet.RezZutRowChangeEvent.Row Property " Url="html/8692848a-e618-f225-96fe-a0f4a698c254.htm" />
+    <HelpKINode Title="KochbuchDataSet.UserRowChangeEvent.Row Property " Url="html/20a548e1-adc2-ffa3-3ac0-1aa5f483ff23.htm" />
+    <HelpKINode Title="KochbuchDataSet.ZutatRowChangeEvent.Row Property " Url="html/9ef8cfe5-6577-2694-730a-0c5be0aca529.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SchemaSerializationMode property" Url="html/9698eaa9-b411-0974-8673-836eaa37ffe2.htm" />
+  <HelpKINode Title="score field" Url="html/a70cd197-19a6-3dae-c274-38a8834c99c4.htm" />
+  <HelpKINode Title="Score property" Url="html/787fc80f-af5c-4593-53fa-5667f2596d02.htm" />
+  <HelpKINode Title="ScoreColumn property" Url="html/63925c98-0107-c8cf-b4e2-761fb8da04e2.htm" />
+  <HelpKINode Title="selectEinheitName method" Url="html/efc0674b-dd79-1dd7-686a-61163a073639.htm" />
+  <HelpKINode Title="selectID method" Url="html/903f6767-afac-7fc1-4b87-efa16fc5b547.htm" />
+  <HelpKINode Title="SetEinheitNull method" Url="html/0de07573-9652-fb88-3d19-5b554c61e2af.htm" />
+  <HelpKINode Title="SetEinhNameNull method" Url="html/97a24e20-5e50-a6f3-ff89-ee32e0ab7c94.htm" />
+  <HelpKINode Title="SetEmailNull method" Url="html/832795d3-08c7-bc8f-8b1d-c16417209980.htm" />
+  <HelpKINode Title="SetMengeNull method" Url="html/b03458b4-3751-317e-c40d-03e7d966511b.htm" />
+  <HelpKINode Title="SetPasswortNull method" Url="html/edfd2bf8-63df-8e40-967e-cd5ddec16d75.htm" />
+  <HelpKINode Title="SetPersonenNull method" Url="html/94745a79-b64c-7503-2ad9-a3c4a387914f.htm" />
+  <HelpKINode Title="SetRezNameNull method" Url="html/71803461-b3ec-79bf-80ea-0f7066b1d7f4.htm" />
+  <HelpKINode Title="SetScoreNull method" Url="html/36916e52-439d-fc4d-eda8-a7417dde2dc7.htm" />
+  <HelpKINode Title="SetUNameNull method" Url="html/2374da53-0c00-10e0-21f2-d99317e158ac.htm" />
+  <HelpKINode Title="SetUsrIDNull method" Url="html/93308174-1b92-2946-9bc3-816efafe6285.htm" />
+  <HelpKINode Title="SetZubereitungNull method" Url="html/65997161-985b-a602-6d85-4c4c06c6fbc6.htm" />
+  <HelpKINode Title="SetZutNameNull method" Url="html/dcfebb19-6228-ceb0-b5c3-fcebf6eec504.htm" />
+  <HelpKINode Title="ShouldSerializeRelations method" Url="html/2b6d683b-8b6a-47f6-7088-465d5893db0a.htm" />
+  <HelpKINode Title="ShouldSerializeTables method" Url="html/4ce92652-d640-b023-4920-5f7951dafb6e.htm" />
+  <HelpKINode Title="SortSelfReferenceRows method" Url="html/a6d8132c-d2d1-31b5-2d6b-452ded9ed126.htm" />
+  <HelpKINode Title="start class">
+    <HelpKINode Title="start Class" Url="html/e4fe956b-1b8e-00d2-066f-c22dfff0c5ff.htm" />
+    <HelpKINode Title="start Members" Url="html/4fac56c1-dd31-b883-345a-6fb5876e17dd.htm" />
+    <HelpKINode Title="about start class" Url="html/e4fe956b-1b8e-00d2-066f-c22dfff0c5ff.htm" />
+    <HelpKINode Title="all members" Url="html/4fac56c1-dd31-b883-345a-6fb5876e17dd.htm" />
+    <HelpKINode Title="constructor" Url="html/c3f463af-6fbf-0258-dbcf-8953ee928359.htm" />
+    <HelpKINode Title="events" Url="html/8eb07d1e-c9be-cc41-0364-3d985f4792c6.htm" />
+    <HelpKINode Title="methods" Url="html/34547eb1-64a3-20e0-4b73-dd18a9cc397a.htm" />
+    <HelpKINode Title="properties" Url="html/de2cd3cf-4013-30e8-808b-d6de4deda79b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="start.InitializeComponent method" Url="html/6f99361d-69d0-3fd4-fc2e-0d6962c80244.htm" />
+  <HelpKINode Title="start.start constructor" Url="html/c3f463af-6fbf-0258-dbcf-8953ee928359.htm" />
+  <HelpKINode Title="TableAdapterInstanceCount property" Url="html/2d2b88f3-629b-b0b4-6ee8-af0dfc518843.htm" />
+  <HelpKINode Title="TableAdapterManager class">
+    <HelpKINode Title="TableAdapterManager Class" Url="html/81bc9cb7-b2ea-0236-8cc5-f4f6ca3c610f.htm" />
+    <HelpKINode Title="TableAdapterManager Members" Url="html/9e30ae47-90a8-6e6e-e9c8-81fbebb5b4de.htm" />
+    <HelpKINode Title="about TableAdapterManager class" Url="html/81bc9cb7-b2ea-0236-8cc5-f4f6ca3c610f.htm" />
+    <HelpKINode Title="all members" Url="html/9e30ae47-90a8-6e6e-e9c8-81fbebb5b4de.htm" />
+    <HelpKINode Title="constructor" Url="html/cd9e79e4-fb83-725b-6516-94e94412926d.htm" />
+    <HelpKINode Title="events" Url="html/42862eb1-8961-d1d9-5c66-e45cbe12fd7a.htm" />
+    <HelpKINode Title="methods" Url="html/a76c711c-0792-ada1-a479-2b0f0c763465.htm" />
+    <HelpKINode Title="properties" Url="html/c055e00e-c80e-ea14-9f5a-99e0f5264d25.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TableAdapterManager.BackupDataSetBeforeUpdate property" Url="html/f1cb8bcb-6b9a-efb4-d25d-5c49272ce7d6.htm" />
+  <HelpKINode Title="TableAdapterManager.Connection property" Url="html/571cbf27-d33a-8910-7033-2681e2772d18.htm" />
+  <HelpKINode Title="TableAdapterManager.EinheitTableAdapter property" Url="html/773b23ce-8930-8d85-d436-de577942767f.htm" />
+  <HelpKINode Title="TableAdapterManager.MatchTableAdapterConnection method" Url="html/a194da06-e851-3cf2-a7c0-41e82ae76f99.htm" />
+  <HelpKINode Title="TableAdapterManager.RezeptTableAdapter property" Url="html/475db286-3d50-9359-cfa9-44b4ce6d35d1.htm" />
+  <HelpKINode Title="TableAdapterManager.RezZutTableAdapter property" Url="html/b53df3c0-12eb-090b-96d9-1e9f2fb6e370.htm" />
+  <HelpKINode Title="TableAdapterManager.SortSelfReferenceRows method" Url="html/a6d8132c-d2d1-31b5-2d6b-452ded9ed126.htm" />
+  <HelpKINode Title="TableAdapterManager.TableAdapterInstanceCount property" Url="html/2d2b88f3-629b-b0b4-6ee8-af0dfc518843.htm" />
+  <HelpKINode Title="TableAdapterManager.TableAdapterManager constructor" Url="html/cd9e79e4-fb83-725b-6516-94e94412926d.htm" />
+  <HelpKINode Title="TableAdapterManager.UpdateAll method" Url="html/63feeb61-792c-1ca2-a6f8-2aebefc53539.htm" />
+  <HelpKINode Title="TableAdapterManager.UpdateOrder property" Url="html/11847be2-3ce2-b3a6-0189-d6e7147ba721.htm" />
+  <HelpKINode Title="TableAdapterManager.UpdateOrderOption enumeration" Url="html/ec71caac-1242-feb7-2058-8a27ed42370b.htm" />
+  <HelpKINode Title="TableAdapterManager.UserTableAdapter property" Url="html/3589add8-7bc3-de31-5795-46855652276d.htm" />
+  <HelpKINode Title="TableAdapterManager.ZutatTableAdapter property" Url="html/18cec334-3023-7d8a-e230-b1a14e0a4afd.htm" />
+  <HelpKINode Title="Tables property" Url="html/d78d791d-052a-bddd-e82a-a8f66225960e.htm" />
+  <HelpKINode Title="ToString method" Url="html/f83d31bf-7479-173e-8ea2-1029d0a12e34.htm" />
+  <HelpKINode Title="UName property" Url="html/55a1a0a4-a264-036f-23d6-6deee49948b2.htm" />
+  <HelpKINode Title="UNameColumn property" Url="html/86ff9a78-7dc8-1a01-bf17-28f335fd9922.htm" />
+  <HelpKINode Title="Update method">
+    <HelpKINode Title="EinheitTableAdapter.Update Method " Url="html/5114aa88-4dec-c28d-80d1-c89a0adee9ef.htm" />
+    <HelpKINode Title="RezeptTableAdapter.Update Method " Url="html/4ce4f2bd-ed6b-6982-68e3-3412d185f977.htm" />
+    <HelpKINode Title="RezZutTableAdapter.Update Method " Url="html/23ed52f1-6f40-26fc-6bd2-af5fac2a3cbf.htm" />
+    <HelpKINode Title="UserTableAdapter.Update Method " Url="html/abf461e9-747c-1b98-5b1e-525af32b2e04.htm" />
+    <HelpKINode Title="ZutatTableAdapter.Update Method " Url="html/dec1df5c-36d3-e8b4-ea04-0abcab8ace0c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UpdateAll method" Url="html/63feeb61-792c-1ca2-a6f8-2aebefc53539.htm" />
+  <HelpKINode Title="UpdateInsertDelete enumeration member" Url="html/ec71caac-1242-feb7-2058-8a27ed42370b.htm" />
+  <HelpKINode Title="UpdateOrder property" Url="html/11847be2-3ce2-b3a6-0189-d6e7147ba721.htm" />
+  <HelpKINode Title="User property" Url="html/c379585e-7c48-95cf-b630-bacdeefbcf29.htm" />
+  <HelpKINode Title="UserDataTable class">
+    <HelpKINode Title="UserDataTable Members" Url="html/380298f8-7caf-5e5a-93e5-4e1d48dbbc9c.htm" />
+    <HelpKINode Title="all members" Url="html/380298f8-7caf-5e5a-93e5-4e1d48dbbc9c.htm" />
+    <HelpKINode Title="events" Url="html/be7cb2da-66b2-ea99-3103-b7f32c0eb498.htm" />
+    <HelpKINode Title="fields" Url="html/0c7f79d0-bfa9-5b5b-b5f0-fef7bd52c3f1.htm" />
+    <HelpKINode Title="methods" Url="html/d84d4d7c-c391-72ed-561e-4431ba7cca72.htm" />
+    <HelpKINode Title="properties" Url="html/90b98ce1-26e5-876d-46a4-8a8d1c869478.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UserRow class">
+    <HelpKINode Title="UserRow Members" Url="html/1da89bae-a077-c585-4246-353a872329a6.htm" />
+    <HelpKINode Title="all members" Url="html/1da89bae-a077-c585-4246-353a872329a6.htm" />
+    <HelpKINode Title="methods" Url="html/1695c33c-0118-86f2-6629-a2ce9653d3fc.htm" />
+    <HelpKINode Title="properties" Url="html/fa760a7a-0290-98f2-08a4-881144aa55e6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UserRow property" Url="html/bd8b06a0-8ece-9a96-fa90-92851e69c861.htm" />
+  <HelpKINode Title="UserRowChanged event" Url="html/2a9909bb-230a-ad3e-db49-5f29d09d6e2b.htm" />
+  <HelpKINode Title="UserRowChangeEvent class">
+    <HelpKINode Title="UserRowChangeEvent Members" Url="html/7db15c45-9edd-3601-a02a-03dfa9df627f.htm" />
+    <HelpKINode Title="all members" Url="html/7db15c45-9edd-3601-a02a-03dfa9df627f.htm" />
+    <HelpKINode Title="methods" Url="html/9729ae27-66f2-8043-35f8-4b0c89435ed3.htm" />
+    <HelpKINode Title="properties" Url="html/f001ce5a-8497-07ef-520f-fadcfe33d746.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UserRowChanging event" Url="html/5d9abbe9-f2d7-307e-1c4e-aad918dbb978.htm" />
+  <HelpKINode Title="UserRowDeleted event" Url="html/06d89565-d436-cb03-6af3-c71c539c012c.htm" />
+  <HelpKINode Title="UserRowDeleting event" Url="html/5aaf7b63-eaef-1cce-64bd-a3e4c4af9418.htm" />
+  <HelpKINode Title="UserTableAdapter class">
+    <HelpKINode Title="UserTableAdapter Class" Url="html/e3efae53-db1a-1ddc-814e-8e41292e6524.htm" />
+    <HelpKINode Title="UserTableAdapter Members" Url="html/ad722ed8-1a6b-cb71-6a32-0c4e3b8fc05f.htm" />
+    <HelpKINode Title="about UserTableAdapter class" Url="html/e3efae53-db1a-1ddc-814e-8e41292e6524.htm" />
+    <HelpKINode Title="all members" Url="html/ad722ed8-1a6b-cb71-6a32-0c4e3b8fc05f.htm" />
+    <HelpKINode Title="constructor" Url="html/dff821f7-9894-a67c-6b3e-eb735fd6d3d8.htm" />
+    <HelpKINode Title="events" Url="html/34c3d549-e73e-7c91-7474-8909cea2637c.htm" />
+    <HelpKINode Title="methods" Url="html/80a474ce-bf43-8616-8f3d-08e569610176.htm" />
+    <HelpKINode Title="properties" Url="html/c7350466-091d-4e88-f1be-ddf4fe323d50.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UserTableAdapter property" Url="html/3589add8-7bc3-de31-5795-46855652276d.htm" />
+  <HelpKINode Title="UserTableAdapter.Adapter property" Url="html/53529061-2aeb-9369-5ae5-45d201da1f59.htm" />
+  <HelpKINode Title="UserTableAdapter.ClearBeforeFill property" Url="html/3c0d5f6c-e77f-dc34-8376-3771f0d3884a.htm" />
+  <HelpKINode Title="UserTableAdapter.CommandCollection property" Url="html/6472fc66-52ff-17e3-43e9-130181d94f9d.htm" />
+  <HelpKINode Title="UserTableAdapter.Delete method" Url="html/d83b435a-3874-a9d7-f25d-a942f3d0564c.htm" />
+  <HelpKINode Title="UserTableAdapter.Fill method" Url="html/213d3160-175d-7b58-9f44-1fa2fdab1526.htm" />
+  <HelpKINode Title="UserTableAdapter.GetData method" Url="html/4e0c49e1-3ff9-39f3-a833-20c4b82ebb8f.htm" />
+  <HelpKINode Title="UserTableAdapter.Insert method" Url="html/234c7f3b-3b3b-f0ef-0ab2-a42c8e4e311d.htm" />
+  <HelpKINode Title="UserTableAdapter.Update method" Url="html/abf461e9-747c-1b98-5b1e-525af32b2e04.htm" />
+  <HelpKINode Title="UserTableAdapter.UserTableAdapter constructor" Url="html/dff821f7-9894-a67c-6b3e-eb735fd6d3d8.htm" />
+  <HelpKINode Title="UsrID property" Url="html/f7cd6bb8-0ef7-0e52-9a7e-dced81980cfa.htm" />
+  <HelpKINode Title="UsrIDColumn property" Url="html/637a75ab-eaf9-b188-7301-811fd1d7ee54.htm" />
+  <HelpKINode Title="zubereitung field" Url="html/442302a3-f906-dc87-1262-9a71619d109d.htm" />
+  <HelpKINode Title="Zubereitung property" Url="html/dbe5d6f5-9e99-ebfa-f552-e155dfe5d95a.htm" />
+  <HelpKINode Title="ZubereitungColumn property" Url="html/33a67cf0-6640-83a9-b6ae-88d092d56812.htm" />
+  <HelpKINode Title="Zutat class">
+    <HelpKINode Title="Zutat Class" Url="html/f9f0697c-40c6-219f-890a-00fbd165dc1c.htm" />
+    <HelpKINode Title="Zutat Members" Url="html/560a6e84-ab3d-5119-b137-b56c831e2c5e.htm" />
+    <HelpKINode Title="about Zutat class" Url="html/f9f0697c-40c6-219f-890a-00fbd165dc1c.htm" />
+    <HelpKINode Title="all members" Url="html/560a6e84-ab3d-5119-b137-b56c831e2c5e.htm" />
+    <HelpKINode Title="constructor" Url="html/e9fddd6e-f6e6-5b34-34ba-35f48503bdec.htm" />
+    <HelpKINode Title="fields" Url="html/cbce8908-520a-ec50-8418-5c2f36cc3b60.htm" />
+    <HelpKINode Title="methods" Url="html/807a4d29-0625-b752-f79b-1714640d34dd.htm" />
+    <HelpKINode Title="properties" Url="html/afe271b0-f254-6853-b3b7-e3eea0d9b345.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Zutat property" Url="html/b2cf43c1-6f49-e142-f767-f551693f5d11.htm" />
+  <HelpKINode Title="Zutat.einh property" Url="html/47565e14-f4ae-2549-9d3a-11022478c16f.htm" />
+  <HelpKINode Title="Zutat.Equals method" Url="html/1b65a9a8-d63e-30f1-88c7-27da86967847.htm" />
+  <HelpKINode Title="Zutat.menge property" Url="html/c5714e35-762d-2ca0-ef09-d603ed815fbf.htm" />
+  <HelpKINode Title="Zutat.name property" Url="html/f4189603-1e7e-e0aa-dd2a-4b20c3ca1dc9.htm" />
+  <HelpKINode Title="Zutat.score field" Url="html/a70cd197-19a6-3dae-c274-38a8834c99c4.htm" />
+  <HelpKINode Title="Zutat.Zutat constructor" Url="html/e9fddd6e-f6e6-5b34-34ba-35f48503bdec.htm" />
+  <HelpKINode Title="ZutatDataTable class">
+    <HelpKINode Title="ZutatDataTable Members" Url="html/28f0312c-3a9d-1a89-3797-7ec39232b90d.htm" />
+    <HelpKINode Title="all members" Url="html/28f0312c-3a9d-1a89-3797-7ec39232b90d.htm" />
+    <HelpKINode Title="events" Url="html/80296d0a-de9c-6327-ce3a-b8acd7448212.htm" />
+    <HelpKINode Title="fields" Url="html/df14f28e-f4d1-a3c0-7b21-37b3867e4767.htm" />
+    <HelpKINode Title="methods" Url="html/9d955ae7-9044-a4f6-a9a5-0b2fcd29df42.htm" />
+    <HelpKINode Title="properties" Url="html/4c843c2a-97e6-1608-ec2f-b1057247a84b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="zutaten property" Url="html/5fa1259e-245e-9d25-16ba-a57e82accd79.htm" />
+  <HelpKINode Title="ZutatID property" Url="html/873f20da-f88a-90f5-7e85-759f9a4e5cd6.htm" />
+  <HelpKINode Title="ZutatIDColumn property" Url="html/9837ab94-8fd2-0a9b-3f84-671572bf11ce.htm" />
+  <HelpKINode Title="ZutatRow class">
+    <HelpKINode Title="ZutatRow Members" Url="html/940d7808-6e28-7626-be84-c37e7c0c3f1b.htm" />
+    <HelpKINode Title="all members" Url="html/940d7808-6e28-7626-be84-c37e7c0c3f1b.htm" />
+    <HelpKINode Title="methods" Url="html/28b52612-8391-160a-8fe4-7fb9d1f293fc.htm" />
+    <HelpKINode Title="properties" Url="html/f41c5b54-110b-f49c-f6b6-6bed2bfaeb44.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ZutatRow property" Url="html/7bef9732-173c-eddd-51c8-27fb2f905a1f.htm" />
+  <HelpKINode Title="ZutatRowChanged event" Url="html/b78ad28b-a848-b2a2-9fee-24d63a3819bf.htm" />
+  <HelpKINode Title="ZutatRowChangeEvent class">
+    <HelpKINode Title="ZutatRowChangeEvent Members" Url="html/0721f4bd-a67c-0976-604d-14579ad85e75.htm" />
+    <HelpKINode Title="all members" Url="html/0721f4bd-a67c-0976-604d-14579ad85e75.htm" />
+    <HelpKINode Title="methods" Url="html/bb6bae63-f3c0-3e07-34b3-cd8633ed16cb.htm" />
+    <HelpKINode Title="properties" Url="html/d283a63e-bf8d-7bb5-8dce-a2e3bd1aa284.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ZutatRowChanging event" Url="html/b836e9c5-a0d1-f6ab-f061-3146aac5ac46.htm" />
+  <HelpKINode Title="ZutatRowDeleted event" Url="html/03a1afe1-488e-864c-2285-d3112befc4fc.htm" />
+  <HelpKINode Title="ZutatRowDeleting event" Url="html/92f398b6-031a-4205-fcb6-b10cb924f3b7.htm" />
+  <HelpKINode Title="ZutatTableAdapter class">
+    <HelpKINode Title="ZutatTableAdapter Class" Url="html/edea41cf-888b-7f44-9218-8a610bf94fc2.htm" />
+    <HelpKINode Title="ZutatTableAdapter Members" Url="html/172405f8-5f2c-7548-f54c-d3f9928be443.htm" />
+    <HelpKINode Title="about ZutatTableAdapter class" Url="html/edea41cf-888b-7f44-9218-8a610bf94fc2.htm" />
+    <HelpKINode Title="all members" Url="html/172405f8-5f2c-7548-f54c-d3f9928be443.htm" />
+    <HelpKINode Title="constructor" Url="html/cd6d1c6b-748f-f988-565f-53ff5dc50129.htm" />
+    <HelpKINode Title="events" Url="html/1794ce02-530e-e78a-7662-cef534ccbae1.htm" />
+    <HelpKINode Title="methods" Url="html/a770f141-4617-4a9e-94e4-c5b2b32fea4d.htm" />
+    <HelpKINode Title="properties" Url="html/19f5b63d-3dd2-5ef0-9280-a477496f07b2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ZutatTableAdapter property" Url="html/18cec334-3023-7d8a-e230-b1a14e0a4afd.htm" />
+  <HelpKINode Title="ZutatTableAdapter.Adapter property" Url="html/57de7cff-fef0-209d-38b3-7671a1d1b209.htm" />
+  <HelpKINode Title="ZutatTableAdapter.ClearBeforeFill property" Url="html/c29a921e-573a-51a4-4dd2-1607564f96d1.htm" />
+  <HelpKINode Title="ZutatTableAdapter.CommandCollection property" Url="html/9c80755c-b11a-ce1c-86f0-c5bdc375a225.htm" />
+  <HelpKINode Title="ZutatTableAdapter.Delete method" Url="html/01ce0826-9ca5-00bf-eb8a-f290c79f16c3.htm" />
+  <HelpKINode Title="ZutatTableAdapter.Fill method" Url="html/79fcdae3-459a-de06-52c0-4ef09cbb0708.htm" />
+  <HelpKINode Title="ZutatTableAdapter.GetData method" Url="html/0ed6cd6b-0332-0ba3-7089-c939acb01a18.htm" />
+  <HelpKINode Title="ZutatTableAdapter.Insert method" Url="html/79e9cf41-aa2d-1ee4-6927-9da9927e5758.htm" />
+  <HelpKINode Title="ZutatTableAdapter.Update method" Url="html/dec1df5c-36d3-e8b4-ea04-0abcab8ace0c.htm" />
+  <HelpKINode Title="ZutatTableAdapter.ZutatTableAdapter constructor" Url="html/cd6d1c6b-748f-f988-565f-53ff5dc50129.htm" />
+  <HelpKINode Title="ZutName property" Url="html/c60ddf9c-0a59-16f7-870a-b2aa9c422460.htm" />
+  <HelpKINode Title="ZutNameColumn property" Url="html/39656c24-bf67-6d69-71bb-848276b0b2a7.htm" />
+</HelpKI>

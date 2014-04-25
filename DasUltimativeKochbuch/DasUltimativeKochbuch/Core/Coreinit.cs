@@ -9,7 +9,12 @@ namespace DasUltimativeKochbuch.Core
 {
     static class Coreinit
     {
-        private static bool intialisiert = false;
+       /// <summary>
+       /// <para> 
+       /// Wird am anfang des Programmes aufgerufen und soll die wichtigsten Umgebungsvariablen setzen,
+       /// die für den Programmablauf benötigt werden. 
+       /// </para>
+       /// </summary>
         public static void ini() {
             Ref.dbc = new DBConnect();
             Ref.defaultValues = new Dictionary<string, string>();
@@ -19,22 +24,9 @@ namespace DasUltimativeKochbuch.Core
             Ref.defaultValues.Add("TB_Zutat", "Zutat");
             Ref.defaultValues.Add("TB_Menge", "Menge");
             Ref.defaultValues.Add("TB_Personenanzahl", "");
+            //Ref.defaultValues.Add();
 
-            List<Einheit> el = new List<Einheit>();
-             
-            el.Add(new Einheit(""));
-
-            el.Add(new Einheit("Stk"));
-            el.Add(new Einheit("tl"));
-
-
-            el.Add(new Einheit("kg"));
-            el.Add(new Einheit("g"));
-
-            el.Add(new Einheit("l"));
-            el.Add(new Einheit("ml"));
-            el.Add(new Einheit("cl"));
-            Ref.ehl = el;
+            Ref.ehl = Ref.dbc.alleEinheiten();
             
         }
     }

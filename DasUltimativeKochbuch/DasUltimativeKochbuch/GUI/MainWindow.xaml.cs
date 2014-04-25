@@ -25,7 +25,6 @@ namespace DasUltimativeKochbuch
         {
 
             InitializeComponent();
-            
             Coreinit.ini();
         }
 
