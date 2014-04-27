@@ -324,7 +324,7 @@ namespace DasUltimativeKochbuch.Datenbank
                     }
                     readerEinheit.Close();
                     //---------------
-                    cmd.CommandText = "SELECT Name FROM zutat WHERE ID = '" + zid + "';";
+                    cmd.CommandText = "SELECT Name, Score FROM zutat WHERE ID = '" + zid + "';";
                     MySqlDataReader readerZutatName = cmd.ExecuteReader();
                     while (readerZutatName.Read())
                     {
@@ -332,6 +332,7 @@ namespace DasUltimativeKochbuch.Datenbank
 
                         Einheit e = new Einheit(eName);
                         Zutat zut = new Zutat(zName, e, m);
+                        zut.score = Convert.ToInt32(readerZutatName["Score"]);
                         zl.Add(zut);
                     }
                     readerZutatName.Close();
