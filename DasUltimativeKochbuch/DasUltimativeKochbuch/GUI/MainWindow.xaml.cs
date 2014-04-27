@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using DasUltimativeKochbuch.Core;
+using DasUltimativeKochbuch;
 
 namespace DasUltimativeKochbuch
 {
@@ -39,6 +40,14 @@ namespace DasUltimativeKochbuch
             view.NavigationService.Navigate(new Uri("GUI\\Rezept_suchen.xaml", UriKind.Relative));
             Hauptfenster.Title = "Das Ultimative Kochbuch - Rezept suchen";
         }
+
+        private void Ueber_Click(object sender, RoutedEventArgs e)
+        {
+            GUI.Über u = new GUI.Über();
+            u.Show();
+        }
+
+
 
     }
 }

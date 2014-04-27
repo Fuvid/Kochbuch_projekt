@@ -9,6 +9,9 @@
             <!--<MenuItem Header="_Bearbeiten">-->
                 <MenuItem x:Name="Rezept_hinzufügen" Header="_Rezept hinzufügen" Click="Rezept_hinzufügen_Click" />
                 <MenuItem x:Name="Rezept_suchen" Header="_Rezept suchen" Click="Rezept_suchen_Click" />
+            <MenuItem x:Name="Hife" Header="_Hilfe"  >
+                <MenuItem x:Name="Über" Header="Über" Click="Ueber_Click"/>
+            </MenuItem>
             <!--</MenuItem>-->
             <!--<MenuItem Header="_Hilfe" />-->
         </Menu>
