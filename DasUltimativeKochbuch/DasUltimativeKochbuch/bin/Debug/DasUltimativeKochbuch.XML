@@ -98,14 +98,9 @@
             Klasse zum Suchen von Rezepten in der Vorgegenen datenbank
             </summary>
         </member>
-        <member name="T:DasUltimativeKochbuch.Core.Suche.ZutComparer">
-            <summary>
-            Ermöglicht es, Zutaten als gleich zu behandeln, falls der name gleich ist
-            </summary>
-        </member>
         <member name="T:DasUltimativeKochbuch.Core.Suche.SBLess">
             <summary>
-            Die Klasse, die Rezepte anhand deren Zutaten<br />
+            Die Klasse, die Rezepte anhand der Wertigkeiten ihrer Zutaten sortiert<br />
             Rezepte sind mehr wert, wenn man weniger zusätzliche Zutaten benötigt werden
             </summary>
         </member>
@@ -127,6 +122,12 @@
             <param name="x"></param>
             <param name="y"></param>
             <returns></returns>
+        </member>
+        <member name="T:DasUltimativeKochbuch.Core.Suche.SBPop">
+            <summary>
+            Die Klasse, die Rezepte anhand der Wertigkeiten ihrer Zutaten sortiert<br />
+            Rezepte sind mehr wert, wenn man Häufigere Zutaten verwendet
+            </summary>
         </member>
         <member name="P:DasUltimativeKochbuch.Core.Zutat.name">
             <summary>

@@ -12,17 +12,28 @@ namespace DasUltimativeKochbuch.Core
         /// Name der Zutat
         /// </summary>
         public string name { get; set; }
-        //interne Bewertung der Zutat
+        /// <summary>
+        /// interne Bewertung der Zutat
+        /// </summary>
         public int score;
-        //Die Einheit in der die Zutat berechnet wird
+        /// <summary>
+        /// Einheit der Zutat
+        /// </summary>
         public Einheit einh { get; internal set; }
 
-
+        /// <summary>
+        /// benötigte Menge der Zutat
+        /// </summary>
         public double menge { get; set; }
-
+        
         public string ToString() {
             return name;
         }
+        /// <summary>
+        /// Konstruktor
+        /// </summary>
+        /// <param name="n">Name der Zutat</param>
+        /// <param name="e">Einzheit</param>
         public Zutat(string n, Einheit e) {
 
             name = n;
@@ -30,6 +41,12 @@ namespace DasUltimativeKochbuch.Core
             score = 0;
             menge = 0;
         }
+        /// <summary>
+        /// Konstruktor
+        /// </summary>
+        /// <param name="n">Name</param>
+        /// <param name="e">Einheit</param>
+        /// <param name="m">Menge</param>
         public Zutat(string n, Einheit e, double m)
         {
             name = n;
@@ -37,6 +54,13 @@ namespace DasUltimativeKochbuch.Core
             score = 0;
             menge = m;
         }
+        /// <summary>
+        /// Konstruktor
+        /// </summary>
+        /// <param name="n">Name</param>
+        /// <param name="e">Einheit</param>
+        /// <param name="m">Menge</param>
+        /// <param name="s">Score</param>
         public Zutat(string n, Einheit e, double m, int s)
         {
             name = n;

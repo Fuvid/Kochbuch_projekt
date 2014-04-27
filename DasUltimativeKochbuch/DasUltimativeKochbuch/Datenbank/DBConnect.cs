@@ -12,7 +12,7 @@ namespace DasUltimativeKochbuch.Datenbank
     {
         MySqlConnection connect;
         MySqlCommand cmd = new MySqlCommand();
-        string connectionLine;
+        string connectionLine = "Data source=localhost;UserId=root;Password=;database=kochbuch";
         string commandLine;
 
         /// <summary>
@@ -20,7 +20,6 @@ namespace DasUltimativeKochbuch.Datenbank
         /// </summary>
         public DBConnect()
         {
-            connectionLine = "Data source=localhost;UserId=root;Password=;database=kochbuch";
             connect = new MySqlConnection(connectionLine);
         }
 
@@ -324,7 +323,7 @@ namespace DasUltimativeKochbuch.Datenbank
                         m = Convert.ToInt32(readerEinheit["Menge"]);
                     }
                     readerEinheit.Close();
-                    ///---------------
+                    //---------------
                     cmd.CommandText = "SELECT Name FROM zutat WHERE ID = '" + zid + "';";
                     MySqlDataReader readerZutatName = cmd.ExecuteReader();
                     while (readerZutatName.Read())
