@@ -111,6 +111,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="GUI\Über.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GUI\Rezept_erstellen.xaml.cs">
@@ -123,6 +127,9 @@
     </Compile>
     <Compile Include="GUI\start.xaml.cs">
       <DependentUpon>start.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Über.xaml.cs">
+      <DependentUpon>Über.xaml</DependentUpon>
     </Compile>
     <Compile Include="KochbuchDataSet.Designer.cs">
       <AutoGen>True</AutoGen>

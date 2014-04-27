@@ -98,6 +98,24 @@
             Klasse zum Suchen von Rezepten in der Vorgegenen datenbank
             </summary>
         </member>
+        <member name="F:DasUltimativeKochbuch.Core.Suche.SORT_BY_BUY_LESS">
+            <summary>
+            Statische Variablen, um das Sortierverhalten steuern zu können
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.Core.Suche.#ctor">
+            <summary>
+            Standartkonstruktor
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.Core.Suche.find(System.Collections.Generic.List{DasUltimativeKochbuch.Core.Zutat},System.Int32)">
+            <summary>
+            Die Funktion zum Suchen nach Rezepten anhand einer Liste von Zutaten
+            </summary>
+            <param name="z">Liste der Zutaten, nach denen gesucht werden soll</param>
+            <param name="sortby">Das Verfahren, nach dem Gesucht werden soll</param>
+            <returns></returns>
+        </member>
         <member name="T:DasUltimativeKochbuch.Core.Suche.SBLess">
             <summary>
             Die Klasse, die Rezepte anhand der Wertigkeiten ihrer Zutaten sortiert<br />
@@ -129,9 +147,67 @@
             Rezepte sind mehr wert, wenn man Häufigere Zutaten verwendet
             </summary>
         </member>
+        <member name="F:DasUltimativeKochbuch.Core.Suche.SBPop.toIgnore">
+            <summary>
+            Die Liste der Zutaten, die Bei der Punkteberechnung ignoriert werden soll
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.Core.Suche.SBPop.#ctor(System.Collections.Generic.List{DasUltimativeKochbuch.Core.Zutat})">
+            <summary>
+            Standartkonstruktor
+            </summary>
+            <param name="tig">Die zu ignorierenden Zutaten</param>
+        </member>
+        <member name="M:DasUltimativeKochbuch.Core.Suche.SBPop.Compare(DasUltimativeKochbuch.Core.Rezept,DasUltimativeKochbuch.Core.Rezept)">
+            <summary>
+            Vergleicht anhand der Punktzahl zwei Rezepte
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="F:DasUltimativeKochbuch.Core.Zutat.score">
+            <summary>
+            interne Bewertung der Zutat
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.Core.Zutat.#ctor(System.String,DasUltimativeKochbuch.Core.Einheit)">
+            <summary>
+            Konstruktor
+            </summary>
+            <param name="n">Name der Zutat</param>
+            <param name="e">Einzheit</param>
+        </member>
+        <member name="M:DasUltimativeKochbuch.Core.Zutat.#ctor(System.String,DasUltimativeKochbuch.Core.Einheit,System.Double)">
+            <summary>
+            Konstruktor
+            </summary>
+            <param name="n">Name</param>
+            <param name="e">Einheit</param>
+            <param name="m">Menge</param>
+        </member>
+        <member name="M:DasUltimativeKochbuch.Core.Zutat.#ctor(System.String,DasUltimativeKochbuch.Core.Einheit,System.Double,System.Int32)">
+            <summary>
+            Konstruktor
+            </summary>
+            <param name="n">Name</param>
+            <param name="e">Einheit</param>
+            <param name="m">Menge</param>
+            <param name="s">Score</param>
+        </member>
         <member name="P:DasUltimativeKochbuch.Core.Zutat.name">
             <summary>
             Name der Zutat
+            </summary>
+        </member>
+        <member name="P:DasUltimativeKochbuch.Core.Zutat.einh">
+            <summary>
+            Einheit der Zutat
+            </summary>
+        </member>
+        <member name="P:DasUltimativeKochbuch.Core.Zutat.menge">
+            <summary>
+            benötigte Menge der Zutat
             </summary>
         </member>
         <member name="M:DasUltimativeKochbuch.Datenbank.DBConnect.#ctor">
@@ -253,6 +329,19 @@
             </summary>
         </member>
         <member name="M:DasUltimativeKochbuch.GUI.start.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DasUltimativeKochbuch.GUI.Über">
+            <summary>
+            Interaktionslogik für Über.xaml
+            </summary>
+            <summary>
+            Über
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.GUI.Über.InitializeComponent">
             <summary>
             InitializeComponent
             </summary>

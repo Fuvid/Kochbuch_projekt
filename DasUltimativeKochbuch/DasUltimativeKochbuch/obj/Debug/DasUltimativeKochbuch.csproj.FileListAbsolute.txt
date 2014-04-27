@@ -74,3 +74,5 @@ C:\Users\David\Source\Repos\Kochbuch_projekt\DasUltimativeKochbuch\DasUltimative
 C:\Users\David\Source\Repos\Kochbuch_projekt\DasUltimativeKochbuch\DasUltimativeKochbuch\obj\Debug\DasUltimativeKochbuch.g.resources
 C:\Users\David\Source\Repos\Kochbuch_projekt\DasUltimativeKochbuch\DasUltimativeKochbuch\obj\Debug\DasUltimativeKochbuch.Properties.Resources.resources
 C:\Users\David\Source\Repos\Kochbuch_projekt\DasUltimativeKochbuch\DasUltimativeKochbuch\obj\Debug\DasUltimativeKochbuch.csproj.GenerateResource.Cache
+C:\Users\David\Source\Repos\Kochbuch_projekt\DasUltimativeKochbuch\DasUltimativeKochbuch\obj\Debug\GUI\Über.baml
+C:\Users\David\Source\Repos\Kochbuch_projekt\DasUltimativeKochbuch\DasUltimativeKochbuch\obj\Debug\GUI\Über.g.cs

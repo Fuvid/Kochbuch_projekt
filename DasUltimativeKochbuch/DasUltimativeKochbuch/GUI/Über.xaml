@@ -1,0 +1,10 @@
+﻿<Window x:Class="DasUltimativeKochbuch.GUI.Über"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Über" Height="470.35" Width="450">
+    <Grid>
+        <TextBlock IsEnabled="True" IsManipulationEnabled="False" HorizontalAlignment="Left" Height="207" Margin="10,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="422"><Run Text="Das Ultimative Kochbuch entstand im Rahmen eines Schulprojektes der "/><LineBreak/><Run Text="Werner von Siemens Schule Frankfurt"/><LineBreak/><Run Language="de-de" Text="Beteiligt waren:"/><LineBreak/><Run Language="de-de"/><LineBreak/><Run Language="de-de" Text="Amore, David "/><LineBreak/><Run Language="de-de" Text="Brox, Tom"/><LineBreak/><Run Language="de-de" Text="Denizli, Cüneyt"/><LineBreak/><Run Language="de-de" Text="Fleißig, Dorian"/><LineBreak/><Run Language="de-de"/><LineBreak/><Run Language="de-de" Text="Der Quelltext ist unter "/><Hyperlink NavigateUri="https://github.com/fuvid/Kochbuch_projekt" RequestNavigate="Hyperlink_RequestNavigate"><Run Text="GitHub"/></Hyperlink><Run Language="de-de" Text=" zu finden"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" TextWrapping="Wrap" Text="Das Ultimative Kochbuch" VerticalAlignment="Top" Width="422" FontWeight="Bold" FontSize="14"/>
+
+    </Grid>
+</Window>

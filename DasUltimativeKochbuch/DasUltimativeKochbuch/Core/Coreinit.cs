@@ -22,14 +22,14 @@ namespace DasUltimativeKochbuch.Core
             
             Ref.defaultValues = new Dictionary<string, string>();
             
-            Ref.defaultValues.Add("TB_Zutaten", "Hier Zutaten bitte Kommagetrennt eingeben");
+            Ref.defaultValues.Add("TB_Zutaten", "Hier Zutaten bitte durch Komma getrennt eingeben");
             Ref.defaultValues.Add("TB_Rezeptname", "Rezeptname");
             Ref.defaultValues.Add("TB_Zubereitung", "Zubereitung");
             Ref.defaultValues.Add("TB_Zutat", "Zutat");
             Ref.defaultValues.Add("TB_Menge", "Menge");
-            Ref.defaultValues.Add("TB_Personenanzahl", "4");
+            Ref.defaultValues.Add("TB_Personenanzahl", "");
             //Ref.defaultValues.Add();
-            MessageBox.Show("Eiheiten:"+Ref.dbc.alleEinheiten().Count);
+
             if (Ref.dbc.alleEinheiten().Count==0) {
                 List<Einheit> ehl = new List<Einheit>();
                 ehl.Add(new Einheit("kg"));
