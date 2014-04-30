@@ -9,7 +9,7 @@
 
     <Grid x:Name="Rezept_erstellen_Grid" Margin="0,0,0,0" MinWidth="800" MinHeight="400">
         <TextBox x:Name="TB_Rezeptname" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="286" Margin="10,10,0,0" GotFocus="TB_GotFocus" LostFocus="TB_LostFocus"/>
-        <TextBox x:Name="TB_Zubereitung" TextWrapping="Wrap" Margin="303,10,8,10" AcceptsReturn="True" AcceptsTab="True" GotFocus="TB_GotFocus" LostFocus="TB_LostFocus"/>
+        <TextBox x:Name="TB_Zubereitung" TextWrapping="Wrap" Margin="303,10,8,10" AcceptsReturn="True" AcceptsTab="True" GotFocus="TB_GotFocus" LostFocus="TB_LostFocus" Width="489" Height="380"/>
         <TextBox x:Name="TB_Zutat" HorizontalAlignment="Left" Height="23" Margin="10,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" GotFocus="TB_GotFocus" LostFocus="TB_LostFocus"/>
         <TextBox x:Name="TB_Menge" HorizontalAlignment="Left" Height="23" Margin="161,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" GotFocus="TB_GotFocus" LostFocus="TB_LostFocus"/>
         <ComboBox x:Name="Einheit" HorizontalAlignment="Left" Margin="236,38,0,0" VerticalAlignment="Top" Width="59" Height="23" >

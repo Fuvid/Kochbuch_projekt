@@ -125,7 +125,17 @@ namespace DasUltimativeKochbuch.GUI
             //    }
             //    else throw new Exception("WPF ist DUMM!");
             //}
-            Rezept r = new Rezept(zl, TB_Zubereitung.Text, TB_Rezeptname.Text, 4);//-TODO Personenangabe
+            int persAnz = 0;
+            try
+            {
+                persAnz = Convert.ToInt32(TB_Personenanzahl.Text);
+            }
+            catch (Exception) {
+
+                MessageBox.Show("Die Anzahl der Personen muss eine Zahl sein");
+                return;
+            }
+            Rezept r = new Rezept(zl, TB_Zubereitung.Text, TB_Rezeptname.Text, persAnz);//-TODO Personenangabe
             dbc.rezSpeichern(r);
 
         }
