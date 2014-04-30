@@ -345,5 +345,10 @@ namespace DasUltimativeKochbuch.Datenbank
             cmd.Connection.Close();
             return rMit;
         }
+
+        public void rezLoeschen(Rezept r)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
