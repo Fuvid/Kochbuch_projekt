@@ -32,6 +32,8 @@ namespace DasUltimativeKochbuch.Core
 
         //Für wie viele Personen ist das Rezept gedacht, um Skalieren zu können
         public int pers;
+        //ID für interne Bearbeitung
+        public int rezeptId;
         /// <summary>
         /// Konstruktor
         /// </summary>

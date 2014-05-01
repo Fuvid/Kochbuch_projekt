@@ -291,17 +291,18 @@ namespace DasUltimativeKochbuch.Datenbank
                 string rName = "";
                 string rZubereitung = "";
                 int rPersonen = 0;
+                int rId = 0;
                 List<Zutat> zl = new List<Zutat>();
                 while (readerRezept.Read())
                 {
                     rName = readerRezept["Name"].ToString();
                     rZubereitung = readerRezept["Zubereitung"].ToString();
                     rPersonen = Convert.ToInt32(readerRezept["Personen"]);
+                    rId = Convert.ToInt32(readerRezept["ID"]);
                 }
                 readerRezept.Close();
                 cmd.CommandText = "SELECT ZutatID FROM rezzut WHERE RezeptID = " + id + ";";
                 MySqlDataReader readerZutatID = cmd.ExecuteReader();
-                //hier for
                 int[] zutatenID = new int[100];
                 int j = 0;
                 while (readerZutatID.Read())
@@ -310,7 +311,6 @@ namespace DasUltimativeKochbuch.Datenbank
                     j++;
                 }
                 readerZutatID.Close();
-                //--
                 foreach (int zid in zutatenID)
                 {
                     string eName = "";
@@ -323,7 +323,6 @@ namespace DasUltimativeKochbuch.Datenbank
                         m = Convert.ToInt32(readerEinheit["Menge"]);
                     }
                     readerEinheit.Close();
-                    //---------------
                     cmd.CommandText = "SELECT Name, Score FROM zutat WHERE ID = '" + zid + "';";
                     MySqlDataReader readerZutatName = cmd.ExecuteReader();
                     while (readerZutatName.Read())
@@ -336,10 +335,9 @@ namespace DasUltimativeKochbuch.Datenbank
                         zl.Add(zut);
                     }
                     readerZutatName.Close();
-
-                    //counter2++;
                 }
                 Rezept r = new Rezept(zl, rZubereitung, rName, rPersonen);
+                r.rezeptId = rId;
                 rMit.Add(r);
             }
             cmd.Connection.Close();
