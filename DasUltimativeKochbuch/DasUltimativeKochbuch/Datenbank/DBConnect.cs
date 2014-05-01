@@ -22,71 +22,45 @@ namespace DasUltimativeKochbuch.Datenbank
         {
             connect = new MySqlConnection(connectionLine);
         }
-
+        ///<summary>
+        ///Verbindung zur Datenbank herstellen
+        ///Bei Misserfolg Fehlermeldung ausgeben
+        ///</summary>
         private void verbindungOeffnen()
         {
             try
             {
-                ///<summary>
-                ///Verbindung an die Datenbank herstellen
-                ///</summary>
                 cmd.Connection = connect;
-                ///<summary>
-                ///Verbindung öffnen
-                ///</summary>
                 cmd.Connection.Open();
             }
             catch (NullReferenceException ex)
             {
-
-                ///<summary>
-                ///Fehler abfangen und in Messagebox ausgeben
-                ///</summary>
                 MessageBox.Show(ex.Message);
             }
         }
 
         ///<summary>
-        ///Zum ausführen von SQL Anweisungen ohne Rückgabe
+        ///Zum ausführen von einfachen SQL Anweisungen ohne Rückgabe
         ///</summary>
         private void executeQuery(string query)
         {
             cmd = new MySqlCommand();
             this.verbindungOeffnen();
-
-
             commandLine = query;
-
-            ///<summary>
-            ///Set the command text | Befehlszeile setzen
-            ///</summary>
             cmd.CommandText = commandLine;
-            ///<summary>
-            ///Ausführen des SQL-Eintrages
-            ///</summary>
             cmd.ExecuteNonQuery();
-            ///<summary>
-            ///Verbindung schließen
-            ///</summary>
             cmd.Connection.Close();
         }
 
         ///<summary>
-        /// 
+        /// Zum ausführen von einfachen SQL Anweisungen mit Rückgabe, z.B. eine Id nach einem Insert
         ///</summary>
         private int executeQueryMitReturn(string query)
         {
             cmd = new MySqlCommand();
             this.verbindungOeffnen();
-
             cmd.CommandText = query;
-            ///<summary>
-            ///Ausführen des SQL-Eintrages und Rückgabe der ersten Spalte in der ersten Reihe
-            ///</summary>
             int ret = Convert.ToInt32(cmd.ExecuteScalar());
-            ///<summary>
-            ///Verbindung schließen 
-            ///</summary>  
             cmd.Connection.Close();
             return ret;
         }
@@ -124,13 +98,13 @@ namespace DasUltimativeKochbuch.Datenbank
             }
         }
 
+        ///<summary>
+        ///Selektieren der Einheiten und Rückgabe einer Liste mit allen in der Datenbank vorhandenen Einheiten
+        ///</summary>
         public List<Einheit> selectEinheitName(string query)
         {
             MySqlCommand cmd = new MySqlCommand(query, connect);
             this.verbindungOeffnen();
-            ///<summary>
-            ///Erstellen eines MySQL-Datensatzlesers und anschließende Befehlausführung 
-            ///</summary>
             MySqlDataReader dataReader = cmd.ExecuteReader();
             List<Einheit> einheiten = new List<Einheit>();
             while (dataReader.Read())
@@ -144,7 +118,9 @@ namespace DasUltimativeKochbuch.Datenbank
         }
 
 
-
+        ///<summary>
+        ///Methode zum einfügen von Rezepten in die Datenbank, sowie der dazugehörigen Zutaten
+        ///</summary>
         public void rezSpeichern(Rezept r)
         {
 
@@ -152,21 +128,11 @@ namespace DasUltimativeKochbuch.Datenbank
             String query;
 
             query = "INSERT INTO rezept(Name, Zubereitung, Personen) VALUES('" + r.name + "', '" + r.zubereitung + "', '" + r.pers + "');SELECT LAST_INSERT_ID();"; // @usrID
-            ///<summary>
-            ///Insert ausführen und die ID des Rezeptes speichern
-            ///</summary>
             rezeptID = this.executeQueryMitReturn(query);
             foreach (Zutat zt in r.zutaten)
             {
                 query = "SELECT ID FROM zutat WHERE name = '" + zt.name + "';";
-                ///<summary>
-                ///Nach Zutat suchen
-                ///</summary>
                 int zID = Convert.ToInt32(this.selectID(query));
-
-                ///<summary>
-                ///Wenn Zutat vorhanden Score inkrementieren | Wenn nicht vorhanden, Zutat hinzufügen und ID der Zutat speichern
-                ///</summary>
                 if (zID != 0)
                 {
                     query = "UPDATE zutat SET Score=Score+1 WHERE ID = '" + zID + "'";
@@ -180,13 +146,8 @@ namespace DasUltimativeKochbuch.Datenbank
                     query = "SELECT ID FROM zutat WHERE name = '" + zt.name + "';";
                     zID = Convert.ToInt32(this.selectID(query));
                 }
-
-                ///<summary>
-                ///Muss um EinheitID ergänzt werden
-                ///</summary>
-                ///
+                //Muss um EinheitID ergänzt werden
                 string einheitName = zt.einh.name;
-
 
                 cmd = new MySqlCommand();
                 this.verbindungOeffnen();
@@ -202,11 +163,12 @@ namespace DasUltimativeKochbuch.Datenbank
 
                 query = "INSERT INTO rezzut(ZutatID, Menge, RezeptID, EinheitID) VALUES('" + zID + "', '" + zt.menge + "', '" + rezeptID + "','" + eID + "');";  //ZutatID, RezeptID und Menge in Tabelle "rezzut" eintragen
                 this.executeQuery(query);
-
             }
             MessageBox.Show("Rezept hinzugefügt");
         }
-
+        ///<summary>
+        ///Methode zum speichern von Einheiten in die Datenbank
+        ///</summary>
         public void einheitSpeichern(Einheit e)
         {
             string query;
@@ -215,7 +177,9 @@ namespace DasUltimativeKochbuch.Datenbank
             query = "INSERT INTO einheit(Name) VALUES('" + name + "');";
             this.executeQuery(query);
         }
-
+        ///<summary>
+        ///Methode zum selektieren aller Einheiten
+        ///</summary>
         public List<Einheit> alleEinheiten()//sollte funktionieren
         {
             List<Einheit> einheiten = new List<Einheit>();
@@ -233,8 +197,10 @@ namespace DasUltimativeKochbuch.Datenbank
             return einheiten;
         }
 
-
-        public List<Rezept> rezepteMit(List<Zutat> lz)//Done
+        ///<summary>
+        ///Methode für den Abruf aller Rezepte aus der Datenbank mit einer bestimmten Zutat
+        ///</summary>
+        public List<Rezept> rezepteMit(List<Zutat> lz)
         {
             this.verbindungOeffnen();
             cmd = new MySqlCommand();
@@ -343,7 +309,9 @@ namespace DasUltimativeKochbuch.Datenbank
             cmd.Connection.Close();
             return rMit;
         }
-
+        ///<summary>
+        ///Methode zum Löschen einzelner Rezepte
+        ///</summary>
         public void rezLoeschen(Rezept r)
         {
             string query;
