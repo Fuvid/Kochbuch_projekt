@@ -346,7 +346,11 @@ namespace DasUltimativeKochbuch.Datenbank
 
         public void rezLoeschen(Rezept r)
         {
-            throw new NotImplementedException();
+            string query;
+            query = "DELETE FROM rezept WHERE ID = "+r.rezeptId+";";
+            this.executeQuery(query);
+            query = "DELETE FROM rezzut WHERE ID = " + r.rezeptId + ";";
+            this.executeQuery(query);
         }
     }
 }
