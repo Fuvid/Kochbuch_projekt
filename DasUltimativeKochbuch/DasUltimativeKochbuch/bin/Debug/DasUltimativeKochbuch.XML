@@ -215,14 +215,50 @@
             Anmeldedaten des MySQL Servers
             </summary>
         </member>
+        <member name="M:DasUltimativeKochbuch.Datenbank.DBConnect.verbindungOeffnen">
+            <summary>
+            Verbindung zur Datenbank herstellen
+            Bei Misserfolg Fehlermeldung ausgeben
+            </summary>
+        </member>
         <member name="M:DasUltimativeKochbuch.Datenbank.DBConnect.executeQuery(System.String)">
             <summary>
-            Zum ausführen von SQL Anweisungen ohne Rückgabe
+            Zum ausführen von einfachen SQL Anweisungen ohne Rückgabe
             </summary>
         </member>
         <member name="M:DasUltimativeKochbuch.Datenbank.DBConnect.executeQueryMitReturn(System.String)">
             <summary>
-             
+             Zum ausführen von einfachen SQL Anweisungen mit Rückgabe, z.B. eine Id nach einem Insert
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.Datenbank.DBConnect.selectEinheitName(System.String)">
+            <summary>
+            Selektieren der Einheiten und Rückgabe einer Liste mit allen in der Datenbank vorhandenen Einheiten
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.Datenbank.DBConnect.rezSpeichern(DasUltimativeKochbuch.Core.Rezept)">
+            <summary>
+            Methode zum einfügen von Rezepten in die Datenbank, sowie der dazugehörigen Zutaten
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.Datenbank.DBConnect.einheitSpeichern(DasUltimativeKochbuch.Core.Einheit)">
+            <summary>
+            Methode zum speichern von Einheiten in die Datenbank
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.Datenbank.DBConnect.alleEinheiten">
+            <summary>
+            Methode zum selektieren aller Einheiten
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.Datenbank.DBConnect.rezepteMit(System.Collections.Generic.List{DasUltimativeKochbuch.Core.Zutat})">
+            <summary>
+            Methode für den Abruf aller Rezepte aus der Datenbank mit einer bestimmten Zutat
+            </summary>
+        </member>
+        <member name="M:DasUltimativeKochbuch.Datenbank.DBConnect.rezLoeschen(DasUltimativeKochbuch.Core.Rezept)">
+            <summary>
+            Methode zum Löschen einzelner Rezepte
             </summary>
         </member>
         <member name="T:DasUltimativeKochbuch.MainWindow">
