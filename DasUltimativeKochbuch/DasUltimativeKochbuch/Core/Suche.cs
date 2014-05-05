@@ -128,7 +128,7 @@ namespace DasUltimativeKochbuch.Core
         /// </summary>
         /// <param name="z">Liste der Zutaten, nach denen gesucht werden soll</param>
         /// <param name="sortby">Das Verfahren, nach dem Gesucht werden soll</param>
-        /// <returns></returns>
+        /// <returns>Die gefundenen Rezepte</returns>
         public List<Rezept> find(List<Zutat> z, int sortby)
         {
             

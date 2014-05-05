@@ -124,7 +124,7 @@ namespace DasUltimativeKochbuch.Datenbank
             }
         }
 
-        public List<Einheit> selectEinheitName(string query)
+        private List<Einheit> selectEinheitName(string query)
         {
             MySqlCommand cmd = new MySqlCommand(query, connect);
             this.verbindungOeffnen();
@@ -344,6 +344,9 @@ namespace DasUltimativeKochbuch.Datenbank
             }
             cmd.Connection.Close();
             return rMit;
+        }
+       public void rezLoeschen(Rezept r) {
+            throw new NotImplementedException();
         }
     }
 }

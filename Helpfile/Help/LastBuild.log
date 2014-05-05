@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder" version="2014.4.21.0" projectFile="C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Kuchbuch.shfbproj" started="25.04.2014 10:41:28">
+<shfbBuild product="Sandcastle Help File Builder" version="2014.4.21.0" projectFile="C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Kuchbuch.shfbproj" started="30.04.2014 09:27:21">
 <buildStep step="Initializing">
 Finding tools...
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
@@ -20,16 +20,16 @@ Copying XML comments files
 </buildStep>
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, Englisch (USA))...
-    Last step completed in 00:00:00.2480
+    Last step completed in 00:00:00.1760
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00.0320
+    Last step completed in 00:00:00.0180
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
 [C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
-Der Buildvorgang wurde am 25.04.2014 10:41:33 gestartet.
+Der Buildvorgang wurde am 30.04.2014 09:27:25 gestartet.
 Projekt &quot;C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\GenerateRefInfo.proj&quot; auf Knoten &quot;1&quot; (Standardziele).
 PrepareForBuild:
   Das Verzeichnis &quot;obj\Debug\&quot; wird erstellt.
@@ -38,7 +38,7 @@ GenerateRefInfo:
   Copyright &#184; 2006-2014, Microsoft Corporation, All Rights Reserved.
   Portions Copyright &#184; 2006-2014, Eric Woodruff, All Rights Reserved.
   Loaded 1 assemblies for reflection and 1 dependency assemblies.
-  Wrote information on 5 namespaces, 39 types, and 333 members
+  Wrote information on 5 namespaces, 40 types, and 337 members
   Die Datei wird von &quot;reflection.org&quot; in &quot;reflection.all&quot; kopiert.
   XslTransform (v2014.1.26.0)
   Copyright &#184; 2006-2014, Microsoft Corporation, All Rights Reserved.
@@ -48,13 +48,13 @@ Die Erstellung von Projekt &quot;C:\Users\David\Documents\Berufsschule\Kochbuch_
 
 Der Buildvorgang wurde erfolgreich ausgefhrt.
 
-Verstrichene Zeit 00:00:08.97
-    Last step completed in 00:00:10.3386
+Verstrichene Zeit 00:00:05.58
+    Last step completed in 00:00:06.6724
 </buildStep>
 <buildStep step="TransformReflectionInfo">
 Transforming reflection output...
 [C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
-Der Buildvorgang wurde am 25.04.2014 10:41:43 gestartet.
+Der Buildvorgang wurde am 30.04.2014 09:27:31 gestartet.
 Projekt &quot;C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\TransformManifest.proj&quot; auf Knoten &quot;1&quot; (Standardziele).
 TransformManifest:
   XslTransform (v2014.1.26.0)
@@ -74,26 +74,26 @@ Die Erstellung von Projekt &quot;C:\Users\David\Documents\Berufsschule\Kochbuch_
 
 Der Buildvorgang wurde erfolgreich ausgefhrt.
 
-Verstrichene Zeit 00:00:06.04
-    Last step completed in 00:00:07.3754
+Verstrichene Zeit 00:00:07.40
+    Last step completed in 00:00:08.4495
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.1200
+    Last step completed in 00:00:00.1810
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
 No additional content to copy
-    Last step completed in 00:00:00.0150
+    Last step completed in 00:00:00.0170
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
-    Last step completed in 00:00:00.0050
+    Last step completed in 00:00:00.0030
 </buildStep>
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file...
 [C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
-Der Buildvorgang wurde am 25.04.2014 10:41:50 gestartet.
+Der Buildvorgang wurde am 30.04.2014 09:27:40 gestartet.
 Projekt &quot;C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\GenerateIntermediateTOC.proj&quot; auf Knoten &quot;1&quot; (Standardziele).
 GenerateIntermediateTOC:
   XslTransform (v2014.1.26.0)
@@ -104,24 +104,24 @@ Die Erstellung von Projekt &quot;C:\Users\David\Documents\Berufsschule\Kochbuch_
 
 Der Buildvorgang wurde erfolgreich ausgefhrt.
 
-Verstrichene Zeit 00:00:01.95
+Verstrichene Zeit 00:00:02.09
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:02.8932
+    Last step completed in 00:00:02.9012
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
     sandcastle.config
-    Last step completed in 00:00:00.3430
+    Last step completed in 00:00:00.3480
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
 C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\sandcastle.config
-    Last step completed in 00:00:00.0700
+    Last step completed in 00:00:00.0610
 </buildStep>
 <buildStep step="BuildReferenceTopics">
 Building reference help topics...
 [C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
-Der Buildvorgang wurde am 25.04.2014 10:41:54 gestartet.
+Der Buildvorgang wurde am 30.04.2014 09:27:44 gestartet.
 Projekt &quot;C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj&quot; auf Knoten &quot;1&quot; (Standardziele).
 BuildReferenceTopics:
   BuildAssembler (v2014.1.26.0)
@@ -481,21 +481,9 @@ BuildAssembler : warning : ShowMissingComponent: [T:DasUltimativeKochbuch.Core.R
 BuildAssembler : warning : ShowMissingComponent: [F:DasUltimativeKochbuch.Core.Rezept.name] Missing &lt;summary&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [F:DasUltimativeKochbuch.Core.Rezept.pers] Missing &lt;summary&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [T:DasUltimativeKochbuch.Core.Zutat] Missing &lt;summary&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Core.Zutat.#ctor(System.String,DasUltimativeKochbuch.Core.Einheit)] Missing &lt;param name=&quot;n&quot;/&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Core.Zutat.#ctor(System.String,DasUltimativeKochbuch.Core.Einheit)] Missing &lt;param name=&quot;e&quot;/&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Core.Zutat.#ctor(System.String,DasUltimativeKochbuch.Core.Einheit,System.Double)] Missing &lt;param name=&quot;n&quot;/&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Core.Zutat.#ctor(System.String,DasUltimativeKochbuch.Core.Einheit,System.Double)] Missing &lt;param name=&quot;e&quot;/&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Core.Zutat.#ctor(System.String,DasUltimativeKochbuch.Core.Einheit,System.Double)] Missing &lt;param name=&quot;m&quot;/&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Core.Zutat.#ctor(System.String,DasUltimativeKochbuch.Core.Einheit,System.Double,System.Int32)] Missing &lt;param name=&quot;n&quot;/&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Core.Zutat.#ctor(System.String,DasUltimativeKochbuch.Core.Einheit,System.Double,System.Int32)] Missing &lt;param name=&quot;e&quot;/&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Core.Zutat.#ctor(System.String,DasUltimativeKochbuch.Core.Einheit,System.Double,System.Int32)] Missing &lt;param name=&quot;m&quot;/&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Core.Zutat.#ctor(System.String,DasUltimativeKochbuch.Core.Einheit,System.Double,System.Int32)] Missing &lt;param name=&quot;s&quot;/&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:DasUltimativeKochbuch.Core.Zutat.einh] Missing &lt;summary&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Core.Zutat.Equals(DasUltimativeKochbuch.Core.Zutat)] Missing &lt;summary&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Core.Zutat.Equals(DasUltimativeKochbuch.Core.Zutat)] Missing &lt;returns&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Core.Zutat.Equals(DasUltimativeKochbuch.Core.Zutat)] Missing &lt;param name=&quot;other&quot;/&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:DasUltimativeKochbuch.Core.Zutat.menge] Missing &lt;summary&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:DasUltimativeKochbuch.Core.Zutat.score] Missing &lt;summary&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Core.Zutat.ToString] Missing &lt;summary&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Core.Zutat.ToString] Missing &lt;returns&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [N:DasUltimativeKochbuch.Datenbank] Missing &lt;summary&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
@@ -507,6 +495,8 @@ BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Datenb
 BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Datenbank.DatenbankConnector.rezepteMit(System.Collections.Generic.List{DasUltimativeKochbuch.Core.Zutat})] Missing &lt;summary&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Datenbank.DatenbankConnector.rezepteMit(System.Collections.Generic.List{DasUltimativeKochbuch.Core.Zutat})] Missing &lt;returns&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Datenbank.DatenbankConnector.rezepteMit(System.Collections.Generic.List{DasUltimativeKochbuch.Core.Zutat})] Missing &lt;param name=&quot;lz&quot;/&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Datenbank.DatenbankConnector.rezLoeschen(DasUltimativeKochbuch.Core.Rezept)] Missing &lt;summary&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Datenbank.DatenbankConnector.rezLoeschen(DasUltimativeKochbuch.Core.Rezept)] Missing &lt;param name=&quot;r&quot;/&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Datenbank.DatenbankConnector.rezSpeichern(DasUltimativeKochbuch.Core.Rezept)] Missing &lt;summary&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Datenbank.DatenbankConnector.rezSpeichern(DasUltimativeKochbuch.Core.Rezept)] Missing &lt;param name=&quot;r&quot;/&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [T:DasUltimativeKochbuch.Datenbank.DBConnect] Missing &lt;summary&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
@@ -517,6 +507,8 @@ BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Datenb
 BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Datenbank.DBConnect.rezepteMit(System.Collections.Generic.List{DasUltimativeKochbuch.Core.Zutat})] Missing &lt;summary&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Datenbank.DBConnect.rezepteMit(System.Collections.Generic.List{DasUltimativeKochbuch.Core.Zutat})] Missing &lt;returns&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Datenbank.DBConnect.rezepteMit(System.Collections.Generic.List{DasUltimativeKochbuch.Core.Zutat})] Missing &lt;param name=&quot;lz&quot;/&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Datenbank.DBConnect.rezLoeschen(DasUltimativeKochbuch.Core.Rezept)] Missing &lt;summary&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Datenbank.DBConnect.rezLoeschen(DasUltimativeKochbuch.Core.Rezept)] Missing &lt;param name=&quot;r&quot;/&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Datenbank.DBConnect.rezSpeichern(DasUltimativeKochbuch.Core.Rezept)] Missing &lt;summary&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Datenbank.DBConnect.rezSpeichern(DasUltimativeKochbuch.Core.Rezept)] Missing &lt;param name=&quot;r&quot;/&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Datenbank.DBConnect.selectEinheitName(System.String)] Missing &lt;summary&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
@@ -747,22 +739,23 @@ BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.Kochbu
 BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.KochbuchDataSetTableAdapters.ZutatTableAdapter.Update(System.Nullable{System.Int32},System.String,System.Int32,System.Nullable{System.Int32},System.String)] Missing &lt;param name=&quot;Original_ID&quot;/&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.KochbuchDataSetTableAdapters.ZutatTableAdapter.Update(System.Nullable{System.Int32},System.String,System.Int32,System.Nullable{System.Int32},System.String)] Missing &lt;param name=&quot;Original_Score&quot;/&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:DasUltimativeKochbuch.KochbuchDataSetTableAdapters.ZutatTableAdapter.Update(System.Nullable{System.Int32},System.String,System.Int32,System.Nullable{System.Int32},System.String)] Missing &lt;param name=&quot;Original_ZutName&quot;/&gt; documentation [C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj]
-  Processed 513 topic(s)
-  618 warning(s)
+  Processed 522 topic(s)
+  610 warning(s)
   CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 9 of 15.
   CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 1 of 30.
 Die Erstellung von Projekt &quot;C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\BuildReferenceTopics.proj&quot; ist abgeschlossen (Standardziele).
 
 Der Buildvorgang wurde erfolgreich ausgefhrt.
 
-Verstrichene Zeit 00:00:44.37
-    Last step completed in 00:00:45.6466
+Verstrichene Zeit 00:00:32.81
+    Last step completed in 00:00:33.7609
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
 
 Clearing any prior web output
-    Last step completed in 00:00:00.3850
+    Ignoring folder &#39;C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\html&#39;: Der Prozess kann nicht auf die Datei &quot;172405f8-5f2c-7548-f54c-d3f9928be443.htm&quot; zugreifen, da sie von einem anderen Prozess verwendet wird.
+    Last step completed in 00:00:00.2530
 </buildStep>
 <buildStep step="ExtractingHtmlInfo">
 Extracting HTML info for HTML Help 1 and/or website...
@@ -774,17 +767,17 @@ E-Mail: Eric@EWoodruff.us
 Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
 
 Processing Help 1 files in C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\Output\HtmlHelp1
-Processed 513 HTML files
+Processed 522 HTML files
 Sorting keywords and generating See Also indices
 Saving HTML Help 1 keyword index to C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\Documentation.hhk
 Saving HTML Help 1 table of contents to C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\Documentation.hhc
 
 Processing website files in C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\Output\Website
-Processed 513 HTML files
+Processed 522 HTML files
 Sorting keywords and generating See Also indices
 Saving website keyword index to C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\WebKI.xml
 Saving website table of contents to C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\WebTOC.xml
-    Last step completed in 00:00:06.9454
+    Last step completed in 00:00:06.6254
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -1023,19 +1016,19 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\SyncTOC.gif 
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\TOC.css -&gt; C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\Output\Website\.\TOC.css
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\TOC.js -&gt; C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\Output\Website\.\TOC.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\Web.Config -&gt; C:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\Output\Website\.\Web.Config
-    Last step completed in 00:00:01.3541
+    Last step completed in 00:00:01.2141
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating HTML Help 1 table of contents file...
-    Last step completed in 00:00:00.0030
+    Last step completed in 00:00:00.0020
 </buildStep>
 <buildStep step="GenerateHelpFileIndex">
 Generating HTML Help 1 index file...
-    Last step completed in 00:00:00.0030
+    Last step completed in 00:00:00.0020
 </buildStep>
 <buildStep step="GenerateHelpProject">
 Generating HTML Help 1 project file...
-    Last step completed in 00:00:00.0190
+    Last step completed in 00:00:00.0290
 </buildStep>
 <buildStep step="CompilingHelpFile">
 Compiling HTML Help 1 file...
@@ -1050,13 +1043,13 @@ Compiling HTML Help 1 file...
   
   
   
-  Compile time: 0 minutes, 9 seconds
+  Compile time: 0 minutes, 8 seconds
   
-  515	Topics
+  524	Topics
   
-  6,198	Local links
+  6,294	Local links
   
-  12,351	Internet links
+  14,313	Internet links
   
   0	Graphics
   
@@ -1064,11 +1057,11 @@ Compiling HTML Help 1 file...
   
   
   
-  Created c:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\Output\HtmlHelp1\Documentation.chm, 956,965 bytes
+  Created c:\Users\David\Documents\Berufsschule\Kochbuch_projekt\Helpfile\Help\Working\Output\HtmlHelp1\Documentation.chm, 1,005,437 bytes
   
-  Compression decreased file by 8,079,544 bytes.
+  Compression decreased file by 8,485,586 bytes.
   
-    Last step completed in 00:00:13.2118
+    Last step completed in 00:00:12.5367
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating website table of contents file...
@@ -1077,7 +1070,7 @@ Generating website table of contents file...
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
-    Last step completed in 00:00:05.1423
+    Last step completed in 00:00:04.8023
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
@@ -1088,16 +1081,16 @@ Copied 300 files
 Copied 400 files
 Copied 500 files
 Copied 600 files
-Copied 668 files for the website content
-    Last step completed in 00:00:00.9281
+Copied 677 files for the website content
+    Last step completed in 00:00:00.9581
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00.6920
+    Last step completed in 00:00:00.4090
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 04.25.2014 10:43 .  Total time: 00:01:39,4937
+Build completed successfully at 04.30.2014 09:28 .  Total time: 00:01:22,8137
 
 </buildStep>
 </shfbBuild>

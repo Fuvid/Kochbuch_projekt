@@ -121,6 +121,10 @@
     <HelpKINode Title="start Class" Url="html/e4fe956b-1b8e-00d2-066f-c22dfff0c5ff.htm" />
     <HelpKINode Title="start Members" Url="html/4fac56c1-dd31-b883-345a-6fb5876e17dd.htm" />
   </HelpKINode>
+  <HelpKINode Title="DasUltimativeKochbuch.GUI.&#220;ber class">
+    <HelpKINode Title="&#220;ber Class" Url="html/0001f849-8406-e098-8c5f-44816ac3d2c9.htm" />
+    <HelpKINode Title="&#220;ber Members" Url="html/d2ee68f6-685c-beaf-3fd2-b3117e268f62.htm" />
+  </HelpKINode>
   <HelpKINode Title="DasUltimativeKochbuch.KochbuchDataSet class">
     <HelpKINode Title="KochbuchDataSet Class" Url="html/6236b6bc-2c22-6252-edd5-f2f91a827952.htm" />
     <HelpKINode Title="KochbuchDataSet Members" Url="html/755be0a4-f627-3133-fa3f-a714f1a6e9ec.htm" />
@@ -197,6 +201,7 @@
   <HelpKINode Title="DatenbankConnector.alleEinheiten method" Url="html/fcb0b656-7908-1b73-0655-b11b64f54984.htm" />
   <HelpKINode Title="DatenbankConnector.einheitSpeichern method" Url="html/9b04121f-dbbf-c865-cdfe-3c702640b21d.htm" />
   <HelpKINode Title="DatenbankConnector.rezepteMit method" Url="html/dc434169-2412-e00c-510a-fbde4462ecf1.htm" />
+  <HelpKINode Title="DatenbankConnector.rezLoeschen method" Url="html/30a6f5a1-30c6-18bc-da38-1e2b4e359db2.htm" />
   <HelpKINode Title="DatenbankConnector.rezSpeichern method" Url="html/72678e76-3085-6f93-1ad8-860d9ef7ea9d.htm" />
   <HelpKINode Title="dbc field" Url="html/40261f37-1b0a-58e4-8ec0-a3c0cb3e2d5e.htm" />
   <HelpKINode Title="DBConnect class">
@@ -211,6 +216,7 @@
   <HelpKINode Title="DBConnect.DBConnect constructor" Url="html/40997acd-0477-9e24-5d2d-e7232566211a.htm" />
   <HelpKINode Title="DBConnect.einheitSpeichern method" Url="html/b62bab01-49d0-d3b8-f9eb-c5fe2522a4ed.htm" />
   <HelpKINode Title="DBConnect.rezepteMit method" Url="html/711cd228-6d37-ff82-12fd-516ad7e09eff.htm" />
+  <HelpKINode Title="DBConnect.rezLoeschen method" Url="html/1fee5b9e-aa04-327d-47b8-4b9c7aa37ecf.htm" />
   <HelpKINode Title="DBConnect.rezSpeichern method" Url="html/1f8d889c-d233-4db3-1f52-305b9b233f94.htm" />
   <HelpKINode Title="DBConnect.selectEinheitName method" Url="html/efc0674b-dd79-1dd7-686a-61163a073639.htm" />
   <HelpKINode Title="DBConnect.selectID method" Url="html/903f6767-afac-7fc1-4b87-efa16fc5b547.htm" />
@@ -356,6 +362,7 @@
     <HelpKINode Title="Rezept_erstellen.InitializeComponent Method " Url="html/5f897444-f9a2-e530-dd4b-b66481f294dc.htm" />
     <HelpKINode Title="Rezept_suchen.InitializeComponent Method " Url="html/f75797ef-a0ea-1f81-8f5a-fb91b9de9bb7.htm" />
     <HelpKINode Title="start.InitializeComponent Method " Url="html/6f99361d-69d0-3fd4-fc2e-0d6962c80244.htm" />
+    <HelpKINode Title="&#220;ber.InitializeComponent Method " Url="html/85f18be4-345b-2878-747f-879a293e9e85.htm" />
   </HelpKINode>
   <HelpKINode Title="InitializeDerivedDataSet method" Url="html/9aadb567-9bec-ad95-22a0-bd9fd9b33564.htm" />
   <HelpKINode Title="Insert method">
@@ -844,6 +851,10 @@
   </HelpKINode>
   <HelpKINode Title="Rezept_suchen.InitializeComponent method" Url="html/f75797ef-a0ea-1f81-8f5a-fb91b9de9bb7.htm" />
   <HelpKINode Title="Rezept_suchen.Rezept_suchen constructor" Url="html/d4e0a368-5fa3-a164-0541-3b7558dac1f1.htm" />
+  <HelpKINode Title="rezLoeschen method">
+    <HelpKINode Title="DatenbankConnector.rezLoeschen Method " Url="html/30a6f5a1-30c6-18bc-da38-1e2b4e359db2.htm" />
+    <HelpKINode Title="DBConnect.rezLoeschen Method " Url="html/1fee5b9e-aa04-327d-47b8-4b9c7aa37ecf.htm" />
+  </HelpKINode>
   <HelpKINode Title="RezName property" Url="html/ed712995-7656-d53b-ffae-92fa563f6bd6.htm" />
   <HelpKINode Title="RezNameColumn property" Url="html/070dcca8-ae4a-e873-d9f9-907255f63053.htm" />
   <HelpKINode Title="rezSpeichern method">
@@ -1096,4 +1107,16 @@
   <HelpKINode Title="ZutatTableAdapter.ZutatTableAdapter constructor" Url="html/cd6d1c6b-748f-f988-565f-53ff5dc50129.htm" />
   <HelpKINode Title="ZutName property" Url="html/c60ddf9c-0a59-16f7-870a-b2aa9c422460.htm" />
   <HelpKINode Title="ZutNameColumn property" Url="html/39656c24-bf67-6d69-71bb-848276b0b2a7.htm" />
+  <HelpKINode Title="&#220;ber class">
+    <HelpKINode Title="&#220;ber Class" Url="html/0001f849-8406-e098-8c5f-44816ac3d2c9.htm" />
+    <HelpKINode Title="&#220;ber Members" Url="html/d2ee68f6-685c-beaf-3fd2-b3117e268f62.htm" />
+    <HelpKINode Title="about &#220;ber class" Url="html/0001f849-8406-e098-8c5f-44816ac3d2c9.htm" />
+    <HelpKINode Title="all members" Url="html/d2ee68f6-685c-beaf-3fd2-b3117e268f62.htm" />
+    <HelpKINode Title="constructor" Url="html/59220df9-f599-518a-ca0b-ab3bf51d6fbd.htm" />
+    <HelpKINode Title="events" Url="html/fb865f7c-b693-dcc7-059c-f8336e8a2f54.htm" />
+    <HelpKINode Title="methods" Url="html/b9aa181c-e381-4340-bc82-f62491b00325.htm" />
+    <HelpKINode Title="properties" Url="html/dac70d6b-5359-5e2f-3b8b-9ced0829ad2c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="&#220;ber.InitializeComponent method" Url="html/85f18be4-345b-2878-747f-879a293e9e85.htm" />
+  <HelpKINode Title="&#220;ber.&#220;ber constructor" Url="html/59220df9-f599-518a-ca0b-ab3bf51d6fbd.htm" />
 </HelpKI>
