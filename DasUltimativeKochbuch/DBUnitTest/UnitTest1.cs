@@ -13,9 +13,15 @@ namespace DBUnitTest
         public void einheitenTest()
         {
             //Hier abändern je nach Einträgen in der Datenbank, auf Reihenfolge achten!!
-            Einheit[] earray = new Einheit[2];
-            earray[0] = new Einheit("Stk");
-            earray[1] = new Einheit("kg");
+            Einheit[] earray = new Einheit[8];
+            earray[0] = new Einheit("kg");
+            earray[1] = new Einheit("g");
+            earray[2] = new Einheit("l");
+            earray[3] = new Einheit("Stk");
+            earray[4] = new Einheit("tl");
+            earray[5] = new Einheit("Msp");
+            earray[6] = new Einheit("ml");
+            earray[7] = new Einheit("cl");
             //------------------------------------------------
             DBConnect db = new DBConnect();
             List<Einheit> el = new List<Einheit>();
