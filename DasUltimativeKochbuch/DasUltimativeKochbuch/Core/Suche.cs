@@ -14,7 +14,7 @@ namespace DasUltimativeKochbuch.Core
     /// <summary>
     /// Klasse zum Suchen von Rezepten in der Vorgegenen datenbank
     /// </summary>
-    class Suche
+    public class Suche
     {
        /// <summary>
        /// Die Klasse, die Rezepte anhand der Wertigkeiten ihrer Zutaten sortiert<br />
@@ -64,7 +64,7 @@ namespace DasUltimativeKochbuch.Core
                 score_x += x_zut.Count;
                 score_y += y_zut.Count;
                 
-                return score_y - score_x;
+                return score_x - score_y;
             }
         }
         /// <summary>

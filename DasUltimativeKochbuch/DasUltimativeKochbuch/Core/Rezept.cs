@@ -13,7 +13,8 @@ namespace DasUltimativeKochbuch.Core
     /// <summary>
     /// 
     /// </summary>
-    public class Rezept
+    
+    public class Rezept:IEquatable<Rezept>
     {
         /// <summary>
         /// Liste der benötigten Zutaten
@@ -66,6 +67,18 @@ namespace DasUltimativeKochbuch.Core
 
             return res;
 
+        }
+
+
+        public bool Equals(Rezept other)
+        {
+
+            if (this.name != other.name) return false;
+            if (!(this.zubereitung.Equals(other.zubereitung))) return false;
+            foreach (Zutat z in other.zutaten) {
+                if (!this.zutaten.Contains(z)) return false;
+            }
+            return true;
         }
     }
 }

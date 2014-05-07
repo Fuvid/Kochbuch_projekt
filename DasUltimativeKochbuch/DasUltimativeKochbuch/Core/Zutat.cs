@@ -60,7 +60,7 @@ namespace DasUltimativeKochbuch.Core
         /// <param name="n">Name</param>
         /// <param name="e">Einheit</param>
         /// <param name="m">Menge</param>
-        /// <param name="s">Score</param>
+        /// <param name="s">Score(Wird von der Datenbank geschrieben)</param>
         public Zutat(string n, Einheit e, double m, int s)
         {
             name = n;
