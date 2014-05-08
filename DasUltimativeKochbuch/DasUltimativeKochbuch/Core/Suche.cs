@@ -22,7 +22,6 @@ namespace DasUltimativeKochbuch.Core
        /// </summary>
         private class SBLess : IComparer<Rezept>
         {
-           
             /// <summary>
             /// Die Liste, nach der gesucht wurde, diese soll nicht in die Wertung mit eingehen
             /// </summary>

@@ -24,7 +24,6 @@ namespace DasUltimativeKochbuch.GUI
     public partial class Rezept_erstellen : Page
     {
         List<Zutat> zl;
-        DatenbankConnector dbc = new DBConnect();
 
 
         /// <summary>
@@ -136,7 +135,7 @@ namespace DasUltimativeKochbuch.GUI
                 return;
             }
             Rezept r = new Rezept(zl, TB_Zubereitung.Text, TB_Rezeptname.Text, persAnz);//-TODO Personenangabe
-            dbc.rezSpeichern(r);
+            Ref.dbc.rezSpeichern(r);
 
         }
 

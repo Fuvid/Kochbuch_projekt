@@ -23,13 +23,16 @@ namespace DasUltimativeKochbuch.GUI
     public partial class Rezept_suchen : Page
     {
         List<Rezept> rezeptliste = new List<Rezept>();
+        Suche s;
         ///<summary>
         /// Hier werden die Startwerte für die Page <c>Rezept_suchen</c> gesetzt
         /// in der <c>Coreinit.cs</c> stehen die Textfeldbezeichnungen die dann geladen werden.
         ///</summary>
         public Rezept_suchen()
         {
+
             InitializeComponent();
+            s = new Suche();
             TB_Zutaten.Text = Ref.defaultValues["TB_Zutaten"]; // Setzten des Textes der Textbox TB_Zutaten
             CB_Suchkrit.Items.Add("Wenig neu kaufen"); // Hinzufügen der Auswahlmöglichkeit der Combobox
             CB_Suchkrit.Items.Add("Häufig benutze Zutaten"); // Hinzufügen der Auswahlmöglichkeit der Combobox
@@ -111,7 +114,6 @@ namespace DasUltimativeKochbuch.GUI
                         zutatens.Add(new Zutat(zutat, null));
                     }
 
-                    Suche s = new Suche();
                     byte cb_id = (byte)CB_Suchkrit.SelectedIndex;
                     List<Rezept> Rezepte = s.find(zutatens, cb_id); // Die Rezeptsuche starten und die Liste speichern.
 
